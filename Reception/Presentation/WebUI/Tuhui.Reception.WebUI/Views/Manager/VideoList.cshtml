@@ -1,0 +1,207 @@
+﻿@{
+    ViewBag.Title = "VideoList";
+    ViewBag.MenuKey = "Video";
+}
+<div class="layout-content-head">
+    <h2>视频管理 -> 列表</h2>
+</div>
+<div class="layout-content-condition">
+    是否开启：
+    <select id="videoenable" name="videoenable" style="width: 120px;">
+        <option>全部</option>
+        <option value="1" selected="selected">开启</option>
+        <option value="2">关闭</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    视频状态：
+    <select id="videostatus" name="videostatus" style="width: 120px;">
+        <option>全部</option>
+        <option value="1" selected="selected">正常</option>
+        <option value="0">故障</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    选择来源：
+    <select id="videosource" name="videosource" style="width: 120px;">
+        <option>全部</option>
+        <option value="10">南京交通视频</option>
+        <option value="20">320视频</option>
+        <option value="30">江苏省厅视频</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    视频名称：
+    <input id="word" name="word" style="width: 160px; height: 30px;" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="搜索" style="width: 100px; height: 30px; font-family: 微软雅黑" onclick="search()" />
+</div>
+<div class="layout-content-main">
+    <table class="l-table" style="min-width: 800px;">
+        <thead>
+            <tr>
+                <th style="width: 80px">是否开启</th>
+                <th style="width: 60px;">状态</th>
+                <th>视频名称</th>
+                <th style="width: 180px;">视频类型</th>
+                <th style="width: 150px;">所属单位</th>
+                <th style="width: 60px;">经纬度</th>
+                <th style="width: 80px;">@Html.ActionLink(" ", "VideoModify", new { controller = "Manager" }, new { @class = "create" })</th>
+            </tr>
+        </thead>
+        <tbody id="tbody_VideoList" binding="{'pageId':'page_VideoList','pageCallback':'GetVideoList'}">
+            <tr>
+                <td binding="{'html':'enable','htmlData':ENABLE}">
+                <td binding="{'html':'videostatus','htmlData':VIDEOSTATUS}"></td>
+                <td binding="{'title':'videodesc'}"><a onclick="showVideoPopup(this)" binding="{'html':'videoname','videoid':'videoid','videosource':'videosource','videoaccess':'videoaccess','thirdid':'thirdid'}"></a></td>
+                <td binding="{'html':'videosource','htmlData':VIDEOSOURCE}"></td>
+                <td binding="{'html':'videounit'}"></td>
+                <td binding="{'html':'videolng','htmlHandle':VideoLng}"></td>
+                <td><a class="edit" binding="{'onclick':'videoid','onclickFormat':'edit_video({0})'}"></a>
+                    <a class="delete" onclick="DeleteVideo(this)" binding="{'videoid':'videoid'}"></a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7" id="page_VideoList"></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div id="div_video_dialog" style="display: none">
+    <iframe id="iframe_videoPopup"></iframe>
+</div>
+@*if (ele.videosource == 20) {
+                    _src = ACTION_URL("YCVLC", "Video") + "?c_id=" + ele.videoaccess;
+                } else if (ele.videosource == 30) {
+                    _src = ACTION_URL("STVIDEO", "Video") + "?c_id=" + ele.videoaccess;
+                } else {
+                    _src = ele.videoaccess;
+                }*@
+<script type="text/javascript">
+    function VideoLng(value, data, obj) {
+        if (value == 0) {
+            return "未设置";
+        } else {
+            return "已设置";
+        }
+    }
+
+    var VIDEOSOURCE = {
+        10: "交通局视频",
+        20: "320视频",
+        30: "江苏省厅视频"
+    }
+
+    var ENABLE = {
+        1: "开启",
+        2: "关闭"
+    }
+
+    var VIDEOSTATUS = {
+        1: "正常",
+        0: "故障"
+    }
+    $(function () {
+        GetVideoList();
+    });
+
+    function GetVideoList(pageIndex) {
+        $.L.ajaxHandle({
+            cache: "false",
+            data: {
+                videosource: $("#videosource").val(),
+                pageIndex: pageIndex,
+                justEnable: $("#videoenable").val(),
+                videostatus: $("#videostatus").val(),
+                keyword: $("#word").val()
+            },
+            url: ACTION_URL("GetAllVideo", "Manager"),
+            success: function (response) {
+                $("#tbody_VideoList").L_bindingDataList(response, {
+                    itemHandle: function (index, obj, data) {
+                        if (data.videosource == 20) {
+                            obj.find("a.edit,a.delete").hide();
+                        }
+                    }
+                });
+            }
+        })
+    }
+
+
+    function DeleteVideo(a) {
+        $.L.messageConfirmT("确定删除此条记录？", function () {
+            var videoid = $(a).attr("videoid");
+            $.L.ajaxHandle({
+                type: "post",
+                cache: "false",
+                data: { id: videoid },
+                url: ACTION_URL("DeleteVideoById", "Manager"),
+                error: function () {
+                    alert("error");
+                },
+                success: function (response) {
+                    //alert("Delete success!");
+                    //GetVideoList();
+                    window.location.href = '@Url.Action("VideoList","Manager")';
+                }
+            });
+        })
+    }
+
+    function edit_video(videoid) {
+        window.location.href = '@Url.Action("VideoModify", "Manager")' + '?videoid=' + videoid;
+    }
+
+    function search() {
+        $.L.ajaxHandle({
+            cache: "false",
+            data: {
+                videosource: $("#videosource").val(),
+                //pageIndex: pageIndex,
+                justEnable: $("#videoenable").val(),
+                videostatus: $("#videostatus").val(),
+                keyword: $("#word").val()
+            },
+            url: ACTION_URL("GetAllVideo", "Manager"),
+            success: function (response) {
+                $("#tbody_VideoList").L_bindingDataList(response, {
+                    itemHandle: function (index, obj, data) {
+                        if (data.videosource == 20) {
+                            obj.find("a.edit,a.delete").hide();
+                        }
+                    }
+                });
+            }
+        })
+    }
+
+    function showVideoPopup(obj) {
+        $("#div_video_dialog").dialog({
+            title: '视频播放',
+            width: 800,
+            height: 500,
+            open: function () {
+                var _src = ACTION_URL("PlayVideo", "Video") + "?videoid=" + $(obj).attr("videoid");
+                //if ($(obj).attr("videosource") == "20") {
+                //    _src = ACTION_URL("YCVLC", "Video") + "?c_id=" + encodeURIComponent($(obj).attr("videoaccess"));
+                //} else if ($(obj).attr("videosource") == "30") {
+                //    _src = ACTION_URL("STVIDEO2", "Video") + "?c_id=" + $(obj).attr("thirdid");
+                //} else {
+                //    if ($(obj).attr("videoaccess").indexOf("rtmp") != -1) {
+                //        _src = ACTION_URL("YCVLC", "Video") + "?c_id=" + encodeURIComponent($(obj).attr("videoaccess"));
+                //    } else {
+                //        _src = $(obj).attr("videoaccess");
+                //    }
+                //}
+                $("#iframe_videoPopup").attr("src", _src);
+            },
+            close: function () {
+                $("#iframe_videoPopup").attr("src", "");
+            }
+        })
+    }
+
+</script>
+
+

@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "UserList";
+    ViewBag.MenuKey = "User";
+}
+<div class="layout-content-head">
+    <h2>用户管理 -> 列表</h2>
+</div>
+<div class="layout-content-main">
+    <table class="l-table" style="min-width:800px;">
+        <thead>
+            <tr>
+                <th style="width:120px;">用户名</th>
+                <th>用户昵称</th>
+                <th style="width:100px;">用户级别</th>
+                <th style="width:60px;">用户状态</th>
+                <th style="width:150px;">最后登录时间</th>
+                <th style="width:80px;">@Html.ActionLink(" ", "UserModify", new { controller = "Manager" }, new { @class = "create" })</th>
+            </tr>
+        </thead>
+        <tbody id="tbody_UserList">
+            <tr>
+                <td binding="{'html':'username'}"></td>
+                <td binding="{'html':'nickname'}"></td>
+                <td binding="{'html':'userlevel','htmlData':USERLEVELDATA}"></td>
+                <td binding="{'html':'userstate'}"></td>
+                <td binding="{'html':'lastlogintime','htmlHandle':'datetime'}"></td>
+                <td><a class="edit"  binding="{'onclick':'userid','onclickFormat':'EditUser({0})'}"></a><a class="delete" onclick="DeleteUser(this)" binding="{'userid':'userid'}"></a></td>
+            </tr>
+        
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript">
+    var USERLEVELDATA = {
+        1: "系统管理员",
+        9: "网站管理员"
+    }
+    $(function() {
+        GetUserList();
+    });
+    
+    function GetUserList() {
+        $.L.ajaxHandle({
+            cache: "false",
+            url: ACTION_URL("GetAllUser", "Manager"),
+            success: function (response) {
+                debugger;
+                $("#tbody_UserList").L_bindingDataList(response, {
+                    itemHandle: function (index, obj, data) {
+                        if (data.userlevel == 1) {
+                            obj.find("a.delete").hide();
+                        }
+                    }
+                });
+            }
+        })
+    }
+
+    
+    function DeleteUser(userid) {
+        var id_string = $(userid).attr("userid");
+        $.L.messageConfirmT("确定删除该用户信息？", function() {
+            $.L.ajaxHandle({
+                cache: "false",
+                data: { id: id_string },
+                url: ACTION_URL("DeleteUserById", "Manager"),
+                error: function () {
+                    alert("error");
+                },
+                success: function (response) {
+                    //alert("Delete success!");
+                    //GetUserList();
+                    window.location.href = '@Url.Action("UserList","Manager")';
+                }
+            });
+        })
+    }
+
+    function EditUser(userid) {
+        window.location.href = '@Url.Action("UserModify", "Manager")' + '?userid=' + userid;
+    }
+</script>

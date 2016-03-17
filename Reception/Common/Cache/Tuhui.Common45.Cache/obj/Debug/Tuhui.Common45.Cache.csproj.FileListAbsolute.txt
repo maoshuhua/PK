@@ -1,0 +1,10 @@
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Cache\Tuhui.Common45.Cache\bin\Debug\Tuhui.Common45.Cache.dll
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Cache\Tuhui.Common45.Cache\bin\Debug\Tuhui.Common45.Cache.pdb
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Cache\Tuhui.Common45.Cache\obj\Debug\Tuhui.Common45.Cache.csprojResolveAssemblyReference.cache
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Cache\Tuhui.Common45.Cache\obj\Debug\Tuhui.Common45.Cache.dll
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Cache\Tuhui.Common45.Cache\obj\Debug\Tuhui.Common45.Cache.pdb
+D:\Reception\Common\Cache\Tuhui.Common45.Cache\bin\Debug\Tuhui.Common45.Cache.dll
+D:\Reception\Common\Cache\Tuhui.Common45.Cache\bin\Debug\Tuhui.Common45.Cache.pdb
+D:\Reception\Common\Cache\Tuhui.Common45.Cache\obj\Debug\Tuhui.Common45.Cache.csprojResolveAssemblyReference.cache
+D:\Reception\Common\Cache\Tuhui.Common45.Cache\obj\Debug\Tuhui.Common45.Cache.dll
+D:\Reception\Common\Cache\Tuhui.Common45.Cache\obj\Debug\Tuhui.Common45.Cache.pdb

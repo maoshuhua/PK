@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0C15460-2E6B-496F-AFA8-D8D0FAF5C676}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tuhui.Common45.Utility</RootNamespace>
+    <AssemblyName>Tuhui.Common45.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonEnum.cs" />
+    <Compile Include="CommonStruct.cs" />
+    <Compile Include="Extension\IEnumerableExtension.cs" />
+    <Compile Include="Extension\NameValueExtension.cs" />
+    <Compile Include="Extension\StringExtension.cs" />
+    <Compile Include="Handle\WebRequestHandle.cs" />
+    <Compile Include="Handle\WebRequestResult.cs" />
+    <Compile Include="Model\ControllerActionLogModel.cs" />
+    <Compile Include="Model\JsonError.cs" />
+    <Compile Include="Model\PagedList.cs" />
+    <Compile Include="Model\zTreeModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serializer\SerializerUtility.cs" />
+    <Compile Include="Utility\Caesar.cs" />
+    <Compile Include="Utility\CodeUtility.cs" />
+    <Compile Include="Utility\CommonUtility.cs" />
+    <Compile Include="Utility\HashUtility.cs" />
+    <Compile Include="Utility\InvokeUtility.cs" />
+    <Compile Include="Utility\ObjectUtility.cs" />
+    <Compile Include="Utility\ParseUtility.cs" />
+    <Compile Include="Utility\PathUtility.cs" />
+    <Compile Include="Utility\ShortUtility.cs" />
+    <Compile Include="Utility\UTF8Utility.cs" />
+    <Compile Include="Validation\CaptchaImage.cs" />
+    <Compile Include="Validation\RegularExpression.cs" />
+    <Compile Include="Validation\ValidateCode.cs" />
+    <Compile Include="Validation\ValidatorUtility.cs" />
+    <Compile Include="XML\XMLReader.cs" />
+    <Compile Include="XML\XMLWriter.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,121 @@
+﻿.layout_head{
+    width:100%;
+    height:85px;
+    background:url(images/manager/bg.png) repeat-x;
+    box-shadow:0px 0px 8px rgba(0,0,0,.5);
+    z-index:10;
+}
+
+.layout_head .sitetitle{
+    /*width:405px;*/
+    width: 520px;
+    height:71px;
+    float:left;
+    margin:8px 10px;
+    /*background:url(images/manager/tit.png);*/
+    background:url(images/manager/tit-2.png);
+
+}
+
+    .layout_head .userstate {
+        float:right;
+        margin:30px 20px;
+    }
+
+.layout_left{
+    position:absolute;
+    left:0px;
+    top:85px;
+    width:210px;
+    background-color:rgba(91,206,239,.5);
+    box-shadow:0px 0px 8px rgba(0,0,0,.8);
+    z-index:9;
+}
+
+.layout_right{
+    position:absolute;
+    right:0px;
+    top:85px;
+    background-color:#fff;
+    z-index:8;
+}
+
+.menu_head{
+    height:70px;
+    background:url(images/manager/menu_head.png);
+}
+
+.layout_menu{
+}
+
+.layout_menu li{
+    width:100%;
+    height:70px;
+    line-height:70px;
+    margin:2px 0px;
+}
+
+    .layout_menu li a {
+        display:block;
+        height:100%;
+        width:100%;
+        color:#fff;
+        background-color:rgb(91,206,239);
+        transition:all linear .3s;
+        box-shadow:0px 0px 3px rgba(255,255,255,.3);
+    }
+
+        .layout_menu li a:hover {
+            background-color:rgba(0,0,0,.6);
+            text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FF1177,
+               0 0 35px #FF1177,
+               0 0 40px #FF1177,
+               0 0 50px #FF1177,
+               0 0 75px #FF1177;
+        }
+
+        .layout_menu li a.select {
+            background-color:rgba(0,0,0,.6);
+            text-shadow: 0 0 5px #FFaa00,
+               0 0 15px #FFaa00,
+               0 0 20px #FFaa00,
+               0 0 35px #FFaa00,
+               0 0 40px #FFaa00,
+               0 0 50px #FFaa00,
+               0 0 75px #FFaa00;
+        }
+
+
+.layout-content-head {
+    margin:0px 10px;
+    height: 45px;
+    text-align: left;
+    line-height: 45px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.layout-content-condition {
+    border: 1px dotted #ccc;
+    padding: 10px;
+    width: 95%;
+    margin: auto;
+    text-align: left;
+}
+
+.layout-content-main {
+    margin: 10px;
+}
+
+.layout-foot {
+}
+
+.manager_homePage{
+    
+    height:100%;
+    width:100%;
+    background:#e6e6e6 url(images/manager/manager_home.png) center center no-repeat;
+}

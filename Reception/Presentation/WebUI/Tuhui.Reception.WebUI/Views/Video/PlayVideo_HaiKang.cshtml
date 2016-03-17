@@ -1,0 +1,154 @@
+﻿@model Tuhui.Reception.Model.tv_video
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title></title>
+    @Content.Common(Url, false)
+    @Content.Script(Url, "HaiKang/webVideoCtrl.js")
+</head>
+<body style="background-color: #000;" onload="init();" onclose="close();">
+    <div id="main" style="position: absolute; left: 0px; top: 0px;">
+    </div>
+    <div id="message" style="color: #fff; position: absolute; z-index: 101; bottom: 0px; left: 0px; width: 100%; height: 30px; line-height: 30px;">
+    </div>
+
+    <select id="channels" style="display:none;"></select>
+    <script type="text/javascript">
+        var szIP = '@Model.videoaccess';
+        var szPort = "80";
+        var szUsername = "admin";
+        var szPassword = "12345";
+        var nAnalogChannel = 0;
+       
+        function setSize() {
+            $("body,#main").css({
+                width: document.documentElement.clientWidth + "px",
+                height: document.documentElement.clientHeight + "px"
+            })
+
+            $("#message").css({
+                'top': (document.documentElement.clientHeight / 2 - 15) + "px"
+            })
+
+        }
+
+
+        $(function () {
+
+            setSize();
+
+            window.onresize = setSize;
+
+            $("#main").css({ "left": "10000px" });
+            
+            $("#message").hide();
+
+            if (szIP == '') {
+                showMessage("海康视频IP地址缺失");
+            } else {
+                playVideoHK();
+            }
+        })
+
+        function showMessage(msg) {
+            $("#message").html(msg).show();
+        }
+
+        function playVideoHK() {
+            // 检查插件是否已经安装过
+            if (-1 == WebVideoCtrl.I_CheckPluginInstall()) {
+                alert("您还未安装过插件，请安装海康视频播放控件WebComponents.exe！");
+                return;
+            }
+
+            // 初始化插件参数及插入插件
+            WebVideoCtrl.I_InitPlugin(document.documentElement.clientWidth, document.documentElement.clientHeight, {
+                iWndowType: 1
+            });
+
+            WebVideoCtrl.I_InsertOBJECTPlugin("main");
+
+            _login();
+        }
+
+        function _login() {
+            var iRet = WebVideoCtrl.I_Login(szIP, 1, szPort, szUsername, szPassword, {
+                success: function (xmlDoc) {
+                    showMessage("登录成功,开始获取通道信息....")
+                    // 登录成功
+                    setTimeout(function () {
+                        // 获取通道信息
+                        getChannelInfo();
+                    }, 10);
+                },
+                error: function () {
+                    // 登录失败
+                    showMessage(szIP + " 登录失败！");
+                }
+            });
+
+            if (-1 == iRet) {
+                // 已登录过！
+                showMessage(szIP + " 已登录过！");
+            }
+
+        }
+
+        function getChannelInfo() {
+            var oSel = $("#channels").empty();
+            WebVideoCtrl.I_GetAnalogChannelInfo(szIP, {
+                async: false,
+                success: function (xmlDoc) {
+                    var oChannels = $(xmlDoc).find("VideoInputChannel");
+                    nAnalogChannel = oChannels.length;
+
+                    $.each(oChannels, function (i) {
+                        var id = parseInt($(this).find("id").eq(0).text(), 10),
+                            name = $(this).find("name").eq(0).text();
+                        if ("" == name) {
+                            name = "Camera " + (id < 9 ? "0" + id : id);
+                        }
+                        oSel.append("<option value='" + id + "' bZero='false'>" + name + "</option>");
+                    });
+
+                    showMessage(szIP + " 获取模拟通道成功！开始启动预览!");
+
+                    setTimeout(function () {
+                        startPlayReview();
+                    }, 20);
+
+                },
+                error: function () {
+                    showMessage(szIP + " 获取模拟通道失败！");
+                }
+            });
+        }
+
+        function startPlayReview() {
+            var iRet = WebVideoCtrl.I_StartRealPlay(szIP, {
+                iStreamType: 1,
+                iChannelID: parseInt($("#channels").val(), 10),
+                bZeroChannel: false
+            });
+
+            if (0 == iRet) {
+                //showMessage( "开始预览成功！");
+
+                $("#main").css({ "left": "0px" });
+
+            } else {
+                showMessage("开始预览失败！");
+            }
+        }
+
+        
+    </script>
+
+</body>
+</html>

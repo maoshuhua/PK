@@ -1,0 +1,66 @@
+﻿@model List<Tuhui.Reception.Model.tv_subject>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南京交通视频监控平台驾驶舱</title>
+    @Content.Common(Url, false)
+    @Content.tmap(Url)
+    @Content.Script(Url, "tv_f_video.js")
+
+    <script>
+        $.config = {
+            fixPopup: {
+                width: 300,
+                height:240
+            },
+            subjectid: "@Request["s_id"]",
+            subjectname:"@Request["s_name"]"
+        }
+    </script>
+</head>
+<body>
+    <div class="video_head">
+        <a href="@Url.Action("Index","Home")" class="v_homepage"></a>
+        <div class="v_title">南京交通视频监控平台驾驶舱</div>
+    </div>
+    <div class="video_map" id="map"></div>
+    @Html.Partial("_PartialVideoSubject2", Html.GetSubjectTreeData(Model, ViewBag.s_id_list as List<int>))
+    @Html.Partial("_PartialVideoList")
+    <div id="div_title" style="position:absolute;z-index:1000;top:50px;right:290px;color:#fff;font-weight:bolder;font-size:18px; height:35px;line-height:35px;width:150px;background-color:rgb(248,199,101);box-shadow:0px 0px 5px rgba(0,0,0,.6);"></div>
+    <script>
+        $(function () {
+            if ($.config.subjectname) {
+                $("#div_title").html($.config.subjectname);
+            } else {
+                $("#div_title").hide();
+            }
+            window.onresize = _onResize;
+
+            _onResize();
+
+            $.tv_f.tmap_Init();
+            $.tv_f.ajax_GetSubjectList();
+
+        })
+        
+        function _onResize() {
+            $("body").css({
+                height: document.documentElement.clientHeight + "px"
+            })
+            $(".video_map,#video_menu,.video_list").css({
+                "height": document.documentElement.clientHeight-45 +"px"
+            })
+            $("#map").css({
+                "width": (document.documentElement.clientWidth - $("#video_menu").width()) +"px"
+            })
+        }
+
+    </script>
+</body>
+</html>

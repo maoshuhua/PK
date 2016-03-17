@@ -1,0 +1,91 @@
+﻿@model List<Tuhui.Reception.Model.tv_face>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南京交通视频监控平台驾驶舱</title>
+    <link href="@Url.Content("~/Content/site.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/common.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/JqueryTuhui/jquery.tuhui.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.tuhui.js")"></script>
+    <script language="javascript" src="http://webapi.amap.com/maps?v=1.3&key=e9b3f98244bf47fcf0daaf8dd7f6b5fd"></script>
+
+</head>
+<body style="overflow:auto;">
+    <div id="map" style="height:0px;width:100%;"></div>
+    <div>关键字：<input type="text" id="txtKeyword" /><input type="button" name="name" value="检索" onclick="doSearch();" /></div>
+    <div style="width:40%;float:left;margin:10px;">
+        <ul id="lineResultList">
+            <li style="padding:10px;margin:0px;box-shadow:0px 0px 10px rgba(0,0,0,.6);">
+                <a style="display:block;height:100%;width:100%;" binding="{'text':'name'}" onclick="ShowLineData(this);"></a>
+            </li>
+        </ul>
+    </div>
+    <div style="width: 50%; float: right; margin: 10px;">
+        <textarea id="area_LineData" style="width:90%;height:400px;"></textarea>
+    </div>
+    <script>
+        window.onresize = _onResize;
+
+        _onResize();
+
+        function _onResize() {
+            $("body").css({
+                height: document.documentElement.clientHeight + "px"
+            })
+        }
+        var mapObj;
+        var lineSearchObj;
+        $(function () {
+            mapObj = new AMap.Map("map", {
+                rotateEnable: true,
+                dragEnable: true,
+                zoomEnable: true,
+                //二维地图显示视口
+                view: new AMap.View2D({
+                    center: new AMap.LngLat(118.79585, 32.03762),//地图中心点
+                    zoom: 16 //地图显示的缩放级别
+                })
+            });
+
+            mapObj.plugin(["AMap.LineSearch"], function () {
+
+                lineSearchObj = new AMap.LineSearch({
+                    city: "南京"
+                });
+
+            })
+
+            AMap.event.addListener(lineSearchObj, "complete", function (result) {
+                $("#lineResultList").L_bindingDataList(result.lineInfo, {
+                    itemHandle: function (index, obj, data) {
+                        $(obj).find("a").data("LineData", data);
+                    }
+                });
+            });
+
+
+
+        })
+
+
+        function doSearch() {
+            lineSearchObj.search($("#txtKeyword").val());
+        }
+
+        function ShowLineData(obj) {
+            var _path = $(obj).data("LineData").path;
+            
+            $("#area_LineData").val($.map(_path, function (a, i) {
+                return a.lng + "," + a.lat;
+            }).join(";"))
+        }
+    </script>
+</body>
+</html>

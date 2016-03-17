@@ -1,0 +1,115 @@
+﻿/*#region Login布局*/
+.logon-head
+{
+    height: 100px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.logon-head h1
+{
+    width:100%;
+    text-align:center;
+    line-height:100px;
+    color:#fcfcfc;
+    font-size:30px;
+    }
+.logon-main
+{
+    /*width: 745px;
+    position:relative;*/
+}
+
+.validation-summary-errors
+{
+    height: 45px;
+    line-height: 45px;
+    width: 165px;
+    padding-left: 45px;
+    background: url("images/logon/logon-form-error.png") no-repeat;
+    position: absolute;
+    left: 434px;
+    top:248px;
+}
+.logon-content
+{
+    width: 1003px;
+    height: 613px;
+    background-image:url("images/logon/login-1.png");
+    margin:10px auto;
+    position:relative;
+}
+
+.logon-content h3
+{
+    padding: 0 20px;
+    background-color:Red;
+}
+
+.logon-content .input
+{
+   
+    color:#ffffff;
+       position:absolute;
+    left:433px;
+    top:293px;
+       
+}
+.logon-content .input input
+{
+   
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background-repeat:repeat;
+    background-color:#32a2e3;
+    border-radius:0px;
+    border:0px;
+
+}
+.logon-content .input input:focus
+{
+    /*border: 1px solid #95ac46;*/
+}
+.logon-content .logon-button
+{
+    
+    width: 93px;
+    height:32px;
+    background-image:url("images/logon/loginbutton1.png");
+    box-shadow: none;
+    border-radius:0px;
+    border:0px;
+    
+     margin-top: -22.88px;
+    margin-left: -46.5px;
+    position: absolute;
+    left: 50%;
+    top: 71.5%;
+    
+    
+}
+
+.logon-content .logon-button:hover
+{
+   background-image:url("images/logon/loginbutton2.png");
+}
+
+.main-split
+{
+    clear: both;
+}
+
+.logon-foot
+{
+    clear: both;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #096905;
+    position:absolute;
+    left:0px;
+    bottom:3px;
+    width:100%;
+}
+
+
+/*#endregion Login布局*/

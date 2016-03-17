@@ -1,0 +1,346 @@
+﻿@using Tuhui.Reception.Model
+@model Tuhui.Reception.Model.tv_face
+@{
+    List<string> imageList = ViewBag.ImageList;
+    List<tv_video> videoList= ViewBag.VideoList;
+    ViewBag.Title = "FaceAdd";
+    var FaceSizeSelectList = new List<SelectListItem>()
+        {
+            new SelectListItem{Text = "1*1",Value ="1"},            
+            new SelectListItem{Text = "1*2",Value ="2"}           
+        };
+
+    var SortNoSelectList = new List<SelectListItem>(){
+            new SelectListItem{Text="1",Value="1"},
+            new SelectListItem{Text="2",Value="2"},
+            new SelectListItem{Text="3",Value="3"},
+            new SelectListItem{Text="4",Value="4"},
+            new SelectListItem{Text="5",Value="5"},
+            new SelectListItem{Text="6",Value="6"},
+            new SelectListItem{Text="7",Value="7"},
+            new SelectListItem{Text="8",Value="8"},
+            new SelectListItem{Text="9",Value="9"},
+            new SelectListItem{Text="10",Value="10"},
+            new SelectListItem{Text="11",Value="11"},
+            new SelectListItem{Text="12",Value="12"},
+            new SelectListItem{Text="13",Value="13"},
+            new SelectListItem{Text="14",Value="14"},
+            new SelectListItem{Text="15",Value="15"},
+            new SelectListItem{Text="16",Value="16"},
+            new SelectListItem{Text="17",Value="17"},
+            new SelectListItem{Text="18",Value="18"},
+            new SelectListItem{Text="19",Value="19"},
+            new SelectListItem{Text="20",Value="20"}
+        };
+
+    @*var FaceTypeSelectList = new  List<SelectListItem>()
+        {
+            new SelectListItem{Text = "封面时钟",Value = "1"},
+            new SelectListItem{Text = "单一专题",Value = "2"},
+            new SelectListItem{Text = "概念图片",Value = "3"}
+        };*@
+
+    var FaceTypeSelectList = @Html.GetAllTypeGroups();
+        
+}
+<style type="text/css">
+    ::-webkit-scrollbar
+{
+    width: 16px;
+    height: 6px;
+}
+
+
+.iframe_videoaccess input.btnselected{
+   background:#fff;
+}
+</style>
+<div class="layout-content-head">
+    <h2>@ViewBag.TitleName</h2>
+</div>
+<div style="text-align:left;margin-left:50px;">
+    @using (Html.BeginForm("FaceModify", "Manager"))
+    {
+        @Html.HiddenFor(p => p.faceid)
+        @Html.HiddenFor(p => p.facecontent)   
+        <div class="edit-area">
+            <div class="edit-lable">封面大小:</div>
+            <div class="edit-content">
+                @Html.DropDownListFor(p => p.facesize, FaceSizeSelectList)
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">封面序号:</div>
+            <div class="edit-content">
+                @Html.DropDownListFor(p => p.sortno, SortNoSelectList)
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">封面类型:</div>
+            <div class="edit-content">
+                @Html.DropDownListFor(p => p.facetype, FaceTypeSelectList)
+            </div>
+        </div>
+        <div id="edit_div" style="height: 290px;width:887px;border-style:dotted;overflow-y:auto;overflow-x: hidden;">
+            <div name="M_div" id="M_div1" style="display: block;font-size: 400%;text-align:center;margin-top: 110px;">
+                封面时钟
+            </div>
+            <div name="M_div" id="M_div2" style="display: block" class="edit-area">
+                &nbsp;&nbsp;&nbsp;&nbsp; 封面名称：
+                <input id="facename" style="width: 100px;height: 25px;"/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp; 专题：
+                <div id="face_type" style="display: block">
+                    <ul class="" style="width:700px;margin-left: 22px; " >
+                        <li style="float: left; margin-left: 10px;">
+                            <input type="checkbox" name="face_type_checkbox" binding="{'value': 'subjectid','id':'subjectid'}" /><label binding="{'text': 'subjectname', 'for': 'subjectname' }"></label>
+                        </li>
+                    </ul>
+                </div>
+                <br/>
+                @*@Html.DropDownList(" ",@Html.GetAllSubjectGroups(),new { @id = "face_type" })*@
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;视频数：
+                <input id="videocount" style="width: 100px;height: 25px;"/>
+            </div>
+            <div name="M_div" id="M_div3" style="display: none;background-color:#B4DCE3; width:870px; height:295px;">
+                <ul id="M_div3_ul" >
+                    @foreach (var item in imageList)
+                    {
+                        <li style="display:block;float:left;width:145px;height:145px;" imgname="@item"><img style="height:135px;width:135px;margin-left:5px;margin-top:5px;" src="@Url.Content("~/images/face/"+item)" /></li>
+                    }
+                </ul>
+            </div>
+            <div name="M_div" id="M_div4" style="display: none" class="edit-area">
+                视频名称：
+                <input id="videoname" style="width: 200px;height: 25px;" />
+                <br/>
+                视频地址：
+                <input id="videourl" style="width: 200px;height: 25px;" onchange="VideoUrlChange()"/>
+                <a style="width:500px;height:200px;" id="getvideoaccess" onclick="GoGetVideoAccess(videoaccess)">选择视频</a>
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable"></div>
+            <div class="edit-content">
+                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存" onclick="BeforeSubmit()"/>
+                <input type="button" value="返回" style="width: 70px;height: 30px;" onclick="BackToFaceList()" />
+            </div>
+        </div>
+    
+    }
+</div>
+<div id="div_dialog_videoaccess" style="display:none">
+    <div id="iframe_videoaccess" class="iframe_videoaccess" name="iframe_videoaccess">
+        <div id="keyword">
+            <input style="width: 200px;height: 30px;" id="videoaccess_keyword" />
+            <input type="button" id="keyword_submit" style="width: 50px;height: 30px;top: 3px;" onclick="KeywordSubmit()" value="搜索"/>
+        </div>
+        <div >
+            <ul class="page_panellist">
+            @foreach (var item in videoList)
+            {
+                <li class="videoaccess" style="height:30px;width: 210px;float: left;display: block;margin:0 10px 10px 0;">
+                    <a style="font-size: 13px;margin: 5px;width:210px;height: 30px;display: block;overflow: hidden;" videoaccess="@item.videoaccess" value="@item.videoname" text="@item.videoname" title="@item.videoname">@item.videoname</a>
+                </li>
+                
+                @*<input type="button" class="videoaccess" style="font-size: 13px;float: left;margin: 5px;width: 210px;height: 30px;display: block" videoaccess="@item.videoaccess" value="@item.videoname" text="@item.videoname" title="@item.videoname"/>*@
+            }
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var faceimagename;
+    var facetype = @Model.facetype;
+    var facecontent = '@Model.facecontent';
+    var videoaccess;
+    $(function() {
+        if (facetype == 0) {
+            $.L.ajaxHandle({
+                type: "post",
+                cache: "false",
+                url: ACTION_URL("GetParentSubject", "Manager"),
+                success: function(response) {
+                    $("#face_type").L_bindingDataList(response);
+                    $("div[name='M_div']").hide().eq(1).show();
+                }
+            });
+        } else if (facetype == 1) {
+            $("div[name='M_div']").hide().eq(1).show();
+        } else if (facetype == 2) {
+            $("div[name='M_div']").hide().eq(1).show();
+            var facecontentobj = JSON.parse($("#facecontent").val());
+            $("#facename").val(facecontentobj.subjectname);
+            $("#videocount").val(facecontentobj.videocount);
+            $.L.ajaxHandle({
+                type: "post",
+                cache: "false",
+                url: ACTION_URL("GetParentSubject", "Manager"),
+                success: function(response) {
+                    $("#face_type").L_bindingDataList(response);
+                    if (facecontentobj.subjectid != "") {
+                        var temp = facecontentobj.subjectid.split(",");
+                        $("#face_type").find("[type='checkbox']").each(function() {
+                            var value = $(this).val();
+                            for (var i = 0; i < temp.length; i++) {
+                                if (value == temp[i]) {
+                                    $(this).attr('checked', 'true');
+                                }
+                            }
+                        })
+                    }
+                }
+            });        
+        } else if (facetype == 3) {
+            $("#M_div3_ul li").css("background-color", "#B4DCE3");
+            $("#facecontent").val();
+            faceimagename = JSON.parse($("#facecontent").val()).imgName;
+            $("div[name='M_div']").hide().eq(2).show();
+            $("#M_div3_ul li[imgname='" + faceimagename + "']").css("background-color", "black");
+        } else if (facetype == 4) {
+            $("div[name='M_div']").hide().eq(3).show();
+            var facecontentobj = JSON.parse($("#facecontent").val());
+            $("#face_type").val(4);
+            $("#videourl").val(facecontentobj.videourl);
+            $("#videoname").val(facecontentobj.videoname);
+            videoaccess = $("#videourl").val();
+        }
+    })
+        
+
+
+        $("#M_div3_ul li").click(function() {
+            //样式初始化
+            $("#M_div3_ul li").css("background-color", "#B4DCE3");
+            $(this).css("background-color", "black");
+            faceimagename = $(this).attr("imgname");
+        });
+
+        $('#iframe_videoaccess .videoaccess a').click(function() {
+            videoaccess = $(this).attr("videoaccess");
+            $("#videourl").val(videoaccess);
+            $("#videoname").val($(this).attr("value"));
+            $("#div_dialog_videoaccess").dialog('close');
+        });
+
+
+        $("#facetype").change(function() {
+            FaceTypeSwitch();
+        })
+
+        function BeforeSubmit() {
+
+            if (facetype == 1) {
+                $('#facecontent').val(" ");
+            }
+            if (facetype == 2 || facetype == 0) {
+                var subjectid="";
+                $("#face_type input:checked").each(function() {
+                    subjectid += $(this).val() + ",";
+                });
+                subjectid = subjectid.substr(0, subjectid.length - 1);
+                var temp = {
+                    subjectid: subjectid,
+                    subjectname: $("#facename").val(),
+                    videocount: $("#videocount").val()
+                };
+                var temp_string = JSON.stringify(temp);
+                $('#facecontent').val(temp_string);
+            }
+            if (facetype == 3) {
+                var temp_img1 = {
+                    imgName: faceimagename
+                };
+                $("#facecontent").val(JSON.stringify(temp_img1));
+            }
+            if (facetype == 4) {
+                var temp = {
+                    videourl: $("#videourl").val(),
+                    videoname: $("#videoname").val()
+                };
+                var temp_string = JSON.stringify(temp);
+                $('#facecontent').val(temp_string);
+            }
+
+        }
+
+        function FaceTypeSwitch() {
+            $("#facecontent").val(" ");
+
+            if ($("#facetype").val() == 1) {
+                facetype = 1;
+                $("div[name='M_div']").hide().eq(0).show();
+            } else if ($("#facetype").val() == 2) {
+                facetype = 2;
+                $("#face_type").val("").selected = 'selected';
+                $("div[name='M_div']").hide().eq(1).show();
+                $("#videocount").val(" ");
+            } else if ($("#facetype").val() == 3) {
+                facetype = 3;
+                $("div[name='M_div']").hide().eq(2).show();
+                $("#M_div3_ul li").css("background-color", "#B4DCE3");
+                faceimagename = " ";
+            } else if ($("#facetype").val() == 4) {
+                facetype = 4;
+                $("div[name='M_div']").hide().eq(3).show();
+                $("#videourl").val(" ");
+            }
+
+        }
+
+        function BackToFaceList() {
+            window.location.href = '@Url.Action("FaceList","Manager")';
+        }
+
+        function GoGetVideoAccess(videoaccess) {
+            if (videoaccess == '') {
+
+            }
+            $(".iframe_videoaccess .videoaccess").each(function() {
+                if ($(this).attr("videoaccess") == videoaccess) {
+                    $(this).addClass("btnselected");
+                }
+            });
+            $("#div_dialog_videoaccess").dialog({
+                title: '视频选择',
+                width: document.documentElement.clientWidth / 2,
+                height: document.documentElement.clientHeight / 2,
+                close: function() {
+                    $("#getvideoaccess").show();
+                }
+            });
+            $("#getvideoaccess").hide();
+        }
+
+        function KeywordSubmit() {
+            $.L.ajaxHandle({
+                cache: "false",
+                data: { keyword: $("#videoaccess_keyword").val() },
+                url: ACTION_URL("SearchVideoByAccessKeyword", "Manager"),
+                error: function() {
+                    alert("error");
+                },
+                success: function(response) {
+                    var html;
+                    $("#iframe_videoaccess .videoaccess").remove();
+                    for (var i = 0; i < response.length; i++) {
+                        html = '<li class="videoaccess" style="height:30px;width: 210px;float: left;display: block;margin:0 10px 10px 0;"><a  style="font-size: 13px;margin: 5px;width:210px;height: 30px;display: block;overflow: hidden;" videoaccess="' + response[i].videoaccess + '" value="' + response[i].videoname + '" title="' + response[i].videoname + '">' + response[i].videoname + '</a></li>';
+                        $("#iframe_videoaccess ul").append(html);
+                    }
+                    //重写样式点击事件
+                    $('#iframe_videoaccess .videoaccess a').click(function() {
+                        videoaccess = $(this).attr("videoaccess");
+                        $("#videourl").val(videoaccess);
+                        $("#videoname").val($(this).attr("value"));
+                        $("#div_dialog_videoaccess").dialog('close');
+                    });
+                }
+            });
+        }
+
+        function VideoUrlChange() {
+            videoaccess = $("#videourl").val();
+        }
+
+</script>

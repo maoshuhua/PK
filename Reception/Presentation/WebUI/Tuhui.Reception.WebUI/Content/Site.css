@@ -1,0 +1,150 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    overflow: hidden;
+    color: #333;
+    font-size:14px;
+    font-family:微软雅黑,tahoma,arial,\5b8b\4f53;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, figure {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #e9ecec;
+}
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+    empty-cells: show;
+    width: 100%;
+}
+iframe {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+
+section, article, aside, header, footer, nav, dialog, figure {
+    display: block;
+}
+
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+code, kbd, pre, samp {
+    font-family: courier new,courier,monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #06C;
+    cursor: pointer;
+}
+
+    a, a:link, a:visited {
+        color: #2974B6;
+        text-decoration: none;
+    }
+
+        a:hover, a:active {
+            text-decoration: none;
+        }
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset, img {
+    border: 0 none;
+}
+
+img {
+    border: none;
+}
+
+    img a {
+        border: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+.clearfix:after {
+    content: "\20";
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+}
+
+.disabled, .disabled:link, .disabled:hover, .disabled:visited, .actions .disabled, .actions .disabled:link, .actions .disabled:hover, .actions .disabled:visited {
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+    color: #9ebdd9;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+::-webkit-scrollbar
+{
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: #CCCCCC;
+    -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical
+{
+    height: 5px;
+    background-color: #999999;
+    -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal
+{
+    width: 5px;
+    background-color: #CCCCCC;
+    -webkit-border-radius: 6px;
+}
+
+.videoaccess:hover {
+    background-color: grey;
+    
+}

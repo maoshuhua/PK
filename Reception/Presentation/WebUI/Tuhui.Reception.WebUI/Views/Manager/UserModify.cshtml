@@ -1,0 +1,70 @@
+﻿@model Tuhui.Reception.Model.tv_user
+@{
+    ViewBag.Title = "UserAdd";
+    var UserStatusSelectList = new List<SelectListItem>()
+        {
+            new SelectListItem{Text = "使用",Value = "1" ,Selected = true},
+            new SelectListItem{Text = "禁用",Value = "0"}
+        };
+    var UserLevelSelectList = new List<SelectListItem>()
+        {
+            new SelectListItem{Text = "系统管理员",Value = "1"},
+            new SelectListItem{Text = "网站管理员",Value = "9"}
+        };
+
+}
+
+<div class="layout-content-head">
+    <h2>@ViewBag.TitleName</h2>
+</div>
+<div style="text-align:left;margin-left:50px;">
+    @using(Html.BeginForm("UserModify","Manager")){
+
+        @Html.HiddenFor(p => p.userid)
+        @Html.HiddenFor(p => p.createtime)
+        <div class="edit-area">
+            <div class="edit-lable">登录名:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p=>p.username)
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">密码:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p=>p.password)
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">用户名称:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p=>p.nickname)
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">用户状态：</div>
+            <div class="edit-content">
+                 @Html.DropDownListFor(p=>p.userstate,UserStatusSelectList)  
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">用户等级：</div>
+            <div class="edit-content">
+                 @Html.DropDownListFor(p=>p.userlevel,UserLevelSelectList)  
+            </div>
+        </div>
+        <div class ="edit-area">
+            <div class="edit-lable"></div>
+            <div class="edit-content">
+                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存"/>
+                <input type="button" value="返回" style="width: 70px;height: 30px;" onclick="BackToUserList()"/>
+            </div>    
+         </div>
+    }
+
+</div>
+
+<script type="text/javascript">
+    function BackToUserList() {
+        window.location.href = '@Url.Action("UserList", "Manager")';
+    }
+</script>

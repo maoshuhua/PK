@@ -1,0 +1,395 @@
+﻿@{
+    ViewBag.title = "statistic";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>南京交通视频监控平台驾驶舱</title>
+        @Content.Common(Url, false)
+        @Content.Script(Url, "ichart.1.2.min.js")
+    </head>
+    <body>
+        <div class="face_bg">
+        </div>
+        <div class="statistic_main1">
+            <a href="@Url.Action("Index","Home")" class="v_homepage"></a>
+            <div class="f_head">南京交通视频监控平台驾驶舱</div>
+            <div class="f_area">
+                <div class="statistic_menu">
+                    <div class="statistic_time"></div>
+                    <div class="statistic_data1">
+                        <div id="statistic_datagroup1" >
+                            <img src="~/Images/StatisticIcon/c_07.png" style="float: left;margin-left: 5px;margin-top: 5px;"/>
+                            <label style="font-size:14px;color:#607185; float: left; margin-left: 5px;">实时数据</label><br/>
+                            <label style="font-size:12px;color:#bcbec0; float: left;margin-left:18px;margin-top: 9px;">交通视频数</label>
+                            <label style="font-size:16px;color:#bcbec0; float: left;margin-left:100px;margin-top: 9px;" id="jt_count">--个</label>
+                            <label style="font-size:12px;color:#bcbec0; float: left;margin-left:18px;margin-top: 9px;">320视频数</label>
+                            <label style="font-size:16px;color:#bcbec0; float: left;margin-left:103px;margin-top: 9px;" id="320_count">--个</label>
+                            <label style="font-size:12px;color:#bcbec0; float: left;margin-left:18px;margin-top: 9px;">省厅视频</label>
+                            <label style="font-size:16px;color:#bcbec0; float: right;margin-right:18px;margin-top: 9px;" id="st_count">65个</label>
+                        </div>
+                        <div id="Chart0" style="background-color: #293541;margin-left: -50px;">
+                            
+                        </div>
+                    </div>
+                    <div class="statistic_data2">
+                        <div id="statistic_datagroup2" class="statistic_datagroup2">
+                            <img src="~/Images/StatisticIcon/c_07.png" style="float: left;margin-left: 5px;margin-top: 5px;"/>
+                            <label style="font-size:14px;color:#607185; float: left; margin-left: 5px;">数据指标</label><br/>
+                            <ul>
+                                <li statistictype="1">区域指标分析</li>
+                                <li statistictype="2">来源指标分析</li>
+                                @*<li statistictype="3">视频有效率</li>*@
+                                <li statistictype="4">专题视频分析</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="statistic_title">
+                    <label id="statistic_title_label">区域指标分析</label>
+                    <img src="~/Images/StatisticIcon/c_03.png" style="float: left;margin-top: 63px;margin-left: -60px;"/>
+                </div>
+                <div class="statistic_content" id="statistic_content">
+                   
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    var alldata;
+
+    $(function () {
+        $.L.ajaxHandle({
+            type: "post",
+            cache: "false",
+            url: ACTION_URL("GetStatistic", "Manager"),
+            error: function() {
+                alert("error");
+            },
+            success: function(response) {
+                $("#jt_count").html(response.data1[1].value+"个");
+                $("#320_count").html(response.data1[0].value+"个");
+                //$("#st_count").html(response.data1[2].value+"个");
+                alldata = response;
+                _onResize();
+                _init_li_timetick();
+                _ichart0Init();
+                if (@Request["statistictype"]) {
+                    var type = @Request["statistictype"];
+                    $("#statistic_content").append('<div style="float: left;margin-left:50px;margin-top:50px;" name="statistictable" id="Chart'+type+'"></div>');
+                    //$("#statistic_datagroup2 ul li").eq(type-1).css('font-weight','bold');
+                    $(".statistic_datagroup2 ul li").eq(type-1).css('color', '#ec6e51');
+                    _ichartInit(type);
+                }
+            }
+        });
+   
+        $(".statistic_datagroup2 ul li").click(function() {
+            $(".statistic_datagroup2 ul li").css('color', '#bcbec0');
+            $(this).css('color', '#ec6e51');
+            var statistictype = $(this).attr("statistictype");
+            if (statistictype == 1) {
+                $('div[name="statistictable"]').remove();
+                $("#statistic_content").append('<div style="float: left;margin-left:50px;margin-top:50px;" name="statistictable" id="Chart1"></div>');
+                _ichartInit(1);
+            } else if (statistictype == 2) {
+                $('div[name="statistictable"]').remove();
+                $("#statistic_content").append('<div style="float: left;margin-left:50px;margin-top:50px;" name="statistictable" id="Chart2"></div>');
+                _ichartInit(2);
+            }else if (statistictype == 3) {
+                $('div[name="statistictable"]').remove();
+                $("#statistic_content").append('<div style="float: left;margin-left:50px;margin-top:50px;" name="statistictable" id="Chart3"></div>');
+                _ichartInit(3);
+            } else {
+                $('div[name="statistictable"]').remove();
+                $("#statistic_content").append('<div style="float: left;margin-left:50px;margin-top:50px;" name="statistictable" id="Chart4"></div>');
+                _ichartInit(4);
+            }
+           
+        });
+
+    });
+    
+    function _onResize() {
+        $("body").css({
+            height: document.documentElement.clientHeight + "px"
+        });
+    }
+    function _init_li_timetick() {
+        if ($(".statistic_menu .statistic_time").length == 0) return;
+        _getTime();
+
+        function _getTime() {
+            var weekArray = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+            var _date = new Date();
+            var _hour, _minite, _month, _day, _week;
+            _hour = _pad0(_date.getHours());
+            _minite = _pad0(_date.getMinutes());
+            _month = _date.getMonth() + 1;
+            _day = _date.getDate();
+            _week = weekArray[_date.getDay()];
+
+            $(".statistic_menu .statistic_time").each(function () {
+                $(this).html('<h2>' + _hour + ':' + _minite + '</h2><p>' + _month + '月' + _day + '日 ' + _week + '</p>');
+            })
+
+            setTimeout(_getTime, 1000);
+
+        }
+        function _pad0(v) {
+            if (v >= 10) return v;
+            return "0" + v;
+        }
+    }
+    
+    //左侧饼状图
+    function _ichart0Init() {
+        var data = alldata.data1;
+        new iChart.Pie2D({
+            render: 'Chart0',
+            data: data,
+            background_color: '#293541',
+            legend: {
+                enable: true,
+                background_color: '#293541',
+                border: 0,
+                color:'#bcbec0'
+            },
+            border: {
+                width: 0,
+                color: '#293541'
+            },
+            //showpercent: false,
+            //decimalsnum: 2,
+            width: 280,
+            height:150,
+            radius: 75,
+            sub_option: {
+                label:null,
+                offsetx:-15
+            },
+            bound_event:null,
+            default_mouseover_css:false
+            
+        }).draw();
+    }
+    
+    //四张图标汇总
+    function _ichartInit(type) {
+        //区域指标分析
+        if (type == 1) {
+            $("#statistic_title_label").html("区域指标分析");
+            var data1 = alldata.data2;
+
+            var chart = new iChart.Column2D({
+                render: 'Chart1',
+                data: data1,
+                width: 850,
+                height: 350,
+                label: {
+                    fontsize: 11,
+                    color: '#666666'
+                },
+                border: {
+                    color: "#fff",
+                    width: 1
+                },
+                animation: true,//开启过渡动画
+                animation_duration: 800,//800ms完成动画
+                shadow: false,
+                sub_option: {
+                    listeners: {
+                        parseText: function (r, t) {
+                            return t;
+                        }
+                    },
+                    label: {
+                        fontsize: 11,
+                        fontweight: 600,
+                        color: '#4572a7'
+                    },
+                    border: {
+                        width: 0,
+                        color: '#ffffff'
+                    }
+                },
+                coordinate: {
+                    background_color: null,
+                    width: 650,
+                    height: 300,
+                    axis: {
+                        color: '#c0d0e0',
+                        width: [0, 0, 1, 0]
+                    },
+                    scale: [{
+                        position: 'left',
+                        start_scale: 0,
+                        end_scale: 70,
+                        scale_space: 30,
+                        scale_enable: false,
+                        label: {
+                            fontsize: 11,
+                            color: '#fff'
+                        }
+                    }]
+                }
+            });
+            chart.draw();
+        }
+        //来源指标分析
+        if (type == 2) {
+            $("#statistic_title_label").html("来源指标分析");
+            $.each(alldata.data3,function(index,ele){
+                if(ele.name=='省厅视频') ele.value=65;
+            })
+            var data2 = alldata.data3;
+            new iChart.Bar2D({
+                render: 'Chart2',
+                background_color: '#fff',
+                border: {
+                    color: "#fff",
+                    width: 1
+                },
+                data: data2,
+                width: 850,
+                height: 350,
+                coordinate: {
+                    width: 650,
+                    height: 300,
+                    axis: {
+                        width: [0, 0, 1, 1]
+                    },
+                    scale: [{
+                        position: 'bottom',
+                        start_scale: 0,
+                        end_scale: 500,
+                        scale_space: 100
+                    }]
+                },
+                animation: true,
+                sub_option: {
+                    listeners: {
+                        parseText: function (r, t) {
+                            return t;
+                        }
+                    }
+                },
+                legend: {
+                    enable: false
+                }
+            }).draw();
+        }
+        //视频有效率
+        if (type == 3) {
+            $("#statistic_title_label").html("视频有效率");
+            var data3 = alldata.data4;
+            new iChart.Pie2D({
+                render: 'Chart3',
+                data: data3,
+                background_color: '#ffffff',
+                legend: {
+                    enable: true,
+                    background_color: '#ffffff',
+                    border: 0,
+                    color:'#bcbec0',
+                    fontsize:18,
+                    offsetx:-100
+                },
+                border: {
+                    width: 0,
+                    color: '#ffffff'
+                },
+                //showpercent: false,
+                //decimalsnum: 2,
+                width: 850,
+                height: 350,
+                radius: 150,
+                animation: true,//开启过渡动画
+                animation_duration: 800,//800ms完成动画
+                sub_option: {
+                    //label:null,
+                    offsetx:0,
+                    border:null,
+                    background_color:'#ffffff'
+                },
+                bound_event:null,
+                default_mouseover_css:false
+            
+            }).draw();
+        }
+        //专题视频分析
+        if (type == 4) {
+            $("#statistic_title_label").html("专题视频分析");
+            var data4 = alldata.data5;
+
+            var chart = new iChart.Column2D({
+                render: 'Chart4',
+                data: data4,
+                width: 850,
+                height: 450,
+                label: {
+                    fontsize: 11,
+                    color: '#666666',
+                    padding:0,
+                    rotate:45,
+                    offsetx:0,
+                    offsety:23,
+                    line_height:500,
+                    textAlign:'left',
+                    width:100,
+                    height:-50
+                },
+                border: {
+                    color: "#fff",
+                    width: 1
+                },
+                animation: true,//开启过渡动画
+                animation_duration: 800,//800ms完成动画
+                shadow: false,
+                sub_option: {
+                    listeners: {
+                        parseText: function (r, t) {
+                            return t;
+                        }
+                    },
+                    label: {
+                        fontsize: 11,
+                        fontweight: 600,
+                        color: '#4572a7'
+                    },
+                    border: {
+                        width: 0,
+                        color: '#ffffff'
+                    }
+                },
+                coordinate: {
+                    background_color: null,
+                    width: 650,
+                    height: 300,
+                    axis: {
+                        color: '#c0d0e0',
+                        width: [0, 0, 1, 0]
+                    },
+                    scale: [{
+                        position: 'left',
+                        start_scale: 0,
+                        end_scale: 70,
+                        scale_space: 30,
+                        scale_enable: false,
+                        label: {
+                            fontsize: 11,
+                            color: '#fff'
+                        }
+                    }]
+                }
+            });
+            chart.draw();
+        }
+    }
+
+</script>

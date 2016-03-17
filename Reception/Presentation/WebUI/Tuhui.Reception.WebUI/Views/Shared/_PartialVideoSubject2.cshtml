@@ -1,0 +1,77 @@
+﻿@model List<Tuhui.Reception.Model.tv_subject>
+
+@helper CreateSubjectTreeHtml(List<Tuhui.Reception.Model.tv_subject> children)
+{
+    <ul>
+        @foreach (var item in children)
+        {
+            <li>
+                <div class="@(item.isleaf==0?"t_arrow":"t_leaf")" style="left:@(12*item.treeLevel)px;"></div>
+
+                @if (item.isleaf == 1)
+                {
+                    <span class="t_allvideo" style="display:none;" subjectid="@item.subjectid" onclick="$.tv_f.openSubjectVideos(this)" title="打开本组所有视频"></span>
+                    <input type="checkbox" class="chk_item" value="@item.subjectid" />
+                    <p class="chk_item_icon"></p>
+                }
+
+                <a isleaf="@item.isleaf" subjectid="@item.subjectid" style="padding-left: @(12*item.treeLevel+24+6)px;">@item.subjectname 【<span style="color:red;font-weight:bolder;">@item.videoIds.Count</span>】</a>
+                @if (item.children != null && item.children.Count != 0)
+                {
+                    @CreateSubjectTreeHtml(item.children);
+                }
+            </li>
+        }
+    </ul>
+}
+
+
+<div class="video_menu" id="video_menu">
+    <ul class="subject_menu2" id="subject_menu2">
+        @{var _index = 0;}
+        @foreach (var item in Model)
+        {
+            _index++;
+            <li>
+                <div class="t_index">@_index</div>
+                <a isleaf="@item.isleaf">@item.subjectname</a>
+                @if (item.children != null && item.children.Count != 0)
+                {
+                    @CreateSubjectTreeHtml(item.children);
+                }
+            </li>
+        }
+    </ul>
+    @*<ul class="subject_menu2" id="subject_menu2">
+            <li>
+                <div class="t_index">1</div>
+                <a>AAAAA1</a>
+                <ul>
+                    <li>
+                        <div class="t_arrow" style="left:12px;">2</div>
+                        <a style="padding-left:42px;">AAAA2</a>
+                        <ul>
+                            <li>
+                                <div class="t_arrow" style="left:24px;">3</div>
+                                <a style="padding-left:54px;">AAAA3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>*@
+</div>
+<script>
+    $(function () {
+        $("#video_menu a").click(function () {
+            if ($(this).attr("isleaf") == "0") {
+                if ($(this).siblings(".t_arrow").hasClass("t_arrow2")) {
+                    $(this).siblings(".t_arrow").removeClass("t_arrow2")
+                } else {
+                    $(this).siblings(".t_arrow").addClass("t_arrow2")
+                }
+                $(this).next("ul").slideToggle();
+            }
+        })
+    })
+</script>

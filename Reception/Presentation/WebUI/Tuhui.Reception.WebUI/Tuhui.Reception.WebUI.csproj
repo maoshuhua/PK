@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DAFC8868-84BD-4173-9350-A664D0DF8B1A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tuhui.Reception.WebUI</RootNamespace>
+    <AssemblyName>Tuhui.Reception.WebUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\..\..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\..\..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\..\..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\..\..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\..\..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\..\..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\..\..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\..\..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\..\..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\VideoController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManagerController.cs" />
+    <Compile Include="Controllers\AjaxManagerController.cs">
+      <DependentUpon>ManagerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\common.css" />
+    <Content Include="Content\images\btn_layer_img_bg1.png" />
+    <Content Include="Content\images\btn_layer_img_bg2.png" />
+    <Content Include="Content\images\common\area.png" />
+    <Content Include="Content\images\common\a_create.png" />
+    <Content Include="Content\images\common\a_create_20.png" />
+    <Content Include="Content\images\common\a_create_28.png" />
+    <Content Include="Content\images\common\a_delete.png" />
+    <Content Include="Content\images\common\a_edit.png" />
+    <Content Include="Content\images\common\a_loading.gif" />
+    <Content Include="Content\images\common\a_point.png" />
+    <Content Include="Content\images\common\a_refresh.png" />
+    <Content Include="Content\images\common\a_save.png" />
+    <Content Include="Content\images\common\a_search.png" />
+    <Content Include="Content\images\common\a_upload.png" />
+    <Content Include="Content\images\common\calendar.png" />
+    <Content Include="Content\images\common\checkbox-radio-bg.png" />
+    <Content Include="Content\images\common\create_20.png" />
+    <Content Include="Content\images\common\delete.png" />
+    <Content Include="Content\images\common\edit.png" />
+    <Content Include="Content\images\common\info.png" />
+    <Content Include="Content\images\common\mac-select.gif" />
+    <Content Include="Content\images\common\poi.png" />
+    <Content Include="Content\images\common\return_back.png" />
+    <Content Include="Content\images\common\save.png" />
+    <Content Include="Content\images\common\tm2008-select.gif" />
+    <Content Include="Content\images\common\ubox-select.gif" />
+    <Content Include="Content\images\f_bg.png" />
+    <Content Include="Content\images\f_main_bg.png" />
+    <Content Include="Content\images\logon\bg-login.gif" />
+    <Content Include="Content\images\logon\login-1.png" />
+    <Content Include="Content\images\logon\login.png" />
+    <Content Include="Content\images\logon\loginbackground.png" />
+    <Content Include="Content\images\logon\loginbutton1.png" />
+    <Content Include="Content\images\logon\loginbutton2.png" />
+    <Content Include="Content\images\logon\logo%281%29.png" />
+    <Content Include="Content\images\logon\logon-form-error.png" />
+    <Content Include="Content\images\manager\bg.png" />
+    <Content Include="Content\images\manager\manager_home.png" />
+    <Content Include="Content\images\manager\menu_head.png" />
+    <Content Include="Content\images\manager\tit.png" />
+    <Content Include="Content\images\subject_arrow_right.png" />
+    <Content Include="Content\images\subject_menu_chk.png" />
+    <Content Include="Content\images\subject_menu_chk_open.png" />
+    <Content Include="Content\images\tool_circle.png" />
+    <Content Include="Content\images\tool_line.png" />
+    <Content Include="Content\images\tool_rect.png" />
+    <Content Include="Content\images\t_allvideo.png" />
+    <Content Include="Content\images\t_allvideo_open.png" />
+    <Content Include="Content\images\video-list-left.png" />
+    <Content Include="Content\images\video-list-right.png" />
+    <Content Include="Content\images\video_homepage.png" />
+    <Content Include="Content\images\video_marker_disabled.png" />
+    <Content Include="Content\images\video_searchPop.png" />
+    <Content Include="Content\images\video_tools_panel.png" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_loadingIcon_1.gif" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_loadingIcon_10.gif" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_loadingIcon_2.gif" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_loadingIcon_3.gif" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_loadingIcon_4.gif" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_loadingIcon_5.gif" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_loadingIcon_6.gif" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_loadingIcon_7.gif" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_loadingIcon_8.gif" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_loadingIcon_9.gif" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_messageQ-icon.png" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_messageQ-loading.gif" />
+    <Content Include="Content\JqueryTuhui\Images\lgh_messageT-icon.png" />
+    <Content Include="Content\JqueryTuhui\jquery.tuhui.css" />
+    <Content Include="Content\jqueryui\redmond\images\animated-overlay.gif" />
+    <Content Include="Content\jqueryui\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Content\jqueryui\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Content\jqueryui\redmond\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Content\jqueryui\redmond\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Content\jqueryui\ui-darkness\images\animated-overlay.gif" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-icons_a83300_256x240.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="Content\jqueryui\ui-darkness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jqueryui\ui-darkness\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Content\jqueryui\ui-darkness\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Content\layout.css" />
+    <Content Include="Content\layout_m.css" />
+    <Content Include="Content\logon.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\site.css" />
+    <Content Include="Config\connection.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\Environment_Cache.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\Environment_Global.config" />
+    <Content Include="Config\Environment_Log.config" />
+    <Content Include="Config\Environment_NameValue.config" />
+    <Content Include="Config\NLog.config" />
+    <Content Include="App_Code\Content.cshtml" />
+    <Content Include="Images\faceImg\videoface.png" />
+    <Content Include="Images\face\pic_03.png" />
+    <Content Include="Images\face\pic_07.png" />
+    <Content Include="Images\mapIcon\icon_10.png" />
+    <Content Include="Images\mapIcon\icon_101.png" />
+    <Content Include="Images\mapIcon\icon_20.png" />
+    <Content Include="Images\mapIcon\icon_30.png" />
+    <Content Include="Images\mapIcon\icon_video.png" />
+    <Content Include="Images\StatisticIcon\bg-3_03.png" />
+    <Content Include="Images\StatisticIcon\c_03.png" />
+    <Content Include="Images\StatisticIcon\c_07.png" />
+    <Content Include="Images\StatisticIcon\d_10.png" />
+    <Content Include="Images\StatisticIcon\d_12.png" />
+    <Content Include="Images\StatisticIcon\d_14.png" />
+    <Content Include="Images\StatisticIcon\d_16.png" />
+    <Content Include="Scripts\demo_app_YCVideo.js" />
+    <Content Include="Scripts\demo_SubjectList.js" />
+    <Content Include="Scripts\HaiKang\webVideoCtrl.js" />
+    <Content Include="Scripts\ichart.1.2.min.js" />
+    <Content Include="Scripts\jquery-ui.js">
+      <DependentUpon>jquery.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.tuhui.js">
+      <DependentUpon>jquery.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\logon.js" />
+    <Content Include="Scripts\STVIDEO\common.js" />
+    <Content Include="Scripts\STVIDEO\videoPlayer.swf" />
+    <Content Include="Scripts\tv_f_video.js" />
+    <Content Include="Scripts\tv_m_subjectList.js" />
+    <Content Include="Scripts\tv_video.js" />
+    <Content Include="Scripts\zTree\img\diy\1_close.png" />
+    <Content Include="Scripts\zTree\img\diy\1_open.png" />
+    <Content Include="Scripts\zTree\img\diy\2.png" />
+    <Content Include="Scripts\zTree\img\diy\3.png" />
+    <Content Include="Scripts\zTree\img\diy\4.png" />
+    <Content Include="Scripts\zTree\img\diy\5.png" />
+    <Content Include="Scripts\zTree\img\diy\6.png" />
+    <Content Include="Scripts\zTree\img\diy\7.png" />
+    <Content Include="Scripts\zTree\img\diy\8.png" />
+    <Content Include="Scripts\zTree\img\diy\9.png" />
+    <Content Include="Scripts\zTree\img\line_conn.gif" />
+    <Content Include="Scripts\zTree\img\loading.gif" />
+    <Content Include="Scripts\zTree\img\zTreeStandard.gif" />
+    <Content Include="Scripts\zTree\img\zTreeStandard.png" />
+    <Content Include="Scripts\zTree\jquery.ztree.core-3.5.min.js" />
+    <Content Include="Scripts\zTree\zTreeStyle.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="tmap\images\marker-icon-2x.png" />
+    <Content Include="tmap\images\marker-icon.png" />
+    <Content Include="tmap\tmap.css" />
+    <Content Include="tmap\tmap.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Views\Manager\Index.cshtml" />
+    <Content Include="Views\Manager\VideoList.cshtml" />
+    <Content Include="Views\Manager\SubjectList.cshtml" />
+    <Content Include="Views\Manager\UserList.cshtml" />
+    <Content Include="Views\Manager\LogList.cshtml" />
+    <Content Include="Views\Manager\FaceList.cshtml" />
+    <None Include="Properties\PublishProfiles\Tuhui.Reception.pubxml" />
+    <Content Include="Views\Video\Index.cshtml" />
+    <Content Include="Views\Video\YCVLC.cshtml" />
+    <Content Include="Views\Manager\VideoModify.cshtml" />
+    <Content Include="Views\Video\Mock.cshtml" />
+    <Content Include="Views\Shared\_PartialVideoList.cshtml" />
+    <Content Include="Views\Shared\_PartialVideoSubject.cshtml" />
+    <Content Include="Views\Shared\_PartialVideoSubject2.cshtml" />
+    <Content Include="Views\Account\LogOn.cshtml" />
+    <Content Include="Views\Manager\JTMap.cshtml" />
+    <Content Include="Views\Manager\LogModify.cshtml" />
+    <Content Include="Views\Manager\FaceModify.cshtml" />
+    <Content Include="Views\Manager\UserModify.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Statistic.cshtml" />
+    <Content Include="Views\Manager\Sync.cshtml" />
+    <Content Include="Views\Video\STVIDEO.cshtml" />
+    <Content Include="Views\Video\STVIDEO2.cshtml" />
+    <Content Include="Views\Manager\YCVideoUpdate.cshtml" />
+    <Content Include="Views\Home\ToolGD.cshtml" />
+    <Content Include="Views\Video\PlayVideo_YCVLC.cshtml" />
+    <Content Include="Views\Video\PlayVideo_VLC_rtmp.cshtml" />
+    <Content Include="Views\Video\PlayVideo_STVideo.cshtml" />
+    <Content Include="Views\Video\PlayVideo_HaiKang.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\ASP.NET MVC\Tuhui.Common45.Mvc\Tuhui.Common45.Mvc.csproj">
+      <Project>{5eeaa005-0c9f-4352-a91c-1a0c79e5ff19}</Project>
+      <Name>Tuhui.Common45.Mvc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Cache\Tuhui.Common45.Cache\Tuhui.Common45.Cache.csproj">
+      <Project>{f9d262ff-5c28-42b2-a849-0d1990046aad}</Project>
+      <Name>Tuhui.Common45.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Communication\Tuhui.Common45.Communication\Tuhui.Common45.Communication.csproj">
+      <Project>{679b2c56-6a7f-4280-b733-35bd8949c8ef}</Project>
+      <Name>Tuhui.Common45.Communication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Environment\Tuhui.Common45.Environment\Tuhui.Common45.Environment.csproj">
+      <Project>{d52f1eb7-d3d0-47a8-8e1d-63e3b7c73b3d}</Project>
+      <Name>Tuhui.Common45.Environment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Exception\Tuhui.Common45.Exception\Tuhui.Common45.Exception.csproj">
+      <Project>{a5f15426-dcc1-4a40-988f-0fb33ced5a4e}</Project>
+      <Name>Tuhui.Common45.Exception</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Framework\Tuhui.Common45.Framework\Tuhui.Common45.Framework.csproj">
+      <Project>{b208cd6f-1b08-41bb-b72c-d12b2c07e657}</Project>
+      <Name>Tuhui.Common45.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Log\Tuhui.Common45.Log\Tuhui.Common45.Log.csproj">
+      <Project>{20acfc55-c57d-4c55-8bf0-b36df8c91579}</Project>
+      <Name>Tuhui.Common45.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Utility\Tuhui.Common45.Utility\Tuhui.Common45.Utility.csproj">
+      <Project>{a0c15460-2e6b-496f-afa8-d8d0faf5c676}</Project>
+      <Name>Tuhui.Common45.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Model\Tuhui.Reception.Model\Tuhui.Reception.Model.csproj">
+      <Project>{2b88a88a-23d2-4da9-a83c-7174932511f0}</Project>
+      <Name>Tuhui.Reception.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Repository\Tuhui.Reception.Repository\Tuhui.Reception.Repository.csproj">
+      <Project>{3219c314-604d-4c4a-a543-42e12c4f16c2}</Project>
+      <Name>Tuhui.Reception.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Service\Tuhui.Reception.Service\Tuhui.Reception.Service.csproj">
+      <Project>{f785e547-76b0-4418-8138-000e37723f7e}</Project>
+      <Name>Tuhui.Reception.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Utility\Tuhui.Reception.Utility\Tuhui.Reception.Utility.csproj">
+      <Project>{6b567836-f130-4459-97b8-925bcb046f94}</Project>
+      <Name>Tuhui.Reception.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mvc\Tuhui.Reception.Mvc\Tuhui.Reception.Mvc.csproj">
+      <Project>{95fac928-d0b2-4832-be99-2324b8417048}</Project>
+      <Name>Tuhui.Reception.Mvc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6144</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6144/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://www.tuhui.com/tv/</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

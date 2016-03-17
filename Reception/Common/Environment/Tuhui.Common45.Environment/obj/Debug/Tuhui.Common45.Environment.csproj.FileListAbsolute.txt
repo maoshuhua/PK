@@ -1,0 +1,14 @@
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Environment.dll
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Environment.pdb
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Utility.dll
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Utility.pdb
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.csprojResolveAssemblyReference.cache
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.dll
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.pdb
+D:\Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Environment.dll
+D:\Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Environment.pdb
+D:\Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Utility.dll
+D:\Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Utility.pdb
+D:\Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.csprojResolveAssemblyReference.cache
+D:\Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.dll
+D:\Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.pdb

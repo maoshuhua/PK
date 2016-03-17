@@ -1,0 +1,9 @@
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Communication\Tuhui.Common45.Communication\bin\Debug\Tuhui.Common45.Communication.dll
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Communication\Tuhui.Common45.Communication\bin\Debug\Tuhui.Common45.Communication.pdb
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Communication\Tuhui.Common45.Communication\obj\Debug\Tuhui.Common45.Communication.dll
+D:\工作相关\Product_Reception\07.Source\Tuhui.Reception\Common\Communication\Tuhui.Common45.Communication\obj\Debug\Tuhui.Common45.Communication.pdb
+D:\Reception\Common\Communication\Tuhui.Common45.Communication\bin\Debug\Tuhui.Common45.Communication.dll
+D:\Reception\Common\Communication\Tuhui.Common45.Communication\bin\Debug\Tuhui.Common45.Communication.pdb
+D:\Reception\Common\Communication\Tuhui.Common45.Communication\obj\Debug\Tuhui.Common45.Communication.csprojResolveAssemblyReference.cache
+D:\Reception\Common\Communication\Tuhui.Common45.Communication\obj\Debug\Tuhui.Common45.Communication.dll
+D:\Reception\Common\Communication\Tuhui.Common45.Communication\obj\Debug\Tuhui.Common45.Communication.pdb

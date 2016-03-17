@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "SubjectList";
+    ViewBag.MenuKey = "Subject";
+}
+@Content.tmap(Url)
+@Content.zTree(Url)
+@Content.Script(Url,"tv_m_subjectList.js")
+
+<div class="layout-content-head">
+    <h2>专题管理 -> 列表</h2>
+</div>
+<div class="layout-content-main">
+    <div id="div_tree" style="width: 160px; height: 100%; float: left; box-shadow: 0px 0px 8px rgba(0,0,0,.7);">
+        <ul id="treeDemo" class="ztree" style="height: 95%;overflow:auto;"></ul>
+    </div>
+    <div id="map_right" style="height:100%;position:relative; float: right;box-shadow:0px 0px 8px rgba(0,0,0,.7);border-radius:8px;overflow:hidden;">
+       <div id="map" style="height:100%;width:100%;"></div>
+        <div class="page_frame" id="subject_page_frame" style="left: -300px; top: 5px; height: 450px; width: 250px;">
+            <div class="edit-area">
+                <div class="edit-lable" style="width:80px;">专题名称:</div>
+                <div class="edit-content">
+                    <input type="hidden" id="isleaf" binding="{'value':'isleaf'}" />
+                    <input type="hidden" id="subjectid" binding="{'value':'subjectid'}" />
+                    <input type="text" id="subjectname" binding="{'value':'subjectname'}" style="width:130px;" />
+                </div>
+            </div>
+            <div class="edit-area" name="forsubsubject">
+                <div class="edit-lable" style="width:80px;">所属专题:</div>
+                <div class="edit-content">
+                    <input type="text" id="parentid" binding="{'value':'parentid'}" style="width: 130px; " />
+                </div>
+            </div>
+            <div class="edit-area" name="forsubsubject">
+                <div class="edit-lable" style="width:80px;">中心点经度:</div>
+                <div class="edit-content">
+                    <input type="text" id="centerlng" binding="{'value':'centerlng'}" style="width: 130px; " />
+                </div>
+            </div>
+            <div class="edit-area" name="forsubsubject">
+                <div class="edit-lable" style="width:80px;">中心点纬度:</div>
+                <div class="edit-content">
+                    <input type="text" id="centerlat" binding="{'value':'centerlat'}" style="width: 130px; " />
+                </div>
+            </div>
+            <div class="edit-area" name="forsubsubject">
+                <div class="edit-lable" style="width:80px;">中心点等级:</div>
+                <div class="edit-content">
+                    <input type="text" id="centerzoom" binding="{'value':'centerzoom'}" style="width: 130px; " />
+                </div>
+            </div>
+            <div class="edit-area">
+                <div class="edit-content">
+                    <a class="l-btn btn-medium btn-white" onclick="$.tv_m.ajax_UpdateSubject()" id="btnSaveInfo">保存基本信息</a>
+                    <a class="l-btn btn-medium btn-white" onclick="$.tv_m.ajax_DeleteSubject()" id="btnSaveInfo">删除专题</a>
+                </div>
+            </div>
+            <hr />
+            <div class="edit-area" name="forsubsubject">
+                <div class="edit-content">
+                    视频个数：<span id="subjectVideoCount" onclick="$('.page_panellist').toggle();" style="cursor:pointer;font-size:16px;font-weight:bolder;color:#ff6a00;text-decoration:underline;">0</span>个
+                </div>
+            </div>
+            <div class="edit-area" name="forsubsubject">
+                <div class="edit-content">
+                    <a class="l-btn btn-medium btn-white" onclick="$.tv_m.ajax_UpdateSubjectVideoList()" id="btnSaveVideos">保存视频信息</a>
+                </div>
+            </div>
+            <div id="div_addSubject" style="display:none;">
+                <div class="edit-area">
+                    <div class="edit-lable" style="width:80px;">同级专题名:</div>
+                    <div class="edit-content">
+                        <input type="text" id="tj_subjectname" style="width: 130px; " />
+                    </div>
+                </div>
+                <div class="edit-area">
+                    <div class="edit-content">
+                        <a class="l-btn btn-medium btn-white" onclick="$.tv_m.ajax_AddSubject(1)" id="btnSaveVideos">添加同级专题</a>
+                    </div>
+                </div>
+                <hr />
+                <div class="edit-area">
+                    <div class="edit-lable" style="width:80px;">子级专题名:</div>
+                    <div class="edit-content">
+                        <input type="text" id="zj_subjectname" style="width: 130px; " />
+                    </div>
+                </div>
+                <div class="edit-area">
+                    <div class="edit-lable" style="width:100px;">是否叶子节点:</div>
+                    <div class="edit-content" style="width:120px;">
+                        <input type="checkbox" checked="checked" id="zj_isleaf" style="width:30px;height:30px;float:left;" />
+                    </div>
+                </div>
+                <div class="edit-area">
+                    <div class="edit-content">
+                        <a class="l-btn btn-medium btn-white" onclick="$.tv_m.ajax_AddSubject(2)" id="btnSaveVideos">添加子级专题</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="page_panel" style="left:5px;top:5px;" id="page_panel" state="0" onclick="$.tv_m.togglePanel()">专题信息</div>
+        <div class="page_panel" style="right:5px;top:5px;" id="page_panel2" onclick="$.tv_m.tmap_drawCircle()">画圆</div>
+        <div class="page_panel" style="right: 5px; top: 60px;" id="page_panel3" onclick="$.tv_m.tmap_drawRect()">画矩形</div>
+        <div class="page_panel" style="right: 5px; top: 133px;" id="page_panel4" onclick="$.tv_m.tmap_drawRectClear()">橡皮擦</div>
+
+        <ul id="ul_subjectVideoList" class="page_panellist" style="display:none;width:300px;max-height:300px;right:5px;bottom:5px;overflow:auto;">
+            <li><a binding="{'text':'videoname','videoid':'videoid'}"></a></li>
+        </ul>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(function () {
+        $(".layout-content-main").css({
+            "height":(document.documentElement.clientHeight-150)+"px"
+        })
+        $("#map_right").css({
+            "width": (document.documentElement.clientWidth - 400) + "px"
+        })
+        $("#subject_page_frame").find("[name='forsubsubject']").hide();
+
+        $.tv_m.ajax_GetSubjectList();
+        $.tv_m.tmap_Init();
+    })
+</script>

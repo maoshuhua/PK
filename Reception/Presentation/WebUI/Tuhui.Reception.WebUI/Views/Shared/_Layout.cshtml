@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南京交通视频监控平台驾驶舱</title>
+    @Content.Common(Url,true)
+</head>
+<body>
+    <div class="layout_head">
+        <div class="sitetitle"></div>
+        <div class="userstate"><span>管理员,</span>&nbsp;&nbsp;&nbsp;@Html.ActionLink("注销", "logout", new { controller = "account" })</div>
+    </div>
+    <div class="layout_left">
+        <div class="menu_head"></div>
+        <ul class="layout_menu">
+            <li>@Html.ActionLink("视频管理", "VideoList", new { controller = "Manager" }, new {@menuKey="Video" })</li>
+            <li>@Html.ActionLink("专题管理", "SubjectList", new { controller = "Manager" }, new { @menuKey = "Subject" })</li>
+            <li>@Html.ActionLink("驾驶舱设置", "FaceList", new { controller = "Manager" }, new { @menuKey = "Face" })</li>
+            <li>@Html.ActionLink("云创视频同步", "YCVideoUpdate", new { controller = "Manager" }, new { @menuKey = "YCVideo" })</li>
+            @*<li>@Html.ActionLink("同步管理", "Sync", new { controller = "Manager" }, new { @menuKey = "Sync" })</li>*@
+            <li>@Html.ActionLink("用户管理", "UserList", new { controller = "Manager" }, new { @menuKey = "User" })</li>
+            @*<li>@Html.ActionLink("日志管理", "LogList", new { controller = "Manager" }, new { @menuKey = "Log" })</li>*@
+        </ul>
+    </div>
+    <div class="layout_right">
+        @RenderBody()
+    </div>
+    <script>
+        //$.API = {};
+        var _menuKey = "@ViewBag.MenuKey";
+        //var property = new Array;
+        //property = {
+        //    url: "Manager/List"
+        //}
+        //$(function () {
+
+        //    var apiBaseUrl = "http://" + location.host + "/tv/";
+        //    $.extend($.API, {
+        //        API_Access: function(property) {
+        //            $.ajax({
+        //                url: apiBaseUrl + property.url,
+        //                cache: false,
+        //                data: property.data,
+        //                error: function(info) {
+        //                    if (property.error) {
+        //                        property.error(info);
+        //                    }
+        //                },
+        //                success: function(response) {
+        //                    property.success(response);
+        //                }
+        //            });
+        //        }
+        //    });
+            
+            window.onresize = _onResize;
+
+            _onResize();
+
+            if (_menuKey) {
+                $(".layout_menu a[menuKey='" + _menuKey + "']").addClass("select");
+            }
+
+
+            function _onResize() {
+                $("body").css({
+                    height: document.documentElement.clientHeight + "px"
+                })
+
+                $(".layout_left,.layout_right").css({
+                    height: document.documentElement.clientHeight - $(".layout_head").height()
+                })
+
+                $(".layout_right").css({
+                    width: document.documentElement.clientWidth - $(".layout_left").width() + "px"
+                })
+            }
+
+          
+        //})
+
+    </script>
+    @RenderSection("script",false)
+</body>
+</html>
