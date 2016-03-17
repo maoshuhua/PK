@@ -24,3 +24,16 @@ D:\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\zh-Hans\EntityF
 D:\Reception\Common\Framework\Tuhui.Common45.Framework\obj\Debug\Tuhui.Common45.Framework.csprojResolveAssemblyReference.cache
 D:\Reception\Common\Framework\Tuhui.Common45.Framework\obj\Debug\Tuhui.Common45.Framework.dll
 D:\Reception\Common\Framework\Tuhui.Common45.Framework\obj\Debug\Tuhui.Common45.Framework.pdb
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\Tuhui.Common45.Framework.dll
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\Tuhui.Common45.Framework.pdb
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\EntityFramework.dll
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\EntityFramework.SqlServer.dll
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\Tuhui.Common45.Utility.dll
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\Tuhui.Common45.Utility.pdb
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\EntityFramework.xml
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\EntityFramework.SqlServer.xml
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\obj\Debug\Tuhui.Common45.Framework.csprojResolveAssemblyReference.cache
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\obj\Debug\Tuhui.Common45.Framework.dll
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\obj\Debug\Tuhui.Common45.Framework.pdb

@@ -12,3 +12,10 @@ D:\Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Commo
 D:\Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.csprojResolveAssemblyReference.cache
 D:\Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.dll
 D:\Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.pdb
+D:\msh\pk\PK\Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Environment.dll
+D:\msh\pk\PK\Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Environment.pdb
+D:\msh\pk\PK\Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Utility.dll
+D:\msh\pk\PK\Reception\Common\Environment\Tuhui.Common45.Environment\bin\Debug\Tuhui.Common45.Utility.pdb
+D:\msh\pk\PK\Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.csprojResolveAssemblyReference.cache
+D:\msh\pk\PK\Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.dll
+D:\msh\pk\PK\Reception\Common\Environment\Tuhui.Common45.Environment\obj\Debug\Tuhui.Common45.Environment.pdb

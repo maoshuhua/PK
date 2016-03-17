@@ -8,6 +8,7 @@
     <LastUsedBuildConfiguration>Debug</LastUsedBuildConfiguration>
     <LastUsedPlatform>Any CPU</LastUsedPlatform>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Administrator\Desktop\新建文件夹 (2)</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Code/Content.cshtml">
@@ -18,6 +19,18 @@
     </File>
     <File Include="bin/Antlr3.Runtime.pdb">
       <publishTime>07/13/2015 15:31:38</publishTime>
+    </File>
+    <File Include="bin/App_Code.compiled">
+      <publishTime>03/17/2016 21:18:26</publishTime>
+    </File>
+    <File Include="bin/App_Code.dll">
+      <publishTime>03/17/2016 21:18:26</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>03/17/2016 21:18:26</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>03/17/2016 21:18:26</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>07/13/2015 15:31:43</publishTime>
@@ -95,85 +108,85 @@
       <publishTime>07/13/2015 15:31:40</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Cache.dll">
-      <publishTime>01/26/2016 15:56:57</publishTime>
+      <publishTime>03/17/2016 21:17:56</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Cache.pdb">
       <publishTime>01/26/2016 15:56:57</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Communication.dll">
-      <publishTime>01/26/2016 15:56:57</publishTime>
+      <publishTime>03/17/2016 21:17:58</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Communication.pdb">
       <publishTime>01/26/2016 15:56:57</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Environment.dll">
-      <publishTime>01/26/2016 15:56:58</publishTime>
+      <publishTime>03/17/2016 21:17:58</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Environment.pdb">
       <publishTime>01/26/2016 15:56:58</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Exception.dll">
-      <publishTime>01/26/2016 15:56:57</publishTime>
+      <publishTime>03/17/2016 21:17:56</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Exception.pdb">
       <publishTime>01/26/2016 15:56:57</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Framework.dll">
-      <publishTime>01/26/2016 15:56:58</publishTime>
+      <publishTime>03/17/2016 21:17:57</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Framework.pdb">
       <publishTime>01/26/2016 15:56:58</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Log.dll">
-      <publishTime>01/26/2016 15:56:58</publishTime>
+      <publishTime>03/17/2016 21:17:59</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Log.pdb">
       <publishTime>01/26/2016 15:56:58</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Mvc.dll">
-      <publishTime>01/26/2016 15:56:59</publishTime>
+      <publishTime>03/17/2016 21:18:00</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Mvc.pdb">
       <publishTime>01/26/2016 15:56:59</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Utility.dll">
-      <publishTime>01/26/2016 15:56:57</publishTime>
+      <publishTime>03/17/2016 21:17:56</publishTime>
     </File>
     <File Include="bin/Tuhui.Common45.Utility.pdb">
       <publishTime>01/26/2016 15:56:57</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.Model.dll">
-      <publishTime>01/26/2016 15:56:58</publishTime>
+      <publishTime>03/17/2016 21:17:58</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.Model.pdb">
       <publishTime>01/26/2016 15:56:58</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.Mvc.dll">
-      <publishTime>01/26/2016 15:57:00</publishTime>
+      <publishTime>03/17/2016 21:18:01</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.Mvc.pdb">
       <publishTime>01/26/2016 15:57:00</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.Repository.dll">
-      <publishTime>01/26/2016 15:56:59</publishTime>
+      <publishTime>03/17/2016 21:18:00</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.Repository.pdb">
       <publishTime>01/26/2016 15:56:59</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.Service.dll">
-      <publishTime>01/26/2016 15:57:00</publishTime>
+      <publishTime>03/17/2016 21:18:00</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.Service.pdb">
       <publishTime>01/26/2016 15:57:00</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.Utility.dll">
-      <publishTime>01/26/2016 15:56:58</publishTime>
+      <publishTime>03/17/2016 21:17:59</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.Utility.pdb">
       <publishTime>01/26/2016 15:56:58</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.WebUI.dll">
-      <publishTime>01/26/2016 15:57:01</publishTime>
+      <publishTime>03/17/2016 21:18:02</publishTime>
     </File>
     <File Include="bin/Tuhui.Reception.WebUI.pdb">
       <publishTime>01/26/2016 15:57:01</publishTime>
@@ -239,25 +252,25 @@
       <publishTime>07/13/2015 15:31:40</publishTime>
     </File>
     <File Include="Config/connection.config">
-      <publishTime>07/13/2015 15:31:36</publishTime>
+      <publishTime>03/17/2016 16:54:46</publishTime>
     </File>
     <File Include="Config/Environment_Cache.config">
-      <publishTime>07/13/2015 15:31:36</publishTime>
+      <publishTime>03/17/2016 09:49:31</publishTime>
     </File>
     <File Include="Config/Environment_Global.config">
-      <publishTime>07/13/2015 15:31:36</publishTime>
+      <publishTime>03/17/2016 09:49:31</publishTime>
     </File>
     <File Include="Config/Environment_Log.config">
-      <publishTime>07/13/2015 15:31:36</publishTime>
+      <publishTime>03/17/2016 09:49:31</publishTime>
     </File>
     <File Include="Config/Environment_NameValue.config">
-      <publishTime>07/13/2015 15:31:36</publishTime>
+      <publishTime>03/17/2016 09:49:31</publishTime>
     </File>
     <File Include="Config/NLog.config">
-      <publishTime>07/13/2015 15:31:36</publishTime>
+      <publishTime>03/17/2016 09:49:31</publishTime>
     </File>
     <File Include="Content/common.css">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:31</publishTime>
     </File>
     <File Include="Content/images/btn_layer_img_bg1.png">
       <publishTime>07/13/2015 15:31:37</publishTime>
@@ -461,7 +474,7 @@
       <publishTime>07/13/2015 15:31:38</publishTime>
     </File>
     <File Include="Content/JqueryTuhui/jquery.tuhui.css">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:33</publishTime>
     </File>
     <File Include="Content/jqueryui/redmond/images/animated-overlay.gif">
       <publishTime>07/13/2015 15:31:37</publishTime>
@@ -512,10 +525,10 @@
       <publishTime>07/13/2015 15:31:37</publishTime>
     </File>
     <File Include="Content/jqueryui/redmond/jquery-ui-1.10.3.custom.css">
-      <publishTime>07/13/2015 15:31:37</publishTime>
+      <publishTime>03/17/2016 09:49:33</publishTime>
     </File>
     <File Include="Content/jqueryui/redmond/jquery-ui-1.10.3.custom.min.css">
-      <publishTime>07/13/2015 15:31:37</publishTime>
+      <publishTime>03/17/2016 09:49:33</publishTime>
     </File>
     <File Include="Content/jqueryui/ui-darkness/images/animated-overlay.gif">
       <publishTime>07/13/2015 15:31:37</publishTime>
@@ -563,25 +576,25 @@
       <publishTime>07/13/2015 15:31:37</publishTime>
     </File>
     <File Include="Content/jqueryui/ui-darkness/jquery-ui-1.10.3.custom.css">
-      <publishTime>07/13/2015 15:31:37</publishTime>
+      <publishTime>03/17/2016 09:49:33</publishTime>
     </File>
     <File Include="Content/jqueryui/ui-darkness/jquery-ui-1.10.3.custom.min.css">
-      <publishTime>07/13/2015 15:31:37</publishTime>
+      <publishTime>03/17/2016 09:49:33</publishTime>
     </File>
     <File Include="Content/layout.css">
-      <publishTime>07/13/2015 15:31:36</publishTime>
+      <publishTime>03/17/2016 09:49:31</publishTime>
     </File>
     <File Include="Content/layout_m.css">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:31</publishTime>
     </File>
     <File Include="Content/logon.css">
-      <publishTime>07/13/2015 15:31:37</publishTime>
+      <publishTime>03/17/2016 09:49:31</publishTime>
     </File>
     <File Include="Content/site.css">
-      <publishTime>07/13/2015 15:31:37</publishTime>
+      <publishTime>03/17/2016 09:49:31</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:29</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
       <publishTime>07/13/2015 15:31:38</publishTime>
@@ -644,46 +657,49 @@
       <publishTime>07/13/2015 15:31:36</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:29</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>03/17/2016 21:18:18</publishTime>
     </File>
     <File Include="Scripts/demo_app_YCVideo.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:41</publishTime>
     </File>
     <File Include="Scripts/demo_SubjectList.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:41</publishTime>
     </File>
     <File Include="Scripts/HaiKang/webVideoCtrl.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Scripts/ichart.1.2.min.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:41</publishTime>
     </File>
     <File Include="Scripts/jquery-ui.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:41</publishTime>
     </File>
     <File Include="Scripts/jquery.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:41</publishTime>
     </File>
     <File Include="Scripts/jquery.tuhui.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:41</publishTime>
     </File>
     <File Include="Scripts/logon.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:41</publishTime>
     </File>
     <File Include="Scripts/STVIDEO/common.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Scripts/STVIDEO/videoPlayer.swf">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Scripts/tv_f_video.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:41</publishTime>
     </File>
     <File Include="Scripts/tv_m_subjectList.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:41</publishTime>
     </File>
     <File Include="Scripts/tv_video.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:41</publishTime>
     </File>
     <File Include="Scripts/zTree/img/diy/1_close.png">
       <publishTime>07/13/2015 15:31:38</publishTime>
@@ -728,13 +744,13 @@
       <publishTime>07/13/2015 15:31:38</publishTime>
     </File>
     <File Include="Scripts/zTree/jquery.ztree.core-3.5.min.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Scripts/zTree/zTreeStyle.css">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Scripts/_references.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:41</publishTime>
     </File>
     <File Include="tmap/images/marker-icon-2x.png">
       <publishTime>07/13/2015 15:31:38</publishTime>
@@ -743,10 +759,10 @@
       <publishTime>07/13/2015 15:31:38</publishTime>
     </File>
     <File Include="tmap/tmap.css">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="tmap/tmap.js">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Views/Account/LogOn.cshtml">
       <publishTime>07/13/2015 15:31:38</publishTime>
@@ -802,23 +818,29 @@
     <File Include="Views/Manager/YCVideoUpdate.cshtml">
       <publishTime>07/13/2015 15:31:38</publishTime>
     </File>
+    <File Include="Views/ReceptionManager/Index.cshtml">
+      <publishTime>03/17/2016 14:58:24</publishTime>
+    </File>
+    <File Include="Views/ReceptionManager/LogOn.cshtml">
+      <publishTime>03/17/2016 14:52:35</publishTime>
+    </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 20:17:42</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Views/Shared/_PartialVideoList.cshtml">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Views/Shared/_PartialVideoSubject.cshtml">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Views/Shared/_PartialVideoSubject2.cshtml">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Views/Video/Index.cshtml">
       <publishTime>11/25/2015 16:52:46</publishTime>
@@ -848,13 +870,13 @@
       <publishTime>07/13/2015 15:31:38</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>07/13/2015 15:31:38</publishTime>
+      <publishTime>03/17/2016 09:49:42</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/26/2016 16:00:00</publishTime>
+      <publishTime>03/17/2016 21:18:04</publishTime>
     </File>
   </ItemGroup>
 </Project>

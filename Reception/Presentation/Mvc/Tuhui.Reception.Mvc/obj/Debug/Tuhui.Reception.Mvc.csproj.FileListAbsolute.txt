@@ -72,7 +72,6 @@ D:\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\zh-Hans\System.Web.W
 D:\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.csprojResolveAssemblyReference.cache
 D:\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.dll
 D:\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.pdb
-D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\Tuhui.Reception.Mvc.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\Tuhui.Reception.Mvc.pdb
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\System.Web.Mvc.dll
@@ -107,5 +106,6 @@ D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\zh-Hans\Sy
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.pdb

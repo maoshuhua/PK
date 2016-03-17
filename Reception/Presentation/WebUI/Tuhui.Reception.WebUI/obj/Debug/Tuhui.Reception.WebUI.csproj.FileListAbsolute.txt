@@ -200,7 +200,6 @@ D:\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\zh-Hans\Microsoft.Owin
 D:\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.csprojResolveAssemblyReference.cache
 D:\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.dll
 D:\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.pdb
-D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Tuhui.Reception.WebUI.dll.config
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Tuhui.Reception.WebUI.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Tuhui.Reception.WebUI.pdb
@@ -300,5 +299,8 @@ D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\zh-Hans\Micr
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.pdb
+D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Oracle.ManagedDataAccess.dll
+D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Oracle.ManagedDataAccess.EntityFramework.dll

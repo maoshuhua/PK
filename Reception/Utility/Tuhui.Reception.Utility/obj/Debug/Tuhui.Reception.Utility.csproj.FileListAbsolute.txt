@@ -16,3 +16,12 @@ D:\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\Tuhui.Common45.Utility.pd
 D:\Reception\Utility\Tuhui.Reception.Utility\obj\Debug\Tuhui.Reception.Utility.csprojResolveAssemblyReference.cache
 D:\Reception\Utility\Tuhui.Reception.Utility\obj\Debug\Tuhui.Reception.Utility.dll
 D:\Reception\Utility\Tuhui.Reception.Utility\obj\Debug\Tuhui.Reception.Utility.pdb
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\Tuhui.Reception.Utility.dll
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\Tuhui.Reception.Utility.pdb
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\Tuhui.Common45.Environment.dll
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\Tuhui.Common45.Utility.dll
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\Tuhui.Common45.Environment.pdb
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\Tuhui.Common45.Utility.pdb
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\obj\Debug\Tuhui.Reception.Utility.csprojResolveAssemblyReference.cache
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\obj\Debug\Tuhui.Reception.Utility.dll
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\obj\Debug\Tuhui.Reception.Utility.pdb
