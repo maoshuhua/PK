@@ -158,13 +158,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\VideoController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManagerController.cs" />
-    <Compile Include="Controllers\AjaxManagerController.cs">
-      <DependentUpon>ManagerController.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Controllers\ReceptionManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -360,7 +354,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -372,36 +365,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Views\Manager\Index.cshtml" />
-    <Content Include="Views\Manager\VideoList.cshtml" />
-    <Content Include="Views\Manager\SubjectList.cshtml" />
-    <Content Include="Views\Manager\UserList.cshtml" />
-    <Content Include="Views\Manager\LogList.cshtml" />
-    <Content Include="Views\Manager\FaceList.cshtml" />
     <None Include="Properties\PublishProfiles\Tuhui.Reception.pubxml" />
-    <Content Include="Views\Video\Index.cshtml" />
-    <Content Include="Views\Video\YCVLC.cshtml" />
-    <Content Include="Views\Manager\VideoModify.cshtml" />
-    <Content Include="Views\Video\Mock.cshtml" />
     <Content Include="Views\Shared\_PartialVideoList.cshtml" />
     <Content Include="Views\Shared\_PartialVideoSubject.cshtml" />
     <Content Include="Views\Shared\_PartialVideoSubject2.cshtml" />
-    <Content Include="Views\Account\LogOn.cshtml" />
-    <Content Include="Views\Manager\JTMap.cshtml" />
-    <Content Include="Views\Manager\LogModify.cshtml" />
-    <Content Include="Views\Manager\FaceModify.cshtml" />
-    <Content Include="Views\Manager\UserModify.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Statistic.cshtml" />
-    <Content Include="Views\Manager\Sync.cshtml" />
-    <Content Include="Views\Video\STVIDEO.cshtml" />
-    <Content Include="Views\Video\STVIDEO2.cshtml" />
-    <Content Include="Views\Manager\YCVideoUpdate.cshtml" />
-    <Content Include="Views\Home\ToolGD.cshtml" />
-    <Content Include="Views\Video\PlayVideo_YCVLC.cshtml" />
-    <Content Include="Views\Video\PlayVideo_VLC_rtmp.cshtml" />
-    <Content Include="Views\Video\PlayVideo_STVideo.cshtml" />
-    <Content Include="Views\Video\PlayVideo_HaiKang.cshtml" />
+    <Content Include="Views\ReceptionManager\LogOn.cshtml" />
+    <Content Include="Views\ReceptionManager\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\ASP.NET MVC\Tuhui.Common45.Mvc\Tuhui.Common45.Mvc.csproj">

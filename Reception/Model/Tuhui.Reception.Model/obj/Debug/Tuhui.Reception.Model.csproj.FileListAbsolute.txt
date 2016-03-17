@@ -22,3 +22,14 @@ D:\Reception\Model\Tuhui.Reception.Model\bin\Debug\zh-Hans\EntityFramework.resou
 D:\Reception\Model\Tuhui.Reception.Model\obj\Debug\Tuhui.Reception.Model.csprojResolveAssemblyReference.cache
 D:\Reception\Model\Tuhui.Reception.Model\obj\Debug\Tuhui.Reception.Model.dll
 D:\Reception\Model\Tuhui.Reception.Model\obj\Debug\Tuhui.Reception.Model.pdb
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\Tuhui.Reception.Model.dll
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\Tuhui.Reception.Model.pdb
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\EntityFramework.dll
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\Tuhui.Common45.Framework.dll
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\Tuhui.Common45.Utility.dll
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\Tuhui.Common45.Framework.pdb
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\EntityFramework.xml
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\Tuhui.Common45.Utility.pdb
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\obj\Debug\Tuhui.Reception.Model.dll
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\obj\Debug\Tuhui.Reception.Model.pdb

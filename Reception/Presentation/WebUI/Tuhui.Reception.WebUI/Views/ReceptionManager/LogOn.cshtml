@@ -1,0 +1,56 @@
+﻿@model Tuhui.Reception.Model.Reception_UserInfo
+@{
+    Layout = null;
+}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    @Content.Common(Url)
+    @Content.Css(Url, "logon.css")
+    @Content.Script(Url, "logon.js")
+    <title>登陆</title>
+    <script type="text/javascript">
+        $(function () {
+            $("body").css({
+                "height": document.documentElement.clientHeight + "px"
+            })
+            //var browerHeight = document.documentElement.clientHeight;
+            //var contentHeight = $(".topWrap").height() + $(".mainWrap").height() + $(".footWrap").height();
+            //if (browerHeight > contentHeight) {
+            //    $(".topWrap").css("margin-top", (browerHeight - contentHeight) / 2 + "px");
+            //}
+            //$(".logon-content").css({ "margin-top": ((document.documentElement.clientHeight - $(".logon-content").height()) / 2 -40) + "px" })
+        })
+    </script>
+</head>
+<body style="background-color:#02406a;">
+    <div class="logon-main">
+        @using (Html.BeginForm("LogOn", "ReceptionManager", FormMethod.Post, new { id = "logon_form" }))
+        {
+            Html.Hidden("returnUrl", Request["returnUrl"]);
+
+            <div class="logon-content">
+                @Html.ValidationSummary(true)
+                <div class="input" style=" width:186px; height:33px;">@Html.TextBoxFor(p => p.Name)</div>
+                <div class="input" style=" width:186px; height:33px;top:337px;">
+                    @Html.PasswordFor(p => p.Pwd)
+                <input id="Password_Text" name="Password_Text" style="display: none;" type="text"
+                       value="请输入登录密码" />
+            </div>
+            <div>
+                <a class="logon-button">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+            </div>
+        </div>
+        }
+    </div>
+
+    <div class="logon-foot">
+        &copy &nbsp;&nbsp;南京图慧信息技术有限公司 技术支持
+    </div>
+</body>
+</html>
+
+

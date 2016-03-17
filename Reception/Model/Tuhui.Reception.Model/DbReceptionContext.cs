@@ -19,14 +19,7 @@ namespace Tuhui.Reception.Model
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<tv_subject> tv_subject { get; set; }
-        public DbSet<tv_subject_video> tv_subject_video { get; set; }
-        public DbSet<tv_face> tv_face { get; set; }
-        public DbSet<tv_user> tv_user { get; set; }
-        public DbSet<tv_log> tv_log { get; set; }
-        public DbSet<tv_video> tv_video { get; set; }
-
-        public DbSet<tv_busLine> tv_busLine { get; set; }
+        public DbSet<Reception_UserInfo> Reception_UserInfo { get; set; }
 
     }
 }

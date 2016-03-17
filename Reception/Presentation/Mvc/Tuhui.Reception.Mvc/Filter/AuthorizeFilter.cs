@@ -13,10 +13,10 @@ namespace Tuhui.Reception.Mvc
 {
     public class AuthorizeFilter : FilterAttribute, IAuthorizationFilter
     {
-        private IUserService _userBL;
+        private IReception_UserInfoService _userBL;
         public AuthorizeFilter()
         {
-            _userBL = new UserService();
+            _userBL = new Reception_UserInfoService();
         }
 
         public void OnAuthorization(AuthorizationContext filterContext)
@@ -27,7 +27,7 @@ namespace Tuhui.Reception.Mvc
                 // 已经登录认证，如果session过期或丢失，则恢复session
                 if (SessionHelper.LogOnUserObj == null)
                 {
-                    SessionHelper.LogOnUser<tv_user>(_userBL.GetUserByUserName(filterContext.HttpContext.User.Identity.Name));
+                    SessionHelper.LogOnUser<Reception_UserInfo>(_userBL.GetUserByUserName(filterContext.HttpContext.User.Identity.Name));
                 }
             }
             else
@@ -40,7 +40,7 @@ namespace Tuhui.Reception.Mvc
                 {
                     filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new
                     {
-                        controller = "Account",
+                        controller = "ReceptionManager",
                         action = "LogOn",
                         returnUrl = filterContext.HttpContext.Request.Url
                     }));

@@ -26,3 +26,17 @@ D:\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\zh-Hans\EntityFrame
 D:\Reception\Repository\Tuhui.Reception.Repository\obj\Debug\Tuhui.Reception.Repository.csprojResolveAssemblyReference.cache
 D:\Reception\Repository\Tuhui.Reception.Repository\obj\Debug\Tuhui.Reception.Repository.dll
 D:\Reception\Repository\Tuhui.Reception.Repository\obj\Debug\Tuhui.Reception.Repository.pdb
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\Tuhui.Reception.Repository.dll
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\Tuhui.Reception.Repository.pdb
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\EntityFramework.dll
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\Tuhui.Common45.Framework.dll
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\Tuhui.Common45.Utility.dll
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\Tuhui.Reception.Model.dll
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\Tuhui.Common45.Framework.pdb
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\Tuhui.Common45.Utility.pdb
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\Tuhui.Reception.Model.pdb
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\EntityFramework.xml
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\obj\Debug\Tuhui.Reception.Repository.csprojResolveAssemblyReference.cache
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\obj\Debug\Tuhui.Reception.Repository.dll
+D:\msh\pk\PK\Reception\Repository\Tuhui.Reception.Repository\obj\Debug\Tuhui.Reception.Repository.pdb

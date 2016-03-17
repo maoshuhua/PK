@@ -9,20 +9,6 @@ namespace Tuhui.Reception.Mvc
 {
     public static partial class ReceptionHtmlHelperExtension
     {
-        private static IUserService _userBL
-        {
-            get
-            {
-                return new UserService();
-            }
-        }
-
-        private static IFaceService _faceBL
-        {
-            get
-            {
-                return new FaceService();
-            }
-        }
+        
     }
 }
