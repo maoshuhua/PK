@@ -53,7 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IReception_ResourceTypeRepository.cs" />
     <Compile Include="IReception_UserInfoRepository.cs" />
+    <Compile Include="Reception_ResourceTypeRepository.cs" />
     <Compile Include="Reception_UserInfoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

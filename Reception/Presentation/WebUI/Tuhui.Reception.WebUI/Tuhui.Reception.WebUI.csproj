@@ -358,7 +358,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -370,11 +369,10 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\Tuhui.Reception.pubxml" />
-    <Content Include="Views\Shared\_PartialVideoList.cshtml" />
-    <Content Include="Views\Shared\_PartialVideoSubject.cshtml" />
-    <Content Include="Views\Shared\_PartialVideoSubject2.cshtml" />
     <Content Include="Views\ReceptionManager\LogOn.cshtml" />
     <Content Include="Views\ReceptionManager\Index.cshtml" />
+    <Content Include="Views\ReceptionManager\ResourceType.cshtml" />
+    <Content Include="Views\ReceptionManager\ResourceTypeModify.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\ASP.NET MVC\Tuhui.Common45.Mvc\Tuhui.Common45.Mvc.csproj">

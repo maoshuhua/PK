@@ -8,28 +8,22 @@ using Tuhui.Reception.Model;
 
 namespace Tuhui.Reception.Repository
 {
-    public class Reception_UserInfoRepository : IReception_UserInfoRepository
+    public class Reception_UserInfoRepository : BaseRepository<DbReceptionContext>, IReception_UserInfoRepository
     {
         //登录
         public bool ValidationUser(Reception_UserInfo model)
         {
-            using (var db = new DbReceptionContext())
-            {
-                var _result = db.Reception_UserInfo.Where(p => p.Name == model.Name && p.Pwd == model.Pwd).FirstOrDefault() != null;
+            var _result = base.ContextObj.Reception_UserInfo.Where(p => p.Name == model.Name && p.Pwd == model.Pwd).FirstOrDefault() != null;
 
-                return _result;
-            }
+            return _result;   
         }
 
         //获取用户信息
         public Reception_UserInfo GetUserByUserName(string userName)
         {
-            using (var db = new DbReceptionContext())
-            {
-                var _result = db.Reception_UserInfo.Where(p => p.Name == userName).FirstOrDefault();
+            var _result = base.ContextObj.Reception_UserInfo.Where(p => p.Name == userName).FirstOrDefault();
 
-                return _result;
-            }
+            return _result;
         }
     }
 }

@@ -1,0 +1,36 @@
+﻿
+@model Tuhui.Reception.Model.Reception_ResourceType
+@{
+    ViewBag.Title = "ResourceTypeAdd";
+}
+
+<div class="layout-content-head">
+    <h2>@ViewBag.TitleName</h2>
+</div>
+<div style="text-align:left;margin-left:50px;">
+    @using (Html.BeginForm("ResourceTypeModify", "ReceptionManager"))
+    {
+        <div class="edit-area">
+            <div class="edit-lable">资源名称:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p => p.Name, htmlAttributes: new { maxlength = 20 })
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable"></div>
+            <div class="edit-content">
+                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存" />
+                <input type="button" value="返回" style="width: 70px;height: 30px;" onclick="BackTo()" />
+            </div>
+        </div>
+    }
+
+</div>
+
+<script type="text/javascript">
+
+    function BackTo() {
+        window.location.href = '@Url.Action("ResourceType", "ReceptionManager")';
+    }
+</script>
+

@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonEnum.cs" />
+    <Compile Include="CommonFun.cs" />
     <Compile Include="CommonStruct.cs" />
     <Compile Include="Extension\IEnumerableExtension.cs" />
     <Compile Include="Extension\NameValueExtension.cs" />

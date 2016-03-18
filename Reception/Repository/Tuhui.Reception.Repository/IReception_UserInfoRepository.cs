@@ -8,7 +8,7 @@ using Tuhui.Reception.Model;
 
 namespace Tuhui.Reception.Repository
 {
-    public interface IReception_UserInfoRepository
+    public interface IReception_UserInfoRepository : IBaseRepository<DbReceptionContext>
     {
         //登录
         bool ValidationUser(Reception_UserInfo model);

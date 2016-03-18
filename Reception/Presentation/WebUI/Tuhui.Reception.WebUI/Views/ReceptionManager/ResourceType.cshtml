@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "ResourceType";
+    ViewBag.MenuKey = "ResourceType";
+}
+<div class="layout-content-head">
+    <h2>资源分类 -> 列表</h2>
+</div>
+<div class="layout-content-main">
+    <table class="l-table" style="min-width: 800px;">
+        <thead>
+            <tr>
+                <th>分类名称</th>
+                <th style="width:80px;">@Html.ActionLink(" ", "ResourceTypeModify", new { controller = "ReceptionManager" }, new { @class = "create" })</th>
+            </tr>
+        </thead>
+        <tbody id="tbody_ResourceType">
+            <tr>
+                <td binding="{'html':'Name'}"></td>
+                <td><a class="edit" binding="{'onclick':'RT_ID','onclickFormat':'Edit(\'{0}\')'}"></a><a class="delete" onclick="Delete(this)" binding="{'id':'RT_ID'}"></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript">
+    $(function () {
+        GetResouceTypeList();
+    });
+
+    function GetResouceTypeList() {
+        $.L.ajaxHandle({
+            type: "get",
+            cache: "false",
+            url: ACTION_URL("GetResourceTypeList", "ReceptionManager"),
+            data: {
+                
+            },
+            success: function (response) {
+                $("#tbody_ResourceType").L_bindingDataList(response);
+            }
+        });
+    }
+
+    function Edit(id) {
+
+        window.location.href = '@Url.Action("ResourceTypeModify", "ReceptionManager")' + '?id=' + id;
+    }
+
+    function Delete(id) {
+        var id_string = $(id).attr("id");
+        $.L.messageConfirmT("确定删除该信息？", function () {
+            $.L.ajaxHandle({
+                cache: "false",
+                data: { id: id_string },
+                url: ACTION_URL("ResourceTypeDelete", "ReceptionManager"),
+                error: function () {
+                    alert("error");
+                },
+                success: function (response) {
+    
+                    window.location.href = '@Url.Action("ResourceType", "ReceptionManager")';
+                }
+            });
+        })
+    }
+</script>
+

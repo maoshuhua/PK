@@ -15,13 +15,7 @@
     <div class="layout_left">
         <div class="menu_head"></div>
         <ul class="layout_menu">
-            <li>@Html.ActionLink("视频管理", "VideoList", new { controller = "Manager" }, new {@menuKey="Video" })</li>
-            <li>@Html.ActionLink("专题管理", "SubjectList", new { controller = "Manager" }, new { @menuKey = "Subject" })</li>
-            <li>@Html.ActionLink("驾驶舱设置", "FaceList", new { controller = "Manager" }, new { @menuKey = "Face" })</li>
-            <li>@Html.ActionLink("云创视频同步", "YCVideoUpdate", new { controller = "Manager" }, new { @menuKey = "YCVideo" })</li>
-            @*<li>@Html.ActionLink("同步管理", "Sync", new { controller = "Manager" }, new { @menuKey = "Sync" })</li>*@
-            <li>@Html.ActionLink("用户管理", "UserList", new { controller = "Manager" }, new { @menuKey = "User" })</li>
-            @*<li>@Html.ActionLink("日志管理", "LogList", new { controller = "Manager" }, new { @menuKey = "Log" })</li>*@
+            <li>@Html.ActionLink("资源分类管理", "ResourceType", new { controller = "ReceptionManager" }, new { @menuKey = "ResourceType" })</li>
         </ul>
     </div>
     <div class="layout_right">

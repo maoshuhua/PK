@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using Tuhui.Common45.Mvc;
+using Tuhui.Common45.Utility;
 using Tuhui.Reception.Model;
 using Tuhui.Reception.Service;
 
@@ -13,9 +14,12 @@ namespace Tuhui.Reception.WebUI.Controllers
     public class ReceptionManagerController : BaseController
     {
         private IReception_UserInfoService _reception_UserInfoService;
+        private IReception_ResourceTypeService _reception_ResourceType;
+
         public ReceptionManagerController()
         {
             _reception_UserInfoService = base.InstanceService<Reception_UserInfoService>();
+            _reception_ResourceType = base.InstanceService<Reception_ResourceTypeService>();
         }
 
         public ActionResult Index()
@@ -66,6 +70,66 @@ namespace Tuhui.Reception.WebUI.Controllers
             FormsAuthentication.SignOut();
             Session.Abandon();
             return RedirectToAction("LogOn", "ReceptionManager");
+        }
+
+        public ActionResult ResourceType()
+        {
+            return View();
+        }
+
+        //获取资源列表
+        public ActionResult GetResourceTypeList()
+        {
+            var list = _reception_ResourceType.GetResourceTypeList();
+
+            return Json(list,JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult ResourceTypeModify(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                @ViewBag.TitleName = "资源分类管理 -> 添加页面";
+                return View(new Reception_ResourceType());
+            }
+            else
+            {
+                @ViewBag.TitleName = "资源分类管理 -> 编辑页面";
+                Reception_ResourceType entity = _reception_ResourceType.GetResourceTypeById(id);
+
+                return View(entity);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult ResourceTypeModify(Reception_ResourceType model)
+        {
+            if (string.IsNullOrEmpty(model.RT_ID))
+            {
+                model.RT_ID = CommonFun.GenerGuid();
+                model.ImgPath = "";
+                model.CreateTime = DateTime.Now;
+                //添加资源分类
+                _reception_ResourceType.ResourceTypeInsert(model);
+            }
+            else {
+                //修改资源分类
+                _reception_ResourceType.ResourceTypeUpdate(model);
+            }
+
+            return RedirectToAction("ResourceType");
+        }
+
+        //删除资源分类
+        public ActionResult ResourceTypeDelete(string id) 
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                //抛出异常
+            }
+            int i = _reception_ResourceType.ResourceTypeDelete(id);
+
+            return Json(true);
         }
 
 	}
