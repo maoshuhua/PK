@@ -15,7 +15,6 @@ namespace Tuhui.Reception.Service
 
         public Reception_UserInfoService()
         {
-            //_reception_UserInfoRepository = base.InstanceRepository<Reception_UserInfoRepository>();
             _reception_UserInfoRepository = new Reception_UserInfoRepository();
         }
 

@@ -23,9 +23,9 @@ namespace ReceptionApp.Web.Controllers
             {
                 var user = new Reception_UserInfo
                 {
-                    U_ID = "22",
-                    Name = "gg",
-                    Pwd = "111",
+                    U_ID = "22333",
+                    Name = "ggfdsafdasf",
+                    Pwd = "111fdsfsdafsda",
                     RegTime = DateTime.Now
                 };
 

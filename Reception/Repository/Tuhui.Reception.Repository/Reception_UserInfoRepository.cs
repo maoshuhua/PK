@@ -13,35 +13,23 @@ namespace Tuhui.Reception.Repository
         //登录
         public bool ValidationUser(Reception_UserInfo model)
         {
-            //var _result = base.ContextObj.Reception_UserInfo.Where(p => p.Name == model.Name && p.Pwd == model.Pwd).FirstOrDefault() != null;
-            
-
-
-            //return _result;
-            using (var ctx = new DbReceptionContext())
+            using (var db = new DbReceptionContext())
             {
-                var user = new Reception_UserInfo
-                {
-                   U_ID  = "22",
-                   Name = "gg",
-                   Pwd = "111",
-                   RegTime = DateTime.Now
-                };
+                var _result = db.Reception_UserInfo.Where(p => p.Name == model.Name && p.Pwd == model.Pwd).FirstOrDefault() != null;
 
-                ctx.Reception_UserInfo.Add(user);
-                ctx.SaveChanges();
+                return _result;
             }
-            
-            return true;
         }
 
         //获取用户信息
         public Reception_UserInfo GetUserByUserName(string userName)
         {
-            //var _result = base.ContextObj.Reception_UserInfo.Where(p => p.Name == userName).FirstOrDefault();
+            using (var db = new DbReceptionContext())
+            {
+                var _result = db.Reception_UserInfo.Where(p => p.Name == userName).FirstOrDefault();
 
-            //return _result;
-            return null;
+                return _result;
+            }
         }
     }
 }

@@ -65,7 +65,7 @@ namespace Tuhui.Reception.WebUI.Controllers
         {
             FormsAuthentication.SignOut();
             Session.Abandon();
-            return RedirectToAction("Index", "ReceptionManager");
+            return RedirectToAction("LogOn", "ReceptionManager");
         }
 
 	}

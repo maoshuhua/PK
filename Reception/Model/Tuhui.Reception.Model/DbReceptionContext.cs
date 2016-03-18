@@ -16,7 +16,6 @@ namespace Tuhui.Reception.Model
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //base.OnModelCreating(modelBuilder);
             modelBuilder.HasDefaultSchema("TUHUI_AQI");
         }
 
