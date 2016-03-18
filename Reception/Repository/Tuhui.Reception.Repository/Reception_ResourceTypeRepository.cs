@@ -13,7 +13,7 @@ namespace Tuhui.Reception.Repository
         //获取资源分类列表
         public List<Reception_ResourceType> GetResourceTypeList()
         {
-            var list = base.SearchList<Reception_ResourceType>().OrderBy(p => p.CreateTime).ToList();
+            var list = base.SearchList<Reception_ResourceType>().OrderByDescending(p => p.CreateTime).ToList();
 
             return list;
         }

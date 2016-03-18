@@ -11,3 +11,4 @@ D:\msh\pk\PK\Reception\Common\Communication\Tuhui.Common45.Communication\bin\Deb
 D:\msh\pk\PK\Reception\Common\Communication\Tuhui.Common45.Communication\bin\Debug\Tuhui.Common45.Communication.pdb
 D:\msh\pk\PK\Reception\Common\Communication\Tuhui.Common45.Communication\obj\Debug\Tuhui.Common45.Communication.dll
 D:\msh\pk\PK\Reception\Common\Communication\Tuhui.Common45.Communication\obj\Debug\Tuhui.Common45.Communication.pdb
+D:\msh\pk\PK\Reception\Common\Communication\Tuhui.Common45.Communication\obj\Debug\Tuhui.Common45.Communication.csprojResolveAssemblyReference.cache

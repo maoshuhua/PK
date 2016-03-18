@@ -203,7 +203,6 @@ D:\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Tuhui.Reception.WebUI.dll.config
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Tuhui.Reception.WebUI.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Tuhui.Reception.WebUI.pdb
-D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Antlr3.Runtime.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\EntityFramework.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\EntityFramework.SqlServer.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
@@ -264,7 +263,6 @@ D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\System.Web.W
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\System.Web.WebPages.Deployment.xml
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\System.Web.WebPages.Razor.xml
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Newtonsoft.Json.xml
-D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Antlr3.Runtime.pdb
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\EntityFramework.xml
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\EntityFramework.SqlServer.xml
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
