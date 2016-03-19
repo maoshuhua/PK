@@ -34,9 +34,9 @@ namespace Tuhui.Reception.Repository
 
         //获取单个资源分类
         public Reception_ResourceType GetResourceTypeById(string id)
-        {
+        {    
             var list = base.SearchFirstOrDefault<Reception_ResourceType>(p => p.RT_ID == id);
-
+        
             return list;
         }
 

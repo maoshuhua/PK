@@ -1,0 +1,94 @@
+﻿<%-- 
+Name: DAL
+Author: 茅书华
+Description: 生成DAL
+--%>
+<%@ CodeTemplate Inherits="CodeTemplate" TargetLanguage="Text" Description="NetTiers main template."Debug="True" ResponseEncoding="UTF-8"%>
+
+<%@ Assembly Name="SchemaExplorer" %>
+<%@ Import Namespace="SchemaExplorer" %>
+
+<%-- 要打印的表 --%>
+<%@ Property Name="Table" Type="TableSchema" DeepLoad="True" Optional="False" Category="01. Getting Started - Required"　Description="Database that the tables views, and stored procedures shouldbe based on. IMPORTANT!!! If SourceTables and SourceViews are left blank, theEntire Database will then be generated." %>
+<%-- 命名空间 --%>
+<%@ Property Name="Namespace" Type="System.String" Optional="False" Default="" Category="命名空间" %>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Tuhui.Common45.Framework;
+using Tuhui.Common45.Utility;
+using Tuhui.<%=Namespace%>.Model;
+
+namespace Tuhui.<%=Namespace%>.Repository
+{
+    public class <%=Table.Name%>Repository : BaseRepository<Db<%=Namespace%>Context>, I<%=Table.Name%>Repository
+    {
+        //获取全部
+        public List<<%=Table.Name%>> GetList()
+        {
+            var list = base.SearchList<<%=Table.Name%>>().ToList();
+
+            return list;
+        }
+        
+        //获取单个
+        public <%=Table.Name %> Get(string id)
+        {
+            var list = null;
+            <%if(Table.HasPrimaryKey) { %>
+            list = base.SearchFirstOrDefault<<%=Table.Name %>>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == id);
+            <% } %> 
+            
+            return list;
+        }
+        
+        //获取全部分页
+        public PagedList<<%=Table.Name %>> GetPageList(<%=Table.Name %> model, int pageIndex, int pageSize)
+        {
+            var query = base.Search<<%=Table.Name %>>();
+
+            if (model != null)
+            {
+                //根据条件筛选
+                
+            }
+
+            return new PagedList<<%=Table.Name %>>(query, pageIndex, pageSize);
+        }
+        
+        //添加
+        public int Insert(<%=Table.Name %> model)
+        {
+            return base.Insert<<%=Table.Name %>>(model);
+        }
+        
+        //修改
+        public int Update(<%=Table.Name %> model)
+        {
+            int i = 0;
+            <%if(Table.HasPrimaryKey) { %>
+            i = base.Update<Reception_ResourceType>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == model.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%>, p => {
+            <% for (int c = 0; c < Table.Columns.Count; c++) { %>
+                p.<%=Table.Columns[c].Name %> = model.<%=Table.Columns[c].Name %>;
+            <% } %>
+            });
+            <% } %>
+            
+            return i;
+        }
+        
+        //删除
+        public int Delete(string id)
+        {
+            int i = 0;
+            <%if(Table.HasPrimaryKey) { %>
+            i = base.Delete<<%=Table.Name %>>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == id);
+            <% } %>
+            
+            return i;
+        }
+    }
+}

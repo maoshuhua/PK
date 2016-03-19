@@ -1,0 +1,47 @@
+﻿<%-- 
+Name: DAL
+Author: 茅书华
+Description: 生成DAL
+--%>
+<%@ CodeTemplate Inherits="CodeTemplate" TargetLanguage="Text" Description="NetTiers main template."Debug="True" ResponseEncoding="UTF-8"%>
+
+<%@ Assembly Name="SchemaExplorer" %>
+<%@ Import Namespace="SchemaExplorer" %>
+
+<%-- 要打印的表 --%>
+<%@ Property Name="Table" Type="TableSchema" DeepLoad="True" Optional="False" Category="01. Getting Started - Required"　Description="Database that the tables views, and stored procedures shouldbe based on. IMPORTANT!!! If SourceTables and SourceViews are left blank, theEntire Database will then be generated." %>
+<%-- 命名空间 --%>
+<%@ Property Name="Namespace" Type="System.String" Optional="False" Default="" Category="命名空间" %>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Tuhui.Common45.Utility;
+using Tuhui.Common45.Framework;
+using Tuhui.<%=Namespace%>.Model;
+
+namespace Tuhui.<%=Namespace%>.Service
+{
+    public interface I<%=Table.Name%>Service : IBaseService
+    {
+        //获取全部
+        List<<%=Table.Name%>> GetList();
+        
+        //获取单个
+        <%=Table.Name %> Get(string id);
+        
+        //获取全部分页
+        PagedList<<%=Table.Name %>> GetPageList(<%=Table.Name %> model, int pageIndex, int pageSize);
+        
+        //添加
+        int Insert(<%=Table.Name %> model);
+        
+        //修改
+        int Update(<%=Table.Name %> model);
+        
+        //删除
+        int Delete(string id);
+    }
+}

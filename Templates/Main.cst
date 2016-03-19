@@ -1,0 +1,159 @@
+﻿<%-- 
+Name: 代码生成器
+Author: 茅书华
+Description: 生成Model DAL BLL
+--%>
+<%@ CodeTemplate Inherits="CodeTemplate" TargetLanguage="Text" Description="NetTiers main template."Debug="True" ResponseEncoding="UTF-8"%>
+<%-- 加载访问数据库的组件SchemaExplorer,并声明其使用的命名空间 --%>
+<%@ Assembly Name="SchemaExplorer"%>
+<%@ Import Namespace="SchemaExplorer"%>
+
+<%-- 命名空间 --%>
+<%@ Property Name="Namespace" Type="System.String" Optional="False" Default="" Category="命名空间" %>
+
+<%-- 数据库 --%>
+<%@ Property Name="SourceDatabase" Type="SchemaExplorer.DatabaseSchema" DeepLoad="True" Optional="False" Category="数据源" Description="Database that the tables views, and stored procedures should be based on. IMPORTANT!!! If SourceTables and SourceViews are left blank, the Entire Database will then be generated."%>
+
+<%-- 注册实体层Entity模板 --%>
+<%@ Register Name="EntityTemplate" Template="Entity.cst" MergeProperties="Flase" ExcludeProperties=""%>
+<%-- 注册数据访问接口模板 --%>
+<%@ Register Name="IDALTemplate" Template="IDAL.cst" MergeProperties="Flase" ExcludeProperties=""%>
+<%-- 注册数据访问接口实现模板 --%>
+<%@ Register Name="DALTemplate" Template="DAL.cst" MergeProperties="Flase" ExcludeProperties=""%>
+<%-- 注册逻辑访问接口模板 --%>
+<%@ Register Name="IBLLTemplate" Template="IBLL.cst" MergeProperties="Flase" ExcludeProperties=""%>
+<%-- 注册逻辑访问接口实现模板 --%>
+<%@ Register Name="BLLTemplate" Template="BLL.cst" MergeProperties="Flase" ExcludeProperties=""%>
+
+<%
+//创建实体层Entity类
+this.GenerateEntityClasses();
+//创建数据访问接口类
+this.GenerateIDALClasses();
+//创建数据访问类
+this.GenerateDALClasses();
+//创建逻辑访问接口类
+this.GenerateIBLLClasses();
+//创建逻辑访问类
+this.GenerateBLLClasses();
+
+Debug.WriteLine("OK");
+%>
+
+<script runat="template">
+    //生成Entity
+    private void GenerateEntityClasses()
+    {
+      CodeTemplate Template =new EntityTemplate();
+      foreach(TableSchema table in this.SourceDatabase.Tables)
+      {
+         string FileDirectory = OutputDirectory +"\\Model\\"+ table.Name +".cs";
+         //设置命名空间
+         Template.SetProperty("Namespace",this.Namespace);
+         //生成模板
+         Template.SetProperty("Table",table);
+         //文件显示
+         Template.Render(this.Response);
+         //文件输出
+         Template.RenderToFile(FileDirectory,true);
+         Debug.WriteLine(FileDirectory +" 创建成功.");
+      }
+    }
+    
+    //生成IDAL
+    private void GenerateIDALClasses()
+    {  
+      CodeTemplate Template =new IDALTemplate();
+      foreach(TableSchema table in this.SourceDatabase.Tables)
+      {
+         string FileDirectory = OutputDirectory +"\\DAL\\I"+ table.Name +"Repository.cs";
+         //设置命名空间
+         Template.SetProperty("Namespace",this.Namespace);
+         //生成模板
+         Template.SetProperty("Table",table);
+         //文件显示
+         Template.Render(this.Response);
+         //文件输出
+         Template.RenderToFile(FileDirectory,true);
+         Debug.WriteLine(FileDirectory +" 创建成功.");
+      }
+    }
+    
+    //生成DAL
+    private void GenerateDALClasses()
+    {  
+      CodeTemplate Template =new DALTemplate();
+      foreach(TableSchema table in this.SourceDatabase.Tables)
+      {
+         string FileDirectory = OutputDirectory +"\\DAL\\"+ table.Name +"Repository.cs";
+         //设置命名空间
+         Template.SetProperty("Namespace",this.Namespace);
+         //生成模板
+         Template.SetProperty("Table",table);
+         //文件显示
+         Template.Render(this.Response);
+         //文件输出
+         Template.RenderToFile(FileDirectory,true);
+         Debug.WriteLine(FileDirectory +" 创建成功.");
+      }
+    }
+    
+    //生成IBLL
+    private void GenerateIBLLClasses()
+    {  
+      CodeTemplate Template =new IBLLTemplate();
+      foreach(TableSchema table in this.SourceDatabase.Tables)
+      {
+         string FileDirectory = OutputDirectory +"\\BLL\\I"+ table.Name +"Service.cs";
+         //设置命名空间
+         Template.SetProperty("Namespace",this.Namespace);
+         //生成模板
+         Template.SetProperty("Table",table);
+         //文件显示
+         Template.Render(this.Response);
+         //文件输出
+         Template.RenderToFile(FileDirectory,true);
+         Debug.WriteLine(FileDirectory +" 创建成功.");
+      }
+    }
+    
+    //生成BLL
+    private void GenerateBLLClasses()
+    {  
+      CodeTemplate Template =new BLLTemplate();
+      foreach(TableSchema table in this.SourceDatabase.Tables)
+      {
+         string FileDirectory = OutputDirectory +"\\BLL\\"+ table.Name +"Service.cs";
+         //设置命名空间
+         Template.SetProperty("Namespace",this.Namespace);
+         //生成模板
+         Template.SetProperty("Table",table);
+         //文件显示
+         Template.Render(this.Response);
+         //文件输出
+         Template.RenderToFile(FileDirectory,true);
+         Debug.WriteLine(FileDirectory +" 创建成功.");
+      }
+    }
+</script>
+
+<script runat="template">
+    //解决方案输出路径
+    private string Directory = String.Empty;
+    
+    [Editor(typeof(System.Windows.Forms.Design.FolderNameEditor), typeof(System.Drawing.Design.UITypeEditor))] 
+    [Optional, NotChecked]
+    [DefaultValue("")]
+    public string OutputDirectory 
+    { 
+        get
+        {
+            return Directory;
+        }
+        set
+        {
+            if (value.EndsWith("\\")) value = value.Substring(0, value.Length -1);
+            Directory = value;
+        } 
+    }
+</script>
