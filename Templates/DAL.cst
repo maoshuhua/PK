@@ -69,7 +69,7 @@ namespace Tuhui.<%=Namespace%>.Repository
         public int Update(<%=Table.Name %> model)
         {
             <%if(Table.HasPrimaryKey) { %>
-            return base.Update<Reception_ResourceType>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == model.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%>, p => {
+            return base.Update<<%=Table.Name %>>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == model.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%>, p => {
             <% for (int c = 0; c < Table.Columns.Count; c++) { %>
                 p.<%=Table.Columns[c].Name %> = model.<%=Table.Columns[c].Name %>;
             <% } %>
