@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Resource";
+    ViewBag.MenuKey = "Resource";
+}
+<div class="layout-content-head">
+    <h2>资源管理 -> 列表</h2>
+</div>
+<div class="layout-content-main">
+    <table class="l-table" style="min-width: 900px;">
+        <thead>
+            <tr>
+                <th>资源名称</th>
+                <th style="width:80px;">@Html.ActionLink(" ", "LogModify", new { controller = "Manager" }, new { @class = "create" })</th>
+            </tr>
+        </thead>
+        <tbody id="tbody_ResourceList" binding="{'pageId':'page_Resource','pageCallback':'GetResourceList'}">
+            <tr>
+                <td binding="{'html':'Name'}"></td>            
+                <td><a class="edit"></a><a class="delete"></a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="page_Resource" colspan="2"></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<script type="text/javascript">
+    $(function () {
+        GetResourceList();
+    });
+
+    function GetResourceList(pageIndex) {
+        $.L.ajaxHandle({
+            type: "get",
+            cache: "false",
+            url: ACTION_URL("GetResourcePageList", "ReceptionManager"),
+            data: {
+                pageIndex: pageIndex
+            },
+            success: function (response) {
+                $("#tbody_ResourceList").L_bindingDataList(response);
+            }
+        })
+    }
+</script>
+

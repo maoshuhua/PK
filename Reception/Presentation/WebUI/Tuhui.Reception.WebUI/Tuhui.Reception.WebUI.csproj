@@ -39,6 +39,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Oracle.ManagedDataAccess">
       <HintPath>..\..\..\Repository\Tuhui.Reception.Repository\bin\Debug\Oracle.ManagedDataAccess.dll</HintPath>
@@ -373,6 +377,7 @@
     <Content Include="Views\ReceptionManager\Index.cshtml" />
     <Content Include="Views\ReceptionManager\ResourceType.cshtml" />
     <Content Include="Views\ReceptionManager\ResourceTypeModify.cshtml" />
+    <Content Include="Views\ReceptionManager\Resource.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\ASP.NET MVC\Tuhui.Common45.Mvc\Tuhui.Common45.Mvc.csproj">

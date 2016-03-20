@@ -48,6 +48,7 @@ namespace Tuhui.<%=Namespace%>.Repository
         //获取全部分页
         public PagedList<<%=Table.Name %>> GetPageList(<%=Table.Name %> model, int pageIndex, int pageSize)
         {
+            <%if(Table.HasPrimaryKey) { %>
             var query = base.Search<<%=Table.Name %>>();
 
             if (model != null)
@@ -56,7 +57,11 @@ namespace Tuhui.<%=Namespace%>.Repository
                 
             }
 
-            return new PagedList<<%=Table.Name %>>(query, pageIndex, pageSize);
+            return new PagedList<<%=Table.Name %>>(query.OrderByDescending(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%>), pageIndex, pageSize);
+            <% }else{ %> 
+            
+            return null;
+            <% } %>
         }
         
         //添加

@@ -15,11 +15,13 @@ namespace Tuhui.Reception.WebUI.Controllers
     {
         private IReception_UserInfoService _reception_UserInfoService;
         private IReception_ResourceTypeService _reception_ResourceType;
+        private IReception_ResourceService _reception_Resource;
 
         public ReceptionManagerController()
         {
             _reception_UserInfoService = base.InstanceService<Reception_UserInfoService>();
             _reception_ResourceType = base.InstanceService<Reception_ResourceTypeService>();
+            _reception_Resource = base.InstanceService<Reception_ResourceService>();
         }
 
         public ActionResult Index()
@@ -130,6 +132,18 @@ namespace Tuhui.Reception.WebUI.Controllers
             int i = _reception_ResourceType.Delete(id);
 
             return Json(true);
+        }
+
+        public ActionResult Resource()
+        {
+            return View();
+        }
+
+        public ActionResult GetResourcePageList(int pageIndex = 1, int pageSize = 10)
+        {
+            var list = _reception_Resource.GetPageList(null, pageIndex, pageSize);
+
+            return Json(list, JsonRequestBehavior.AllowGet);
         }
 
 	}
