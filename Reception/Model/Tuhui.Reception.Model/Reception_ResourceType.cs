@@ -9,18 +9,18 @@ using Tuhui.Common45.Framework;
 
 namespace Tuhui.Reception.Model
 {
-    //用户表
+    //
     [Table("Reception_ResourceType")]
-    public class Reception_ResourceType : BaseEntity
+    public partial class Reception_ResourceType : BaseEntity
     {
-        //资源分类编号
-        [Key]
-        public string RT_ID { get; set; }
-        //资源分类名称
-        public string Name { get; set; }
-        //资源分类图片
-        public string ImgPath { get; set; }
-        //创建时间
-        public DateTime CreateTime { get; set; }
+           //
+           [Key]
+           public string RT_ID  { get; set; }
+           //
+           public string Name  { get; set; }
+           //
+           public string ImgPath  { get; set; }
+           //
+           public DateTime CreateTime  { get; set; }
     }
 }

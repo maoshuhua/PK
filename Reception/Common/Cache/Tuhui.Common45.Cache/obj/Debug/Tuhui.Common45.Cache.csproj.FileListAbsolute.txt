@@ -12,4 +12,3 @@ D:\msh\pk\PK\Reception\Common\Cache\Tuhui.Common45.Cache\bin\Debug\Tuhui.Common4
 D:\msh\pk\PK\Reception\Common\Cache\Tuhui.Common45.Cache\bin\Debug\Tuhui.Common45.Cache.pdb
 D:\msh\pk\PK\Reception\Common\Cache\Tuhui.Common45.Cache\obj\Debug\Tuhui.Common45.Cache.dll
 D:\msh\pk\PK\Reception\Common\Cache\Tuhui.Common45.Cache\obj\Debug\Tuhui.Common45.Cache.pdb
-D:\msh\pk\PK\Reception\Common\Cache\Tuhui.Common45.Cache\obj\Debug\Tuhui.Common45.Cache.csprojResolveAssemblyReference.cache

@@ -16,11 +16,16 @@ namespace Tuhui.Reception.Model
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //针对Oracle数据库权限问题
             modelBuilder.HasDefaultSchema("TUHUI_AQI");
         }
-
-        public DbSet<Reception_UserInfo> Reception_UserInfo { get; set; }
-        public DbSet<Reception_ResourceType> Reception_ResourceType { get; set; }
+        
+        //
         public DbSet<Reception_Resource> Reception_Resource { get; set; }
+        //
+        public DbSet<Reception_ResourceType> Reception_ResourceType { get; set; }
+        //
+        public DbSet<Reception_UserInfo> Reception_UserInfo { get; set; }
+    
     }
 }

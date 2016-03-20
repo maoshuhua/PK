@@ -80,7 +80,7 @@ namespace Tuhui.Reception.WebUI.Controllers
         //获取资源列表
         public ActionResult GetResourceTypeList()
         {
-            var list = _reception_ResourceType.GetResourceTypeList();
+            var list = _reception_ResourceType.GetList();
 
             return Json(list,JsonRequestBehavior.AllowGet);
         }
@@ -95,7 +95,7 @@ namespace Tuhui.Reception.WebUI.Controllers
             else
             {
                 @ViewBag.TitleName = "资源分类管理 -> 编辑页面";
-                Reception_ResourceType entity = _reception_ResourceType.GetResourceTypeById(id);
+                Reception_ResourceType entity = _reception_ResourceType.Get(id);
 
                 return View(entity);
             }
@@ -110,11 +110,11 @@ namespace Tuhui.Reception.WebUI.Controllers
                 model.ImgPath = "";
                 model.CreateTime = DateTime.Now;
                 //添加资源分类
-                _reception_ResourceType.ResourceTypeInsert(model);
+                _reception_ResourceType.Insert(model);
             }
             else {
                 //修改资源分类
-                _reception_ResourceType.ResourceTypeUpdate(model);
+                _reception_ResourceType.Update(model);
             }
 
             return RedirectToAction("ResourceType");
@@ -127,7 +127,7 @@ namespace Tuhui.Reception.WebUI.Controllers
             {
                 //抛出异常
             }
-            int i = _reception_ResourceType.ResourceTypeDelete(id);
+            int i = _reception_ResourceType.Delete(id);
 
             return Json(true);
         }
