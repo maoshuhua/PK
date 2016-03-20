@@ -28,15 +28,21 @@ namespace Tuhui.Reception.Repository
         //获取全部分页
         public PagedList<Reception_Resource> GetPageList(Reception_Resource model, int pageIndex, int pageSize)
         {
-            var query = base.Search<Reception_Resource>();
+            var count = base.Search<Reception_Resource>().Count();
+
+            PagedList<Reception_Resource> pageList = new PagedList<Reception_Resource>(count, pageIndex, pageSize);
 
             if (model != null)
             {
                 //根据条件筛选
-                
+
+            }
+            else
+            {
+                pageList.PageData = base.Search<Reception_Resource>().OrderByDescending(p => p.R_ID).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
             }
 
-            return new PagedList<Reception_Resource>(query.OrderByDescending(p => p.R_ID), pageIndex, pageSize);
+            return pageList;
         }
         
         //添加

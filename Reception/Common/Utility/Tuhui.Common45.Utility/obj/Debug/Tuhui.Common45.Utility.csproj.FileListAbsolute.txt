@@ -12,3 +12,4 @@ D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\bin\Debug\Tuhui.Com
 D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\bin\Debug\Tuhui.Common45.Utility.pdb
 D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\obj\Debug\Tuhui.Common45.Utility.dll
 D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\obj\Debug\Tuhui.Common45.Utility.pdb
+D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\obj\Debug\Tuhui.Common45.Utility.csprojResolveAssemblyReference.cache

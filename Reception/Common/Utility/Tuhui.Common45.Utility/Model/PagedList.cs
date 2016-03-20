@@ -48,7 +48,7 @@ namespace Tuhui.Common45.Utility
         /// <summary>
         /// 数据集合
         /// </summary>
-        public List<T> PageData { get; private set; }
+        public List<T> PageData { get; set; }
 
         /// <summary>
         /// 构造函数
@@ -74,6 +74,28 @@ namespace Tuhui.Common45.Utility
                 pageIndex = TotalPageCount;
             }
             PageData = items.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+            PageIndex = pageIndex;
+            PageSize = pageSize;
+            StartRecordIndex = (pageIndex - 1) * pageSize + 1;
+            EndRecordIndex = TotalItemCount > pageIndex * pageSize ? pageIndex * pageSize : TotalItemCount;
+        }
+
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="count"></param>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        public PagedList(int count, int pageIndex, int pageSize)
+        {
+            if (pageIndex < 1) throw new ArgumentException("pageIndex参数不可以小于1");
+            TotalItemCount = count;
+            TotalPageCount = TotalItemCount == 0 ? 0 : (int)Math.Ceiling(TotalItemCount / (double)pageSize);
+            if (pageIndex > TotalPageCount && TotalPageCount != 0)
+            {
+                pageIndex = TotalPageCount;
+            }
+            
             PageIndex = pageIndex;
             PageSize = pageSize;
             StartRecordIndex = (pageIndex - 1) * pageSize + 1;
