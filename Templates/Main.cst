@@ -16,6 +16,8 @@ Description: 生成Model DAL BLL
 
 <%-- 注册实体层Entity模板 --%>
 <%@ Register Name="EntityTemplate" Template="Entity.cst" MergeProperties="Flase" ExcludeProperties=""%>
+<%-- 注册上下文模板 --%>
+<%@ Register Name="DbContextTemplate" Template="DbContext.cst" MergeProperties="Flase" ExcludeProperties=""%>
 <%-- 注册数据访问接口模板 --%>
 <%@ Register Name="IDALTemplate" Template="IDAL.cst" MergeProperties="Flase" ExcludeProperties=""%>
 <%-- 注册数据访问接口实现模板 --%>
@@ -28,6 +30,8 @@ Description: 生成Model DAL BLL
 <%
 //创建实体层Entity类
 this.GenerateEntityClasses();
+//创建上下文
+this.GenerateDbContext();
 //创建数据访问接口类
 this.GenerateIDALClasses();
 //创建数据访问类
@@ -58,6 +62,22 @@ Debug.WriteLine("OK");
          Template.RenderToFile(FileDirectory,true);
          Debug.WriteLine(FileDirectory +" 创建成功.");
       }
+    }
+    
+    //生成DbContext
+    private void GenerateDbContext()
+    {
+        CodeTemplate Template =new DbContextTemplate();
+        string FileDirectory = OutputDirectory +"\\Model\\Db"+ this.Namespace +"Context.cs";
+         //设置命名空间
+         Template.SetProperty("Namespace",this.Namespace);
+         //生成模板
+         Template.SetProperty("SourceDatabase",this.SourceDatabase);
+         //文件显示
+         Template.Render(this.Response);
+         //文件输出
+         Template.RenderToFile(FileDirectory,true);
+         Debug.WriteLine(FileDirectory +" 创建成功.");
     }
     
     //生成IDAL

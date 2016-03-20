@@ -29,11 +29,11 @@ namespace Tuhui.<%=Namespace%>.Model
     public partial class <%=Table.Name%> : BaseEntity
     {
         <% foreach(ColumnSchema col in Table.Columns){ %>
-           //<%=col.Description %>
-           <%if(col.IsPrimaryKeyMember){ %>
-           [Key]
-           <% } %>
-           public <%=DataType2CSharpType(col.DataType) %> <%=col.Name %>  { get; set; }
+       //<%=col.Description %>
+       <%if(col.IsPrimaryKeyMember){ %>
+       [Key]
+       <% } %>
+       public <%=DataType2CSharpType(col.DataType) %> <%=col.Name %>  { get; set; }
         <% } %>
     }
 }

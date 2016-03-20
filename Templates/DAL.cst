@@ -37,12 +37,12 @@ namespace Tuhui.<%=Namespace%>.Repository
         //获取单个
         public <%=Table.Name %> Get(string id)
         {
-            var list = null;
             <%if(Table.HasPrimaryKey) { %>
-            list = base.SearchFirstOrDefault<<%=Table.Name %>>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == id);
-            <% } %> 
+            return base.SearchFirstOrDefault<<%=Table.Name %>>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == id);
+            <% }else{ %> 
             
-            return list;
+            return null;
+            <% } %>
         }
         
         //获取全部分页
@@ -68,27 +68,27 @@ namespace Tuhui.<%=Namespace%>.Repository
         //修改
         public int Update(<%=Table.Name %> model)
         {
-            int i = 0;
             <%if(Table.HasPrimaryKey) { %>
-            i = base.Update<Reception_ResourceType>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == model.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%>, p => {
+            return base.Update<Reception_ResourceType>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == model.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%>, p => {
             <% for (int c = 0; c < Table.Columns.Count; c++) { %>
                 p.<%=Table.Columns[c].Name %> = model.<%=Table.Columns[c].Name %>;
             <% } %>
             });
-            <% } %>
+            <% }else{ %>
             
-            return i;
+            return 0;
+            <% } %>
         }
         
         //删除
         public int Delete(string id)
         {
-            int i = 0;
             <%if(Table.HasPrimaryKey) { %>
-            i = base.Delete<<%=Table.Name %>>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == id);
-            <% } %>
+            return base.Delete<<%=Table.Name %>>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == id);
+            <% }else{ %>
             
-            return i;
+            return 0;
+            <% } %>
         }
     }
 }

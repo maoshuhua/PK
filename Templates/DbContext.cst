@@ -1,0 +1,43 @@
+﻿<%-- 
+Name: DbContext
+Author: 茅书华
+Description: 生成DbContext
+--%>
+<%@ CodeTemplate Inherits="CodeTemplate" TargetLanguage="Text" Description="NetTiers main template."Debug="True" ResponseEncoding="UTF-8"%>
+
+<%@ Assembly Name="SchemaExplorer" %>
+<%@ Import Namespace="SchemaExplorer" %>
+
+<%-- 要打印的表 --%>
+<%@ Property Name="SourceDatabase" Type="DatabaseSchema" DeepLoad="True" Optional="False" Category="01. Getting Started - Required"　Description="Database that the tables views, and stored procedures shouldbe based on. IMPORTANT!!! If SourceTables and SourceViews are left blank, theEntire Database will then be generated." %>
+<%-- 命名空间 --%>
+<%@ Property Name="Namespace" Type="System.String" Optional="False" Default="" Category="命名空间" %>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Tuhui.Common45.Framework;
+using System.Data.Entity;
+
+namespace Tuhui.<%=Namespace%>.Model
+{
+    public class Db<%=Namespace%>Context : BaseContext
+    {
+        public Db<%=Namespace%>Context()
+            : base("Db<%=Namespace%>")
+        {
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //针对Oracle数据库权限问题
+            modelBuilder.HasDefaultSchema("TUHUI_AQI");
+        }
+        
+        <%  foreach(TableSchema table in this.SourceDatabase.Tables) {%>
+        //<%=table.Description %>
+        public DbSet<<%=table.Name %>> <%=table.Name %> { get; set; }
+        <% } %>
+    }
+}
