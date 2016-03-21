@@ -56,6 +56,7 @@ namespace Tuhui.Reception.Repository
         {
             return base.Update<Reception_Resource>(p => p.R_ID == model.R_ID, p => {
                 p.R_ID = model.R_ID;
+                p.RT_ID = model.RT_ID;
                 p.Name = model.Name;
                 p.Long = model.Long;
                 p.Lat = model.Lat;

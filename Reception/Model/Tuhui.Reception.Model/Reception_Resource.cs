@@ -16,6 +16,9 @@ namespace Tuhui.Reception.Model
         [Key]
         //资源编号
         public string R_ID { get; set; }
+
+        //资源分类编号
+        public string RT_ID { get; set; }
         
         //资源名称
         public string Name { get; set; }
