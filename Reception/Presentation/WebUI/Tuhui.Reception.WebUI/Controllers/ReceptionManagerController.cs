@@ -144,9 +144,15 @@ namespace Tuhui.Reception.WebUI.Controllers
         }
 
         //资源列表
-        public ActionResult GetResourcePageList(int pageIndex = 1, int pageSize = 10)
+        public ActionResult GetResourcePageList(string Name,string SSJD,string RStatus,int pageIndex = 1, int pageSize = 10)
         {
-            var list = _reception_Resource.GetPageList(null, pageIndex, pageSize);
+            Reception_Resource entity = new Reception_Resource
+            {
+                Name = Name,
+                SSJD = SSJD,
+                RStatus = RStatus
+            };
+            var list = _reception_Resource.GetPageList(entity, pageIndex, pageSize);
 
             //处理
             if (list.PageData.Count > 0) {

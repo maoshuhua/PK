@@ -28,21 +28,24 @@ namespace Tuhui.Reception.Repository
         //获取全部分页
         public PagedList<Reception_Resource> GetPageList(Reception_Resource model, int pageIndex, int pageSize)
         {
-            var count = base.Search<Reception_Resource>().Count();
+            var query = base.Search<Reception_Resource>();
 
-            PagedList<Reception_Resource> pageList = new PagedList<Reception_Resource>(count, pageIndex, pageSize);
-
-            if (model != null)
+            if (!string.IsNullOrEmpty(model.Name))
             {
-                //根据条件筛选
-
-            }
-            else
-            {
-                pageList.PageData = base.Search<Reception_Resource>().OrderByDescending(p => p.R_ID).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                query = query.Where(p => p.Name.Contains(model.Name));
             }
 
-            return pageList;
+            if (!string.IsNullOrEmpty(model.SSJD))
+            {
+                query = query.Where(p => p.SSJD.Contains(model.SSJD));
+            }
+
+            if (model.RStatus != "0")
+            {
+                query = query.Where(p => p.RStatus == model.RStatus);
+            }
+
+            return new PagedList<Reception_Resource>(query.OrderByDescending(p => p.AddTime), pageIndex, pageSize);
         }
         
         //添加
