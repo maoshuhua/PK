@@ -45,10 +45,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbReceptionContext.cs" />
+    <Compile Include="Image.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reception_Resource.cs" />
     <Compile Include="Reception_ResourceType.cs" />
     <Compile Include="Reception_UserInfo.cs" />
+    <Compile Include="Video.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Common\Framework\Tuhui.Common45.Framework\Tuhui.Common45.Framework.csproj">

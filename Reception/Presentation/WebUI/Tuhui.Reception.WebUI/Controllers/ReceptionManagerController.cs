@@ -16,12 +16,16 @@ namespace Tuhui.Reception.WebUI.Controllers
         private IReception_UserInfoService _reception_UserInfoService;
         private IReception_ResourceTypeService _reception_ResourceType;
         private IReception_ResourceService _reception_Resource;
+        private IImageService _image;
+        private IVideoService _video;
 
         public ReceptionManagerController()
         {
             _reception_UserInfoService = base.InstanceService<Reception_UserInfoService>();
             _reception_ResourceType = base.InstanceService<Reception_ResourceTypeService>();
             _reception_Resource = base.InstanceService<Reception_ResourceService>();
+            _image = base.InstanceService<ImageService>();
+            _video = base.InstanceService<VideoService>();
         }
 
         public ActionResult Index()
@@ -139,11 +143,75 @@ namespace Tuhui.Reception.WebUI.Controllers
             return View();
         }
 
+        //资源列表
         public ActionResult GetResourcePageList(int pageIndex = 1, int pageSize = 10)
         {
             var list = _reception_Resource.GetPageList(null, pageIndex, pageSize);
 
             return Json(list, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult ResourceModify(string id)
+        {
+            List<Reception_ResourceType> resourceTypeList = _reception_ResourceType.GetList();
+            resourceTypeList.Insert(0, new Reception_ResourceType { 
+                RT_ID = "",
+                Name = "--请选择--"
+            });
+            ViewData["resourceTypeList"] = new SelectList(resourceTypeList, "RT_ID", "Name");
+
+            if (string.IsNullOrEmpty(id))
+            {
+                @ViewBag.TitleName = "资源管理 -> 添加页面";
+                Reception_Resource entity = new Reception_Resource();
+                entity.StartTime = DateTime.Now;
+                entity.EndTime = DateTime.Now;
+
+                return View(entity);
+            }
+            else
+            {
+                @ViewBag.TitleName = "资源管理 -> 编辑页面";
+                Reception_Resource entity = _reception_Resource.Get(id);
+
+                return View(entity);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult ResourceModify(Reception_Resource model)
+        {
+            if (string.IsNullOrEmpty(model.R_ID))
+            {
+                model.R_ID = CommonFun.GenerGuid();
+                model.AddTime = DateTime.Now;
+                //添加资源
+                _reception_Resource.Insert(model);
+            }
+            else
+            {
+                //修改资源
+                _reception_Resource.Update(model);
+            }
+
+            return RedirectToAction("Resource");
+        }
+
+        //删除资源分类
+        public ActionResult ResourceDelete(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                //抛出异常
+            }
+            //删除资源
+            _reception_Resource.Delete(id);
+            //删除资源图片
+            _image.DeleteList(id);
+            //删除资源视频
+            _video.DeleteList(id);
+
+            return Json(true);
         }
 
 	}

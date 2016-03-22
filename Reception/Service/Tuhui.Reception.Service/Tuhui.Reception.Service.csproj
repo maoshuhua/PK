@@ -42,13 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IImageService.cs" />
+    <Compile Include="ImageService.cs" />
     <Compile Include="IReception_ResourceService.cs" />
     <Compile Include="IReception_ResourceTypeService.cs" />
     <Compile Include="IReception_UserInfoService.cs" />
+    <Compile Include="IVideoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reception_ResourceService.cs" />
     <Compile Include="Reception_ResourceTypeService.cs" />
     <Compile Include="Reception_UserInfoService.cs" />
+    <Compile Include="VideoService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Common\Framework\Tuhui.Common45.Framework\Tuhui.Common45.Framework.csproj">

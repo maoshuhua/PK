@@ -1,0 +1,108 @@
+﻿
+@model Tuhui.Reception.Model.Reception_Resource
+@{
+    ViewBag.Title = "ResourceAdd";
+    ViewBag.MenuKey = "Resource";
+
+    List<SelectListItem> list = new List<SelectListItem> {
+        new SelectListItem { Text = "--请选择--", Value = "0",Selected = true},
+        new SelectListItem { Text = "未开工", Value = "1" },
+        new SelectListItem { Text = "已开工", Value = "2" },
+        new SelectListItem { Text = "已投产", Value = "3" }  
+    };
+}
+
+<div class="layout-content-head">
+    <h2>@ViewBag.TitleName</h2>
+</div>
+<div style="text-align:left;margin-left:50px;">
+    @using (Html.BeginForm("ResourceModify", "ReceptionManager"))
+    {
+        @Html.HiddenFor(p => p.R_ID)
+
+        <div class="edit-area">
+            <div class="edit-lable">资源名称:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p => p.Name, htmlAttributes: new { maxlength = 50 })
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">资源分类:</div>
+            <div class="edit-content">
+                @Html.DropDownListFor(p => p.RT_ID, ViewData["resourceTypeList"] as SelectList)
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">所属街道:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p => p.SSJD)
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">经度:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p => p.Long, htmlAttributes: new { maxlength = 50 })
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">纬度:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p => p.Lat, htmlAttributes: new { maxlength = 50 })
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">责任单位:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p => p.RRDW, htmlAttributes: new { maxlength = 50 })
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">施方单位:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p => p.SFDW, htmlAttributes: new { maxlength = 50 })
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">开工时间:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p => p.StartTime, new { onClick = "WdatePicker({readOnly:true,dateFmt:'yyyy-MM-dd HH:mm:ss'})", @class = "Wdate", style = "width:180px;" })
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">计划完成时间:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p => p.EndTime, new { onFocus = "WdatePicker({readOnly:true,dateFmt:'yyyy-MM-dd HH:mm:ss'})", @class = "Wdate", style = "width:180px;" })
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">项目内容:</div>
+            <div class="edit-content">
+                @Html.TextAreaFor(p => p.Content, new { style="width:300px;height:150px;" })
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">项目状态:</div>
+            <div class="edit-content">
+                @Html.DropDownListFor(p => p.RStatus, list) 
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable"></div>
+            <div class="edit-content">
+                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存" />
+                <input type="button" value="返回" style="width: 70px;height: 30px;" onclick="BackTo()" />
+            </div>
+        </div>
+    }
+
+</div>
+
+<script type="text/javascript">
+
+    function BackTo() {
+        window.location.href = '@Url.Action("Resource", "ReceptionManager")';
+    }
+</script>
+
+
+

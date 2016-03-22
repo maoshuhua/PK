@@ -26,6 +26,9 @@ namespace Tuhui.Reception.Model
         public DbSet<Reception_ResourceType> Reception_ResourceType { get; set; }
         //
         public DbSet<Reception_UserInfo> Reception_UserInfo { get; set; }
-    
+        //
+        public DbSet<Image> Image { get; set; }
+        //
+        public DbSet<Video> Video { get; set; }
     }
 }

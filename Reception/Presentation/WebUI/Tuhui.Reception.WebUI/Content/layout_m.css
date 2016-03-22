@@ -38,6 +38,8 @@
     top:85px;
     background-color:#fff;
     z-index:8;
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 
 .menu_head{
