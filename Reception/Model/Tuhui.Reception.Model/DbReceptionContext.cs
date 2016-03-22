@@ -30,5 +30,9 @@ namespace Tuhui.Reception.Model
         public DbSet<Image> Image { get; set; }
         //
         public DbSet<Video> Video { get; set; }
+        //
+        public DbSet<Reception_ResourceEvent> Reception_ResourceEvent { get; set; }
+        //
+        public DbSet<Navigation> Navigation { get; set; }
     }
 }

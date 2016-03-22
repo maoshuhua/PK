@@ -55,10 +55,14 @@
   <ItemGroup>
     <Compile Include="IImageRepository.cs" />
     <Compile Include="ImageRepository.cs" />
+    <Compile Include="INavigationRepository.cs" />
+    <Compile Include="IReception_ResourceEventRepository.cs" />
     <Compile Include="IReception_ResourceRepository.cs" />
     <Compile Include="IReception_ResourceTypeRepository.cs" />
     <Compile Include="IReception_UserInfoRepository.cs" />
     <Compile Include="IVideoRepository.cs" />
+    <Compile Include="NavigationRepository.cs" />
+    <Compile Include="Reception_ResourceEventRepository.cs" />
     <Compile Include="Reception_ResourceRepository.cs" />
     <Compile Include="Reception_ResourceTypeRepository.cs" />
     <Compile Include="Reception_UserInfoRepository.cs" />

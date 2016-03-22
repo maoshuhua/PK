@@ -1,7 +1,135 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "ResourceEvent";
+    ViewBag.MenuKey = "ResourceEvent";
 }
+<div class="layout-content-head">
+    <h2>大事件管理 -> 列表</h2>
+</div>
+<div class="layout-content-condition">
+    大事件名称：
+    <input id="Name" name="Name" style="width: 160px; height: 30px;" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    资源：
+    <select id="R_ID" name="R_ID" style="width: 120px;">
+        <option value="" selected="selected">--请选择--</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="搜索" style="width: 100px; height: 30px; font-family: 微软雅黑" onclick="Search()" />
+</div>
+<div class="layout-content-main">
+    <table class="l-table" style="min-width: 900px;">
+        <thead>
+            <tr>
+                <th>大事件名称</th>
+                <th>资源名称</th>
+                <th>添加时间</th>
+                <th style="width:80px;">@Html.ActionLink(" ", "ResourceEventModify", new { controller = "ReceptionManager" }, new { @class = "create" })</th>
+            </tr>
+        </thead>
+        <tbody id="tbody_ResourceEventList" binding="{'pageId':'page_ResourceEvent','pageCallback':'GetResourceList'}">
+            <tr>
+                <td binding="{'html':'Name'}"></td>
+                <td binding="{'html':'R_ID'}"></td>
+                <td binding="{'html':'AddTime','htmlHandle':'datetime'}"></td>
+                <td><a class="edit" binding="{'onclick':'RE_ID','onclickFormat':'Edit(\'{0}\')'}"></a><a class="delete" onclick="Delete(this)" binding="{'id':'RE_ID'}"></a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="page_ResourceEvent" colspan="3"></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<script type="text/javascript">
+    var list;
 
-<h2>ResourceEvent</h2>
+    $(function () {
+        GetResourceTypeList();
+        GetResourceList();
+    });
+
+    function GetResourceList(pageIndex) {
+        $.L.ajaxHandle({
+            type: "get",
+            cache: "false",
+            url: ACTION_URL("GetResourceEventPageList", "ReceptionManager"),
+            data: {
+                pageIndex: pageIndex,
+                Name: entity.Name,
+                R_ID: entity.R_ID
+            },
+            success: function (response) {
+                if (response.PageData.length > 0) {
+                    for (var i = 0; i < response.PageData.length; i++) {
+                        response.PageData[i].R_ID = list[i].Name;
+                    }
+                }
+                $("#tbody_ResourceEventList").L_bindingDataList(response);
+            }
+        })
+    }
+
+    function GetResourceTypeList()
+    {
+        $.ajax({
+            type: "get",
+            cache: "false",
+            async: false,
+            url: ACTION_URL("GetResourceList", "ReceptionManager"),
+            data: {
+
+            },
+            success: function (response) {
+                list = response;
+                var str = "";
+                if (response.length > 0) {
+                    for(var i in response) {
+
+                        str += "<option value='" + response[i].R_ID + "'>" + response[i].Name + "</option>";
+                    }
+                }
+                $("#R_ID").append(str);
+            }
+        })
+    }
+
+    function Edit(id) {
+
+        window.location.href = '@Url.Action("ResourceModify", "ReceptionManager")' + '?id=' + id;
+    }
+
+    function Delete(id) {
+        var id_string = $(id).attr("id");
+        $.L.messageConfirmT("确定删除该信息？", function () {
+            $.L.ajaxHandle({
+                cache: "false",
+                data: { id: id_string },
+                url: ACTION_URL("ResourceDelete", "ReceptionManager"),
+                error: function () {
+                    alert("error");
+                },
+                success: function (response) {
+
+                    window.location.href = '@Url.Action("Resource", "ReceptionManager")';
+                }
+            });
+        })
+    }
+
+    var entity = {
+        Name: "",
+        R_ID: ""
+    };
+
+    function Search()
+    {
+        entity.Name = $.trim($("#Name").val());
+        entity.R_ID = $("#R_ID").val();
+
+        GetResourceList();
+    }
+</script>
+
+
 

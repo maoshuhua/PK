@@ -18,6 +18,7 @@ namespace Tuhui.Reception.WebUI.Controllers
         private IReception_ResourceService _reception_Resource;
         private IImageService _image;
         private IVideoService _video;
+        private IReception_ResourceEventService _event;
 
         public ReceptionManagerController()
         {
@@ -26,6 +27,7 @@ namespace Tuhui.Reception.WebUI.Controllers
             _reception_Resource = base.InstanceService<Reception_ResourceService>();
             _image = base.InstanceService<ImageService>();
             _video = base.InstanceService<VideoService>();
+            _event = base.InstanceService<Reception_ResourceEventService>();
         }
 
         public ActionResult Index()
@@ -180,6 +182,13 @@ namespace Tuhui.Reception.WebUI.Controllers
             return Json(list, JsonRequestBehavior.AllowGet);
         }
 
+        public ActionResult GetResourceList()
+        {
+            var list = _reception_Resource.GetList();
+
+            return Json(list, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult ResourceModify(string id)
         {
             List<Reception_ResourceType> resourceTypeList = _reception_ResourceType.GetList();
@@ -256,6 +265,18 @@ namespace Tuhui.Reception.WebUI.Controllers
         public ActionResult Navigation()
         {
             return View();
+        }
+
+        public ActionResult GetResourceEventPageList(string Name,string R_ID,int pageIndex = 1,int pageSize = 10)
+        {
+            Reception_ResourceEvent entity = new Reception_ResourceEvent
+            {
+                Name = Name,
+                R_ID = R_ID
+            };
+            var list = _event.GetPageList(entity, pageIndex, pageSize);
+
+            return Json(list, JsonRequestBehavior.AllowGet);
         }
 
 	}
