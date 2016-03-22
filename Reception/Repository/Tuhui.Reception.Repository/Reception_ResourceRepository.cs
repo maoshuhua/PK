@@ -45,6 +45,11 @@ namespace Tuhui.Reception.Repository
                 query = query.Where(p => p.RStatus == model.RStatus);
             }
 
+            if (!string.IsNullOrEmpty(model.RT_ID)) 
+            {
+                query = query.Where(p => p.RT_ID == model.RT_ID);
+            }
+
             return new PagedList<Reception_Resource>(query.OrderByDescending(p => p.AddTime), pageIndex, pageSize);
         }
         

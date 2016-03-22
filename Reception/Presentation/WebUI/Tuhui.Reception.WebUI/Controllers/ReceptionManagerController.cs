@@ -144,13 +144,14 @@ namespace Tuhui.Reception.WebUI.Controllers
         }
 
         //资源列表
-        public ActionResult GetResourcePageList(string Name,string SSJD,string RStatus,int pageIndex = 1, int pageSize = 10)
+        public ActionResult GetResourcePageList(string Name,string SSJD,string RStatus,string RT_ID,int pageIndex = 1, int pageSize = 10)
         {
             Reception_Resource entity = new Reception_Resource
             {
                 Name = Name,
                 SSJD = SSJD,
-                RStatus = RStatus
+                RStatus = RStatus,
+                RT_ID = RT_ID
             };
             var list = _reception_Resource.GetPageList(entity, pageIndex, pageSize);
 
@@ -243,6 +244,16 @@ namespace Tuhui.Reception.WebUI.Controllers
         }
 
         public ActionResult JTMap()
+        {
+            return View();
+        }
+
+        public ActionResult ResourceEvent()
+        {
+            return View();
+        }
+
+        public ActionResult Navigation()
         {
             return View();
         }

@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Resource";
     ViewBag.MenuKey = "Resource";
 }
@@ -9,10 +8,15 @@
 <div class="layout-content-condition">
     资源名称：
     <input id="Name" name="Name" style="width: 160px; height: 30px;" />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     所属街道：
     <input id="SSJD" name="SSJD" style="width: 160px; height: 30px;" />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    资源分类：
+    <select id="RT_ID" name="RT_ID" style="width: 120px;">
+        <option value="" selected="selected">--请选择--</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     项目状态：
     <select id="RStatus" name="RStatus" style="width: 120px;">
         <option value="0" selected="selected">--请选择--</option>
@@ -20,7 +24,7 @@
         <option value="2">已开工</option>
         <option value="3">已投产</option>
     </select>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;
     <input type="button" value="搜索" style="width: 100px; height: 30px; font-family: 微软雅黑" onclick="Search()" />
 </div>
 <div class="layout-content-main">
@@ -29,6 +33,7 @@
             <tr>
                 <th>资源名称</th>
                 <th>所属街道</th>
+                <th>资源分类</th>
                 <th>开工时间</th>
                 <th>计划完成时间</th>
                 <th>项目状态</th>
@@ -39,6 +44,7 @@
             <tr>
                 <td binding="{'html':'Name'}"></td>
                 <td binding="{'html':'SSJD'}"></td>
+                <td binding="{'html':'RT_ID'}"></td>
                 <td binding="{'html':'StartTime','htmlHandle':'datetime'}"></td>
                 <td binding="{'html':'EndTime','htmlHandle':'datetime'}"></td>    
                 <td binding="{'html':'RStatus'}"></td>        
@@ -47,14 +53,17 @@
         </tbody>
         <tfoot>
             <tr>
-                <td id="page_Resource" colspan="6"></td>
+                <td id="page_Resource" colspan="7"></td>
             </tr>
         </tfoot>
     </table>
 </div>
 <script type="text/javascript">
+    var list;
+
     $(function () {
-        GetResourceList();
+        GetResourceTypeList();
+        GetResourceList();      
     });
 
     function GetResourceList(pageIndex) {
@@ -66,10 +75,40 @@
                 pageIndex: pageIndex,
                 Name: entity.Name,
                 SSJD: entity.SSJD,
-                RStatus: entity.RStatus
+                RStatus: entity.RStatus,
+                RT_ID: entity.RT_ID
             },
             success: function (response) {
+                if (response.PageData.length > 0) {
+                    for (var i = 0; i < response.PageData.length; i++) {
+                        response.PageData[i].RT_ID = list[i].Name;
+                    }
+                }
                 $("#tbody_ResourceList").L_bindingDataList(response);
+            }
+        })
+    }
+
+    function GetResourceTypeList()
+    {
+        $.ajax({
+            type: "get",
+            cache: "false",
+            async: false,
+            url: ACTION_URL("GetResourceTypeList", "ReceptionManager"),
+            data: {
+                
+            },
+            success: function (response) {
+                list = response;
+                var str = "";
+                if (response.length > 0) {
+                    for(var i in response) {
+                        
+                        str += "<option value='" + response[i].RT_ID + "'>" + response[i].Name + "</option>";
+                    }
+                }
+                $("#RT_ID").append(str);
             }
         })
     }
@@ -100,7 +139,8 @@
     var entity = {
         Name: "",
         SSJD: "",
-        RStatus: "0"
+        RStatus: "0",
+        RT_ID: ""
     };
 
     function Search()
@@ -108,6 +148,7 @@
         entity.Name = $.trim($("#Name").val());
         entity.SSJD = $.trim($("#SSJD").val());
         entity.RStatus = $("#RStatus").val();
+        entity.RT_ID = $("#RT_ID").val();
 
         GetResourceList();
     }
