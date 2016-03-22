@@ -49,21 +49,15 @@ namespace Tuhui.<%=Namespace%>.Repository
         public PagedList<<%=Table.Name %>> GetPageList(<%=Table.Name %> model, int pageIndex, int pageSize)
         {
             <%if(Table.HasPrimaryKey) { %>
-            var count = base.Search<<%=Table.Name %>>().Count();
-
-            PagedList<<%=Table.Name %>> pageList = new PagedList<<%=Table.Name %>>(count, pageIndex, pageSize);
+            var query = base.Search<<%=Table.Name %>>();
 
             if (model != null)
             {
                 //根据条件筛选
 
             }
-            else
-            {
-                pageList.PageData = base.Search<<%=Table.Name %>>().OrderByDescending(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%>).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
-            }
-
-            return pageList;
+            
+            return new PagedList<<%=Table.Name %>>(query.OrderByDescending(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%>), pageIndex, pageSize);
             <% }else{ %> 
             
             return null;
