@@ -11,12 +11,20 @@
         <thead>
             <tr>
                 <th>资源名称</th>
+                <th>所属街道</th>
+                <th>开工时间</th>
+                <th>计划完成时间</th>
+                <th>项目状态</th>
                 <th style="width:80px;">@Html.ActionLink(" ", "ResourceModify", new { controller = "ReceptionManager" }, new { @class = "create" })</th>
             </tr>
         </thead>
         <tbody id="tbody_ResourceList" binding="{'pageId':'page_Resource','pageCallback':'GetResourceList'}">
             <tr>
-                <td binding="{'html':'Name'}"></td>            
+                <td binding="{'html':'Name'}"></td>
+                <td binding="{'html':'SSJD'}"></td>
+                <td binding="{'html':'StartTime','htmlHandle':'datetime'}"></td>
+                <td binding="{'html':'EndTime','htmlHandle':'datetime'}"></td>    
+                <td binding="{'html':'RStatus'}"></td>        
                 <td><a class="edit" binding="{'onclick':'R_ID','onclickFormat':'Edit(\'{0}\')'}"></a><a class="delete" onclick="Delete(this)" binding="{'id':'R_ID'}"></a></td>
             </tr>
         </tbody>

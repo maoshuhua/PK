@@ -402,6 +402,7 @@
     <Content Include="Views\ReceptionManager\ResourceTypeModify.cshtml" />
     <Content Include="Views\ReceptionManager\Resource.cshtml" />
     <Content Include="Views\ReceptionManager\ResourceModify.cshtml" />
+    <Content Include="Views\ReceptionManager\JTMap.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\ASP.NET MVC\Tuhui.Common45.Mvc\Tuhui.Common45.Mvc.csproj">

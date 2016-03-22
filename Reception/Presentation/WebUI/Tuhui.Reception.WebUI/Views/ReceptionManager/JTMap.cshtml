@@ -1,0 +1,67 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南京交通视频监控平台驾驶舱</title>
+    @Content.Common(Url, false)
+    @Content.tmap(Url)
+</head>
+<body>
+    <div id="map" style="height:100%;width:100%;"></div>
+    <script>
+        var map;
+        var _centerMarker;
+        $(function () {
+
+            window.onresize = _onResize;
+
+            _onResize();
+
+            map = $.tMap.init("map", {
+                defaultLayer: "autonavi_wx",
+                lng: 118.63792419433595,
+                lat: 32.067155999071446,
+                zoom: 11
+            })
+
+            _centerMarker = map.addCssMarker(118.63792419433595, 32.067155999071446, {
+                option: {
+                    title: "资源点"
+                },
+                type: "B1",
+                param_B1: {
+                    height: 18,
+                    width: 18,
+                    bgColor: "rgba(255,0,0,0.9)",
+                    bgHoverColor: "rgba(255,106,0,0.9)"
+                }
+            });
+
+            map.on("move", function () {
+                _centerMarker.setLatLng(map.getCenter());
+                if (window.notifyCenterChange) {
+                    window.notifyCenterChange(map.getCenter());
+                }
+            })
+        })
+
+        function _setCenter(lng, lat) {
+            map.setView(lng, lat, 15);
+        }
+
+        function _onResize() {
+            $("body,#map").css({
+                height: document.documentElement.clientHeight + "px"
+            })
+        }
+    </script>
+</body>
+</html>
+
+

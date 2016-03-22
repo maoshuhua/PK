@@ -38,11 +38,13 @@
                 @Html.TextBoxFor(p => p.SSJD)
             </div>
         </div>
+        
         <div class="edit-area">
             <div class="edit-lable">经度:</div>
             <div class="edit-content">
                 @Html.TextBoxFor(p => p.Long, htmlAttributes: new { maxlength = 50 })
             </div>
+            <a style="width:500px;height:200px;" id="getlnglat" onclick="GetLngLat()">获取经纬度坐标</a>
         </div>
         <div class="edit-area">
             <div class="edit-lable">纬度:</div>
@@ -65,13 +67,13 @@
         <div class="edit-area">
             <div class="edit-lable">开工时间:</div>
             <div class="edit-content">
-                @Html.TextBoxFor(p => p.StartTime, new { onClick = "WdatePicker({readOnly:true,dateFmt:'yyyy-MM-dd HH:mm:ss'})", @class = "Wdate", style = "width:180px;" })
+                @Html.TextBoxFor(p => p.StartTime, new { onClick = "WdatePicker({readOnly:true,dateFmt:'yyyy/MM/dd HH:mm:ss'})", @class = "Wdate", style = "width:180px;" })
             </div>
         </div>
         <div class="edit-area">
             <div class="edit-lable">计划完成时间:</div>
             <div class="edit-content">
-                @Html.TextBoxFor(p => p.EndTime, new { onFocus = "WdatePicker({readOnly:true,dateFmt:'yyyy-MM-dd HH:mm:ss'})", @class = "Wdate", style = "width:180px;" })
+                @Html.TextBoxFor(p => p.EndTime, new { onFocus = "WdatePicker({readOnly:true,dateFmt:'yyyy/MM/dd HH:mm:ss'})", @class = "Wdate", style = "width:180px;" })
             </div>
         </div>
         <div class="edit-area">
@@ -96,11 +98,48 @@
     }
 
 </div>
-
+<div id="div_dialog" style="display:none">
+    <iframe id="iframe_map" src="@Url.Action("JTMap", "ReceptionManager")" onload="mapIframeOnLoad()"></iframe>
+</div>
 <script type="text/javascript">
+    var _lng = "@Model.Long";
+    var _lat = "@Model.Lat";
+    if(_lng == ""){
+        _lng = 0;
+    }else{
+        _lng = parseFloat(_lng);
+    }
+    if(_lat == ""){
+        _lat = 0;
+    }else{
+        _lat = parseFloat(_lat);
+    }
 
     function BackTo() {
         window.location.href = '@Url.Action("Resource", "ReceptionManager")';
+    }
+
+    function GetLngLat() {
+        $("#div_dialog").dialog({
+            title: '经纬度选择',
+            width: document.documentElement.clientWidth / 2,
+            height: document.documentElement.clientHeight / 2,
+            close: function () {
+                $("#getlnglat").show();
+            }
+        })
+        $("#getlnglat").hide();
+    }
+
+    function mapIframeOnLoad() {
+        if (_lng != 0) {
+            document.getElementById("iframe_map").contentWindow._setCenter(_lng,_lat);
+        }
+
+        document.getElementById("iframe_map").contentWindow.notifyCenterChange = function (center) {
+            $("#Long").val(center.lng);
+            $("#Lat").val(center.lat);
+        }
     }
 </script>
 

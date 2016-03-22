@@ -148,6 +148,28 @@ namespace Tuhui.Reception.WebUI.Controllers
         {
             var list = _reception_Resource.GetPageList(null, pageIndex, pageSize);
 
+            //处理
+            if (list.PageData.Count > 0) {
+                foreach (var item in list.PageData) {
+                    //项目状态
+                    switch (item.RStatus)
+                    { 
+                        case "1":
+                            item.RStatus = "未开工";
+                            break;
+                        case "2":
+                            item.RStatus = "已开工";
+                            break;
+                        case "3":
+                            item.RStatus = "已投产";
+                            break;
+                        default:
+                            item.RStatus = "";
+                            break;
+                    }
+                }
+            }
+
             return Json(list, JsonRequestBehavior.AllowGet);
         }
 
@@ -212,6 +234,11 @@ namespace Tuhui.Reception.WebUI.Controllers
             _video.DeleteList(id);
 
             return Json(true);
+        }
+
+        public ActionResult JTMap()
+        {
+            return View();
         }
 
 	}
