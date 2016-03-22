@@ -45,11 +45,11 @@
     var list;
 
     $(function () {
-        GetResourceTypeList();
         GetResourceList();
+        GetResourceEventList();
     });
 
-    function GetResourceList(pageIndex) {
+    function GetResourceEventList(pageIndex) {
         $.L.ajaxHandle({
             type: "get",
             cache: "false",
@@ -70,7 +70,7 @@
         })
     }
 
-    function GetResourceTypeList()
+    function GetResourceList()
     {
         $.ajax({
             type: "get",
@@ -96,7 +96,7 @@
 
     function Edit(id) {
 
-        window.location.href = '@Url.Action("ResourceModify", "ReceptionManager")' + '?id=' + id;
+        window.location.href = '@Url.Action("ResourceEventModify", "ReceptionManager")' + '?id=' + id;
     }
 
     function Delete(id) {
@@ -105,13 +105,13 @@
             $.L.ajaxHandle({
                 cache: "false",
                 data: { id: id_string },
-                url: ACTION_URL("ResourceDelete", "ReceptionManager"),
+                url: ACTION_URL("ResourceEventDelete", "ReceptionManager"),
                 error: function () {
                     alert("error");
                 },
                 success: function (response) {
 
-                    window.location.href = '@Url.Action("Resource", "ReceptionManager")';
+                    window.location.href = '@Url.Action("ResourceEvent", "ReceptionManager")';
                 }
             });
         })

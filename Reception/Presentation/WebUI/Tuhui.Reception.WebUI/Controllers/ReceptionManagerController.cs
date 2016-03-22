@@ -279,5 +279,61 @@ namespace Tuhui.Reception.WebUI.Controllers
             return Json(list, JsonRequestBehavior.AllowGet);
         }
 
+        //删除大事件
+        public ActionResult ResourceEventDelete(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                //抛出异常
+            }
+            _event.Delete(id);
+           
+            return Json(true);
+        }
+
+        public ActionResult ResourceEventModify(string id)
+        {
+            List<Reception_Resource> resourceEventList = _reception_Resource.GetList();
+            resourceEventList.Insert(0, new Reception_Resource
+            {
+                R_ID = "",
+                Name = "--请选择--"
+            });
+            ViewData["resourceEventList"] = new SelectList(resourceEventList, "R_ID", "Name");
+
+            if (string.IsNullOrEmpty(id))
+            {
+                @ViewBag.TitleName = "大事件管理 -> 添加页面";
+
+                return View(new Reception_ResourceEvent());
+            }
+            else
+            {
+                @ViewBag.TitleName = "大事件管理 -> 编辑页面";
+                Reception_ResourceEvent entity = _event.Get(id);
+
+                return View(entity);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult ResourceEventModify(Reception_ResourceEvent model)
+        {
+            if (string.IsNullOrEmpty(model.RE_ID))
+            {
+                model.RE_ID = CommonFun.GenerGuid();
+                model.AddTime = DateTime.Now;
+                //添加大事件
+                _event.Insert(model);
+            }
+            else
+            {
+                //修改大事件
+                _event.Update(model);
+            }
+
+            return RedirectToAction("ResourceEvent");
+        }
+
 	}
 }
