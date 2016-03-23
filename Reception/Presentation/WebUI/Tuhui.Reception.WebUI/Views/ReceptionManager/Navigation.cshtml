@@ -17,7 +17,7 @@
             <tr>
                 <th>导航名称</th>
                 <th>添加时间</th>
-                <th style="width:80px;">@Html.ActionLink(" ", "ResourceEventModify", new { controller = "ReceptionManager" }, new { @class = "create" })</th>
+                <th style="width:80px;">@Html.ActionLink(" ", "NavigationModify", new { controller = "ReceptionManager" }, new { @class = "create" })</th>
             </tr>
         </thead>
         <tbody id="tbody_NavigationList" binding="{'pageId':'page_Navigation','pageCallback':'GetNavigationList'}">
@@ -29,7 +29,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td id="page_Navigation" colspan="4"></td>
+                <td id="page_Navigation" colspan="3"></td>
             </tr>
         </tfoot>
     </table>

@@ -423,5 +423,22 @@ namespace Tuhui.Reception.WebUI.Controllers
             return Json(true);
         }
 
+        public ActionResult NavigationModify(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                @ViewBag.TitleName = "导航管理 -> 添加页面";
+
+                return View(new Navigation());
+            }
+            else
+            {
+                @ViewBag.TitleName = "导航管理 -> 编辑页面";
+                Navigation entity = _navigation.Get(id);
+
+                return View(entity);
+            }
+        }
+
 	}
 }
