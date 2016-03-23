@@ -75,5 +75,13 @@ namespace Tuhui.Reception.Repository
         {
             return base.Delete<Video>(p => p.Obj_ID == id);
         }
+
+        //根据外键获取视频列表
+        public List<Video> GetList(string id)
+        {
+            var list = base.SearchList<Video>(p => p.Obj_ID == id).ToList();
+
+            return list;
+        }
     }
 }

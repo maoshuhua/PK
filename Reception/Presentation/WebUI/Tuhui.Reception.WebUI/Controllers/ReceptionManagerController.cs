@@ -217,8 +217,10 @@ namespace Tuhui.Reception.WebUI.Controllers
         }
 
         [HttpPost]
-        public ActionResult ResourceModify(Reception_Resource model)
+        [ValidateInput(false)]
+        public ActionResult ResourceModify(Reception_Resource model, string imageList,string videoList)
         {
+            
             if (string.IsNullOrEmpty(model.R_ID))
             {
                 model.R_ID = CommonFun.GenerGuid();
@@ -230,6 +232,49 @@ namespace Tuhui.Reception.WebUI.Controllers
             {
                 //修改资源
                 _reception_Resource.Update(model);
+            }
+
+            //图片处理
+
+            //删除图片
+            _image.DeleteList(model.R_ID);
+
+            if (!string.IsNullOrEmpty(imageList)) 
+            {
+                string[] imageArray = imageList.Split('|');
+
+                //添加图片
+                foreach (var item in imageArray)
+                {
+                    _image.Insert(new Image { 
+                       I_ID = CommonFun.GenerGuid(),
+                       AddTime = DateTime.Now,
+                       Obj_ID = model.R_ID,
+                       ImagePath = item,
+                       ImageSource = "1"
+                    });
+                }
+            }
+
+            //视频处理
+            _video.DeleteList(model.R_ID);
+
+            if (!string.IsNullOrEmpty(videoList))
+            {
+                string[] videoArray = videoList.Split('|');
+
+                //添加图片
+                foreach (var item in videoArray)
+                {
+                    _video.Insert(new Video
+                    {
+                        V_ID = CommonFun.GenerGuid(),
+                        AddTime = DateTime.Now,
+                        Obj_ID = model.R_ID,
+                        VideoPath = item,
+                        VideoSource = "1"
+                    });
+                }
             }
 
             return RedirectToAction("Resource");
@@ -334,6 +379,22 @@ namespace Tuhui.Reception.WebUI.Controllers
             }
 
             return RedirectToAction("ResourceEvent");
+        }
+
+        //获取图片列表
+        public ActionResult ResourceImageList(string id)
+        {
+            var list = _image.GetList(id);
+
+            return Json(list, JsonRequestBehavior.AllowGet);
+        }
+
+        //获取视频列表
+        public ActionResult ResourceVideoList(string id)
+        {
+            var list = _video.GetList(id);
+
+            return Json(list, JsonRequestBehavior.AllowGet);
         }
 
 	}

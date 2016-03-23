@@ -74,5 +74,13 @@ namespace Tuhui.Reception.Repository
         {
             return base.Delete<Image>(p => p.Obj_ID == id);
         }
+
+        //根据外键获取图片列表
+        public List<Image> GetList(string id)
+        {
+            var list = base.SearchList<Image>(p => p.Obj_ID == id).ToList();
+
+            return list;
+        }
     }
 }

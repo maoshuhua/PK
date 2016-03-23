@@ -19,6 +19,9 @@
     @using (Html.BeginForm("ResourceModify", "ReceptionManager"))
     {
         @Html.HiddenFor(p => p.R_ID)
+        
+        @Html.Hidden("imageList");
+        @Html.Hidden("videoList");
 
         <div class="edit-area">
             <div class="edit-lable">资源名称:</div>
@@ -79,7 +82,8 @@
         <div class="edit-area">
             <div class="edit-lable">项目内容:</div>
             <div class="edit-content">
-                @Html.TextAreaFor(p => p.Content, new { style="width:300px;height:150px;" })
+                @Html.TextAreaFor(p => p.Content, new { rows = "30", cols = "50" })
+                <script type="text/javascript">CKEDITOR.replace('Content');</script>
             </div>
         </div>
         <div class="edit-area">
@@ -89,9 +93,23 @@
             </div>
         </div>
         <div class="edit-area">
+            <div class="edit-lable">项目图片:</div>
+            <div class="edit-content">
+                <div id="fileQueue_img"></div>
+                <input type="file" name="uploadify_img" id="uploadify_img" />
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">项目视频:</div>
+            <div class="edit-content">
+                <div id="fileQueue_video"></div>
+                <input type="file" name="uploadify_video" id="uploadify_video" />
+            </div>
+        </div>
+        <div class="edit-area">
             <div class="edit-lable"></div>
             <div class="edit-content">
-                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存" />
+                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存" onclick="return save();" />
                 <input type="button" value="返回" style="width: 70px;height: 30px;" onclick="BackTo()" />
             </div>
         </div>
@@ -140,6 +158,116 @@
             $("#Long").val(center.lng);
             $("#Lat").val(center.lat);
         }
+    }
+
+    $(document).ready(function () {
+        //上传图片
+        $("#uploadify_img").uploadify({
+            'swf': "@Url.Content("~/Scripts/uploadify/uploadify.swf")",
+            'uploader': '@Url.Content("~/ASHX/UploadHandler.ashx")',
+            'formData':
+                {
+                    'folder': '@Url.Content("~/UploadFile/Image")'
+                },
+            'buttonText': '选择图片',
+            'fileTypeExts': '*.png;*.gif;*.jpg;*.bmp;*.jpeg',
+            'fileTypeDesc': '图片文件(*.png;*.gif;*.jpg;*.bmp;*.jpeg)',
+            'onUploadSuccess': function (file, data, response) {
+                var data = eval("(" + data + ")");
+                var str = "<div data-path='" + data.datetime + "/" + data.filename + "'>" + file.filename + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
+
+                $("#fileQueue_img").append(str);
+            }
+        });
+
+        //上传视频
+        $("#uploadify_video").uploadify({
+            'swf': "@Url.Content("~/Scripts/uploadify/uploadify.swf")",
+            'uploader': '@Url.Content("~/ASHX/UploadHandler.ashx")',
+            'formData':
+        {
+            'folder': '@Url.Content("~/UploadFile/Video")'
+        },
+            'buttonText': '选择视频',
+            'fileTypeExts': '*.mp4',
+            'fileTypeDesc': '视频文件(*.mp4)',
+            'onUploadSuccess': function (file, data, response) {
+                var data = eval("(" + data + ")");
+                var str = "<div data-path='" + data.datetime + "/" + data.filename + "'>" + file.filename + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
+
+                $("#fileQueue_video").append(str);
+            }
+        });
+
+        
+        var pid = "@Model.R_ID";
+        if (pid) {
+            //编辑页面获取图片
+            $.ajax({
+                type: "get",
+                cache: "false",
+                async: false,
+                url: ACTION_URL("ResourceImageList", "ReceptionManager"),
+                data: {
+                    id: pid
+                },
+                success: function (response) {
+                    if (response.length > 0) {
+                        for (var i = 0; i < response.length; i++) {
+                            var str = "<div data-path='" + response[i].ImagePath + "'>" + response[i].ImagePath + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
+
+                            $("#fileQueue_img").append(str);
+                        }
+                    }
+                }
+            });
+            //编辑页面获取视频
+            $.ajax({
+                type: "get",
+                cache: "false",
+                async: false,
+                url: ACTION_URL("ResourceVideoList", "ReceptionManager"),
+                data: {
+                    id: pid
+                },
+                success: function (response) {
+                    if (response.length > 0) {
+                        for (var i = 0; i < response.length; i++) {
+                            var str = "<div data-path='" + response[i].ImagePath + "'>" + response[i].ImagePath + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
+
+                            $("#fileQueue_video").append(str);
+                        }
+                    }
+                }
+            });
+        }
+    });
+
+    function save()
+    {
+        //验证
+
+        //获取图片
+        var imageList = "";
+        $("#fileQueue_img div").each(function(index,value){
+            imageList += $(this).attr("data-path") + "|";
+        });
+        if (imageList.length > 0) {
+            imageList = imageList.substring(0,imageList.lastIndexOf("|"));
+        }
+        $("#imageList").val(imageList);
+
+        //获取视频
+        var videoList = "";
+        $("#fileQueue_video div").each(function (index, value) {
+            videoList += $(this).attr("data-path") + "|";
+        });
+        if (videoList.length > 0) {
+            videoList = videoList.substring(0,videoList.lastIndexOf("|"));
+        }
+        $("#videoList").val(videoList);
+        
+        return true;
     }
 </script>
 

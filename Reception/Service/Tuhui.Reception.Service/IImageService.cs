@@ -31,5 +31,8 @@ namespace Tuhui.Reception.Service
 
         //删除资源图片
         int DeleteList(string id);
+
+        //根据外键获取图片列表
+        List<Image> GetList(string id);
     }
 }

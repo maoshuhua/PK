@@ -60,5 +60,11 @@ namespace Tuhui.Reception.Service
         {
             return repository.DeleteList(id);
         }
+
+        //根据外键获取视频列表
+        public List<Video> GetList(string id)
+        {
+            return repository.GetList(id);
+        }
     }
 }

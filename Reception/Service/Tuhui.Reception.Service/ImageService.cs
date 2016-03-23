@@ -60,5 +60,11 @@ namespace Tuhui.Reception.Service
         {
             return repository.DeleteList(id);
         }
+
+        //根据外键获取图片列表
+        public List<Image> GetList(string id)
+        {
+            return repository.GetList(id);
+        }
     }
 }

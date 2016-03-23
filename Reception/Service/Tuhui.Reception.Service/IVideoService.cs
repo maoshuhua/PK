@@ -31,5 +31,8 @@ namespace Tuhui.Reception.Service
 
         //删除资源视频
         int DeleteList(string id);
+
+        //根据外键获取视频列表
+        List<Video> GetList(string id);
     }
 }
