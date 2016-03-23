@@ -174,7 +174,7 @@
             'fileTypeDesc': '图片文件(*.png;*.gif;*.jpg;*.bmp;*.jpeg)',
             'onUploadSuccess': function (file, data, response) {
                 var data = eval("(" + data + ")");
-                var str = "<div data-path='" + data.datetime + "/" + data.filename + "'>" + file.filename + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
+                var str = "<div data-path='" + data.datetime + "/" + data.filename + "'>" + data.filename + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
 
                 $("#fileQueue_img").append(str);
             }
@@ -185,15 +185,15 @@
             'swf': "@Url.Content("~/Scripts/uploadify/uploadify.swf")",
             'uploader': '@Url.Content("~/ASHX/UploadHandler.ashx")',
             'formData':
-        {
-            'folder': '@Url.Content("~/UploadFile/Video")'
-        },
+                {
+                    'folder': '@Url.Content("~/UploadFile/Video")'
+                },
             'buttonText': '选择视频',
             'fileTypeExts': '*.mp4',
             'fileTypeDesc': '视频文件(*.mp4)',
             'onUploadSuccess': function (file, data, response) {
                 var data = eval("(" + data + ")");
-                var str = "<div data-path='" + data.datetime + "/" + data.filename + "'>" + file.filename + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
+                var str = "<div data-path='" + data.datetime + "/" + data.filename + "'>" + data.filename + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
 
                 $("#fileQueue_video").append(str);
             }
@@ -214,7 +214,7 @@
                 success: function (response) {
                     if (response.length > 0) {
                         for (var i = 0; i < response.length; i++) {
-                            var str = "<div data-path='" + response[i].ImagePath + "'>" + response[i].ImagePath + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
+                            var str = "<div data-path='" + response[i].ImagePath + "'>" + response[i].ImagePath.substring(response[i].ImagePath.indexOf("/") + 1) + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
 
                             $("#fileQueue_img").append(str);
                         }
@@ -233,7 +233,7 @@
                 success: function (response) {
                     if (response.length > 0) {
                         for (var i = 0; i < response.length; i++) {
-                            var str = "<div data-path='" + response[i].ImagePath + "'>" + response[i].ImagePath + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
+                            var str = "<div data-path='" + response[i].VideoPath + "'>" + response[i].VideoPath.substring(response[i].VideoPath.indexOf("/") + 1) + "&nbsp;&nbsp;&nbsp;&nbsp;<a onclick='$(this).parent().remove();'>删除</a></div>";
 
                             $("#fileQueue_video").append(str);
                         }
