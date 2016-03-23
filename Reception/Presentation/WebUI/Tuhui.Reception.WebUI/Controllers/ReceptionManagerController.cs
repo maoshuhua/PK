@@ -411,5 +411,17 @@ namespace Tuhui.Reception.WebUI.Controllers
             return Json(list, JsonRequestBehavior.AllowGet);        
         }
 
+        //删除导航
+        public ActionResult NavigationDelete(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                //抛出异常
+            }
+            _navigation.Delete(id);
+
+            return Json(true);
+        }
+
 	}
 }
