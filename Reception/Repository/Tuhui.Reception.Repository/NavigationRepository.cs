@@ -33,7 +33,10 @@ namespace Tuhui.Reception.Repository
             if (model != null)
             {
                 //根据条件筛选
-
+                if (!string.IsNullOrEmpty(model.Name)) 
+                {
+                    query = query.Where(p => p.Name.Contains(model.Name));
+                }
             }
             
             return new PagedList<Navigation>(query.OrderByDescending(p => p.N_ID), pageIndex, pageSize);

@@ -19,6 +19,7 @@ namespace Tuhui.Reception.WebUI.Controllers
         private IImageService _image;
         private IVideoService _video;
         private IReception_ResourceEventService _event;
+        private INavigationService _navigation;
 
         public ReceptionManagerController()
         {
@@ -28,6 +29,7 @@ namespace Tuhui.Reception.WebUI.Controllers
             _image = base.InstanceService<ImageService>();
             _video = base.InstanceService<VideoService>();
             _event = base.InstanceService<Reception_ResourceEventService>();
+            _navigation = base.InstanceService<NavigationService>();
         }
 
         public ActionResult Index()
@@ -395,6 +397,18 @@ namespace Tuhui.Reception.WebUI.Controllers
             var list = _video.GetList(id);
 
             return Json(list, JsonRequestBehavior.AllowGet);
+        }
+
+        //获取导航分页列表
+        public ActionResult GetNavigationPageList(string Name, int pageIndex = 1, int pageSize = 10)
+        {
+            Navigation entity = new Navigation
+            {
+                Name = Name
+            };
+            var list = _navigation.GetPageList(entity, pageIndex, pageSize);
+
+            return Json(list, JsonRequestBehavior.AllowGet);        
         }
 
 	}
