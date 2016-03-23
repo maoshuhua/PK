@@ -45,6 +45,19 @@ namespace Tuhui.<%=Namespace%>.Repository
             <% } %>
         }
         
+        //获取列表
+        public List<<%=Table.Name %>> GetList(string id)
+        {
+            <%if(Table.HasPrimaryKey) { %>
+            var list = base.SearchList<<%=Table.Name%>>(p => p.<%=Table.PrimaryKey.MemberColumns[0].ToString().Split('.')[2]%> == id).ToList();
+
+            return list;
+            <% }else{ %> 
+            
+            return null;
+            <% } %>
+        }
+        
         //获取全部分页
         public PagedList<<%=Table.Name %>> GetPageList(<%=Table.Name %> model, int pageIndex, int pageSize)
         {

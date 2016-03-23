@@ -46,6 +46,12 @@ namespace Tuhui.<%=Namespace%>.Service
             return repository.Get(id);
         }
         
+        //获取列表
+        public List<<%=Table.Name %>> GetList(string id)
+        {
+            return repository.GetList(id);
+        }
+        
         //获取全部分页
         public PagedList<<%=Table.Name %>> GetPageList(<%=Table.Name %> model, int pageIndex, int pageSize)
         {

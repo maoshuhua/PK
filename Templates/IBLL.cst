@@ -32,6 +32,9 @@ namespace Tuhui.<%=Namespace%>.Service
         //获取单个
         <%=Table.Name %> Get(string id);
         
+        //获取列表
+        List<<%=Table.Name %>> GetList(string id);
+        
         //获取全部分页
         PagedList<<%=Table.Name %>> GetPageList(<%=Table.Name %> model, int pageIndex, int pageSize);
         
