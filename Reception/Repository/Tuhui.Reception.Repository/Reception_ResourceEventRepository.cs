@@ -53,11 +53,8 @@ namespace Tuhui.Reception.Repository
         public int Update(Reception_ResourceEvent model)
         {
             return base.Update<Reception_ResourceEvent>(p => p.RE_ID == model.RE_ID, p => {
-                p.RE_ID = model.RE_ID;
-                p.R_ID = model.R_ID;
                 p.Name = model.Name;
                 p.Content = model.Content;
-                p.AddTime = model.AddTime;
             });
         }
         

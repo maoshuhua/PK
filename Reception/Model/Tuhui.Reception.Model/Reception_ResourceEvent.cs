@@ -21,7 +21,7 @@ namespace Tuhui.Reception.Model
        //大事件名称
        public string Name  { get; set; }
        //大事件内容
-       public object Content  { get; set; }
+       public string Content  { get; set; }
        //添加时间
        public DateTime AddTime  { get; set; }
     }

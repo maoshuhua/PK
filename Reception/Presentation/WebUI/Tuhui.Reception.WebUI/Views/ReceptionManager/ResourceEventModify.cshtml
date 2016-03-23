@@ -28,7 +28,7 @@
         <div class="edit-area">
             <div class="edit-lable">大事件内容:</div>
             <div class="edit-content">
-                <textarea rows="30" cols="50" name="Content">请输入.</textarea>
+                @Html.TextAreaFor(p => p.Content, new {rows="30",cols="50"})
                 <script type="text/javascript">CKEDITOR.replace('Content');</script>
             </div>
         </div>

@@ -317,6 +317,7 @@ namespace Tuhui.Reception.WebUI.Controllers
         }
 
         [HttpPost]
+        [ValidateInput(false)]
         public ActionResult ResourceEventModify(Reception_ResourceEvent model)
         {
             if (string.IsNullOrEmpty(model.RE_ID))

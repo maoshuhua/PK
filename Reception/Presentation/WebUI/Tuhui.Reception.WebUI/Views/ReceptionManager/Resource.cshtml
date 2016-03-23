@@ -81,7 +81,7 @@
             success: function (response) {
                 if (response.PageData.length > 0) {
                     for (var i = 0; i < response.PageData.length; i++) {
-                        response.PageData[i].RT_ID = list[i].Name;
+                        response.PageData[i].RT_ID = $("#RT_ID option[value='" + response.PageData[i].RT_ID + "']").html();
                     }
                 }
                 $("#tbody_ResourceList").L_bindingDataList(response);

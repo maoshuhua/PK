@@ -36,7 +36,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td id="page_ResourceEvent" colspan="3"></td>
+                <td id="page_ResourceEvent" colspan="4"></td>
             </tr>
         </tfoot>
     </table>
@@ -62,7 +62,7 @@
             success: function (response) {
                 if (response.PageData.length > 0) {
                     for (var i = 0; i < response.PageData.length; i++) {
-                        response.PageData[i].R_ID = list[i].Name;
+                        response.PageData[i].R_ID = $("#R_ID option[value='" + response.PageData[i].R_ID + "']").html();
                     }
                 }
                 $("#tbody_ResourceEventList").L_bindingDataList(response);
