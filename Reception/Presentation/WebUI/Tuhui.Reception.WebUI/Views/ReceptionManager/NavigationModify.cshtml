@@ -57,11 +57,14 @@
         if (points.length > 0) { //编辑
             //显示线
             map.addLine(JSON.parse(points));
+
+            resourceAdd(list);
         } else {
             resetMap();
         }
     });
 
+    var list = [];
     //获取资源点
     function GetResourceList()
     {
@@ -74,21 +77,27 @@
 
             },
             success: function (response) {
-                if (response.length > 0) {
-                    for(var i = 0;i<response.length;i++){
-                        map.addCssMarker(response[i].Long, response[i].Lat, {
-                            type: "B1",
-                            param_B1: {
-                                height: 30,
-                                width: 30,
-                                bgColor: "rgba(41,125,252,0.9)",
-                                bgHoverColor: "rgba(255,106,0,0.9)"
-                            },
-                            popupContent: "<div style='padding:30px 10px;color:#000;'>" + response[i].Name + "</div>"
-                        })                    }
-                }
+                list = response;              
             }
         })
+    }
+
+    function resourceAdd(response)
+    {
+        if (response.length > 0) {
+            for (var i = 0; i < response.length; i++) {
+                map.addCssMarker(response[i].Long, response[i].Lat, {
+                    type: "B1",
+                    param_B1: {
+                        height: 30,
+                        width: 30,
+                        bgColor: "rgba(41,125,252,0.9)",
+                        bgHoverColor: "rgba(255,106,0,0.9)"
+                    },
+                    popupContent: "<div style='padding:30px 10px;color:#000;'>" + response[i].Name + "</div>"
+                })
+            }
+        }
     }
 
     function resetMap()
@@ -97,6 +106,8 @@
             //清除线
             map.clear();
             $("#GHLJ").val('');
+
+            resourceAdd(list);
 
             map.drawLine({
                 begin: function () {
