@@ -440,5 +440,24 @@ namespace Tuhui.Reception.WebUI.Controllers
             }
         }
 
+        [HttpPost]
+        public ActionResult NavigationModify(Navigation model)
+        {
+            if (string.IsNullOrEmpty(model.N_ID))
+            {
+                model.N_ID = CommonFun.GenerGuid();
+                model.AddTime = DateTime.Now;
+                //添加导航
+                _navigation.Insert(model);
+            }
+            else
+            {
+                //修改导航
+                _navigation.Update(model);
+            }
+
+            return RedirectToAction("Navigation");
+        }
+
 	}
 }

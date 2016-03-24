@@ -39,7 +39,7 @@ namespace Tuhui.Reception.Repository
                 }
             }
             
-            return new PagedList<Navigation>(query.OrderByDescending(p => p.N_ID), pageIndex, pageSize);
+            return new PagedList<Navigation>(query.OrderByDescending(p => p.AddTime), pageIndex, pageSize);
         }
         
         //添加
@@ -51,12 +51,9 @@ namespace Tuhui.Reception.Repository
         //修改
         public int Update(Navigation model)
         {
-            return base.Update<Navigation>(p => p.N_ID == model.N_ID, p => {
-                p.N_ID = model.N_ID;
-                p.Obj_ID = model.Obj_ID;
+            return base.Update<Navigation>(p => p.N_ID == model.N_ID, p => {         
                 p.Name = model.Name;
                 p.GHLJ = model.GHLJ;
-                p.AddTime = model.AddTime;
             });
         }
         

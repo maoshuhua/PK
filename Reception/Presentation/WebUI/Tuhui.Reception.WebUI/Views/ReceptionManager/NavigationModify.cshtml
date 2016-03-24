@@ -5,6 +5,8 @@
     ViewBag.MenuKey = "Navigation";
 }
 
+@Content.tmap(Url)
+
 <div class="layout-content-head">
     <h2>@ViewBag.TitleName</h2>
 </div>
@@ -12,7 +14,7 @@
     @using (Html.BeginForm("NavigationModify", "ReceptionManager"))
     {
         @Html.HiddenFor(p => p.N_ID)
-
+        @Html.HiddenFor(p => p.GHLJ)
         <div class="edit-area">
             <div class="edit-lable">导航名称:</div>
             <div class="edit-content">
@@ -22,13 +24,14 @@
         <div class="edit-area">
             <div class="edit-lable">导航路径:</div>
             <div class="edit-content">
-                
+                <div id="map" style="height:400px;width:800px;"></div>
+                <input type="button" style="width: 70px;height: 30px;" value="重新绘制" onclick="resetMap()" />               
             </div>
         </div>        
         <div class="edit-area">
             <div class="edit-lable"></div>
             <div class="edit-content">
-                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存" />
+                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存" onclick="return save();" />
                 <input type="button" value="返回" style="width: 70px;height: 30px;" onclick="BackTo()" />
             </div>
         </div>
@@ -38,8 +41,97 @@
 
 <script type="text/javascript">
 
+    var map;
+    $(function () {
+        map = $.tMap.init("map", {
+            defaultLayer: "autonavi_wx",
+            lng: 118.63792419433595,
+            lat: 32.067155999071446,
+            zoom: 12
+        });
+
+        //获取资源点
+        GetResourceList();
+
+        var points = $("#GHLJ").val();
+        if (points.length > 0) { //编辑
+            //显示线
+            map.addLine(JSON.parse(points));
+        } else {
+            resetMap();
+        }
+    });
+
+    //获取资源点
+    function GetResourceList()
+    {
+        $.ajax({
+            type: "get",
+            cache: "false",
+            async: false,
+            url: ACTION_URL("GetResourceList", "ReceptionManager"),
+            data: {
+
+            },
+            success: function (response) {
+                if (response.length > 0) {
+                    for(var i = 0;i<response.length;i++){
+                        map.addCssMarker(response[i].Long, response[i].Lat, {
+                            type: "B1",
+                            param_B1: {
+                                height: 30,
+                                width: 30,
+                                bgColor: "rgba(41,125,252,0.9)",
+                                bgHoverColor: "rgba(255,106,0,0.9)"
+                            },
+                            popupContent: "<div style='padding:30px 10px;color:#000;'>" + response[i].Name + "</div>"
+                        })                    }
+                }
+            }
+        })
+    }
+
+    function resetMap()
+    {
+        if (map) {
+            //清除线
+            map.clear();
+            $("#GHLJ").val('');
+
+            map.drawLine({
+                begin: function () {
+                   
+                },
+                complete: function (result) {
+                    //显示线
+                    map.addLine(result);
+                    //保存数据
+                    $("#GHLJ").val(JSON.stringify(result));
+                }
+            });
+        }
+    }
+
     function BackTo() {
         window.location.href = '@Url.Action("Navigation", "ReceptionManager")';
+    }
+
+    function save()
+    {
+        //验证
+        var Name = $.trim($("#Name").val());
+        if (Name.length == 0)
+        {
+            $.L.messageWarningT('导航名称不能为空');
+            return false;
+        }
+        var GHLJ = $("#GHLJ").val();
+        if (GHLJ.length == 0)
+        {
+            $.L.messageWarningT('请绘制导航路径');
+            return false;
+        }
+        return true;
     }
 </script>
 
