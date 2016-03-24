@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>南京交通视频监控平台驾驶舱</title>
     @Content.Common(Url,true)
+    @Content.zTree(Url)
 </head>
 <body>
     <div class="layout_head">
@@ -14,70 +15,67 @@
     </div>
     <div class="layout_left">
         <div class="menu_head"></div>
-        <ul class="layout_menu">
-            <li>@Html.ActionLink("资源分类管理", "ResourceType", new { controller = "ReceptionManager" }, new { @menuKey = "ResourceType" })</li>
-            <li>@Html.ActionLink("资源管理", "Resource", new { controller = "ReceptionManager" }, new { @menuKey = "Resource" })</li>
-            <li>@Html.ActionLink("大事件管理", "ResourceEvent", new { controller = "ReceptionManager" }, new { @menuKey = "ResourceEvent" })</li>
-            <li>@Html.ActionLink("导航管理", "Navigation", new { controller = "ReceptionManager" }, new { @menuKey = "Navigation" })</li>
-        </ul>
+        <ul id="treeDemo" class="ztree"></ul>
     </div>
     <div class="layout_right">
         @RenderBody()
     </div>
     <script>
-        //$.API = {};
+
         var _menuKey = "@ViewBag.MenuKey";
-        //var property = new Array;
-        //property = {
-        //    url: "Manager/List"
-        //}
-        //$(function () {
 
-        //    var apiBaseUrl = "http://" + location.host + "/tv/";
-        //    $.extend($.API, {
-        //        API_Access: function(property) {
-        //            $.ajax({
-        //                url: apiBaseUrl + property.url,
-        //                cache: false,
-        //                data: property.data,
-        //                error: function(info) {
-        //                    if (property.error) {
-        //                        property.error(info);
-        //                    }
-        //                },
-        //                success: function(response) {
-        //                    property.success(response);
-        //                }
-        //            });
-        //        }
-        //    });
-            
-            window.onresize = _onResize;
+        window.onresize = _onResize;
 
-            _onResize();
+        _onResize();
+
+        //左侧菜单
+
+        var setting = {};
+
+        var zNodes = [
+			{
+			    name: "综合应用",
+			    children: [
+					{
+					    name: "接待资源",
+					    children: [
+							{ id: "ResourceType", name: "资源分类管理", url: ACTION_URL("ResourceType", "ReceptionManager"), target: "_self" },
+							{ id:"Resource",name: "资源管理", url: ACTION_URL("Resource", "ReceptionManager"), target: "_self" },
+							{ id: "ResourceEvent", name: "大事件管理", url: ACTION_URL("ResourceEvent", "ReceptionManager"), target: "_self" },
+							{ id: "Navigation", name: "导航管理", url: ACTION_URL("Navigation", "ReceptionManager"), target: "_self" }
+					    ]
+					}
+			    ]
+			}
+        ];
+
+        $(document).ready(function () {
+            $.fn.zTree.init($("#treeDemo"), setting, zNodes);
 
             if (_menuKey) {
-                $(".layout_menu a[menuKey='" + _menuKey + "']").addClass("select");
+                //展开
+                var treeObj = $.fn.zTree.getZTreeObj("treeDemo");
+                var node = treeObj.getNodeByParam("id", _menuKey);
+                if (node) {
+                    treeObj.selectNode(node, false);
+                }
             }
+        });
 
 
-            function _onResize() {
-                $("body").css({
-                    height: document.documentElement.clientHeight + "px"
-                })
+        function _onResize() {
+            $("body").css({
+                height: document.documentElement.clientHeight + "px"
+            })
 
-                $(".layout_left,.layout_right").css({
-                    height: document.documentElement.clientHeight - $(".layout_head").height()
-                })
+            $(".layout_left,.layout_right").css({
+                height: document.documentElement.clientHeight - $(".layout_head").height()
+            })
 
-                $(".layout_right").css({
-                    width: document.documentElement.clientWidth - $(".layout_left").width() + "px"
-                })
-            }
-
-          
-        //})
-
+            $(".layout_right").css({
+                width: document.documentElement.clientWidth - $(".layout_left").width() + "px"
+            })
+        }
     </script>
     @RenderSection("script",false)
 </body>
