@@ -24,33 +24,33 @@
         @Html.Hidden("videoList");
 
         <div class="edit-area">
-            <div class="edit-lable">资源名称:</div>
+            <div class="edit-lable"><font color="red">*</font>资源名称:</div>
             <div class="edit-content">
                 @Html.TextBoxFor(p => p.Name, htmlAttributes: new { maxlength = 50 })
             </div>
         </div>
         <div class="edit-area">
-            <div class="edit-lable">资源分类:</div>
+            <div class="edit-lable"><font color="red">*</font>资源分类:</div>
             <div class="edit-content">
                 @Html.DropDownListFor(p => p.RT_ID, ViewData["resourceTypeList"] as SelectList)
             </div>
         </div>
         <div class="edit-area">
-            <div class="edit-lable">所属街道:</div>
+            <div class="edit-lable"><font color="red">*</font>所属街道:</div>
             <div class="edit-content">
                 @Html.TextBoxFor(p => p.SSJD)
             </div>
         </div>
         
         <div class="edit-area">
-            <div class="edit-lable">经度:</div>
+            <div class="edit-lable"><font color="red">*</font>经度:</div>
             <div class="edit-content">
                 @Html.TextBoxFor(p => p.Long, htmlAttributes: new { maxlength = 50 })
             </div>
             <a style="width:500px;height:200px;" id="getlnglat" onclick="GetLngLat()">获取经纬度坐标</a>
         </div>
         <div class="edit-area">
-            <div class="edit-lable">纬度:</div>
+            <div class="edit-lable"><font color="red">*</font>纬度:</div>
             <div class="edit-content">
                 @Html.TextBoxFor(p => p.Lat, htmlAttributes: new { maxlength = 50 })
             </div>
@@ -87,7 +87,7 @@
             </div>
         </div>
         <div class="edit-area">
-            <div class="edit-lable">项目状态:</div>
+            <div class="edit-lable"><font color="red">*</font>项目状态:</div>
             <div class="edit-content">
                 @Html.DropDownListFor(p => p.RStatus, list) 
             </div>
@@ -246,6 +246,40 @@
     function save()
     {
         //验证
+        var name = $.trim($("#Name").val());
+        if (name.length == 0)
+        {
+            $.L.messageWarningT('资源名称不能为空');
+            return false;
+        }
+        var RT_ID = $("#RT_ID").val();
+        if (RT_ID.length == 0)
+        {
+            $.L.messageWarningT('请选择资源分类');
+            return false;
+        }
+        var SSJD = $.trim($("#SSJD").val());
+        if (SSJD.length == 0)
+        {
+            $.L.messageWarningT('所属街道不能为空');
+            return false;
+        }
+        var Long = $.trim($("#Long").val());
+        if (Long.length == 0) {
+            $.L.messageWarningT('经度不能为空');
+            return false;
+        }
+        var Lat = $.trim($("#Lat").val());
+        if (Lat.length == 0) {
+            $.L.messageWarningT('纬度不能为空');
+            return false;
+        }
+        var RStatus = $("#RStatus").val();
+        if (RStatus == "0")
+        {
+            $.L.messageWarningT('请选择项目状态');
+            return false;
+        }
 
         //获取图片
         var imageList = "";

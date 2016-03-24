@@ -29,13 +29,13 @@
             <div class="edit-lable">大事件内容:</div>
             <div class="edit-content">
                 @Html.TextAreaFor(p => p.Content, new {rows="30",cols="50"})
-                <script type="text/javascript">CKEDITOR.replace('Content');</script>
+                <script type="text/javascript">var editor = CKEDITOR.replace('Content');</script>
             </div>
         </div>
         <div class="edit-area">
             <div class="edit-lable"></div>
             <div class="edit-content">
-                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存" />
+                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存" onclick="return save();"/>
                 <input type="button" value="返回" style="width: 70px;height: 30px;" onclick="BackTo()" />
             </div>
         </div>
@@ -47,6 +47,30 @@
 
     function BackTo() {
         window.location.href = '@Url.Action("ResourceEvent", "ReceptionManager")';
+    }
+
+    function save()
+    {
+        //验证
+        var name = $.trim($("#Name").val());
+        if (name.length == 0) {
+            $.L.messageWarningT('大事件名称不能为空');
+            return false;
+        }
+        var rid = $.trim($("#R_ID").val());
+        if (rid.length == 0)
+        {
+            $.L.messageWarningT('请选择资源名称');
+            return false;
+        }
+        var content = $.trim(editor.document.getBody().getText());
+        if (content == "")
+        {
+            $.L.messageWarningT('大事件内容不能为空');
+            return false;
+        }
+
+        return true;
     }
 </script>
 
