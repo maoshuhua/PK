@@ -620,6 +620,7 @@
     <Content Include="Scripts\jquery.tuhui.js">
       <DependentUpon>jquery.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\json2.js" />
     <Content Include="Scripts\logon.js" />
     <Content Include="Scripts\My97DatePicker\calendar.js" />
     <Content Include="Scripts\My97DatePicker\lang\en.js" />
