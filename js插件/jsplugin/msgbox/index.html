@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="jquery.js"></script>
+    <script src="msgbox/msgbox.js"></script>
+</head>
+<body>
+    <input onclick="javascript: $.msgbox.success('成功！');" type="button" value="success" /> 
+    <input onclick="javascript: $.msgbox.error('错误！');" type="button" value="error" /> 
+    <input onclick="javascript: $.msgbox.warn('警告！');" type="button" value="warn" />
+    <input onclick="javascript: $.msgbox.confirm('确定？', function () { $.msgbox.success('回调函数！'); });" type="button" value="confirm" /> 
+</body>
+</html>
