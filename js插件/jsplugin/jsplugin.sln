@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "msgbox", "msgbox\msgbox.vbproj", "{892A9966-4228-4C32-97F1-E053F6BB9303}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "editor", "editor\editor.csproj", "{C4F8A761-5716-4DE6-84FA-16E3F258C89D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{892A9966-4228-4C32-97F1-E053F6BB9303}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{892A9966-4228-4C32-97F1-E053F6BB9303}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{892A9966-4228-4C32-97F1-E053F6BB9303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F8A761-5716-4DE6-84FA-16E3F258C89D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F8A761-5716-4DE6-84FA-16E3F258C89D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4F8A761-5716-4DE6-84FA-16E3F258C89D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F8A761-5716-4DE6-84FA-16E3F258C89D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
