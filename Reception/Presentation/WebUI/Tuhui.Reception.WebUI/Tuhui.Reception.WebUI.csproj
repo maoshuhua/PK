@@ -197,6 +197,7 @@
     <Content Include="Content\images\common\create_20.png" />
     <Content Include="Content\images\common\delete.png" />
     <Content Include="Content\images\common\edit.png" />
+    <Content Include="Content\images\common\importexcel.png" />
     <Content Include="Content\images\common\info.png" />
     <Content Include="Content\images\common\mac-select.gif" />
     <Content Include="Content\images\common\poi.png" />

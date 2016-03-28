@@ -17,10 +17,9 @@
             <tr>
                 <th>导航名称</th>
                 <th>添加时间</th>
-                <th style="width:180px;">
+                <th style="width:120px;">
                     @Html.ActionLink(" ", "NavigationModify", new { controller = "ReceptionManager" }, new { @class = "create" })
-                    &nbsp;&nbsp;
-                    <input type="button" value="Excel导入" style="width: 100px; height: 30px; font-family: 微软雅黑" onclick="excelIpr();" />
+                    <a href="javascript:void(0);" class="importexcel" onclick="excelIpr();">&nbsp;&nbsp;</a>
                 </th>
             </tr>
         </thead>

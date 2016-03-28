@@ -250,6 +250,17 @@ a.create {
     font-size: 14px;
 }
 
+a.importexcel {
+    color: #646464;
+    padding-left: 30px;
+    background-image: url(images/common/importexcel.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    font-size: 14px;
+    width:20px;
+    height:20px;
+}
+
 a.search {
     color: #646464;
     padding-left: 30px;
