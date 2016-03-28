@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using Tuhui.Common45.Mvc;
 using Tuhui.Common45.Utility;
+using Tuhui.Common45.Utility.Excel;
 using Tuhui.Reception.Model;
 using Tuhui.Reception.Service;
 
@@ -71,7 +73,7 @@ namespace Tuhui.Reception.WebUI.Controllers
             var _user = _reception_UserInfoService.GetUserByUserName(model.Name);
 
             SessionHelper.LogOnUser<Reception_UserInfo>(_user);
-            
+
             return RedirectToAction("Index", "ReceptionManager");
         }
 
@@ -92,7 +94,7 @@ namespace Tuhui.Reception.WebUI.Controllers
         {
             var list = _reception_ResourceType.GetList();
 
-            return Json(list,JsonRequestBehavior.AllowGet);
+            return Json(list, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult ResourceTypeModify(string id)
@@ -122,7 +124,8 @@ namespace Tuhui.Reception.WebUI.Controllers
                 //添加资源分类
                 _reception_ResourceType.Insert(model);
             }
-            else {
+            else
+            {
                 //修改资源分类
                 _reception_ResourceType.Update(model);
             }
@@ -131,7 +134,7 @@ namespace Tuhui.Reception.WebUI.Controllers
         }
 
         //删除资源分类
-        public ActionResult ResourceTypeDelete(string id) 
+        public ActionResult ResourceTypeDelete(string id)
         {
             if (string.IsNullOrEmpty(id))
             {
@@ -148,7 +151,7 @@ namespace Tuhui.Reception.WebUI.Controllers
         }
 
         //资源列表
-        public ActionResult GetResourcePageList(string Name,string SSJD,string RStatus,string RT_ID,int pageIndex = 1, int pageSize = 10)
+        public ActionResult GetResourcePageList(string Name, string SSJD, string RStatus, string RT_ID, int pageIndex = 1, int pageSize = 10)
         {
             Reception_Resource entity = new Reception_Resource
             {
@@ -160,11 +163,13 @@ namespace Tuhui.Reception.WebUI.Controllers
             var list = _reception_Resource.GetPageList(entity, pageIndex, pageSize);
 
             //处理
-            if (list.PageData.Count > 0) {
-                foreach (var item in list.PageData) {
+            if (list.PageData.Count > 0)
+            {
+                foreach (var item in list.PageData)
+                {
                     //项目状态
                     switch (item.RStatus)
-                    { 
+                    {
                         case "1":
                             item.RStatus = "未开工";
                             break;
@@ -194,7 +199,8 @@ namespace Tuhui.Reception.WebUI.Controllers
         public ActionResult ResourceModify(string id)
         {
             List<Reception_ResourceType> resourceTypeList = _reception_ResourceType.GetList();
-            resourceTypeList.Insert(0, new Reception_ResourceType { 
+            resourceTypeList.Insert(0, new Reception_ResourceType
+            {
                 RT_ID = "",
                 Name = "--请选择--"
             });
@@ -220,9 +226,9 @@ namespace Tuhui.Reception.WebUI.Controllers
 
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult ResourceModify(Reception_Resource model, string imageList,string videoList)
+        public ActionResult ResourceModify(Reception_Resource model, string imageList, string videoList)
         {
-            
+
             if (string.IsNullOrEmpty(model.R_ID))
             {
                 model.R_ID = CommonFun.GenerGuid();
@@ -241,19 +247,20 @@ namespace Tuhui.Reception.WebUI.Controllers
             //删除图片
             _image.DeleteList(model.R_ID);
 
-            if (!string.IsNullOrEmpty(imageList)) 
+            if (!string.IsNullOrEmpty(imageList))
             {
                 string[] imageArray = imageList.Split('|');
 
                 //添加图片
                 foreach (var item in imageArray)
                 {
-                    _image.Insert(new Image { 
-                       I_ID = CommonFun.GenerGuid(),
-                       AddTime = DateTime.Now,
-                       Obj_ID = model.R_ID,
-                       ImagePath = item,
-                       ImageSource = "1"
+                    _image.Insert(new Image
+                    {
+                        I_ID = CommonFun.GenerGuid(),
+                        AddTime = DateTime.Now,
+                        Obj_ID = model.R_ID,
+                        ImagePath = item,
+                        ImageSource = "1"
                     });
                 }
             }
@@ -314,7 +321,7 @@ namespace Tuhui.Reception.WebUI.Controllers
             return View();
         }
 
-        public ActionResult GetResourceEventPageList(string Name,string R_ID,int pageIndex = 1,int pageSize = 10)
+        public ActionResult GetResourceEventPageList(string Name, string R_ID, int pageIndex = 1, int pageSize = 10)
         {
             Reception_ResourceEvent entity = new Reception_ResourceEvent
             {
@@ -334,7 +341,7 @@ namespace Tuhui.Reception.WebUI.Controllers
                 //抛出异常
             }
             _event.Delete(id);
-           
+
             return Json(true);
         }
 
@@ -408,7 +415,7 @@ namespace Tuhui.Reception.WebUI.Controllers
             };
             var list = _navigation.GetPageList(entity, pageIndex, pageSize);
 
-            return Json(list, JsonRequestBehavior.AllowGet);        
+            return Json(list, JsonRequestBehavior.AllowGet);
         }
 
         //删除导航
@@ -459,5 +466,45 @@ namespace Tuhui.Reception.WebUI.Controllers
             return RedirectToAction("Navigation");
         }
 
-	}
+        //导航Excel导入
+        public ActionResult NavigationImport()
+        {
+            @ViewBag.TitleName = "导航管理 -> Excel导入页面";
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult NavigationImportModify(HttpPostedFileBase filepath)
+        {
+            if (filepath.ContentLength > 0)
+            {
+                string path = Server.MapPath("~/UploadFile/Excel/") + System.IO.Path.GetFileName(filepath.FileName);
+                filepath.SaveAs(path);
+
+                using (ExcelHelper excelHelper = new ExcelHelper(path))
+                {
+                    DataTable dt = excelHelper.ExcelToDataTable("Sheet1", true);
+                    //插入数据库
+                    if (dt.Columns.Count == 2 && dt.Rows.Count > 0)
+                    {
+                        for (var i = 0; i < dt.Rows.Count; i++)
+                        {
+
+                            Navigation model = new Navigation();
+                            model.N_ID = CommonFun.GenerGuid();
+                            model.AddTime = DateTime.Now;
+                            model.Name = dt.Rows[i][0].ToString();
+                            model.GHLJ = dt.Rows[i][1].ToString();
+                            //添加导航
+                            _navigation.Insert(model);
+                        }
+                    }
+                }
+            }
+
+            return RedirectToAction("Navigation", "ReceptionManager");
+        }
+
+    }
 }

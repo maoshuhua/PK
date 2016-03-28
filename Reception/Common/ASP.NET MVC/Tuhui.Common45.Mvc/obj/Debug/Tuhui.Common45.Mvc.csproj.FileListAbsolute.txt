@@ -85,3 +85,8 @@ D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\zh-Hans\S
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\obj\Debug\Tuhui.Common45.Mvc.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\obj\Debug\Tuhui.Common45.Mvc.dll
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\obj\Debug\Tuhui.Common45.Mvc.pdb
+D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NPOI.dll
+D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NPOI.OOXML.dll
+D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NPOI.OpenXml4Net.dll

@@ -37,3 +37,8 @@ D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\zh-Ha
 D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\obj\Debug\Tuhui.Common45.Framework.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\obj\Debug\Tuhui.Common45.Framework.dll
 D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\obj\Debug\Tuhui.Common45.Framework.pdb
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\NPOI.dll
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\NPOI.OOXML.dll
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\msh\pk\PK\Reception\Common\Framework\Tuhui.Common45.Framework\bin\Debug\NPOI.OpenXml4Net.dll

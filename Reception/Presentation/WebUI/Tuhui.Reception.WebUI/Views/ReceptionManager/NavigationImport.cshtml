@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "NavigationAdd";
+    ViewBag.MenuKey = "Navigation";
+}
+
+<div class="layout-content-head">
+    <h2>@ViewBag.TitleName</h2>
+</div>
+<div style="text-align:left;margin-left:50px;">
+    @using (Html.BeginForm("NavigationImportModify", "ReceptionManager", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="edit-area">
+            <div class="edit-lable">Excel导入:</div>
+            <div class="edit-content">
+                <input type="file" id="filepath" name="filepath" value="导入" accept=".xls,.xlsx">
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">模板下载:</div>
+            <div class="edit-content">
+                <a href="@Url.Content("~/Template/template.xlsx")">template.xlsx</a>
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable"></div>
+            <div class="edit-content">
+                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存" onclick="return save();" />
+                <input type="button" value="返回" style="width: 70px;height: 30px;" onclick="BackTo()" />
+            </div>
+        </div>
+    }
+
+</div>
+<script type="text/javascript">
+    function save() {
+        //验证
+        var filepath = $.trim($("#filepath").val());
+        if (filepath.length == 0) {
+            $.L.messageWarningT('请上传导入文件');
+            return false;
+        }
+        if (filepath.indexOf(".xls") == -1 && filepath.indexOf(".xlsx") == -1) {
+            $.L.messageWarningT('文件格式为xls,xlsx');
+            return false;
+        }
+
+        return true;
+    }
+
+    function BackTo() {
+        window.location.href = '@Url.Action("Navigation", "ReceptionManager")';
+    }
+</script>

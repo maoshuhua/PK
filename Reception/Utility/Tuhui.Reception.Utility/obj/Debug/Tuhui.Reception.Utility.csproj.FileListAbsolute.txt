@@ -25,3 +25,8 @@ D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\Tuhui.Common45.
 D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\obj\Debug\Tuhui.Reception.Utility.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\obj\Debug\Tuhui.Reception.Utility.dll
 D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\obj\Debug\Tuhui.Reception.Utility.pdb
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\NPOI.dll
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\NPOI.OOXML.dll
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\msh\pk\PK\Reception\Utility\Tuhui.Reception.Utility\bin\Debug\NPOI.OpenXml4Net.dll

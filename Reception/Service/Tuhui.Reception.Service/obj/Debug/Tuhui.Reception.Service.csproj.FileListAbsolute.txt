@@ -78,3 +78,8 @@ D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\zh-Hans\EntityF
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\obj\Debug\Tuhui.Reception.Service.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\obj\Debug\Tuhui.Reception.Service.dll
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\obj\Debug\Tuhui.Reception.Service.pdb
+D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\NPOI.dll
+D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\NPOI.OOXML.dll
+D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\NPOI.OpenXml4Net.dll

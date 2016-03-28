@@ -404,3 +404,8 @@ D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\zh-Hans\Micr
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.pdb
+D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NPOI.dll
+D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NPOI.OOXML.dll
+D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\ICSharpCode.SharpZipLib.dll
+D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NPOI.OpenXmlFormats.dll
+D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NPOI.OpenXml4Net.dll

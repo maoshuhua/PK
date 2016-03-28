@@ -46,3 +46,8 @@ D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\zh-Hans\EntityFrame
 D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\obj\Debug\Tuhui.Reception.Model.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\obj\Debug\Tuhui.Reception.Model.dll
 D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\obj\Debug\Tuhui.Reception.Model.pdb
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\NPOI.dll
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\NPOI.OOXML.dll
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\msh\pk\PK\Reception\Model\Tuhui.Reception.Model\bin\Debug\NPOI.OpenXml4Net.dll

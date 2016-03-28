@@ -17,7 +17,11 @@
             <tr>
                 <th>导航名称</th>
                 <th>添加时间</th>
-                <th style="width:80px;">@Html.ActionLink(" ", "NavigationModify", new { controller = "ReceptionManager" }, new { @class = "create" })</th>
+                <th style="width:180px;">
+                    @Html.ActionLink(" ", "NavigationModify", new { controller = "ReceptionManager" }, new { @class = "create" })
+                    &nbsp;&nbsp;
+                    <input type="button" value="Excel导入" style="width: 100px; height: 30px; font-family: 微软雅黑" onclick="excelIpr();" />
+                </th>
             </tr>
         </thead>
         <tbody id="tbody_NavigationList" binding="{'pageId':'page_Navigation','pageCallback':'GetNavigationList'}">
@@ -88,6 +92,11 @@
         entity.Name = $.trim($("#Name").val());
 
         GetNavigationList();
+    }
+
+    function excelIpr()
+    {
+        window.location.href = '@Url.Action("NavigationImport", "ReceptionManager")';
     }
 </script>
 

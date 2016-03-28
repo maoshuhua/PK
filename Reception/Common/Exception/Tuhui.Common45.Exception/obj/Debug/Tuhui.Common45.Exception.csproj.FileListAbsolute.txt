@@ -9,6 +9,6 @@ D:\Reception\Common\Exception\Tuhui.Common45.Exception\obj\Debug\Tuhui.Common45.
 D:\Reception\Common\Exception\Tuhui.Common45.Exception\obj\Debug\Tuhui.Common45.Exception.pdb
 D:\msh\pk\PK\Reception\Common\Exception\Tuhui.Common45.Exception\bin\Debug\Tuhui.Common45.Exception.dll
 D:\msh\pk\PK\Reception\Common\Exception\Tuhui.Common45.Exception\bin\Debug\Tuhui.Common45.Exception.pdb
+D:\msh\pk\PK\Reception\Common\Exception\Tuhui.Common45.Exception\obj\Debug\Tuhui.Common45.Exception.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Common\Exception\Tuhui.Common45.Exception\obj\Debug\Tuhui.Common45.Exception.dll
 D:\msh\pk\PK\Reception\Common\Exception\Tuhui.Common45.Exception\obj\Debug\Tuhui.Common45.Exception.pdb
-D:\msh\pk\PK\Reception\Common\Exception\Tuhui.Common45.Exception\obj\Debug\Tuhui.Common45.Exception.csprojResolveAssemblyReference.cache

@@ -146,3 +146,8 @@ D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\zh-Hans\Sy
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.pdb
+D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NPOI.dll
+D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NPOI.OOXML.dll
+D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NPOI.OpenXml4Net.dll
