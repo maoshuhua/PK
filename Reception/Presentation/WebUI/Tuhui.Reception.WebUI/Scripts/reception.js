@@ -82,7 +82,7 @@ function GetResourceList() {
                 var _markers = [];
                 for (var i = 0; i < response.length; i++) {
                     //图片类型
-                    var iconUrl = "Content/images/reception/";
+                    var iconUrl = CONTENT_URL("Content/images/reception/");
                     switch (response[i].RStatus)
                     {
                         case "1": //未开工
@@ -182,5 +182,5 @@ function GetResourceTypeList(){
 
 //进入到详情页面
 function RedirectTo(rid){
-    alert(rid);
+    window.location.href = ACTION_URL("ResourceDetail?id=" + rid, "Reception");
 }

@@ -1,0 +1,49 @@
+﻿body {
+   color:#2a2a2a;
+   font-size:16px;
+}
+
+.resource_detail_main {
+   width:100%;
+   overflow:hidden;
+}
+
+.resource_detail_title {
+   background:#698ed5;
+   height:45px;
+   font-size:20px;
+   line-height:45px;
+   color:#FFFFFF;
+   text-align:left;
+   padding-left:20px;
+   margin:0 -15px;
+}
+
+.back {
+   float:right;
+   height:20px;
+   cursor:pointer;
+   margin-right:20px;
+}
+
+.resource_detail_border {
+   margin:30px 50px 0 50px;
+   border:1px solid #DDDADB;
+   border-radius:10px 10px 5px 5px;
+   box-shadow:#DDDADB 0px 6px 15px inset;
+}
+
+.resource_detail {
+   padding:15px;
+   font-size:20px;
+   text-align:left;
+}
+
+.bottom_line {
+   border-bottom:1px solid #DDDADB;
+}
+
+.carousel-example-generic,.carousel-example-generic img {
+   width:100%;
+   height:100%;
+}

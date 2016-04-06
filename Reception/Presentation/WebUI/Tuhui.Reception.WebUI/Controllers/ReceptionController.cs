@@ -53,5 +53,37 @@ namespace Tuhui.Reception.WebUI.Controllers
         {
             return Json(_reception_Resource.GetResource_Type(),JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult ResourceDetail()
+        {
+            ViewBag.Id = Request.QueryString["id"];
+            return View();
+        }
+
+        public ActionResult EventDetail()
+        {
+            return View();
+        }
+
+        //获取资源详情
+        public ActionResult GetResourceInfo(string id)
+        {
+            var entity = _reception_Resource.Get(id);
+
+            return Json(entity,JsonRequestBehavior.AllowGet);
+        }
+
+        //获取资源图片
+        public ActionResult GetResourceImage(string id)
+        {
+            var list = _image.GetList(id);
+
+            return Json(list,JsonRequestBehavior.AllowGet);
+        }
+
+        //获取资源视频
+
+        //获取资源下大事件列表
+
 	}
 }

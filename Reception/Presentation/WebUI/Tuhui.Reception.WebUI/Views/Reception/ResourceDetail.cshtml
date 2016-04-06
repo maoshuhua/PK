@@ -1,0 +1,107 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>接待资源 -- 资源详情、大事件</title>
+    @Content.Common(Url, false)
+    @Content.bootstrap(Url)
+    @Content.Css(Url, "reception_detail.css")
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="resource_detail_title">
+                    <span class="glyphicon glyphicon-home"></span>&nbsp;<label id="ZYMC"></label><div class="back"><span class="glyphicon glyphicon-circle-arrow-left"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="resource_detail_border">
+                    <div class="row resource_detail">
+                         <!--项目详情-->
+                         <div class="col-sm-12 col-md-7" id="resourceInfo"></div>
+                         <script id="resource_info" type="text/html">
+                             <span class="glyphicon glyphicon-globe"></span>&nbsp;项目概况
+                             <hr />
+                             <div class="row">
+                                 <div class="col-sm-6">所属街道：{{ SSJD }}</div>
+                                 <div class="col-sm-6">责任单位：{{ RRDW }}</div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-sm-6">施方单位：{{ SFDW }}</div>
+                                 <div class="col-sm-6">开工时间：{{ StartTime._data() }}</div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-sm-6">计划完成时间：{{ EndTime._data() }}</div>
+                                 <div class="col-sm-6">状态：{{ RStatus }}</div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-sm-12">视频内容：</div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-sm-12">项目内容：{{ #Content }}</div>
+                             </div>
+                         </script>
+                         <!--轮播图-->
+                        <div class="col-sm-12  col-md-5" id="imageList"></div>
+                        <script id="image_list" type="text/html">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    {{each list}}
+                                        {{if $index == 0}}
+                                            <li data-target="#carousel-example-generic" data-slide-to="{{$index}}" class="active"></li>
+                                        {{else}}
+                                            <li data-target="#carousel-example-generic" data-slide-to="{{$index}}"></li>
+                                        {{/if}}
+                                    {{/each}}
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+
+                                    {{each list}}
+                                        {{if $index == 0}}
+                                        <div class="item active">
+                                            <img src="@Url.Content("~/UploadFile/Image/{{ $value.ImagePath }}")" alt="" />
+                                        </div>
+                                        {{else}}
+                                        <div class="item">
+                                            <img src="@Url.Content("~/UploadFile/Image/{{ $value.ImagePath }}")" alt="" />
+                                         </div>
+                                        {{/if}}
+                                    {{/each}}
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var id = "@ViewBag.Id";
+    </script>
+    @Content.Script(Url, "ResourceDetail.js")
+</body>
+</html>
+

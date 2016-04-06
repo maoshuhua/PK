@@ -11,7 +11,7 @@
     <title>接待资源</title>
     @Content.Common(Url, false)
     @Content.tmap(Url)
-    @Content.reception(Url)
+    @Content.Css(Url, "reception.css")
 </head>
 <body>
     <!--卫星和瓦片切换-->
@@ -40,6 +40,7 @@
     </div>
     <!--地图展示区-->
     <div id="map" style="height:100%;width:100%;"></div>
+    @Content.Script(Url, "reception.js")
 </body>
 </html>
 

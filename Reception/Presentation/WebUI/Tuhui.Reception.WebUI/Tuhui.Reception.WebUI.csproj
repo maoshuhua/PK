@@ -179,6 +179,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrap-3.3.5-dist\css\bootstrap-theme.css" />
+    <Content Include="bootstrap-3.3.5-dist\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap-3.3.5-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-3.3.5-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap-3.3.5-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-3.3.5-dist\js\bootstrap.min.js" />
+    <Content Include="bootstrap-3.3.5-dist\js\npm.js" />
     <Content Include="Content\common.css" />
     <Content Include="Content\images\btn_layer_img_bg1.png" />
     <Content Include="Content\images\btn_layer_img_bg2.png" />
@@ -299,6 +307,7 @@
     <Content Include="Content\layout_m.css" />
     <Content Include="Content\logon.css" />
     <Content Include="Content\reception.css" />
+    <Content Include="Content\reception_detail.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -661,6 +670,7 @@
     <Content Include="Scripts\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
     <Content Include="Scripts\My97DatePicker\开发包\skin\whyGreen\img.gif" />
     <Content Include="Scripts\reception.js" />
+    <Content Include="Scripts\ResourceDetail.js" />
     <Content Include="Scripts\STVIDEO\common.js" />
     <Content Include="Scripts\STVIDEO\videoPlayer.swf" />
     <Content Include="Scripts\template.js" />
@@ -723,6 +733,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <Content Include="ASHX\UploadHandler.ashx" />
+    <Content Include="bootstrap-3.3.5-dist\css\bootstrap-theme.css.map" />
+    <Content Include="bootstrap-3.3.5-dist\css\bootstrap.css.map" />
+    <Content Include="bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap-3.3.5-dist\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\Tuhui.Reception.pubxml" />
     <Content Include="Views\UserManager\LogOn.cshtml" />
@@ -759,6 +775,8 @@
     <Content Include="Template\template.xlsx" />
     <Content Include="Views\ReceptionManager\NavigationImport.cshtml" />
     <Content Include="Views\Reception\Index.cshtml" />
+    <Content Include="Views\Reception\ResourceDetail.cshtml" />
+    <Content Include="Views\Reception\EventDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\ASP.NET MVC\Tuhui.Common45.Mvc\Tuhui.Common45.Mvc.csproj">
