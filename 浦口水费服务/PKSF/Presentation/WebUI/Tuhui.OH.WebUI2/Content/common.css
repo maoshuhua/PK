@@ -1,0 +1,231 @@
+﻿/*#region 表格*/
+table.l-table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+    empty-cells: show;
+    width: 100%;
+}
+
+table.l-table {
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background-color: #E7E7E7;
+    text-align: center;
+}
+
+.table-radiustop {
+    border-radius: 15px 15px 0 0;
+}
+
+.table-radiusleft {
+    border-radius: 15px 0 0 15px;
+}
+
+table.l-table tr {
+    height: 35px;
+    line-height: 35px;
+}
+
+table.l-table .select {
+    color: #0d4af3;
+    font-weight: bolder;
+}
+
+table.l-table td {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+table.l-table tr:hover td {
+    background-color: #e7eaf5;
+    border-top: 1px solid #dfe4ec;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+table.l-table tr.select td {
+    background-color: #4b6df3;
+    border-top: 1px solid #dfe4ec;
+    border-bottom: 1px solid #d3d3d3;
+    color: #fff;
+}
+
+table.l-table tr.even td {
+    background-color: #F3F3F3;
+}
+
+table.l-table th {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+table.l-table a.link {
+    color: #005eac;
+    text-decoration: underline;
+}
+
+table.l-table .pager {
+    background: #e5e8eb;
+}
+/*#endregion*/
+
+/*#region 输入框*/
+
+input[type='text'], input[type='password'] {
+    height: 27px;
+    line-height: 27px;
+    width: 200px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 200px;
+    line-height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 5px;
+}
+
+input[type='text']:hover, input[type='password']:hover {
+    border: 1px solid #7d6df1;
+    box-shadow: 1px 0px 3px #7d6df1,-1px 0px 3px #7d6df1,0px 1px 3px #7d6df1,0px -1px 3px #7d6df1;
+}
+
+input[type='text']:focus, input[type='password']:focus {
+    border: 1px solid #d5d1f1;
+    box-shadow: 1px 0px 3px #d5d1f1,-1px 0px 3px #d5d1f1,0px 1px 3px #d5d1f1,0px -1px 3px #d5d1f1;
+}
+
+input.readonly {
+    background: #c8c4c4;
+}
+
+    input.readonly:hover {
+        border: 1px solid #f4f4f4;
+    }
+
+    input.readonly:focus {
+        border: 1px solid #f4f4f4;
+    }
+
+input.datetime {
+    background: url(images/common/calendar.png) no-repeat right center;
+}
+/*#endregion*/
+
+/*#region 按钮*/
+/* button */
+.button {
+    display: inline-block;
+    zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+    *display: inline;
+    vertical-align: baseline;
+    margin: 0 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+    .button:hover {
+        text-decoration: none;
+    }
+
+    .button:active {
+        position: relative;
+        top: 1px;
+    }
+
+.btn-bigrounded {
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+
+.btn-medium {
+    font-size: 12px;
+    padding: .4em 1.5em .42em;
+}
+
+.btn-small {
+    font-size: 11px;
+    padding: .2em 1em .275em;
+}
+
+.btn-white {
+    color: #606060;
+    border: solid 1px #b7b7b7;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+    background: -moz-linear-gradient(top, #fff, #ededed);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+
+    .btn-white:hover {
+        background: #ededed;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+        background: -moz-linear-gradient(top, #fff, #dcdcdc);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+    }
+
+    .btn-white:active {
+        color: #999;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
+        background: -moz-linear-gradient(top, #ededed, #fff);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+    }
+
+/*#endregion*/
+
+ul.l-list1 {
+}
+
+    ul.l-list1 li {
+        float: left;
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+        margin: 10px;
+        position:relative;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+    }
+
+        ul.l-list1 li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+            ul.l-list1 li:hover {
+                background-color:rgba(226, 56, 137, 0.90);
+            }
+
+            ul.l-list1 li:hover a{
+                color:#fff;
+            }
+
+            ul.l-list1 li a.link {
+                position:absolute;
+                width:auto;
+                height:auto;
+                display:none;
+            }
+            ul.l-list1 li:hover a.link{
+                display:block;
+            }

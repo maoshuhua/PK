@@ -1,0 +1,179 @@
+﻿<SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-04-11T11:46:16.6358600+08:00" level="FATAL" thread="3488" domain="/LM/W3SVC/1/ROOT-1-130416522753868590" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: �޷��� null ����ִ������ʱ��
+   �� CallSite.Target(Closure , CallSite , Object )
+   �� System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   �� ASP._Page_Views_Account_LogOn_cshtml.Execute() λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Views\Account\LogOn.cshtml:�к� 43
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   �� System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass1c.&lt;InvokeActionResultWithFilters&gt;b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-11T11:47:28.7119826+08:00" level="FATAL" thread="980" domain="/LM/W3SVC/1/ROOT-1-130416522753868590" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: �޷��� null ����ִ������ʱ��
+   �� CallSite.Target(Closure , CallSite , Object )
+   �� System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   �� ASP._Page_Views_Account_LogOn_cshtml.Execute() λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Views\Account\LogOn.cshtml:�к� 43
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   �� System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass1c.&lt;InvokeActionResultWithFilters&gt;b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-04-11T13:29:12.4520965+08:00" level="FATAL" thread="7160" domain="/LM/W3SVC/1/ROOT-1-130416675547627893" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Franklin Gothic Medium?��֧����ʽ?Bold??
+   �� System.Drawing.Font.CreateNativeFont()
+   �� System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   �� System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   �� Tuhui.Common.Utility.CaptchaImage.GetFont()
+   �� Tuhui.Common.Utility.CaptchaImage.GenerateImagePrivate()
+   �� Tuhui.Common.Utility.CaptchaImage.RenderImage()
+   �� Tuhui.Common.Utility.ValidateCode.CreateValidateGraphic(String validateCode)
+   �� Tuhui.OH.WebUI.Controllers.AccountController.ValidateCode() λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\AccountController.cs:�к� 51
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-04-11T14:20:04.7406775+08:00" level="FATAL" thread="3092" domain="/LM/W3SVC/1/ROOT-2-130416707452812766" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: �޷��� null ����ִ������ʱ��
+   �� CallSite.Target(Closure , CallSite , Object )
+   �� System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   �� ASP._Page_Views_Home_MainPage_cshtml.Execute() λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Views\Home\MainPage.cshtml:�к� 81
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   �� System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass1c.&lt;InvokeActionResultWithFilters&gt;b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-11T14:20:15.8543131+08:00" level="FATAL" thread="7236" domain="/LM/W3SVC/1/ROOT-2-130416707452812766" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: �޷��� null ����ִ������ʱ��
+   �� CallSite.Target(Closure , CallSite , Object )
+   �� ASP._Page_Views_Home_MainPage_cshtml.Execute() λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Views\Home\MainPage.cshtml:�к� 81
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   �� System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass1c.&lt;InvokeActionResultWithFilters&gt;b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-11T14:20:25.5708689+08:00" level="FATAL" thread="7788" domain="/LM/W3SVC/1/ROOT-2-130416707452812766" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: �޷��� null ����ִ������ʱ��
+   �� CallSite.Target(Closure , CallSite , Object )
+   �� ASP._Page_Views_Home_MainPage_cshtml.Execute() λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Views\Home\MainPage.cshtml:�к� 81
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   �� System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass1c.&lt;InvokeActionResultWithFilters&gt;b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-11T14:20:52.6304166+08:00" level="FATAL" thread="1760" domain="/LM/W3SVC/1/ROOT-2-130416707452812766" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: �޷��� null ����ִ������ʱ��
+   �� CallSite.Target(Closure , CallSite , Object )
+   �� ASP._Page_Views_Home_MainPage_cshtml.Execute() λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Views\Home\MainPage.cshtml:�к� 81
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   �� System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass1c.&lt;InvokeActionResultWithFilters&gt;b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-11T15:41:36.4054647+08:00" level="FATAL" thread="8792" domain="/LM/W3SVC/1/ROOT-2-130416707452812766" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Data.EntityCommandExecutionException: ִ�������ʱ����?�й���ϸ��Ϣ��������ڲ��쳣? ---> System.Data.SqlClient.SqlException: �ڴӷ��������ս��ʱ�������伶����? (provider: TCP Provider, error: 0 - ָ�������������ٿ���?) ---> System.ComponentModel.Win32Exception: ָ�������������ٿ���?
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   �� System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   �� System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   �� System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   �� System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   �� System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   �� System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   �� System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   �� System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   �� System.Data.SqlClient.SqlDataReader.get_MetaData()
+   �� System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   �� System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   �� System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   �� System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   �� System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   �� System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   �� System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   �� System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   �� System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   �� System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   �� System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   �� System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   �� System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   �� Tuhui.Common.Framework.BaseDataAccess`1.SearchList[TEntity](Func`2 predicate) λ�� E:\SVN2\Tuhui\Source\Tuhui.Common\Common\Framework\Tuhui.Common.Framework\BaseDataAccess.cs:�к� 185
+   �� Tuhui.OH.BusinessLogic.SceneBusinessLogic.GetFloorAndNode(Int32 sceneId) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\SceneBusinessLogic.cs:�к� 85
+   �� Tuhui.OH.WebUI.Controllers.SceneController.FloorDisplay(Int32 sceneId) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\SceneController.cs:�к� 48
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+</SystemException_Logger>

@@ -1,0 +1,37 @@
+﻿<SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-04-02T22:59:15.1499001+08:00" level="FATAL" thread="620" domain="/LM/W3SVC/1/ROOT-4-130409243512926795" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.InvalidOperationException: The context cannot be used while the model is being created.
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.UserDataAccess.FindByName(String LoginName) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\UserDataAccess.cs:�к� 56
+   �� Tuhui.OH.BusinessLogic.UserBusinessLogic.FindByName(String name) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\UserBusinessLogic.cs:�к� 51
+   �� Tuhui.OH.Mvc.AuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.Mvc\Filter\AuthorizeFilter.cs:�к� 36
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-02T22:59:15.4079148+08:00" level="FATAL" thread="6004" domain="/LM/W3SVC/1/ROOT-4-130409243512926795" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.InvalidOperationException: The context cannot be used while the model is being created.
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.UserDataAccess.FindByName(String LoginName) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\UserDataAccess.cs:�к� 56
+   �� Tuhui.OH.BusinessLogic.UserBusinessLogic.FindByName(String name) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\UserBusinessLogic.cs:�к� 51
+   �� Tuhui.OH.Mvc.AuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.Mvc\Filter\AuthorizeFilter.cs:�к� 36
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger></SystemException_Logger>

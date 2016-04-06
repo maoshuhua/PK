@@ -1,0 +1,253 @@
+﻿html
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #fff;
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+header, footer, nav, section
+{
+    display: block;
+}
+
+ul, p
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+iframe
+{
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+ul.ul_menu
+{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 3px 14px rgba(0,0,0,0.8);
+}
+
+    ul.ul_menu li
+    {
+        height: 30px;
+        line-height: 30px;
+        margin: 5px 5px;
+    }
+
+        ul.ul_menu li a
+        {
+            color: #fff;
+            display: block;
+            height: 100%;
+            width: 100%;
+            box-shadow: 0px 3px 14px rgba(0,0,0,0.4);
+            background-color: #484fdb;
+            cursor: pointer;
+        }
+
+            ul.ul_menu li a:hover
+            {
+                background-color: #ff6a00;
+            }
+
+a.metro
+{
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+    a.metro:hover
+    {
+        background-color: #484fdb;
+    }
+
+a.right
+{
+    background-image: url(images/right.png);
+}
+
+.message
+{
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    overflow: auto;
+    background-color: rgba(255,255,255,.8);
+    box-shadow: 0px 3px 14px rgba(0,0,0,0.8);
+}
+
+.map_title
+{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-color: #fff;
+    box-shadow: 0px 3px 14px rgba(0,0,0,0.8);
+    padding: 5px 8px;
+    color: #333;
+    border-radius: 5px;
+}
+
+.map_status
+{
+    position: absolute;
+    left: 1000px;
+    bottom: 10px;
+    width: 400px;
+    line-height: 30px;
+    background: rgba(0,0,0,.8);
+    box-shadow: 2px 2px 4px #888;
+}
+
+
+ul.index-nav
+{
+    list-style: none;
+    display: block;
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+    ul.index-nav li
+    {
+        margin: 5px 0 0 0;
+    }
+
+        ul.index-nav li a
+        {
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+            background: rgba(0,0,0,.8);
+            color: #fff;
+            padding: 7px 15px 7px 15px;
+            border-radius: 0px 10px 10px 0px;
+            width: 100px;
+            display: block;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 2px 2px 4px #888;
+        }
+
+            ul.index-nav li a:hover
+            {
+                background: #484fdb;
+                padding: 7px 15px 7px 30px;
+            }
+
+
+.index-content
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0px;
+    height: 100%;
+    overflow: hidden;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    box-shadow: -2px 0px 4px #888;
+}
+
+.index-content-show
+{
+    width: 300px;
+}
+
+
+ul.content-nav
+{
+}
+
+    ul.content-nav li
+    {
+        margin: 15px 0 0 0;
+        width: 100%;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        background: #484fdb;
+        color: #fff;
+        border-radius: 10px;
+        padding: 5px 0px;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0px 0px 4px #888;
+    }
+
+        ul.content-nav li a
+        {
+            text-decoration: underline;
+        }
+
+        ul.content-nav li:hover
+        {
+            background: #9148db;
+            font-weight:bolder;
+        }
+
+
+.index-popup
+{
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -400px;
+    background: rgb(0,0,0);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.6);
+    text-shadow: 0px 1px 0px #f3f3f3;
+}
+
+    .index-popup .head
+    {
+        text-align: left;
+        background-color: rgb(0, 90, 255);
+        border-radius: 8px 8px 0 0;
+        line-height: 40px;
+        padding-left: 10px;
+    }
+
+    .index-popup .content
+    {
+        height: 360px;
+    }

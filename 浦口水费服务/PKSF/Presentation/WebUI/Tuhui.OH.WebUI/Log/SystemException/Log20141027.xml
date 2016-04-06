@@ -1,0 +1,163 @@
+﻿<SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-10-27T15:49:45.0159743+08:00" level="FATAL" thread="7808" domain="/LM/W3SVC/1/ROOT-2-130588697795726630" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Web.HttpCompileException (0x80004005): e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\26 �Ͼ���վ��ѯ��\07.Source\PC\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml(4): error CS0234: �����ռ�?Tuhui.OH.Entity?�в��������ͻ������ռ�����?User?(�Ƿ�ȱ�ٳ�������?)
+   �� System.Web.Compilation.AssemblyBuilder.Compile()
+   �� System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   �� System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   �� System.Web.WebPages.VirtualPathFactoryManager.CreateInstance[T](String virtualPath)
+   �� System.Web.WebPages.WebPageExecutingBase.<>c__DisplayClass1.<GetObjectFactory>b__0()
+   �� System.Web.WebPages.StartPage.GetStartPage(WebPageRenderingBase page, String fileName, IEnumerable`1 supportedExtensions)
+   �� System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   �� System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-10-27T15:49:58.9107691+08:00" level="FATAL" thread="7808" domain="/LM/W3SVC/1/ROOT-2-130588697795726630" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Web.HttpCompileException (0x80004005): e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\26 �Ͼ���վ��ѯ��\07.Source\PC\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml(4): error CS0234: �����ռ�?Tuhui.OH.Entity?�в��������ͻ������ռ�����?User?(�Ƿ�ȱ�ٳ�������?)
+   �� System.Web.Compilation.AssemblyBuilder.Compile()
+   �� System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   �� System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   �� System.Web.WebPages.VirtualPathFactoryManager.CreateInstance[T](String virtualPath)
+   �� System.Web.WebPages.WebPageExecutingBase.<>c__DisplayClass1.<GetObjectFactory>b__0()
+   �� System.Web.WebPages.StartPage.GetStartPage(WebPageRenderingBase page, String fileName, IEnumerable`1 supportedExtensions)
+   �� System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   �� System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+<SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-10-27T16:01:23.6899362+08:00" level="FATAL" thread="10468" domain="/LM/W3SVC/1/ROOT/OH-2-130588704802947420" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Web.HttpCompileException (0x80004005): e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\26 �Ͼ���վ��ѯ��\07.Source\PC\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml(4): error CS0234: �����ռ�?Tuhui.OH.Entity?�в��������ͻ������ռ�����?User?(�Ƿ�ȱ�ٳ�������?)
+   �� System.Web.Compilation.AssemblyBuilder.Compile()
+   �� System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   �� System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   �� System.Web.WebPages.VirtualPathFactoryManager.CreateInstance[T](String virtualPath)
+   �� System.Web.WebPages.WebPageExecutingBase.<>c__DisplayClass1.<GetObjectFactory>b__0()
+   �� System.Web.WebPages.StartPage.GetStartPage(WebPageRenderingBase page, String fileName, IEnumerable`1 supportedExtensions)
+   �� System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   �� System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-10-27T16:01:31.2683697+08:00" level="FATAL" thread="8164" domain="/LM/W3SVC/1/ROOT/OH-2-130588704802947420" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Web.HttpCompileException (0x80004005): e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\26 �Ͼ���վ��ѯ��\07.Source\PC\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml(4): error CS0234: �����ռ�?Tuhui.OH.Entity?�в��������ͻ������ռ�����?User?(�Ƿ�ȱ�ٳ�������?)
+   �� System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   �� System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   �� System.Web.WebPages.VirtualPathFactoryManager.CreateInstance[T](String virtualPath)
+   �� System.Web.WebPages.WebPageExecutingBase.<>c__DisplayClass1.<GetObjectFactory>b__0()
+   �� System.Web.WebPages.StartPage.GetStartPage(WebPageRenderingBase page, String fileName, IEnumerable`1 supportedExtensions)
+   �� System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   �� System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-10-27T16:01:38.9288078+08:00" level="FATAL" thread="10468" domain="/LM/W3SVC/1/ROOT/OH-2-130588704802947420" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Web.HttpCompileException (0x80004005): e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\26 �Ͼ���վ��ѯ��\07.Source\PC\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml(4): error CS0234: �����ռ�?Tuhui.OH.Entity?�в��������ͻ������ռ�����?User?(�Ƿ�ȱ�ٳ�������?)
+   �� System.Web.Compilation.AssemblyBuilder.Compile()
+   �� System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   �� System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   �� System.Web.WebPages.VirtualPathFactoryManager.CreateInstance[T](String virtualPath)
+   �� System.Web.WebPages.WebPageExecutingBase.<>c__DisplayClass1.<GetObjectFactory>b__0()
+   �� System.Web.WebPages.StartPage.GetStartPage(WebPageRenderingBase page, String fileName, IEnumerable`1 supportedExtensions)
+   �� System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   �� System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-10-27T16:01:51.3805200+08:00" level="FATAL" thread="10428" domain="/LM/W3SVC/1/ROOT/OH-2-130588704802947420" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Web.HttpCompileException (0x80004005): e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\26 �Ͼ���վ��ѯ��\07.Source\PC\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml(4): error CS0234: �����ռ�?Tuhui.OH.Entity?�в��������ͻ������ռ�����?User?(�Ƿ�ȱ�ٳ�������?)
+   �� System.Web.Compilation.AssemblyBuilder.Compile()
+   �� System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   �� System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   �� System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   �� System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   �� System.Web.WebPages.VirtualPathFactoryManager.CreateInstance[T](String virtualPath)
+   �� System.Web.WebPages.WebPageExecutingBase.<>c__DisplayClass1.<GetObjectFactory>b__0()
+   �� System.Web.WebPages.StartPage.GetStartPage(WebPageRenderingBase page, String fileName, IEnumerable`1 supportedExtensions)
+   �� System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   �� System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+<SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger>

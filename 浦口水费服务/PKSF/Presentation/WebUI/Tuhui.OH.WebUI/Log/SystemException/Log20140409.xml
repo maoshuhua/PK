@@ -1,0 +1,138 @@
+﻿<SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-04-09T10:08:51.9733627+08:00" level="FATAL" thread="8456" domain="/LM/W3SVC/1/ROOT-2-130414829138223245" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Franklin Gothic Medium?��֧����ʽ?Bold??
+   �� System.Drawing.Font.CreateNativeFont()
+   �� System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   �� System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   �� Tuhui.Common.Utility.CaptchaImage.GetFont()
+   �� Tuhui.Common.Utility.CaptchaImage.GenerateImagePrivate()
+   �� Tuhui.Common.Utility.CaptchaImage.RenderImage()
+   �� Tuhui.Common.Utility.ValidateCode.CreateValidateGraphic(String validateCode)
+   �� Tuhui.OH.WebUI.Controllers.AccountController.ValidateCode() λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\AccountController.cs:�к� 51
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-04-09T11:13:39.8717377+08:00" level="FATAL" thread="3932" domain="/LM/W3SVC/1/ROOT-3-130414862838780807" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.FunctionRoomManagerController?�з���?System.Web.Mvc.ActionResult GetFloorById(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?floorId?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-09T11:13:46.3741097+08:00" level="FATAL" thread="8340" domain="/LM/W3SVC/1/ROOT-3-130414862838780807" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.FunctionRoomManagerController?�з���?System.Web.Mvc.ActionResult GetFloorById(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?floorId?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-09T11:16:28.1383620+08:00" level="FATAL" thread="4212" domain="/LM/W3SVC/1/ROOT-3-130414862838780807" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.FunctionRoomManagerController?�з���?System.Web.Mvc.ActionResult GetFloorById(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?floorId?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-09T11:17:57.0094452+08:00" level="FATAL" thread="3892" domain="/LM/W3SVC/1/ROOT-3-130414862838780807" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.FunctionRoomManagerController?�з���?System.Web.Mvc.ActionResult GetFloorById(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?floorId?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-09T11:20:34.1314320+08:00" level="FATAL" thread="5284" domain="/LM/W3SVC/1/ROOT-3-130414862838780807" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.FunctionRoomManagerController?�з���?System.Web.Mvc.ActionResult GetFloorById(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?floorId?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-09T11:20:56.0256843+08:00" level="FATAL" thread="3892" domain="/LM/W3SVC/1/ROOT-3-130414862838780807" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.FunctionRoomManagerController?�з���?System.Web.Mvc.ActionResult GetFloorById(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?floorId?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger>

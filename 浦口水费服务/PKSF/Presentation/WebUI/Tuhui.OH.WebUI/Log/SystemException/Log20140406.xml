@@ -1,0 +1,261 @@
+﻿<SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-04-06T03:11:45.0543628+08:00" level="FATAL" thread="1876" domain="/LM/W3SVC/1/ROOT-1-130411966431014259" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Data.ProviderIncompatibleException: �ṩ����δ���� ProviderManifestToken �ַ���? ---> System.Data.SqlClient.SqlException: ���� SQL Server ��������ʱ������������صĻ��ض���ʵ���Ĵ���?δ�ҵ����޷����ʷ�����?����֤ʵ�������Ƿ���ȷ���� SQL Server ������Ϊ����Զ������? (provider: Named Pipes Provider, error: 40 - �޷��򿪵� SQL Server ������) ---> System.ComponentModel.Win32Exception: �Ҳ�������·��?
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   �� System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   �� System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   �� System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   �� System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   �� System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   �� System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   �� System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   �� System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   �� System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   �� System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   �� System.Data.SqlClient.SqlConnection.Open()
+   �� System.Data.SqlClient.SqlProviderServices.UsingConnection(SqlConnection sqlConnection, Action`1 act)
+   �� System.Data.SqlClient.SqlProviderServices.UsingMasterConnection(SqlConnection sqlConnection, Action`1 act)
+   �� System.Data.SqlClient.SqlProviderServices.GetDbProviderManifestToken(DbConnection connection)
+   �� System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   �� System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   �� System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   �� System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.ZENTRACK_TICKETSDataAccess.GetAlarmList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\ZENTRACK_TICKETSDataAccess.cs:�к� 39
+   �� Tuhui.OH.BusinessLogic.ZENTRACK_TICKETSBusinessLogic.GetAlarmList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\ZENTRACK_TICKETSBusinessLogic.cs:�к� 27
+   �� Tuhui.OH.WebUI.Controllers.APIEventController.FindEventList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\APIEventController.cs:�к� 28
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-06T03:13:00.9487037+08:00" level="FATAL" thread="4188" domain="/LM/W3SVC/1/ROOT-1-130411966431014259" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Data.ProviderIncompatibleException: �ṩ����δ���� ProviderManifestToken �ַ���? ---> System.Data.SqlClient.SqlException: ���� SQL Server ��������ʱ������������صĻ��ض���ʵ���Ĵ���?δ�ҵ����޷����ʷ�����?����֤ʵ�������Ƿ���ȷ���� SQL Server ������Ϊ����Զ������? (provider: Named Pipes Provider, error: 40 - �޷��򿪵� SQL Server ������) ---> System.ComponentModel.Win32Exception: �Ҳ�������·��?
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   �� System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   �� System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   �� System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   �� System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   �� System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   �� System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   �� System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   �� System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   �� System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   �� System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   �� System.Data.SqlClient.SqlConnection.Open()
+   �� System.Data.SqlClient.SqlProviderServices.UsingConnection(SqlConnection sqlConnection, Action`1 act)
+   �� System.Data.SqlClient.SqlProviderServices.UsingMasterConnection(SqlConnection sqlConnection, Action`1 act)
+   �� System.Data.SqlClient.SqlProviderServices.GetDbProviderManifestToken(DbConnection connection)
+   �� System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   �� System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   �� System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   �� System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.ZENTRACK_TICKETSDataAccess.GetAlarmList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\ZENTRACK_TICKETSDataAccess.cs:�к� 39
+   �� Tuhui.OH.BusinessLogic.ZENTRACK_TICKETSBusinessLogic.GetAlarmList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\ZENTRACK_TICKETSBusinessLogic.cs:�к� 27
+   �� Tuhui.OH.WebUI.Controllers.APIEventController.FindEventList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\APIEventController.cs:�к� 28
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-06T03:14:03.9673082+08:00" level="FATAL" thread="7140" domain="/LM/W3SVC/1/ROOT-1-130411966431014259" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Data.ProviderIncompatibleException: �ṩ����δ���� ProviderManifestToken �ַ���? ---> System.Data.SqlClient.SqlException: ���� SQL Server ��������ʱ������������صĻ��ض���ʵ���Ĵ���?δ�ҵ����޷����ʷ�����?����֤ʵ�������Ƿ���ȷ���� SQL Server ������Ϊ����Զ������? (provider: Named Pipes Provider, error: 40 - �޷��򿪵� SQL Server ������) ---> System.ComponentModel.Win32Exception: �Ҳ�������·��?
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   �� System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   �� System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   �� System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   �� System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   �� System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   �� System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   �� System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   �� System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   �� System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   �� System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   �� System.Data.SqlClient.SqlConnection.Open()
+   �� System.Data.SqlClient.SqlProviderServices.UsingConnection(SqlConnection sqlConnection, Action`1 act)
+   �� System.Data.SqlClient.SqlProviderServices.UsingMasterConnection(SqlConnection sqlConnection, Action`1 act)
+   �� System.Data.SqlClient.SqlProviderServices.GetDbProviderManifestToken(DbConnection connection)
+   �� System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   �� System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   �� System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   �� System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.ZENTRACK_TICKETSDataAccess.GetAlarmList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\ZENTRACK_TICKETSDataAccess.cs:�к� 39
+   �� Tuhui.OH.BusinessLogic.ZENTRACK_TICKETSBusinessLogic.GetAlarmList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\ZENTRACK_TICKETSBusinessLogic.cs:�к� 27
+   �� Tuhui.OH.WebUI.Controllers.APIEventController.FindEventList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\APIEventController.cs:�к� 28
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-06T03:15:33.4394257+08:00" level="FATAL" thread="6740" domain="/LM/W3SVC/1/ROOT-1-130411966431014259" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Data.ProviderIncompatibleException: �ṩ����δ���� ProviderManifestToken �ַ���? ---> System.Data.SqlClient.SqlException: ���� SQL Server ��������ʱ������������صĻ��ض���ʵ���Ĵ���?δ�ҵ����޷����ʷ�����?����֤ʵ�������Ƿ���ȷ���� SQL Server ������Ϊ����Զ������? (provider: Named Pipes Provider, error: 40 - �޷��򿪵� SQL Server ������) ---> System.ComponentModel.Win32Exception: �Ҳ�������·��?
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   �� System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   �� System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   �� System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   �� System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   �� System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   �� System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   �� System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   �� System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   �� System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   �� System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   �� System.Data.SqlClient.SqlConnection.Open()
+   �� System.Data.SqlClient.SqlProviderServices.UsingConnection(SqlConnection sqlConnection, Action`1 act)
+   �� System.Data.SqlClient.SqlProviderServices.UsingMasterConnection(SqlConnection sqlConnection, Action`1 act)
+   �� System.Data.SqlClient.SqlProviderServices.GetDbProviderManifestToken(DbConnection connection)
+   �� System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   �� System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   �� System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   �� System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.ZENTRACK_TICKETSDataAccess.GetAlarmList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\ZENTRACK_TICKETSDataAccess.cs:�к� 39
+   �� Tuhui.OH.BusinessLogic.ZENTRACK_TICKETSBusinessLogic.GetAlarmList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\ZENTRACK_TICKETSBusinessLogic.cs:�к� 27
+   �� Tuhui.OH.WebUI.Controllers.APIEventController.FindEventList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\APIEventController.cs:�к� 28
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-04-06T03:16:36.4530299+08:00" level="FATAL" thread="4104" domain="/LM/W3SVC/1/ROOT-1-130411966431014259" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Data.ProviderIncompatibleException: �ṩ����δ���� ProviderManifestToken �ַ���? ---> System.Data.SqlClient.SqlException: ���� SQL Server ��������ʱ������������صĻ��ض���ʵ���Ĵ���?δ�ҵ����޷����ʷ�����?����֤ʵ�������Ƿ���ȷ���� SQL Server ������Ϊ����Զ������? (provider: Named Pipes Provider, error: 40 - �޷��򿪵� SQL Server ������) ---> System.ComponentModel.Win32Exception: �Ҳ�������·��?
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   �� System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   �� System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   �� System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   �� System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   �� System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   �� System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   �� System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   �� System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   �� System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   �� System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   �� System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   �� System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   �� System.Data.SqlClient.SqlConnection.Open()
+   �� System.Data.SqlClient.SqlProviderServices.UsingConnection(SqlConnection sqlConnection, Action`1 act)
+   �� System.Data.SqlClient.SqlProviderServices.UsingMasterConnection(SqlConnection sqlConnection, Action`1 act)
+   �� System.Data.SqlClient.SqlProviderServices.GetDbProviderManifestToken(DbConnection connection)
+   �� System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   �� System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   �� System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   �� System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.ZENTRACK_TICKETSDataAccess.GetAlarmList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\ZENTRACK_TICKETSDataAccess.cs:�к� 39
+   �� Tuhui.OH.BusinessLogic.ZENTRACK_TICKETSBusinessLogic.GetAlarmList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\ZENTRACK_TICKETSBusinessLogic.cs:�к� 27
+   �� Tuhui.OH.WebUI.Controllers.APIEventController.FindEventList(Nullable`1 priority) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\APIEventController.cs:�к� 28
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+<SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger>

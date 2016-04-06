@@ -346,6 +346,9 @@ D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Tuhui.Recept
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Tuhui.Reception.Utility.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\WebGrease.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NLog.dll
+D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NPOI.dll
+D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NPOI.OOXML.dll
+D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NPOI.OpenXml4Net.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Tuhui.Common45.Mvc.pdb
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Tuhui.Common45.Cache.pdb
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\Tuhui.Common45.Communication.pdb
@@ -404,8 +407,3 @@ D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\zh-Hans\Micr
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.dll
 D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\obj\Debug\Tuhui.Reception.WebUI.pdb
-D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NPOI.dll
-D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NPOI.OOXML.dll
-D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\ICSharpCode.SharpZipLib.dll
-D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NPOI.OpenXmlFormats.dll
-D:\msh\pk\PK\Reception\Presentation\WebUI\Tuhui.Reception.WebUI\bin\NPOI.OpenXml4Net.dll

@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+    Page.HasLogOn = (SessionHelper.LogOnUserObj != null);
+    Page.LogOnUser = SessionHelper.LogOnUser<Tuhui.OH.Entity.nz_user>();
+}
+
+@{
+    Page.LeftMenuOptions = new AjaxOptions
+    {
+        UpdateTargetId = "layout_main1",
+        OnBegin = "$.OH.ajaxIframe_OnBegin",
+        OnSuccess = "$.OH.ajaxIframe_OnSuccess",
+        OnFailure = "$.OH.ajaxIframe_OnFailure"
+    };
+
+    Page.LeftMenuOptions2 = new AjaxOptions
+    {
+        UpdateTargetId = "layout_main2",
+        OnBegin = "$.OH.ajaxIframe_OnBegin2",
+        OnSuccess = "$.OH.ajaxIframe_OnSuccess",
+        OnFailure = "$.OH.ajaxIframe_OnFailure"
+    };
+
+    Page.RightAreaOptions = new AjaxOptions
+    {
+        UpdateTargetId = "layout_main3",
+        OnBegin = "$.OH.ajaxIframe_OnBegin3",
+        OnSuccess = "$.OH.ajaxIframe_OnSuccess",
+        OnFailure = "$.OH.ajaxIframe_OnFailure",
+        OnComplete = "$.OH.ajaxIframe_OnComplete"
+    };
+
+
+    Page.Zsxt_RightOptions = new AjaxOptions
+    {
+        UpdateTargetId = "layout-mainbody",
+        OnBegin = "$.OH.ajaxIframe_OnBegin12",
+        OnSuccess = "$.OH.ajaxIframe_OnSuccess",
+        OnFailure = "$.OH.ajaxIframe_OnFailure"
+    };
+}

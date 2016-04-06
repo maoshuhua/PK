@@ -10,8 +10,6 @@ D:\Reception\Common\Utility\Tuhui.Common45.Utility\obj\Debug\Tuhui.Common45.Util
 D:\Reception\Common\Utility\Tuhui.Common45.Utility\obj\Debug\Tuhui.Common45.Utility.pdb
 D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\bin\Debug\Tuhui.Common45.Utility.dll
 D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\bin\Debug\Tuhui.Common45.Utility.pdb
-D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\obj\Debug\Tuhui.Common45.Utility.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\obj\Debug\Tuhui.Common45.Utility.dll
 D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\obj\Debug\Tuhui.Common45.Utility.pdb
-D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\msh\pk\PK\Reception\Common\Utility\Tuhui.Common45.Utility\obj\Debug\Tuhui.Common45.Utility.csprojResolveAssemblyReference.cache

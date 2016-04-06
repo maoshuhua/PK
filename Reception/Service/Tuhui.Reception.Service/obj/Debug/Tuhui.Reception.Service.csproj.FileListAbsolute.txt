@@ -66,7 +66,10 @@ D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\Tuhui.Common45.
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\Tuhui.Reception.Model.dll
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\Tuhui.Reception.Repository.dll
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\Tuhui.Reception.Utility.dll
+D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\NPOI.dll
+D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\NPOI.OOXML.dll
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\Tuhui.Common45.Environment.dll
+D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\NPOI.OpenXml4Net.dll
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\Tuhui.Common45.Framework.pdb
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\Tuhui.Common45.Utility.pdb
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\Tuhui.Reception.Model.pdb
@@ -78,8 +81,3 @@ D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\zh-Hans\EntityF
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\obj\Debug\Tuhui.Reception.Service.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\obj\Debug\Tuhui.Reception.Service.dll
 D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\obj\Debug\Tuhui.Reception.Service.pdb
-D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\NPOI.dll
-D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\NPOI.OOXML.dll
-D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\NPOI.OpenXmlFormats.dll
-D:\msh\pk\PK\Reception\Service\Tuhui.Reception.Service\bin\Debug\NPOI.OpenXml4Net.dll

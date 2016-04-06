@@ -1,0 +1,13 @@
+﻿<ControllerAction_Logger><log4net_event logger="ControllerActionLogger" timestamp="2015-06-07T17:10:29.8364740+08:00" level="INFO" thread="6776" domain="/LM/W3SVC/1/ROOT-3-130781418277616703" username="IIS APPPOOL\AAAA">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-07 05:10:29.602','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://192.168.1.103:1012/','UserHostName':'192.168.1.103','UserHostAddress':'192.168.1.103','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-07T17:10:29.9144741+08:00" level="INFO" thread="6776" domain="/LM/W3SVC/1/ROOT-3-130781418277616703" username="IIS APPPOOL\AAAA">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-07 05:10:29.914','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+</ControllerAction_Logger>

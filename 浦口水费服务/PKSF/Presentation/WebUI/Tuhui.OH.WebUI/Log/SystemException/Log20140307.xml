@@ -1,0 +1,153 @@
+﻿<SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-03-07T09:16:25.3831257+08:00" level="FATAL" thread="7576" domain="/LM/W3SVC/1/ROOT/OH-1-130386285620827930" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.ZENTRACK_TICKETSController?�з���?System.Web.Mvc.ActionResult alarmList(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?priority?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-03-07T14:01:58.6270912+08:00" level="FATAL" thread="4224" domain="/LM/W3SVC/1/ROOT/OH-1-130386450155948801" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.ZENTRACK_TICKETSController?�з���?System.Web.Mvc.ActionResult alarmList(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?priority?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-07T14:03:46.2622476+08:00" level="FATAL" thread="4224" domain="/LM/W3SVC/1/ROOT/OH-1-130386450155948801" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.ZENTRACK_TICKETSController?�з���?System.Web.Mvc.ActionResult alarmList(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?priority?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-07T14:21:08.6458685+08:00" level="FATAL" thread="8552" domain="/LM/W3SVC/1/ROOT/OH-1-130386450155948801" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.ZENTRACK_TICKETSController?�з���?System.Web.Mvc.ActionResult alarmList(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?priority?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-07T14:23:10.7968552+08:00" level="FATAL" thread="9052" domain="/LM/W3SVC/1/ROOT/OH-1-130386450155948801" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.ZENTRACK_TICKETSController?�з���?System.Web.Mvc.ActionResult alarmList(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?priority?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-07T14:27:19.5450827+08:00" level="FATAL" thread="7632" domain="/LM/W3SVC/1/ROOT/OH-1-130386450155948801" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.ZENTRACK_TICKETSController?�з���?System.Web.Mvc.ActionResult alarmList(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?priority?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-03-07T18:00:01.6550337+08:00" level="FATAL" thread="8216" domain="/LM/W3SVC/1/ROOT/OH-1-130386544919798983" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.ZENTRACK_TICKETSController?�з���?System.Web.Mvc.ActionResult alarmList(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?priority?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-07T18:22:27.8820335+08:00" level="FATAL" thread="8460" domain="/LM/W3SVC/1/ROOT/OH-1-130386544919798983" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.ZENTRACK_TICKETSController?�з���?System.Web.Mvc.ActionResult alarmList(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?priority?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger>

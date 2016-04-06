@@ -1,0 +1,47 @@
+﻿<SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-06-03T13:54:33.7279982+08:00" level="FATAL" thread="4544" domain="/LM/W3SVC/1/ROOT-5-130462483837068493" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.Data.EntityCommandExecutionException: ִ�������ʱ����?�й���ϸ��Ϣ��������ڲ��쳣? ---> System.Data.SqlClient.SqlException: �ڴӷ��������ս��ʱ�������伶����? (provider: TCP Provider, error: 0 - ָ�������������ٿ���?) ---> System.ComponentModel.Win32Exception: ָ�������������ٿ���?
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   �� System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   �� System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   �� System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   �� System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   �� System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   �� System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   �� System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   �� System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   �� System.Data.SqlClient.SqlDataReader.get_MetaData()
+   �� System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   �� System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   �� System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   �� System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   �� System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   �� System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   �� System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- �ڲ��쳣��ջ���ٵĽ�β ---
+   �� System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   �� System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   �� System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   �� System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   �� System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   �� System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   �� System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   �� Tuhui.Common.Framework.BaseDataAccess`1.SearchList[TEntity](Func`2 predicate) λ�� E:\SVN2\Tuhui\Source\Tuhui.Common\Common\Framework\Tuhui.Common.Framework\BaseDataAccess.cs:�к� 185
+   �� Tuhui.OH.BusinessLogic.FloorBusinessLogic.GetFloorList(Int32 sceneId) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\FloorBusinessLogic.cs:�к� 59
+   �� Tuhui.OH.Mvc.OHHtmlHelperExtension.GetFloorList(HtmlHelper helper, Int32 sceneId) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.Mvc\Helper\HtmlHelperExtension~1.cs:�к� 34
+   �� ASP._Page_Views_FunctionRoomManager_ModifyFunctionRoom_cshtml.Execute() λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Views\FunctionRoomManager\ModifyFunctionRoom.cshtml:�к� 38
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   �� System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)]]></log4net_exception>
+</log4net_event>
+</SystemException_Logger>

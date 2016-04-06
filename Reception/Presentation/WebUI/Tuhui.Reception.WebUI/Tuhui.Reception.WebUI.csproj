@@ -167,7 +167,9 @@
     <Compile Include="ASHX\UploadHandler.ashx.cs">
       <DependentUpon>UploadHandler.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\ReceptionController.cs" />
     <Compile Include="Controllers\ReceptionManagerController.cs" />
+    <Compile Include="Controllers\UserManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -219,6 +221,17 @@
     <Content Include="Content\images\manager\manager_home.png" />
     <Content Include="Content\images\manager\menu_head.png" />
     <Content Include="Content\images\manager\tit.png" />
+    <Content Include="Content\images\reception\arrow.png" />
+    <Content Include="Content\images\reception\map_wp.png" />
+    <Content Include="Content\images\reception\map_wx.png" />
+    <Content Include="Content\images\reception\navi_close.png" />
+    <Content Include="Content\images\reception\navi_open.png" />
+    <Content Include="Content\images\reception\wkg_big.png" />
+    <Content Include="Content\images\reception\wkg_small.png" />
+    <Content Include="Content\images\reception\ykg_big.png" />
+    <Content Include="Content\images\reception\ykg_small.png" />
+    <Content Include="Content\images\reception\ywg_big.png" />
+    <Content Include="Content\images\reception\ywg_small.png" />
     <Content Include="Content\images\subject_arrow_right.png" />
     <Content Include="Content\images\subject_menu_chk.png" />
     <Content Include="Content\images\subject_menu_chk_open.png" />
@@ -285,6 +298,7 @@
     <Content Include="Content\layout.css" />
     <Content Include="Content\layout_m.css" />
     <Content Include="Content\logon.css" />
+    <Content Include="Content\reception.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -646,8 +660,10 @@
     <Content Include="Scripts\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
     <Content Include="Scripts\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
     <Content Include="Scripts\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="Scripts\reception.js" />
     <Content Include="Scripts\STVIDEO\common.js" />
     <Content Include="Scripts\STVIDEO\videoPlayer.swf" />
+    <Content Include="Scripts\template.js" />
     <Content Include="Scripts\tv_f_video.js" />
     <Content Include="Scripts\tv_m_subjectList.js" />
     <Content Include="Scripts\tv_video.js" />
@@ -709,8 +725,8 @@
     <Content Include="ASHX\UploadHandler.ashx" />
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\Tuhui.Reception.pubxml" />
-    <Content Include="Views\ReceptionManager\LogOn.cshtml" />
-    <Content Include="Views\ReceptionManager\Index.cshtml" />
+    <Content Include="Views\UserManager\LogOn.cshtml" />
+    <Content Include="Views\UserManager\Index.cshtml" />
     <Content Include="Views\ReceptionManager\ResourceType.cshtml" />
     <Content Include="Views\ReceptionManager\ResourceTypeModify.cshtml" />
     <Content Include="Views\ReceptionManager\Resource.cshtml" />
@@ -742,6 +758,7 @@
     <Content Include="Views\ReceptionManager\NavigationModify.cshtml" />
     <Content Include="Template\template.xlsx" />
     <Content Include="Views\ReceptionManager\NavigationImport.cshtml" />
+    <Content Include="Views\Reception\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\ASP.NET MVC\Tuhui.Common45.Mvc\Tuhui.Common45.Mvc.csproj">

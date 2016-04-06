@@ -28,5 +28,8 @@ namespace Tuhui.Reception.Service
         
         //删除
         int Delete(string id);
+
+        //获取最新一条导航
+        Navigation GetNewest();
     }
 }

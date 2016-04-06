@@ -1,0 +1,20 @@
+﻿<SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-04-14T10:40:35.3307484+08:00" level="FATAL" thread="5192" domain="/LM/W3SVC/1/ROOT-1-130419126108761234" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.TechnicalOperPlanController?�з���?System.Web.Mvc.ActionResult GetNodeInfoByFloorIdAndSceneId(Int32, Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?floorId?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger>

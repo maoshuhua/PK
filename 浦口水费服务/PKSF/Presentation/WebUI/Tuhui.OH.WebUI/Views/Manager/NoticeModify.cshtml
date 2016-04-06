@@ -1,0 +1,48 @@
+﻿@model Tuhui.OH.Entity.nz_notice
+@{
+    ViewBag.Title = "NoticeAdd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="layout-content-head">
+    <h2>@ViewBag.TitleName</h2>
+</div>
+<div style="text-align:left;margin-left:50px;">
+    @using (Html.BeginForm("NoticeModify", "Manager"))
+    {
+
+        @Html.HiddenFor(p => p.noticeid)
+        <div class="edit-area">
+            <div class="edit-lable">公告标题:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p=>p.noticetitle)
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">公告内容:</div>
+            <div class="edit-content">
+                @Html.TextAreaFor(p=>p.noticedesc,new {@class="textareafor"})
+            </div>
+        </div>
+        <div class="edit-area">
+            <div class="edit-lable">有效期:</div>
+            <div class="edit-content">
+                @Html.TextBoxFor(p=>p.effectivetime,new { @class = "wdate", onfocus = "WdatePicker({dateFmt:'yyyy/MM/dd HH:mm:ss'})" })
+            </div>
+        </div>
+        <div class ="edit-area">
+            <div class="edit-lable"></div>
+            <div class="edit-content">
+                <input style="margin-left: 80px; width: 70px;height: 30px;" type="submit" value="保存"/>
+                <input type="button" value="返回" style="width: 70px;height: 30px;" onclick="BackToNoticeList()"/>
+            </div>    
+         </div>
+    }
+
+</div>
+
+<script type="text/javascript">
+    function BackToNoticeList() {
+        window.location.href = '@Url.Action("NoticeList", "Manager")';
+    }
+</script>

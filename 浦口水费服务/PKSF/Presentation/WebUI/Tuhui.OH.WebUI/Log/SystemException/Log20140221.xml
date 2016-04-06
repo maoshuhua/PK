@@ -1,0 +1,146 @@
+﻿<SystemException_Logger></SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-02-21T09:52:45.5685273+08:00" level="FATAL" thread="2912" domain="/LM/W3SVC/1/ROOT/OH-3-130374211637314222" identity="admin" username="IIS APPPOOL\DefaultAppPool">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.InvalidOperationException: The context cannot be used while the model is being created.
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.UserDataAccess.FindByName(String LoginName) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\UserDataAccess.cs:�к� 56
+   �� Tuhui.OH.BusinessLogic.UserBusinessLogic.FindByName(String name) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\UserBusinessLogic.cs:�к� 51
+   �� Tuhui.OH.Mvc.AuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.Mvc\Filter\AuthorizeFilter.cs:�к� 36
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-02-21T09:54:48.7425725+08:00" level="FATAL" thread="4048" domain="/LM/W3SVC/1/ROOT/OH-4-130374212867504585" identity="admin" username="IIS APPPOOL\DefaultAppPool">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.InvalidOperationException: The context cannot be used while the model is being created.
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.UserDataAccess.FindByName(String LoginName) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\UserDataAccess.cs:�к� 56
+   �� Tuhui.OH.BusinessLogic.UserBusinessLogic.FindByName(String name) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\UserBusinessLogic.cs:�к� 51
+   �� Tuhui.OH.Mvc.AuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.Mvc\Filter\AuthorizeFilter.cs:�к� 36
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-02-21T09:55:51.6211689+08:00" level="FATAL" thread="8284" domain="/LM/W3SVC/1/ROOT/OH-5-130374213500650799" identity="admin" username="IIS APPPOOL\DefaultAppPool">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.InvalidOperationException: The context cannot be used while the model is being created.
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.UserDataAccess.FindByName(String LoginName) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\UserDataAccess.cs:�к� 56
+   �� Tuhui.OH.BusinessLogic.UserBusinessLogic.FindByName(String name) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\UserBusinessLogic.cs:�к� 51
+   �� Tuhui.OH.Mvc.AuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.Mvc\Filter\AuthorizeFilter.cs:�к� 36
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-02-21T09:57:52.7060946+08:00" level="FATAL" thread="2912" domain="/LM/W3SVC/1/ROOT/OH-5-130374213500650799" identity="admin" username="IIS APPPOOL\DefaultAppPool">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: ?Tuhui.OH.Entity.User?δ����?Power?�Ķ���
+   �� CallSite.Target(Closure , CallSite , Object )
+   �� System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   �� ASP._Page_Views_Home_Index_cshtml.Execute() λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Views\Home\Index.cshtml:�к� 138
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   �� System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass1c.&lt;InvokeActionResultWithFilters&gt;b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-02-21T09:57:54.2351820+08:00" level="FATAL" thread="9036" domain="/LM/W3SVC/1/ROOT/OH-5-130374213500650799" identity="admin" username="IIS APPPOOL\DefaultAppPool">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: ?Tuhui.OH.Entity.User?δ����?Power?�Ķ���
+   �� CallSite.Target(Closure , CallSite , Object )
+   �� ASP._Page_Views_Home_Index_cshtml.Execute() λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Views\Home\Index.cshtml:�к� 138
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   �� System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass1c.&lt;InvokeActionResultWithFilters&gt;b__19()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-02-21T13:54:31.8292380+08:00" level="FATAL" thread="10108" domain="/LM/W3SVC/1/ROOT/OH-6-130374356676409984" identity="admin" username="IIS APPPOOL\DefaultAppPool">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.InvalidOperationException: The context cannot be used while the model is being created.
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.UserDataAccess.FindByName(String LoginName) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\UserDataAccess.cs:�к� 56
+   �� Tuhui.OH.BusinessLogic.UserBusinessLogic.FindByName(String name) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\UserBusinessLogic.cs:�к� 51
+   �� Tuhui.OH.Mvc.AuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.Mvc\Filter\AuthorizeFilter.cs:�к� 36
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-02-21T14:45:07.4658665+08:00" level="FATAL" thread="7796" domain="/LM/W3SVC/1/ROOT/OH-7-130374387050517284" identity="admin" username="IIS APPPOOL\DefaultAppPool">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.InvalidOperationException: The context cannot be used while the model is being created.
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.UserDataAccess.FindByName(String LoginName) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\UserDataAccess.cs:�к� 56
+   �� Tuhui.OH.BusinessLogic.UserBusinessLogic.FindByName(String name) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\UserBusinessLogic.cs:�к� 51
+   �� Tuhui.OH.Mvc.AuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.Mvc\Filter\AuthorizeFilter.cs:�к� 36
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-02-21T15:01:24.4357459+08:00" level="FATAL" thread="5968" domain="/LM/W3SVC/1/ROOT/OH-8-130374396828536555" identity="admin" username="IIS APPPOOL\DefaultAppPool">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.InvalidOperationException: The context cannot be used while the model is being created.
+   �� System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   �� System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   �� System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   �� System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   �� System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   �� Tuhui.OH.DataAccess.UserDataAccess.FindByName(String LoginName) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\UserDataAccess.cs:�к� 56
+   �� Tuhui.OH.BusinessLogic.UserBusinessLogic.FindByName(String name) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\UserBusinessLogic.cs:�к� 51
+   �� Tuhui.OH.Mvc.AuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.Mvc\Filter\AuthorizeFilter.cs:�к� 36
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger>

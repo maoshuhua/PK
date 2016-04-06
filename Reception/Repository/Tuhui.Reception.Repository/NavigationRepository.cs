@@ -62,5 +62,13 @@ namespace Tuhui.Reception.Repository
         {
             return base.Delete<Navigation>(p => p.N_ID == id);
         }
+
+        //获取最新一条导航
+        public Navigation GetNewest()
+        {
+            var query = base.Search<Navigation>();
+
+            return query.OrderByDescending(p => p.AddTime).FirstOrDefault();
+        }
     }
 }

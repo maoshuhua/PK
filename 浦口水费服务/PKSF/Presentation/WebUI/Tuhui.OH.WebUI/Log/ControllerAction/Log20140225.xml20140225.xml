@@ -1,0 +1,1309 @@
+﻿<ControllerAction_Logger><log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:38.0413216+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:37.840','ActionName':'LogOn','ControllerName':'Account','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/Account/LogOn?returnUrl=http://www.tuhui.com/QAZSXT','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'returnUrl':'http://www.tuhui.com/QAZSXT'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:38.1243264+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:38.124','ActionName':'LogOn','ControllerName':'Account',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:46.0757812+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:46.075','ActionName':'LogOn','ControllerName':'Account','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/Account/LogOn','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'UserName':'admin','Password':'123456','Password_Text':'����'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:47.5988683+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:47.598','ActionName':'LogOn','ControllerName':'Account',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:47.6428708+08:00" level="INFO" thread="5188" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:47.642','ActionName':'MainPage','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/Home/MainPage','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:47.6448709+08:00" level="INFO" thread="5188" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:47.644','ActionName':'MainPage','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:49.8139950+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:49.813','ActionName':'GetSceneList','ControllerName':'Scene','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/Scene/GetSceneList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:49.8639978+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:49.863','ActionName':'GetSceneList','ControllerName':'Scene',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:50.3160237+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:50.316','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/ZENTRACK_TICKETS/alarmList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:50.3170237+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:50.317','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:50.8220526+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:50.822','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/ZENTRACK_TICKETS/alarmList?priority=2','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'priority':'2'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:50.8340533+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:50.834','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:51.3210812+08:00" level="INFO" thread="5188" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:51.321','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/ZENTRACK_TICKETS/alarmList?priority=1','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'priority':'1'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:51.3230813+08:00" level="INFO" thread="5188" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:51.323','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:52.0381222+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:52.038','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/Home/Index?sceneId=60','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'sceneId':'60'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:52.0461226+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:52.046','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:52.0591234+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:52.059','ActionName':'Page0','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/Home/Index?sceneId=60','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'sceneId':'60'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:52.0611235+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:52.061','ActionName':'Page0','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:55.2353051+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:55.235','ActionName':'Index','ControllerName':'Manager','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/Manager?sceneId=60&amp;X-Requested-With=XMLHttpRequest&amp;_=1393292455226','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'sceneId':'60','X-Requested-With':'XMLHttpRequest','_':'1393292455226'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:55.2413054+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:55.241','ActionName':'Index','ControllerName':'Manager',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:58.8285106+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:58.828','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292458821','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292458821'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:58.8305107+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:58.829','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:59.1375282+08:00" level="INFO" thread="5188" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:40:59.137','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292459133','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292459133'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:40:59.1645298+08:00" level="INFO" thread="5188" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:40:59.164','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:04.9158588+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:04.915','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292464900','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292464900'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:04.9178589+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:04.917','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:24.8479988+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:24.847','ActionName':'CreateEdit','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','DRSTrainInfoId':'-1'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:25.4050307+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:25.405','ActionName':'CreateEdit','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:44.4141179+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:44.414','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','Name':'20140225','Content':'20140225','Remark':'20140225'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:44.4371192+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:44.437','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:44.4661209+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:44.466','ActionName':'CreateEditList','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEditList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'list[0].Id':'92','list[0].DRSTrainInfoId':'-1','list[0].Name':'2','list[0].StartTime':'2','list[0].EndTime':'2','list[0].RunTask':'2','list[0].RunPlaceRoom':'1,5','list[0].RunPlaceContent':'2','list[0].Remark':'null','list[0].Sort':'0'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:44.5561260+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:44.556','ActionName':'CreateEditList','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:46.0172096+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:46.017','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292506012','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292506012'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:46.0182097+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:46.018','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:46.0672125+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:46.067','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292506060','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292506060'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:46.0702126+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:46.070','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:47.9003173+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:47.900','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'7'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:47.9113180+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:47.911','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:48.4013460+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:48.401','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292507892','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292507892'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:48.4023460+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:48.402','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:56.7648243+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:56.763','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292516757','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292516757'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:56.7658244+08:00" level="INFO" thread="1416" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:56.765','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:56.8128271+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:56.812','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292516805','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292516805'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:56.8158273+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:56.815','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:58.4049182+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:58.404','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'4'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:58.4089184+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:58.408','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:58.9159474+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:41:58.915','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292518396','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292518396'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:41:58.9169474+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:41:58.916','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:01.1240737+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:42:01.123','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292521116','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292521116'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:01.1240737+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:42:01.124','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:01.1710764+08:00" level="INFO" thread="7700" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:42:01.171','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292521167','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292521167'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:01.1740765+08:00" level="INFO" thread="7700" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:42:01.174','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:13.9168054+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:42:13.916','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'7'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:13.9228057+08:00" level="INFO" thread="6192" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:42:13.922','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:14.4218343+08:00" level="INFO" thread="6568" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:42:14.421','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292533899','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292533899'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:14.4228343+08:00" level="INFO" thread="6568" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:42:14.422','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:33.9149492+08:00" level="INFO" thread="5524" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:42:33.914','ActionName':'CreateEdit','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','DRSTrainInfoId':'7'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:33.9309501+08:00" level="INFO" thread="5524" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:42:33.930','ActionName':'CreateEdit','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:50.4628957+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:42:50.462','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'7','Name':'20140225','Content':'20140225','Remark':'20140225'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:50.4678960+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:42:50.467','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:50.5018979+08:00" level="INFO" thread="5816" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:42:50.501','ActionName':'CreateEditList','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEditList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'list[0].Id':'93','list[0].DRSTrainInfoId':'7','list[0].Name':'11','list[0].StartTime':'111','list[0].EndTime':'111','list[0].RunTask':'11','list[0].RunPlaceRoom':'1,5','list[0].RunPlaceContent':'1','list[0].Remark':'null','list[0].Sort':'0'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:42:50.5198990+08:00" level="INFO" thread="5816" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:42:50.519','ActionName':'CreateEditList','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:43:02.6935953+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:43:02.693','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292582682','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292582682'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:43:02.6945953+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:43:02.694','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:43:02.7585990+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:43:02.758','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292582752','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292582752'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:43:02.7615991+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:43:02.761','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:43:04.4366950+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:43:04.436','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'7'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:43:04.4406952+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:43:04.440','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:43:04.9507244+08:00" level="INFO" thread="6568" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:43:04.950','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292584419','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292584419'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:43:04.9517244+08:00" level="INFO" thread="6568" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:43:04.951','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:44:45.3784685+08:00" level="INFO" thread="6568" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:44:45.378','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292685344','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292685344'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:44:45.3794685+08:00" level="INFO" thread="6568" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:44:45.379','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:44:45.4424722+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:44:45.442','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292685435','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292685435'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:44:45.4454723+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:44:45.445','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:44:48.5906522+08:00" level="INFO" thread="4960" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:44:48.589','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'4'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:44:48.5946524+08:00" level="INFO" thread="4960" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:44:48.594','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:44:49.0966812+08:00" level="INFO" thread="6568" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:44:49.096','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292688568','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292688568'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:44:49.0976812+08:00" level="INFO" thread="6568" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:44:49.097','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:06.5506795+08:00" level="INFO" thread="6296" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:06.550','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'4','Name':'fff','Content':'ff','Remark':'ff'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:06.5726807+08:00" level="INFO" thread="6296" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:06.572','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:06.6056826+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:06.605','ActionName':'CreateEditList','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEditList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'list[0].Id':'91','list[0].DRSTrainInfoId':'4','list[0].Name':'222','list[0].StartTime':'222','list[0].EndTime':'222','list[0].RunTask':'222','list[0].RunPlaceRoom':'5','list[0].RunPlaceContent':'22','list[0].Remark':'null','list[0].Sort':'0'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:06.6346843+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:06.634','ActionName':'CreateEditList','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:09.2108316+08:00" level="INFO" thread="5536" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:09.210','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292709199','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292709199'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:09.2118317+08:00" level="INFO" thread="5536" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:09.211','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:09.2908362+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:09.290','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292709279','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292709279'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:09.2938364+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:09.293','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:11.0589373+08:00" level="INFO" thread="2588" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:11.058','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'4'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:11.0749382+08:00" level="INFO" thread="2588" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:11.074','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:11.5609660+08:00" level="INFO" thread="6228" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:11.560','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292711039','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292711039'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:11.5619661+08:00" level="INFO" thread="6228" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:11.561','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:13.5700810+08:00" level="INFO" thread="3828" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:13.569','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292713559','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292713559'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:13.5710810+08:00" level="INFO" thread="3828" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:13.571','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:13.6510856+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:13.651','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292713643','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292713643'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:13.6540858+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:13.654','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:16.9702754+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:16.970','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'3'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:16.9772758+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:16.977','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:17.4893051+08:00" level="INFO" thread="6296" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:17.489','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292716959','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292716959'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:17.4903052+08:00" level="INFO" thread="6296" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:17.490','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:20.7444913+08:00" level="INFO" thread="5536" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:20.744','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292720735','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292720735'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:20.7454914+08:00" level="INFO" thread="5536" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:20.745','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:20.8364966+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:20.836','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292720828','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292720828'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:20.8394967+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:20.839','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:24.9947344+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:24.993','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292724983','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292724983'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:24.9947344+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:24.994','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:25.0717388+08:00" level="INFO" thread="4376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:25.071','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'7'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:25.0777392+08:00" level="INFO" thread="4376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:25.077','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:26.9938488+08:00" level="INFO" thread="2588" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:26.993','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292726984','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292726984'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:26.9948488+08:00" level="INFO" thread="2588" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:26.994','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:27.0508520+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:27.050','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292727043','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292727043'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:27.0548522+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:27.054','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:28.7109470+08:00" level="INFO" thread="6228" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:28.710','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'7'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:28.7189474+08:00" level="INFO" thread="6228" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:28.718','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:29.2209761+08:00" level="INFO" thread="4960" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:29.220','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292728699','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292728699'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:29.2219762+08:00" level="INFO" thread="4960" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:29.221','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:30.7570640+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:30.756','ActionName':'CreateEdit','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','DRSTrainInfoId':'7'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:30.7690647+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:30.769','ActionName':'CreateEdit','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:41.9737056+08:00" level="INFO" thread="6296" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:41.973','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'7','Name':'20140225','Content':'20140225','Remark':'20140225'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:41.9777058+08:00" level="INFO" thread="6296" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:41.977','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:42.0107077+08:00" level="INFO" thread="4960" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:42.010','ActionName':'CreateEditList','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEditList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'list[0].Id':'93','list[0].DRSTrainInfoId':'7','list[0].Name':'11','list[0].StartTime':'111','list[0].EndTime':'111','list[0].RunTask':'11','list[0].RunPlaceRoom':'1,5','list[0].RunPlaceContent':'1','list[0].Remark':'null','list[0].Sort':'0','list[1].Id':'94','list[1].DRSTrainInfoId':'7','list[1].Name':'222','list[1].StartTime':'222','list[1].EndTime':'222','list[1].RunTask':'222','list[1].RunPlaceRoom':'5','list[1].RunPlaceContent':'','list[1].Remark':'null','list[1].Sort':'0'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:42.0627106+08:00" level="INFO" thread="4960" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:42.062','ActionName':'CreateEditList','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:44.2568361+08:00" level="INFO" thread="6228" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:44.255','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292744246','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292744246'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:44.2578362+08:00" level="INFO" thread="6228" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:44.256','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:44.3498415+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:44.349','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292744342','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292744342'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:44.3528416+08:00" level="INFO" thread="1552" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:44.352','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:45.9039303+08:00" level="INFO" thread="8076" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:45.903','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'7'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:45.9109308+08:00" level="INFO" thread="8076" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:45.910','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:46.4069591+08:00" level="INFO" thread="3024" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:46.406','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292745890','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292745890'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:46.4079592+08:00" level="INFO" thread="3024" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:46.407','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:47.8800434+08:00" level="INFO" thread="4960" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:47.880','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292747870','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292747870'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:47.8810434+08:00" level="INFO" thread="4960" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:47.881','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:47.9850494+08:00" level="INFO" thread="8028" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:47.985','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292747976','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292747976'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:47.9880496+08:00" level="INFO" thread="8028" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:47.988','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:49.1991188+08:00" level="INFO" thread="3828" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:49.198','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292749181','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292749181'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:49.1991188+08:00" level="INFO" thread="3828" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:49.199','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:59.1856900+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:45:59.185','ActionName':'CreateEdit','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','DRSTrainInfoId':'-1'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:45:59.2026910+08:00" level="INFO" thread="3440" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:45:59.202','ActionName':'CreateEdit','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:21.3939603+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:46:21.393','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','Name':'test1','Content':'test1','Remark':'test1'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:21.4109612+08:00" level="INFO" thread="6764" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:46:21.410','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:21.4189617+08:00" level="INFO" thread="8028" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:46:21.418','ActionName':'CreateEditList','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEditList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'list[0].Id':'95','list[0].DRSTrainInfoId':'-1','list[0].Name':'test','list[0].StartTime':'test','list[0].EndTime':'test','list[0].RunTask':'test','list[0].RunPlaceRoom':'1','list[0].RunPlaceContent':'','list[0].Remark':'null','list[0].Sort':'0'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:21.4389628+08:00" level="INFO" thread="8028" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:46:21.438','ActionName':'CreateEditList','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:23.1360599+08:00" level="INFO" thread="6296" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:46:23.136','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393292783125','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393292783125'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:23.1370600+08:00" level="INFO" thread="6296" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:46:23.137','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:23.2530666+08:00" level="INFO" thread="6568" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:46:23.253','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393292783240','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292783240'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:23.2560668+08:00" level="INFO" thread="6568" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:46:23.256','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:24.9341628+08:00" level="INFO" thread="6228" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:46:24.934','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'8'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:24.9401631+08:00" level="INFO" thread="6228" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:46:24.940','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:25.4431919+08:00" level="INFO" thread="3024" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:46:25.443','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393292784910','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393292784910'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:46:25.4441919+08:00" level="INFO" thread="3024" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:46:25.444','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:24.7868815+08:00" level="INFO" thread="6376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:24.785','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393293024752','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393293024752'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:24.7868815+08:00" level="INFO" thread="6376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:24.786','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:24.9118887+08:00" level="INFO" thread="6632" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:24.911','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393293024897','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293024897'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:24.9218893+08:00" level="INFO" thread="6632" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:24.921','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:26.8019968+08:00" level="INFO" thread="4988" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:26.801','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'8'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:26.8089972+08:00" level="INFO" thread="4988" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:26.808','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:27.3070257+08:00" level="INFO" thread="7584" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:27.307','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393293026782','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293026782'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:27.3080257+08:00" level="INFO" thread="7584" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:27.308','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:30.0011798+08:00" level="INFO" thread="6632" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:30.001','ActionName':'CreateEdit','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','DRSTrainInfoId':'8'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:30.0161806+08:00" level="INFO" thread="6632" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:30.016','ActionName':'CreateEdit','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:47.0071525+08:00" level="INFO" thread="3592" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:47.007','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'8','Name':'test1','Content':'test1','Remark':'test1'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:47.0251535+08:00" level="INFO" thread="3592" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:47.025','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:47.0541552+08:00" level="INFO" thread="8012" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:47.054','ActionName':'CreateEditList','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEditList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'list[0].Id':'96','list[0].DRSTrainInfoId':'8','list[0].Name':'22','list[0].StartTime':'222','list[0].EndTime':'222','list[0].RunTask':'222','list[0].RunPlaceRoom':'5','list[0].RunPlaceContent':'','list[0].Remark':'null','list[0].Sort':'0'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:47.0701561+08:00" level="INFO" thread="8012" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:47.070','ActionName':'CreateEditList','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:49.5662988+08:00" level="INFO" thread="3592" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:49.566','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393293049551','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393293049551'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:49.5672989+08:00" level="INFO" thread="3592" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:49.567','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:49.6753051+08:00" level="INFO" thread="6632" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:49.675','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393293049661','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293049661'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:49.6783053+08:00" level="INFO" thread="6632" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:49.678','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:51.4314055+08:00" level="INFO" thread="8012" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:51.431','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'8'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:51.4354058+08:00" level="INFO" thread="8012" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:51.434','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:51.9394346+08:00" level="INFO" thread="4092" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:51.939','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393293051391','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293051391'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:51.9404346+08:00" level="INFO" thread="4092" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:51.940','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:53.4625217+08:00" level="INFO" thread="4988" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:53.462','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393293053447','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393293053447'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:53.4635218+08:00" level="INFO" thread="4988" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:53.463','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:53.5825286+08:00" level="INFO" thread="3592" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:53.581','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393293053568','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293053568'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:53.5855287+08:00" level="INFO" thread="3592" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:53.585','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:55.1816200+08:00" level="INFO" thread="6632" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:50:55.181','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393293055166','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293055166'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:50:55.1826201+08:00" level="INFO" thread="6632" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:50:55.182','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:51:18.4979536+08:00" level="INFO" thread="4092" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:51:18.497','ActionName':'CreateEdit','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','DRSTrainInfoId':'-1'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:51:18.5179548+08:00" level="INFO" thread="4092" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:51:18.517','ActionName':'CreateEdit','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:51:34.9358938+08:00" level="INFO" thread="7612" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:51:34.935','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','Name':'test2','Content':'test2','Remark':'test2'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:51:34.9538949+08:00" level="INFO" thread="7612" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:51:34.953','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:51:34.9608953+08:00" level="INFO" thread="7584" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:51:34.960','ActionName':'CreateEditList','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEditList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'list[0].Id':'97','list[0].DRSTrainInfoId':'-1','list[0].Name':'3','list[0].StartTime':'3','list[0].EndTime':'3','list[0].RunTask':'3','list[0].RunPlaceRoom':'5,8','list[0].RunPlaceContent':'3','list[0].Remark':'null','list[0].Sort':'0'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:51:34.9688957+08:00" level="INFO" thread="7584" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:51:34.968','ActionName':'CreateEditList','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:08.0387872+08:00" level="INFO" thread="6376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:52:08.038','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393293128021','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393293128021'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:08.0397873+08:00" level="INFO" thread="6376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:52:08.039','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:08.1467934+08:00" level="INFO" thread="6376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:52:08.146','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393293128132','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293128132'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:08.1497936+08:00" level="INFO" thread="6376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:52:08.149','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:09.9348957+08:00" level="INFO" thread="7584" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:52:09.934','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393293129909','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293129909'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:09.9348957+08:00" level="INFO" thread="7584" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:52:09.934','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:10.4409246+08:00" level="INFO" thread="6376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:52:10.440','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/FindByInfoId','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'dRSTrainInfoId':'9'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:10.4449248+08:00" level="INFO" thread="6376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:52:10.444','ActionName':'FindByInfoId','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:14.0291298+08:00" level="INFO" thread="6376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:52:14.028','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393293134013','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393293134013'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:14.0291298+08:00" level="INFO" thread="6376" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:52:14.029','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:14.1541370+08:00" level="INFO" thread="7612" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:52:14.153','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393293134135','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293134135'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:14.1561371+08:00" level="INFO" thread="7612" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:52:14.156','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:16.6192780+08:00" level="INFO" thread="7584" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:52:16.618','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393293136590','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293136590'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:16.6192780+08:00" level="INFO" thread="7584" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:52:16.619','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:26.9058663+08:00" level="INFO" thread="7256" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:52:26.905','ActionName':'CreateEdit','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','DRSTrainInfoId':'-1'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:52:26.9628696+08:00" level="INFO" thread="7256" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:52:26.962','ActionName':'CreateEdit','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:53:58.6621145+08:00" level="INFO" thread="7884" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:53:58.662','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/Home/Index?sceneId=60','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'sceneId':'60'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:53:58.6741152+08:00" level="INFO" thread="7884" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:53:58.674','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:53:58.6771154+08:00" level="INFO" thread="7884" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:53:58.677','ActionName':'Page0','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/Home/Index?sceneId=60','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'sceneId':'60'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:53:58.6781154+08:00" level="INFO" thread="7884" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:53:58.678','ActionName':'Page0','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:54:05.5285072+08:00" level="INFO" thread="5168" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:54:05.528','ActionName':'Index','ControllerName':'Manager','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/Manager?sceneId=60&amp;X-Requested-With=XMLHttpRequest&amp;_=1393293245523','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'sceneId':'60','X-Requested-With':'XMLHttpRequest','_':'1393293245523'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:54:05.5325075+08:00" level="INFO" thread="5168" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:54:05.532','ActionName':'Index','ControllerName':'Manager',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:54:06.7475770+08:00" level="INFO" thread="6128" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:54:06.747','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1393293246743','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1393293246743'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:54:06.7485770+08:00" level="INFO" thread="6128" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:54:06.748','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:54:06.7915795+08:00" level="INFO" thread="4504" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:54:06.791','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/List?_=1393293246787','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293246787'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:54:06.7935796+08:00" level="INFO" thread="4504" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:54:06.793','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:54:08.5556804+08:00" level="INFO" thread="6884" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:54:08.554','ActionName':'Edit','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/DRSTrainInfo/Edit?_=1393293248543','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'_':'1393293248543'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:54:08.5566804+08:00" level="INFO" thread="6884" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:54:08.556','ActionName':'Edit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:54:17.5681959+08:00" level="INFO" thread="6340" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:54:17.568','ActionName':'CreateEdit','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','DRSTrainInfoId':'-1'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:54:17.6171987+08:00" level="INFO" thread="6340" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:54:17.617','ActionName':'CreateEdit','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:55:17.1666047+08:00" level="INFO" thread="6404" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:55:17.166','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/dRSTrainInfo/CreateEdit','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'Id':'-1','Name':'test4','Content':'te4','Remark':'t4'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:55:17.1836057+08:00" level="INFO" thread="6404" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:55:17.183','ActionName':'CreateEdit','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:55:17.1906061+08:00" level="INFO" thread="7884" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:55:17.190','ActionName':'CreateEditList','ControllerName':'DRSTrainContent','Method':'POST','Url':'http://www.tuhui.com/QAZSXT/DRSTrainContent/CreateEditList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':{'list[0].Id':'99','list[0].DRSTrainInfoId':'-1','list[0].Name':'5','list[0].StartTime':'4','list[0].EndTime':'44','list[0].RunTask':'4','list[0].RunPlaceRoom':'5','list[0].RunPlaceContent':'null','list[0].Remark':'null','list[0].Sort':'0'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:55:17.2146075+08:00" level="INFO" thread="7884" domain="/LM/W3SVC/1/ROOT/QAZSXT-1-130377660334770606" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:55:17.214','ActionName':'CreateEditList','ControllerName':'DRSTrainContent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+</ControllerAction_Logger><ControllerAction_Logger><log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:57:49.5313195+08:00" level="INFO" thread="7436" domain="/LM/W3SVC/1/ROOT/QAZSXT-2-130377670669101695" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-02-25 09:57:49.390','ActionName':'LogOn','ControllerName':'Account','Method':'GET','Url':'http://www.tuhui.com/QAZSXT/Account/LogOn?returnUrl=http://www.tuhui.com/QAZSXT','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V7)','Form':,'QueryString':{'returnUrl':'http://www.tuhui.com/QAZSXT'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-02-25T09:57:49.5843225+08:00" level="INFO" thread="7436" domain="/LM/W3SVC/1/ROOT/QAZSXT-2-130377670669101695" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-02-25 09:57:49.583','ActionName':'LogOn','ControllerName':'Account',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+</ControllerAction_Logger>

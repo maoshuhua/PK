@@ -1,0 +1,72 @@
+﻿@using System.Web.Mvc
+@helper tmap(UrlHelper Url)
+{
+    <link href="@Url.Content("~/Tmap3/tmap.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Tmap3/MarkerCluster.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Tmap3/tmap.th.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Tmap3/jQuery.print.js")"></script>
+    <script src="@Url.Content("~/Tmap3/tmap-src.js")"></script>
+    <script src="@Url.Content("~/Tmap3/markercluster-src.js")"></script>
+    <script src="@Url.Content("~/Tmap3/plotter.js")"></script>
+    <script src="@Url.Content("~/Tmap3/l.ellipse.js")"></script>
+
+
+    <link href="@Url.Content("~/Tmap3/tmap.extend_mark.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Tmap3/tmap.extend.js")"></script>
+    <script src="@Url.Content("~/Tmap3/tmap.th.js")"></script>
+    <script src="@Url.Content("~/Tmap3/heatmap.js")"></script>
+    <script src="@Url.Content("~/Tmap3/tmap.js")"></script>
+    <script src="@Url.Content("~/Tmap3/heatmap-leaflet.js")"></script>@*
+    <script src="@Url.Content("~/Tmap3/webgl-heatmap-leaflet.js")"></script>
+    <script src="@Url.Content("~/Tmap3/webgl-heatmap.js")"></script>*@
+
+}
+
+@helper Common(UrlHelper Url)
+{
+    <script type="text/javascript">
+        function CONTENT_URL(_name) {
+            return '@Url.Content("~/")' + _name;
+        }
+
+        function SCRIPT_URL(_name) {
+            return '@Url.Content("~/Scripts/")' + _name + "?_=" + (Math.random() * 10000);
+        }
+
+        function ACTION_URL(actionName, controllerName) {
+            var _actionUrl = '@Url.Action("ActionName", "ControllerName")';
+            return _actionUrl.replace("ActionName", actionName).replace("ControllerName", controllerName);
+        }
+
+    </script>
+    
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/Page.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/jqueryui/ui-darkness/jquery-ui-1.10.3.custom.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery.js")"></script>@*
+    <script src="@Url.Content("~/Scripts/jquery-ui.js")"></script>*@
+    <script src="@Url.Content("~/Scripts/jquery.tuhui.js")"></script>
+
+}
+
+@helper demo(UrlHelper Url, string path)
+{
+    var _arr = path.Split('|');
+
+    foreach (var item in _arr)
+    {
+    <script src="@Url.Content("~/Scripts/" + item)"></script>
+    }
+    
+}
+
+@helper OH(UrlHelper Url) { 
+<script type="text/javascript">
+    function CONTENT_URL(_name) {
+        return '@Url.Content("~/")' + _name;
+    }
+
+    window.imgPath = "http://www.pkxf.gov.cn/pkpower/upload/";
+    window.docPath = "http://www.pkxf.gov.cn/articlefile/";
+</script>
+}

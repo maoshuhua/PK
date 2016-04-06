@@ -1,0 +1,73 @@
+﻿<div id="div_menu" class="div_menu">
+     <ul>
+        <li id="notice" class="beforeCss rightButton" onclick="$.OH.findCater.showCaterContent();">
+            <span style="margin-left: 20px;">路线导航</span>
+            <span class="span2"></span>
+        </li>
+@*        <li id="showLayer" class="beforeCss rightButton" onclick="$.nanzhan.showLayer.showLayerContent();">
+            <span style="margin-left: 20px">模拟导航</span>
+            <span class="span2"></span>
+        </li>*@
+@*        <li id="traffic" class="beforeCss rightButton" onclick="$.nanzhan.trafficTransfer.showTrafficTransferContent();">
+            <span style="margin-left: 20px">交通换乘</span>
+            <span class="span3"></span>
+        </li>
+        <li id="ticket" class="beforeCss rightButton" onclick="$.nanzhan.findTicket.showTicketContent();">
+            <span style="margin-left: 20px">售票处</span>
+            <span class="span4"></span>
+        </li>
+        <li id="Entrance" class="beforeCss rightButton" onclick="$.nanzhan.findEntrance.showEntranceContent();" style="display: none">
+            <span style="margin-left: 20px">进站口</span>
+            <span class="span5"></span>
+        </li>
+        <li id="Exit" class="beforeCss rightButton" onclick="$.nanzhan.findExit.showExitContent();">
+            <span style="margin-left: 20px">出站口</span>
+            <span class="span6"></span>
+
+        </li>
+        <li id="Cater" class="beforeCss rightButton" onclick="$.nanzhan.findCater.showCaterContent();">
+            <span style="margin-left: 20px">餐饮区</span>
+            <span class="span7"></span>
+        </li>
+        <li id="Toilet" class="beforeCss rightButton" onclick="$.nanzhan.findToilet.showToiletContent();">
+            <span style="margin-left: 20px">卫生间</span>
+            <span class="span8"></span>
+        </li>
+        <li id="Video" class="beforeCss rightButton" onclick="$.nanzhan.CurrentPosition.showVideo();">
+            <span style="margin-left: 20px">视频监控</span>
+            <span class="span9"></span>
+        </li>*@
+    </ul>
+</div>
+<script type="text/javascript">
+    $(function () {
+        if (document.documentElement.clientHeight <= 800) {
+            $("#div_menu ul li").removeClass("rightButton");
+            $("#div_menu ul li").addClass("rightButton1");
+            $(".div_menu").css("margin-top", "0px");
+        } else {
+            $("#div_menu ul li").removeClass("rightButton1");
+            $("#div_menu ul li").addClass("rightButton");
+            $(".div_menu").css("margin-top", "30px");
+        }
+        //点击li时 添加样式
+        $("#div_menu ul li").click(function () {
+
+            //$("#div_menu ul li").removeClass();
+            //$("#div_menu ul li").addClass("beforeCss");
+            //$(this).addClass("clickCss");
+
+            //$("#div_menu ul li").removeClass("beforeCss");
+            //$(this).addClass("clickCss");
+
+
+            $("#div_menu ul li").removeClass("beforeCss clickCss");
+            $("#div_menu ul li").addClass("beforeCss");
+            $(this).removeClass("beforeCss");
+            $(this).addClass("clickCss");
+
+        });
+    })
+</script>
+
+

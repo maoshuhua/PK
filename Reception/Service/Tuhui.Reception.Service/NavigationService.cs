@@ -54,5 +54,11 @@ namespace Tuhui.Reception.Service
         {
             return repository.Delete(id);
         }
+
+        //获取最新一条导航
+        public Navigation GetNewest()
+        {
+            return repository.GetNewest();
+        }
     }
 }

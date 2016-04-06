@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南京南站后台管理平台</title>
+    @Content.CommonManager2(Url)
+    @*@Content.Css(Url, "../JqueryTuhui/jquery.tuhui.css")*@
+</head>
+<body>
+    <div class="layout_head">
+        <div class="sitetitle"></div>
+        <div class="userstate"><span>管理员,</span>&nbsp;&nbsp;&nbsp;@Html.ActionLink("注销", "LogOut", new { controller = "Account" })</div>
+    </div>
+    <div class="layout_left">
+        <div class="menu_head"></div>
+        <ul class="layout_menu">
+            <li>@Html.ActionLink("公告管理", "NoticeList", new { controller = "Manager" }, new {@menuKey="Notice" })</li>
+            <li>@Html.ActionLink("用户管理", "UserList", new { controller = "Manager" }, new { @menuKey = "User" })</li>
+        </ul>
+    </div>
+    <div class="layout_right">
+        @RenderBody()
+    </div>
+    <script>
+        var _menuKey = "@ViewBag.MenuKey";
+            
+            window.onresize = _onResize;
+
+            _onResize();
+
+            if (_menuKey) {
+                $(".layout_menu a[menuKey='" + _menuKey + "']").addClass("select");
+            }
+
+
+            function _onResize() {
+                $("body").css({
+                    height: document.documentElement.clientHeight + "px"
+                })
+
+                $(".layout_left,.layout_right").css({
+                    height: document.documentElement.clientHeight - $(".layout_head").height()
+                })
+
+                $(".layout_right").css({
+                    width: document.documentElement.clientWidth - $(".layout_left").width() + "px"
+                })
+            }
+
+    </script>
+    @RenderSection("script",false)
+</body>
+</html>

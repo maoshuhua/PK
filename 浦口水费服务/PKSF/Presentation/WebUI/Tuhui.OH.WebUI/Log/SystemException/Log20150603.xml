@@ -1,0 +1,298 @@
+﻿<SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T10:41:35.2617793+08:00" level="FATAL" thread="6428" domain="/LM/W3SVC/2/ROOT/OH1-2-130777728922779626" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+<SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T10:51:15.5906749+08:00" level="FATAL" thread="7368" domain="/LM/W3SVC/2/ROOT/OH1-2-130777734743346636" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T10:54:55.9497683+08:00" level="FATAL" thread="1956" domain="/LM/W3SVC/2/ROOT/OH1-3-130777736956197494" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T10:54:58.1678951+08:00" level="FATAL" thread="7264" domain="/LM/W3SVC/2/ROOT/OH1-3-130777736956197494" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T10:55:31.1977843+08:00" level="FATAL" thread="8604" domain="/LM/W3SVC/2/ROOT/OH1-4-130777737309627709" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T10:59:18.0916367+08:00" level="FATAL" thread="7704" domain="/LM/W3SVC/2/ROOT/OH1-4-130777737309627709" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T10:59:32.8648627+08:00" level="FATAL" thread="7368" domain="/LM/W3SVC/2/ROOT/OH1-4-130777737309627709" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+<SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T11:11:50.4305042+08:00" level="FATAL" thread="4460" domain="/LM/W3SVC/2/ROOT/OH1-2-130777747077784995" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T11:20:11.6333228+08:00" level="FATAL" thread="7020" domain="/LM/W3SVC/2/ROOT/ylc-3-130777752093089187" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T11:20:22.4129417+08:00" level="FATAL" thread="9600" domain="/LM/W3SVC/2/ROOT/ylc-3-130777752093089187" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T11:29:23.3064446+08:00" level="FATAL" thread="5184" domain="/LM/W3SVC/2/ROOT/ylc-4-130777757622768428" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T11:29:28.3764536+08:00" level="FATAL" thread="7744" domain="/LM/W3SVC/2/ROOT/ylc-4-130777757622768428" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T11:29:47.0340863+08:00" level="FATAL" thread="5980" domain="/LM/W3SVC/2/ROOT/ylc-1-130777757866284856" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T11:29:48.5940891+08:00" level="FATAL" thread="5980" domain="/LM/W3SVC/2/ROOT/ylc-1-130777757866284856" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T13:36:13.3740977+08:00" level="FATAL" thread="4236" domain="6cb08a04-1-130777833255283611" username="Alio-PC\Alio">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.ArgumentException: Not Exsits this Message:MsgId[E001002] MsgLanguage[zh]
+   �� Tuhui.Common.Environment.MessageHandle.GetMessage(String msgId, LanguageType lanType, Object[] parameters)
+   �� Tuhui.Common.Environment.MessageHandle.GetMessage(String msgId, Object[] parameters)
+   �� Tuhui.Common.Framework.UserException..ctor(String messageId, Object[] parameters)
+   �� Tuhui.OH.Api.Utility.OracleBaseDataAccess.CommandAction(String text, Object parameter, Boolean isProcedure, Action`1 action) λ�� d:\�������\OH\Utility\Tuhui.OH.Utility\OracleDAUtility.cs:�к� 117
+   �� Tuhui.OH.Api.Utility.OracleBaseDataAccess.ExecuteModelCollection[T](String sql, Object parameter) λ�� d:\�������\OH\Utility\Tuhui.OH.Utility\OracleDAUtility.cs:�к� 74
+   �� Tuhui.OH.BusinessLogic.NoticeBusinessLogic.GetobjStationList(Nullable`1 id) λ�� d:\�������\OH\Service\Tuhui.OH.BusinessLogic\NoticeBusinessLogic.cs:�к� 31
+   �� Tuhui.OH.WebUI.Controllers.HomeController.Index() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\HomeController.cs:�к� 19
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   �� System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   �� System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   �� System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+<SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-03T14:59:09.7821214+08:00" level="FATAL" thread="9364" domain="6cb08a04-1-130777883134640441" username="Alio-PC\Alio">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.ArgumentException: Not Exsits this Message:MsgId[E001002] MsgLanguage[zh]
+   �� Tuhui.Common.Environment.MessageHandle.GetMessage(String msgId, LanguageType lanType, Object[] parameters)
+   �� Tuhui.Common.Environment.MessageHandle.GetMessage(String msgId, Object[] parameters)
+   �� Tuhui.Common.Framework.UserException..ctor(String messageId, Object[] parameters)
+   �� Tuhui.OH.Api.Utility.OracleBaseDataAccess.CommandAction(String text, Object parameter, Boolean isProcedure, Action`1 action) λ�� d:\�������\OH\Utility\Tuhui.OH.Utility\OracleDAUtility.cs:�к� 117
+   �� Tuhui.OH.Api.Utility.OracleBaseDataAccess.ExecuteModelCollection[T](String sql, Object parameter) λ�� d:\�������\OH\Utility\Tuhui.OH.Utility\OracleDAUtility.cs:�к� 74
+   �� Tuhui.OH.BusinessLogic.NoticeBusinessLogic.GetobjStationList(Nullable`1 id) λ�� d:\�������\OH\Service\Tuhui.OH.BusinessLogic\NoticeBusinessLogic.cs:�к� 42
+   �� Tuhui.OH.WebUI.Controllers.HomeController.Index() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\HomeController.cs:�к� 19
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   �� System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   �� System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   �� System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>

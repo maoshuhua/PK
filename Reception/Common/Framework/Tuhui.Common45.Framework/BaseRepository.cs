@@ -8,6 +8,7 @@ using System.Linq.Expressions;
 using System.Data.SqlClient;
 using Tuhui.Common45.Utility;
 using System.ComponentModel;
+using System.Reflection;
 
 namespace Tuhui.Common45.Framework
 {
@@ -35,6 +36,25 @@ namespace Tuhui.Common45.Framework
         /// <returns></returns>
         public int Insert<TEntity>(TEntity model) where TEntity : BaseEntity
         {
+            //茅书华
+            //利用反射对string赋值默认值空
+            Type type = typeof(TEntity);
+            PropertyInfo[] props = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
+            if (props.Length > 0) { 
+                foreach(PropertyInfo prop in props)
+                {
+                    string propType = prop.PropertyType.Name;
+                    object obj = prop.GetValue(model,null);
+                    if (propType is string)
+                    {
+                        if(obj == null)
+                        {
+                            prop.SetValue(model,"");
+                        }
+                    }
+                }
+            }
+
             return this.ChangeObjectState<TEntity>(model, EntityState.Added);
         }
 
@@ -166,9 +186,31 @@ namespace Tuhui.Common45.Framework
         {
             using (var _context = new TContext())
             {
-                return predicate == null
+                var model =  predicate == null
                     ? _context.Set<TEntity>().FirstOrDefault()
                     : _context.Set<TEntity>().Where(predicate).FirstOrDefault();
+
+                //茅书华
+                //利用反射对string赋值默认值空
+                Type type = typeof(TEntity);
+                PropertyInfo[] props = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
+                if (props.Length > 0)
+                {
+                    foreach (PropertyInfo prop in props)
+                    {
+                        string propType = prop.PropertyType.Name;
+                        object obj = prop.GetValue(model, null);
+                        if (propType is string)
+                        {
+                            if (obj == null)
+                            {
+                                prop.SetValue(model, "");
+                            }
+                        }
+                    }
+                }
+
+                return model;
             }
         }
 
@@ -182,9 +224,37 @@ namespace Tuhui.Common45.Framework
         {
             using (var _context = new TContext())
             {
-                return predicate == null ?
+                var list =  predicate == null ?
                     _context.Set<TEntity>().ToList()
                     : _context.Set<TEntity>().Where(predicate).ToList();
+
+                if (list.Count > 0)
+                {
+                    list.ForEach(model =>
+                    {
+                        //茅书华
+                        //利用反射对string赋值默认值空
+                        Type type = typeof(TEntity);
+                        PropertyInfo[] props = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
+                        if (props.Length > 0)
+                        {
+                            foreach (PropertyInfo prop in props)
+                            {
+                                string propType = prop.PropertyType.Name;
+                                object obj = prop.GetValue(model, null);
+                                if (propType is string)
+                                {
+                                    if (obj == null)
+                                    {
+                                        prop.SetValue(model, "");
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+
+                return list;
             }
         }
 

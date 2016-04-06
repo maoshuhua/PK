@@ -63,8 +63,6 @@ namespace Tuhui.Reception.Repository
         public int Update(Reception_Resource model)
         {
             return base.Update<Reception_Resource>(p => p.R_ID == model.R_ID, p => {
-                p.R_ID = model.R_ID;
-                p.RT_ID = model.RT_ID;
                 p.Name = model.Name;
                 p.Long = model.Long;
                 p.Lat = model.Lat;
@@ -75,7 +73,6 @@ namespace Tuhui.Reception.Repository
                 p.Content = model.Content;
                 p.RStatus = model.RStatus;
                 p.SSJD = model.SSJD;
-                p.AddTime = model.AddTime;
             });
         }
         
@@ -83,6 +80,19 @@ namespace Tuhui.Reception.Repository
         public int Delete(string id)
         {
             return base.Delete<Reception_Resource>(p => p.R_ID == id);
+        }
+
+        //获取资源分类及其资源列表
+        public List<Reception_Resource_Type> GetResource_Type()
+        {
+            var query = from a in ContextObj.Reception_ResourceType
+                        join b in ContextObj.Reception_Resource                       
+                        on a.RT_ID equals b.RT_ID into ab_join
+                        from x in ab_join.DefaultIfEmpty()
+                        orderby a.CreateTime descending,x.AddTime descending
+                        select new Reception_Resource_Type { RT_ID = a.RT_ID, RT_Name = a.Name, R_ID = x.R_ID, R_Name = x.Name, Long = x.Long, Lat = x.Lat, RRDW = x.RRDW, SFDW = x.SFDW, StartTime = x.StartTime, EndTime = x.EndTime, RStatus = x.RStatus, SSJD = x.SSJD };
+
+            return query.ToList();
         }
     }
 }

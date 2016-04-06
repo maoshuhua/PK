@@ -1,0 +1,253 @@
+﻿<ControllerAction_Logger><log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:06.0719256+08:00" level="INFO" thread="7928" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:05.435','ActionName':'LogOn','ControllerName':'Account','Method':'GET','Url':'http://www.tuhui.com/Account/LogOn?returnUrl=http://www.tuhui.com/','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'returnUrl':'http://www.tuhui.com/'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:06.3439412+08:00" level="INFO" thread="7928" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:06.342','ActionName':'LogOn','ControllerName':'Account',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:13.1023278+08:00" level="INFO" thread="1492" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:13.102','ActionName':'LogOn','ControllerName':'Account','Method':'POST','Url':'http://www.tuhui.com/Account/LogOn','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':{'__RequestVerificationToken':'5r6Y2Hremw0sooViZjejmNjHixqelVe6IHLAnpQskAMyerc0FGUTWHMn8HTqDGjR/qfqO8jZnyTa30xqhC4hQptjWKtpntI41vih1oZHWYuCnkyJXdHAVTU3Af4byP16POZdbzqmjwh4cRFswPWJ10NQIUPVeIjv2cna1kSLaC8=','UserName':'admin','Password':'2345e9692f1aaa37adff401d9e3b013a'},'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:14.7144200+08:00" level="INFO" thread="1492" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:14.714','ActionName':'LogOn','ControllerName':'Account',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:14.7264207+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:14.725','ActionName':'MainPage','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/Home/MainPage','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:14.7264207+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:14.726','ActionName':'MainPage','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:17.1015565+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:17.101','ActionName':'EventTable','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/Home/EventTable','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:17.1045567+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:17.104','ActionName':'EventTable','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:17.4555768+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:17.455','ActionName':'GetSceneList','ControllerName':'Scene','Method':'POST','Url':'http://www.tuhui.com/Scene/GetSceneList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:17.4865785+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:17.486','ActionName':'GetSceneList','ControllerName':'Scene',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:19.8897160+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:19.889','ActionName':'Index2','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/Home/Index2?flagManager=2','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'flagManager':'2'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:19.8907160+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:19.890','ActionName':'Index2','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:19.9727207+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:19.972','ActionName':'Index2','ControllerName':'Manager','Method':'GET','Url':'http://www.tuhui.com/Home/Index2?flagManager=2','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'flagManager':'2'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:19.9747208+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:19.974','ActionName':'Index2','ControllerName':'Manager',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:20.9377759+08:00" level="INFO" thread="7928" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:20.937','ActionName':'Index','ControllerName':'SceneManager','Method':'GET','Url':'http://www.tuhui.com/SceneManager?X-Requested-With=XMLHttpRequest&amp;_=1413855620933','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1413855620933'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:20.9467764+08:00" level="INFO" thread="7928" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:20.946','ActionName':'Index','ControllerName':'SceneManager',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:21.1487880+08:00" level="INFO" thread="6048" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:21.148','ActionName':'SceneList','ControllerName':'SceneManager','Method':'POST','Url':'http://www.tuhui.com/SceneManager/SceneList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:21.1857901+08:00" level="INFO" thread="6048" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:21.185','ActionName':'SceneList','ControllerName':'SceneManager',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:26.8231125+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:26.823','ActionName':'Mainpage','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/Home/Mainpage','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:26.8241126+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:26.824','ActionName':'Mainpage','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:27.1651321+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:27.165','ActionName':'EventTable','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/Home/EventTable','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:27.1651321+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:27.165','ActionName':'EventTable','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:27.2531371+08:00" level="INFO" thread="7928" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:27.253','ActionName':'GetSceneList','ControllerName':'Scene','Method':'POST','Url':'http://www.tuhui.com/Scene/GetSceneList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:27.2591375+08:00" level="INFO" thread="7928" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:27.259','ActionName':'GetSceneList','ControllerName':'Scene',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:27.6971625+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:27.697','ActionName':'GetSceneList','ControllerName':'Scene','Method':'POST','Url':'http://www.tuhui.com/Scene/GetSceneList','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:27.7081632+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:27.708','ActionName':'GetSceneList','ControllerName':'Scene',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:27.8041687+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:27.804','ActionName':'FindEventList','ControllerName':'APIEvent','Method':'GET','Url':'http://www.tuhui.com/api/event/list.json?_=1413855627798','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'_':'1413855627798'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:28.0541830+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:28.054','ActionName':'FindEventList','ControllerName':'APIEvent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:28.2661951+08:00" level="INFO" thread="1492" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:28.266','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS','Method':'GET','Url':'http://www.tuhui.com/ZENTRACK_TICKETS/alarmList?priority=null','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'priority':'null'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:28.3131978+08:00" level="INFO" thread="1492" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:28.313','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:29.4782644+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:29.478','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/Home/Index?sceneId=53','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'sceneId':'53'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:29.4892650+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:29.489','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:29.5332676+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:29.533','ActionName':'Page0','ControllerName':'Home','Method':'GET','Url':'http://www.tuhui.com/Home/Index?sceneId=53','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'sceneId':'53'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:29.5402680+08:00" level="INFO" thread="6788" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:29.540','ActionName':'Page0','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:37.9917514+08:00" level="INFO" thread="8004" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:37.990','ActionName':'Index','ControllerName':'Manager','Method':'GET','Url':'http://www.tuhui.com/Manager?sceneId=53&amp;X-Requested-With=XMLHttpRequest&amp;_=1413855637976','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'sceneId':'53','X-Requested-With':'XMLHttpRequest','_':'1413855637976'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:38.0227531+08:00" level="INFO" thread="8004" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:38.022','ActionName':'Index','ControllerName':'Manager',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:39.7488519+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:39.748','ActionName':'Index','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/DRSTrainInfo?X-Requested-With=XMLHttpRequest&amp;_=1413855639744','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1413855639744'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:39.7648528+08:00" level="INFO" thread="7900" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:39.764','ActionName':'Index','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:41.5669558+08:00" level="INFO" thread="1492" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:41.566','ActionName':'List','ControllerName':'DRSTrainInfo','Method':'POST','Url':'http://www.tuhui.com/dRSTrainInfo/List','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:41.5739562+08:00" level="INFO" thread="1492" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:41.573','ActionName':'List','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:43.9360914+08:00" level="INFO" thread="7636" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>Start_Action:{'OccurTime':'2014-10-21 09:40:43.936','ActionName':'Add','ControllerName':'DRSTrainInfo','Method':'GET','Url':'http://www.tuhui.com/DRSTrainInfo/Add?X-Requested-With=XMLHttpRequest&amp;_=1413855643930','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'X-Requested-With':'XMLHttpRequest','_':'1413855643930'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-10-21T09:40:43.9370914+08:00" level="INFO" thread="7636" domain="/LM/W3SVC/1/ROOT-1-130583283401964004" identity="admin" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>End_Action:{'OccurTime':'2014-10-21 09:40:43.937','ActionName':'Add','ControllerName':'DRSTrainInfo',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+</ControllerAction_Logger>

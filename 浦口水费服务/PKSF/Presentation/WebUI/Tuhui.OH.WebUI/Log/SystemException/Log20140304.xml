@@ -1,0 +1,399 @@
+﻿<SystemException_Logger></SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T09:29:12.9193256+08:00" level="FATAL" thread="1076" domain="/LM/W3SVC/1/ROOT/OH-1-130383701404206107" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.HomeController?�з���?System.Web.Mvc.ActionResult Page0(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?sceneId?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T10:16:13.1016308+08:00" level="FATAL" thread="3064" domain="/LM/W3SVC/1/ROOT/OH-1-130383701404206107" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.HomeController?�з���?System.Web.Mvc.ActionResult Page0(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?sceneId?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger></SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T13:55:47.4731617+08:00" level="FATAL" thread="9432" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.DRSTrainContentController?�з���?System.Web.Mvc.ActionResult Find(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?id?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T13:57:05.6986360+08:00" level="FATAL" thread="12472" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.DRSTrainContentController?�з���?System.Web.Mvc.ActionResult Find(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?id?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T14:05:57.6680629+08:00" level="FATAL" thread="9992" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.DRSTrainContentController?�з���?System.Web.Mvc.ActionResult Find(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?id?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T14:06:16.3981342+08:00" level="FATAL" thread="11884" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.DRSTrainContentController?�з���?System.Web.Mvc.ActionResult Find(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?id?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T14:06:30.0989178+08:00" level="FATAL" thread="10968" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.DRSTrainContentController?�з���?System.Web.Mvc.ActionResult Find(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?id?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T14:06:40.1664936+08:00" level="FATAL" thread="11884" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.DRSTrainContentController?�з���?System.Web.Mvc.ActionResult Find(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?id?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T14:06:50.2690715+08:00" level="FATAL" thread="3064" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.DRSTrainContentController?�з���?System.Web.Mvc.ActionResult Find(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?id?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T14:07:00.3636489+08:00" level="FATAL" thread="620" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.DRSTrainContentController?�з���?System.Web.Mvc.ActionResult Find(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?id?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T14:09:05.1917886+08:00" level="FATAL" thread="2512" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentException: ����?Tuhui.OH.WebUI.Controllers.DRSTrainContentController?�з���?System.Web.Mvc.ActionResult Find(Int32)?�Ĳ�����Ϊ null ������?System.Int32?�Ĳ���?id?�������ֵ����һ�� null ��?��ѡ��������Ϊ��������?����Ϊ null �����ͻ�����Ϊ��ѡ����?
+������: parameters
+   �� System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   �� System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   �� System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   �� System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T14:40:26.5983989+08:00" level="FATAL" thread="10516" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentNullException: ֵ����Ϊ null?
+������: entity
+   �� System.Data.Entity.ModelConfiguration.Utilities.RuntimeFailureMethods.ReportFailure(ContractFailureKind contractFailureKind, String userMessage, String conditionText, Exception innerException)
+   �� System.Data.Entity.DbSet`1.Remove(TEntity entity)
+   �� Tuhui.OH.DataAccess.DRSTrainInfoDataAccess.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\DRSTrainInfoDataAccess.cs:�к� 132
+   �� Tuhui.OH.BusinessLogic.DRSTrainInfoBusinessLogic.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\DRSTrainInfoBusinessLogic.cs:�к� 64
+   �� Tuhui.OH.WebUI.Controllers.DRSTrainInfoController.DeleteDRSInfo(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\DRSTrainInfoController.cs:�к� 196
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T14:40:30.3126114+08:00" level="FATAL" thread="9968" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentNullException: ֵ����Ϊ null?
+������: entity
+   �� System.Data.Entity.ModelConfiguration.Utilities.RuntimeFailureMethods.ReportFailure(ContractFailureKind contractFailureKind, String userMessage, String conditionText, Exception innerException)
+   �� System.Data.Entity.DbSet`1.Remove(TEntity entity)
+   �� Tuhui.OH.DataAccess.DRSTrainInfoDataAccess.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\DRSTrainInfoDataAccess.cs:�к� 132
+   �� Tuhui.OH.BusinessLogic.DRSTrainInfoBusinessLogic.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\DRSTrainInfoBusinessLogic.cs:�к� 64
+   �� Tuhui.OH.WebUI.Controllers.DRSTrainInfoController.DeleteDRSInfo(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\DRSTrainInfoController.cs:�к� 196
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T14:40:42.3272986+08:00" level="FATAL" thread="4844" domain="/LM/W3SVC/1/ROOT/OH-1-130383854808750345" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentNullException: ֵ����Ϊ null?
+������: entity
+   �� System.Data.Entity.ModelConfiguration.Utilities.RuntimeFailureMethods.ReportFailure(ContractFailureKind contractFailureKind, String userMessage, String conditionText, Exception innerException)
+   �� System.Data.Entity.DbSet`1.Remove(TEntity entity)
+   �� Tuhui.OH.DataAccess.DRSTrainInfoDataAccess.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\DRSTrainInfoDataAccess.cs:�к� 132
+   �� Tuhui.OH.BusinessLogic.DRSTrainInfoBusinessLogic.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\DRSTrainInfoBusinessLogic.cs:�к� 64
+   �� Tuhui.OH.WebUI.Controllers.DRSTrainInfoController.DeleteDRSInfo(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\DRSTrainInfoController.cs:�к� 196
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T16:14:14.9253208+08:00" level="FATAL" thread="10736" domain="/LM/W3SVC/1/ROOT/OH-1-130383942966352671" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentNullException: ֵ����Ϊ null?
+������: entity
+   �� System.Data.Entity.ModelConfiguration.Utilities.RuntimeFailureMethods.ReportFailure(ContractFailureKind contractFailureKind, String userMessage, String conditionText, Exception innerException)
+   �� System.Data.Entity.DbSet`1.Remove(TEntity entity)
+   �� Tuhui.OH.DataAccess.DRSTrainInfoDataAccess.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\DRSTrainInfoDataAccess.cs:�к� 132
+   �� Tuhui.OH.BusinessLogic.DRSTrainInfoBusinessLogic.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\DRSTrainInfoBusinessLogic.cs:�к� 64
+   �� Tuhui.OH.WebUI.Controllers.DRSTrainInfoController.DeleteDRSInfo(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\DRSTrainInfoController.cs:�к� 196
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T16:14:34.3704330+08:00" level="FATAL" thread="10116" domain="/LM/W3SVC/1/ROOT/OH-1-130383942966352671" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentNullException: ֵ����Ϊ null?
+������: entity
+   �� System.Data.Entity.ModelConfiguration.Utilities.RuntimeFailureMethods.ReportFailure(ContractFailureKind contractFailureKind, String userMessage, String conditionText, Exception innerException)
+   �� System.Data.Entity.DbSet`1.Remove(TEntity entity)
+   �� Tuhui.OH.DataAccess.DRSTrainInfoDataAccess.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\DRSTrainInfoDataAccess.cs:�к� 132
+   �� Tuhui.OH.BusinessLogic.DRSTrainInfoBusinessLogic.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\DRSTrainInfoBusinessLogic.cs:�к� 64
+   �� Tuhui.OH.WebUI.Controllers.DRSTrainInfoController.DeleteDRSInfo(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\DRSTrainInfoController.cs:�к� 196
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T16:15:24.9003231+08:00" level="FATAL" thread="9704" domain="/LM/W3SVC/1/ROOT/OH-1-130383942966352671" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentNullException: ֵ����Ϊ null?
+������: entity
+   �� System.Data.Entity.ModelConfiguration.Utilities.RuntimeFailureMethods.ReportFailure(ContractFailureKind contractFailureKind, String userMessage, String conditionText, Exception innerException)
+   �� System.Data.Entity.DbSet`1.Remove(TEntity entity)
+   �� Tuhui.OH.DataAccess.DRSTrainInfoDataAccess.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\DRSTrainInfoDataAccess.cs:�к� 132
+   �� Tuhui.OH.BusinessLogic.DRSTrainInfoBusinessLogic.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\DRSTrainInfoBusinessLogic.cs:�к� 64
+   �� Tuhui.OH.WebUI.Controllers.DRSTrainInfoController.DeleteDRSInfo(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\DRSTrainInfoController.cs:�к� 196
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T16:18:42.6556341+08:00" level="FATAL" thread="13304" domain="/LM/W3SVC/1/ROOT/OH-1-130383942966352671" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentNullException: ֵ����Ϊ null?
+������: entity
+   �� System.Data.Entity.ModelConfiguration.Utilities.RuntimeFailureMethods.ReportFailure(ContractFailureKind contractFailureKind, String userMessage, String conditionText, Exception innerException)
+   �� System.Data.Entity.DbSet`1.Remove(TEntity entity)
+   �� Tuhui.OH.DataAccess.DRSTrainInfoDataAccess.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\DRSTrainInfoDataAccess.cs:�к� 132
+   �� Tuhui.OH.BusinessLogic.DRSTrainInfoBusinessLogic.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\DRSTrainInfoBusinessLogic.cs:�к� 64
+   �� Tuhui.OH.WebUI.Controllers.DRSTrainInfoController.DeleteDRSInfo(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\DRSTrainInfoController.cs:�к� 196
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T16:18:49.7260385+08:00" level="FATAL" thread="12612" domain="/LM/W3SVC/1/ROOT/OH-1-130383942966352671" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentNullException: ֵ����Ϊ null?
+������: entity
+   �� System.Data.Entity.ModelConfiguration.Utilities.RuntimeFailureMethods.ReportFailure(ContractFailureKind contractFailureKind, String userMessage, String conditionText, Exception innerException)
+   �� System.Data.Entity.DbSet`1.Remove(TEntity entity)
+   �� Tuhui.OH.DataAccess.DRSTrainInfoDataAccess.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\DRSTrainInfoDataAccess.cs:�к� 132
+   �� Tuhui.OH.BusinessLogic.DRSTrainInfoBusinessLogic.Delete(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\DRSTrainInfoBusinessLogic.cs:�к� 64
+   �� Tuhui.OH.WebUI.Controllers.DRSTrainInfoController.DeleteDRSInfo(Int32 Id) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\DRSTrainInfoController.cs:�к� 196
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+<log4net_event logger="SystemExceptionLogger" timestamp="2014-03-04T16:26:30.2663799+08:00" level="FATAL" thread="9488" domain="/LM/W3SVC/1/ROOT/OH-1-130383942966352671" username="IIS APPPOOL\www.tuhui.com">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+  <log4net_exception>System.ArgumentNullException: ֵ����Ϊ null?
+������: entity
+   �� System.Data.Entity.ModelConfiguration.Utilities.RuntimeFailureMethods.ReportFailure(ContractFailureKind contractFailureKind, String userMessage, String conditionText, Exception innerException)
+   �� System.Data.Entity.DbSet`1.Remove(TEntity entity)
+   �� Tuhui.OH.DataAccess.DRSTrainContentDataAccess.Delete(DRSTrainContent entity) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.DataAccess\DRSTrainContentDataAccess.cs:�к� 63
+   �� Tuhui.OH.BusinessLogic.DRSTrainContentBusinessLogic.Delete(DRSTrainContent entity) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Service\Tuhui.OH.BusinessLogic\DRSTrainContentBusinessLogic.cs:�к� 56
+   �� Tuhui.OH.WebUI.Controllers.DRSTrainContentController.Delete(DRSTrainContent entity) λ�� e:\SVN\ͼ��\Project\04 ��Ŀ�ĵ�\13 ��»�3D����չʾϵͳ\07.Source\PC\Tuhui.QAZSXT3D\Presentation\WebUI\Tuhui.OH.WebUI\Controllers\DRSTrainContentController.cs:�к� 39
+   �� lambda_method(Closure , ControllerBase , Object[] )
+   �� System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)</log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger></SystemException_Logger>

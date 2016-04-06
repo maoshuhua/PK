@@ -51,6 +51,7 @@
     <Compile Include="Reception_Resource.cs" />
     <Compile Include="Reception_ResourceEvent.cs" />
     <Compile Include="Reception_ResourceType.cs" />
+    <Compile Include="Reception_Resource_Type.cs" />
     <Compile Include="Reception_UserInfo.cs" />
     <Compile Include="Video.cs" />
   </ItemGroup>

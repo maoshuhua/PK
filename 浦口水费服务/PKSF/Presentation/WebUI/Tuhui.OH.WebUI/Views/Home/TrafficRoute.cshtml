@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="@Url.Content("~/Script/jquery-1.8.2.js")" type="text/javascript"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .current
+        {
+            width: 158px;
+            height: 704px;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        .current_back
+        {
+            width: 158px;
+            height: 704px;
+            margin: 0px;
+            padding: 0px;
+            background-repeat: no-repeat;
+            /*background-size:170px 704px;*/
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            //动态改变路线图
+        })
+    </script>
+</head>
+<body style="background-color:transparent;overflow: hidden">
+
+    <div >
+        <img class="current_back" src="@Url.Content("~/Content/Images/trafficPic/subway-1.png")" />
+    </div>
+</body>
+<script type="text/javascript">
+    //根据点击的内容 来改变背景图
+    function changeBackgroundImage(id) {
+        //debugger;
+        var url1;
+        var urlNew;
+        switch (id) {
+            case "5"://地铁1号线
+                url1 = "subway-1.png";
+                break;
+            case "6"://S1
+                url1 = "subway_s1.png";
+                break;
+            case "1"://公共汽车站
+                break;
+            case "2"://出租车
+                break;
+            case "31"://公交车
+                url1 = "bus_84.png";
+                break;
+            case "32"://公交车
+                url1 = "bus_119.png";
+                break;
+            case "33"://公交车
+                url1 = "bus_129.png";
+                break;
+            case "34"://公交车
+                url1 = "bus_816.png";
+                break;
+            case "35"://公交车
+                url1 = "bus_192.png";
+                break;
+            case "36"://公交车
+                url1 = "bus_191.png";
+                break;
+            case "37"://公交车190
+                url1 = "bus_190.png";
+                break;
+            case "38"://公交车
+                url1 = "bus_181.png";
+                break;
+            case "39"://公交车
+                url1 = "bus_19.png";
+                break;
+            case "4"://停车场
+                break;
+            default:
+        }
+        urlNew = "../Content/images/trafficPic/" + url1;
+        //$(".current_back").css("background-image", "url("+urlNew+")");
+        $(".current_back").attr("src", urlNew);
+    }
+    
+    //根据可用高度来改变背景图片的高度
+    function changeImageHeight() {
+        var piHeight = window.parent.picHeight;
+        var usHeight = window.parent.userHeight;
+        if (piHeight > 0) {
+            //判断图片的高度与可用高度
+            if (piHeight > usHeight) {
+                //将iframe高度设为userHeight
+                $(".current_back").css("height", usHeight + "px");
+                //$(".current").css("height", usHeight + "px");
+                //$(".current").css("background-size", "158px "+picHeight+"px");//width height 图片的宽高
+
+            } else {
+                //将iframe高度设为picHeight
+                $(".current_back").css("height", piHeight + "px");
+                //$(".current").css("height", picHeight + "px");
+                //移除background-size
+            }
+
+           
+        }
+    }
+
+    //function getImgWidth() {
+    //    // 图片地址
+    //    var img_url = 'http://www.qttc.net/static/upload/2013/13643608813441.jpg';
+
+    //    // 创建对象
+    //    var img = new Image();
+
+    //    // 改变图片的src
+    //    img.src = img_url;
+
+    //    // 判断是否有缓存
+    //    if (img.complete) {
+    //        // 打印
+    //        alert('from:complete : width:' + img.width + ',height:' + img.height);
+    //    } else {
+    //        // 加载完成执行
+    //        img.onload = function () {
+    //            // 打印
+    //            alert('from:onload : width:' + img.width + ',height:' + img.height);
+    //        };
+    //    }
+    //}
+
+</script>
+</html>
+

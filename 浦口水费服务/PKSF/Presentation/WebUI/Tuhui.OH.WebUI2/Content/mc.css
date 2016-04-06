@@ -1,0 +1,25 @@
+*{margin:0;padding:0;font-size:.95em;font-family:Hiragino Sans GB;outline:0;color:#555;line-height:1em}
+body{background:#f1f1f1;font-family:microsoft yahei;-webkit-text-size-adjust:100%;}
+textarea{resize:none}
+iframe,img{border:0}
+ul,ol,li{list-style:none}
+input{-webkit-appearance:none}
+a{text-decoration:none}
+html,body{overflow:hidden}
+.fleft{float:left;}
+.fright{float:right}
+.myclear{clear:both}
+
+p.name_plas{font-size:1.1em; color:#; width:95%; margin:.5em auto 0 auto}
+div.zhuanzhen{width:95%; margin:1em auto}
+p.zhuan_time{border-radius:15px 15px 0 0; background:#ff9519; width:100%; height:2.0em; line-height:2.0em; font-weight:bold; font-size:1.2em}
+p.zhuan_time span{padding:0 0 0 30px; color:#fff; background:url(./images/ZZ/datad.png) no-repeat left center; margin:0 0 0 10px}
+div.show_data{width:100%; background:#fff; -webkit-box-shadow:0 3px 10px #ccc;    -moz-box-shadow:0 3px 10px #ccc; box-shadow:0 3px 10px #ccc; padding-bottom:1em}
+div.show_data p{padding:1em 0 0 1em; font-size:1.1em}
+div.show_data p span{color:#73b7e7}
+
+div.text_area{width:95%; margin:1em auto 0 auto}
+p.ywu_title{border-radius:15px 15px 0 0; background:#ff9519; width:100%; height:2.0em; line-height:2.0em; font-weight:bold; font-size:1.2em; text-align:center; color:#fff;}
+div.huanzhe{width:100%; background:#fff; -webkit-box-shadow:0 3px 10px #ccc;    -moz-box-shadow:0 3px 10px #ccc; box-shadow:0 3px 10px #ccc; padding-bottom:1em; padding:1em 0;border-radius:0 0 15px 15px;}
+div.huanzhe ul li{font-size:1.1em; color:#363434; margin:0 0 0.5em .5em}
+div.huanzhe ul li span{color:#858383;}

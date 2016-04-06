@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{469F3D7D-C630-4E8C-A4AF-85058E5260D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tuhui.OH.Mvc</RootNamespace>
+    <AssemblyName>Tuhui.OH.Mvc</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\..\..\..\..\..\..\..\..\source\Tuhui.Common\Binaries\Utility\Aspose\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Tuhui.OH.WebUI\bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tuhui.Common.Cache">
+      <HintPath>..\..\..\..\..\..\..\..\..\source\Tuhui.Common\Binaries\Tuhui.Common\Tuhui.Common.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="Tuhui.Common.Environment">
+      <HintPath>..\..\..\..\..\..\..\..\..\source\Tuhui.Common\Binaries\Tuhui.Common\Tuhui.Common.Environment.dll</HintPath>
+    </Reference>
+    <Reference Include="Tuhui.Common.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\source\Tuhui.Common\Binaries\Tuhui.Common\Tuhui.Common.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Tuhui.Common.Log">
+      <HintPath>..\..\..\..\..\..\..\..\..\source\Tuhui.Common\Binaries\Tuhui.Common\Tuhui.Common.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Tuhui.Common.Mvc">
+      <HintPath>..\..\..\..\..\..\..\..\..\source\Tuhui.Common\Binaries\Tuhui.Common\Tuhui.Common.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Tuhui.Common.Utility">
+      <HintPath>..\..\..\..\..\..\..\..\..\source\Tuhui.Common\Binaries\Tuhui.Common\Tuhui.Common.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Filter\AuthorizeFilter.cs" />
+    <Compile Include="GetIP4Address.cs" />
+    <Compile Include="LDAPHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\TrainTimeWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="THDes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Entity\Tuhui.OH.Entity\Tuhui.OH.Entity.csproj">
+      <Project>{AEE326C9-29A0-4E39-8902-9B958FDE66D6}</Project>
+      <Name>Tuhui.OH.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Interface\Tuhui.OH.IBusinessLogic\Tuhui.OH.IBusinessLogic.csproj">
+      <Project>{7CD9012F-F8B2-49CE-BB20-EC3DED82259F}</Project>
+      <Name>Tuhui.OH.IBusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Service\Tuhui.OH.BusinessLogic\Tuhui.OH.BusinessLogic.csproj">
+      <Project>{20BF21DB-60D8-4377-A848-7FF5FD9A2947}</Project>
+      <Name>Tuhui.OH.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Utility\Tuhui.OH.Utility\Tuhui.OH.Utility.csproj">
+      <Project>{E35644E9-822D-400A-93C7-331651F9D0AA}</Project>
+      <Name>Tuhui.OH.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Service References\TrainTimeWebService\TrainTimeWebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\TrainTimeWebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrainTimeWebService\TrainTimeWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrainTimeWebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrainTimeWebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrainTimeWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

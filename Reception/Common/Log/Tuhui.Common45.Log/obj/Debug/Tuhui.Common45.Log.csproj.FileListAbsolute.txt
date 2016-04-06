@@ -25,14 +25,12 @@ D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\Tuhui.Common45.Lo
 D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\NLog.dll
 D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\Tuhui.Common45.Exception.dll
 D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\Tuhui.Common45.Utility.dll
+D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\NPOI.dll
+D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\NPOI.OOXML.dll
+D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\NPOI.OpenXml4Net.dll
 D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\Tuhui.Common45.Exception.pdb
 D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\Tuhui.Common45.Utility.pdb
 D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\NLog.xml
 D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\obj\Debug\Tuhui.Common45.Log.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\obj\Debug\Tuhui.Common45.Log.dll
 D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\obj\Debug\Tuhui.Common45.Log.pdb
-D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\NPOI.dll
-D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\NPOI.OOXML.dll
-D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\NPOI.OpenXmlFormats.dll
-D:\msh\pk\PK\Reception\Common\Log\Tuhui.Common45.Log\bin\Debug\NPOI.OpenXml4Net.dll

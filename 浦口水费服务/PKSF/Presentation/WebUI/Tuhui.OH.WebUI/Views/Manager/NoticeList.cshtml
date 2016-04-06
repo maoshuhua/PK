@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "NoticeList";
+    ViewBag.MenuKey = "Notice";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="layout-content-head">
+    <h2>公告管理 -> 列表</h2>
+</div>
+<div class="layout-content-main">
+    <label style="float: left;margin-top: 6px;">有效期：</label>
+    <select id="noticeeffect" name="noticeeffect" style="width:160px;float: left;margin-bottom: 5px" onchange="GetNoticeList()">
+        <option value="1">有效</option>
+        <option value="0">无效</option>
+    </select>
+    <table class="l-table" style="min-width:800px;">
+        <thead>
+            <tr>
+                <th style="width:80px">公告序列</th>
+                <th>公告标题</th>
+                <th>公告内容</th>
+                <th style="width:180px;">创建时间</th>
+                <th style="width:150px;">有效期</th>
+                <th style="width: 60px;">创建人</th>
+                <th style="width:80px;">@Html.ActionLink(" ", "NoticeModify", new { controller = "Manager" }, new { @class = "create" })</th>
+            </tr>
+        </thead>
+        <tbody id="tbody_NoticeList">
+            <tr>
+                <td binding="{'html':'noticeid'}">
+                <td binding="{'html':'noticetitle'}">
+                <td binding="{'html':'noticedesc'}"></td>
+                <td binding="{'html':'createtime','htmlHandle':'datetime'}"></td>
+                <td binding="{'html':'effectivetime','htmlHandle':'datetime'}"></td>
+                <td binding="{'html':'createuser'}"></td>
+                <td><a class="edit" binding="{'onclick':'noticeid','onclickFormat':'edit_video({0})'}"></a>
+                    <a class="delete" onclick="DeleteVideo(this)" binding="{'noticeid':'noticeid'}"></a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="7" id="page_NoticeList"></td></tr>
+        </tfoot>
+    </table>
+</div>
+
+<script type="text/javascript">
+
+    $(function() {
+        GetNoticeList();
+    });
+    
+    function GetNoticeList() {
+        $.L.ajaxHandle({
+            cache: "false",
+            //url: ACTION_URL("GetAllNotice", "Manager"),
+            data: {
+                effecttype: $("#noticeeffect").val()
+            },
+            url: ACTION_URL("GetNoticeByTimeNow", "Manager"),
+            success: function (response) {
+                $("#tbody_NoticeList").L_bindingDataList(response);
+            }
+        })
+    }
+
+    //function USERNAME(value, data, obj) {
+    //    $.L.ajaxHandle({
+    //        type: "post",
+    //        cache: "false",
+    //        data: { userid: value },
+    //        url: ACTION_URL("GetUserByUserId", "Manager"),
+    //        error: function () {
+    //            alert("error");
+    //        },
+    //        success: function (response) {
+    //            return response.username;
+    //        }
+    //    })
+    //}
+
+    function DeleteVideo(a) {
+        $.L.messageConfirmT("确定删除此条记录？",function () {
+            var noticeid = $(a).attr("noticeid");
+            $.L.ajaxHandle({
+                type: "post",
+                cache: "false",
+                data: { id: noticeid },
+                url: ACTION_URL("DeleteNoticeById", "Manager"),
+                error: function () {
+                    alert("error");
+                },
+                success: function (response) {
+                    GetNoticeList();
+                    window.location.href = '@Url.Action("NoticeList","Manager")';
+                }
+            });
+        })
+    }
+
+    function edit_video(noticeid) {
+        window.location.href = '@Url.Action("NoticeModify", "Manager")' + '?Noticeid=' + noticeid;
+    }
+
+</script>
+
+

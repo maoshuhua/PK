@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    @*<script src="~/Script/jquery-1.8.2.js"></script>*@
+    <script type="text/javascript">
+            
+    </script>
+    <style type="text/css">
+        .current_back
+        {
+            width: 158px;
+            height: 60px;
+            margin: 0px;
+            padding: 0px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        .current
+        {
+           
+            width: 158px;
+            height: 60px;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body class="current">
+
+    <div class="current_back" onclick="window.parent.$.OH.CurrentPosition.goToCurrentPosition();" style="background-image: url(@Url.Content("~/Content/Images/image_Current.png"))">
+    </div>
+</body>
+</html>
+

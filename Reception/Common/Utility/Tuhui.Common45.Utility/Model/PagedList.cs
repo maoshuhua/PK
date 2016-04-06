@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 
 namespace Tuhui.Common45.Utility
 {
@@ -74,6 +75,33 @@ namespace Tuhui.Common45.Utility
                 pageIndex = TotalPageCount;
             }
             PageData = items.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+
+            if (PageData.Count > 0)
+            {
+                PageData.ForEach(model =>
+                {
+                    //茅书华
+                    //利用反射对string赋值默认值空
+                    Type type = typeof(T);
+                    PropertyInfo[] props = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
+                    if (props.Length > 0)
+                    {
+                        foreach (PropertyInfo prop in props)
+                        {
+                            string propType = prop.PropertyType.Name;
+                            object obj = prop.GetValue(model, null);
+                            if (propType is string)
+                            {
+                                if (obj == null)
+                                {
+                                    prop.SetValue(model, "");
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
             PageIndex = pageIndex;
             PageSize = pageSize;
             StartRecordIndex = (pageIndex - 1) * pageSize + 1;

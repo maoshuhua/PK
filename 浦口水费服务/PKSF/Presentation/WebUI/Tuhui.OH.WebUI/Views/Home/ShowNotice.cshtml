@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    @Content.Common1(Url,true)
+    <script type="text/javascript">
+        var rootPath = '@Request.ApplicationPath';
+        if (rootPath[rootPath.length - 1] == '/') {
+            rootPath = rootPath.substring(0, rootPath.length - 2);
+        }
+        $(function () {
+            //查询公告列表
+            //$.ajaxHandle({
+            //    url: rootPath + "/Manager/GetNoticeByTimeNow",
+            //    data: {
+            //        effecttype: 1
+            //    },
+            //    success: function (response) {
+            //        if (response) {
+            //            var noticeData = response;
+            //            $("#box_list_ol").bindingDataList(noticeData);
+            //            IncreaseId("box_list_ol");
+            //        }
+
+            //    }
+            //});
+            
+        });
+    </script>
+    <style type="text/css">
+        body{margin: 0px;padding: 0px;background: #ffffff;}
+        #box_title{ height: 50px; line-height: 50px; font-size: 22px; background: url('@Url.Content("~/content/title/tit_back.png")') repeat-x;color: #fff;font-family: '微软雅黑', '黑体';}
+        #box_title .titleIcon{width: 126px;height: 31px;background: url('@Url.Content("~/content/title/tit_14.png")') no-repeat center;position: absolute;left: 0px;top: 0px;margin-left: 30px;margin-top: 12px;}
+      
+        #box_title .closeBtn{width: 21px;height: 21px;background: url('@Url.Content("~/content/title/close.png")') no-repeat center;position: absolute;right: 0px;top: 0px; cursor: pointer;margin-top: 12px;margin-right: 15px;}
+       
+        #box_list ul li {
+           
+            font-size: 16px;
+            color: #474747;
+            font-family: '微软雅黑', '黑体';
+            margin-left: 30px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-weight: bold;
+
+        }
+
+       .divTime {
+            float: right;
+            margin-right: 30px;
+            margin-top: -25px;
+            font-size: 16px;
+            color: #474747;
+            font-family: '微软雅黑', '黑体';
+            cursor: pointer;
+            font-weight: bold;
+        }
+     
+        @*采用ol增加序号的时候 需要加上*@
+      @*  ol li{
+        list-style-type:decimal;
+        list-style-position:inside;
+              }*@
+
+        
+        #detail_list div {
+              font-family: '微软雅黑', '黑体';
+        }
+        #title {
+             font-size: 18px;
+            text-align: center;
+            font-family: bold;
+            margin-top: 10px;
+        }
+        #time {
+             font-size: 14px;
+        text-align: center;
+        }
+
+        #content {
+            margin-left: 30px;
+            font-size: 16px;
+        }
+        #bottom {
+              margin-bottom: 30px;
+        }
+        #bottom input{
+            position: absolute;
+           bottom: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+          
+            text-align: center;
+       
+            font-size: 16px;
+            font-family: '微软雅黑', '黑体';
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+
+            //关闭按钮
+            $(".closeBtn").on("click", function () {
+                window.parent.$("#ShowNotice").hide();
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div id="box_title">
+        <div class="titleIcon"></div>
+        <div style="background: #cbdcc3; width: 60px; height: 50px; float: right">
+            <div class="closeBtn"></div>
+        </div>
+
+    </div>
+    @*  <div id="box_list" style="display: block">
+        <ol id="box_list_ol">
+            <li style="width: 650px;" binding="{'html':'noticetitle','htmlHandle':$.OH.showNotice.handleNoticeDesc,'noticeid':'noticeid'}"  onclick="$.OH.showNotice.showDetail(this);">
+            </li>
+            <div class="divTime">
+                 <span>[</span>
+            <span  binding="{'html':'createtime','htmlHandle':'datetime_Date'}"></span>
+            <span>]</span>
+            </div>
+           
+            <div style="background-color: #b0b0b0; height: 1px; margin-left: 30px; margin-right: 30px;"></div>
+            <div style="display: none" binding="{'noticeid':'noticeid'}" id="divtest"></div>
+        </ol>
+    </div>*@
+    
+    <!--modify by tangdeng 2014-11-7改用js实现序号的自增长-->
+    <div id="box_list" style="display: block">
+        <ul id="box_list_ol">
+            <li style="width: 650px;" binding="{'html':'noticetitle','htmlHandle':handleNoticeDesc,'noticeid':'noticeid'}"  onclick="showDetail(this);">
+            </li>
+            <div class="divTime">
+                 <span>[</span>
+            <span  binding="{'html':'createtime','htmlHandle':'datetime_Date'}"></span>
+            <span>]</span>
+            </div>
+           
+            <div style="background-color: #b0b0b0; height: 1px; margin-left: 30px; margin-right: 30px;"></div>
+            <div style="display: none" binding="{'noticeid':'noticeid'}" id="divtest"></div>
+        </ul>
+    </div>
+    
+    <script type="text/javascript">
+        //js实现li序号自增长
+        function IncreaseId(e) {
+            var ul = document.getElementById(e);
+            var lis = ul.getElementsByTagName('li');
+            for (var i = 0, l = lis.length; i < l; i++) {
+                var tHTML = lis[i].innerHTML;
+                lis[i].innerHTML = '<span>' + (i + 1) + '. </span>' + tHTML;
+            }
+        }
+        //公告内容转换方法
+        function handleNoticeDesc(value,data,obj) {
+            var str = value;
+            return str + "；";
+        }
+        //点击显示详细信息
+        function showDetail(obj) {
+            var noticeid = $(obj).attr("noticeid");
+            this.searchNoticeById(noticeid);
+        }
+        //通过id查询对应的公告信息
+        function searchNoticeById(id) {
+            $.ajaxHandle({
+                url: rootPath + "/Manager/GetNoticeByNoticeId",
+                data: { noticeid: id },
+                loading: false,//不显示加载进度条
+                success: function (response) {
+                    if (response) {
+                        window.parent.$("#ShowNotice").hide();
+                        window.parent.$("#ShowNoticeDetail").show();
+                        var noticeData = response;
+
+                        window.parent.document.getElementById("ShowNoticeDetail").contentWindow.bindData(noticeData);
+
+                    }
+
+                }
+            });
+        }
+
+        //serachNoticeList();
+        function serachNoticeList() {
+            $.ajaxHandle({
+                url: rootPath + "/Manager/GetNoticeByTimeNow",
+                data: {
+                    effecttype: 1
+                },
+                loading: false,
+                success: function (response) {
+                    if (response) {
+                        var noticeData = response;
+                        $("#box_list_ol").bindingDataList(noticeData);
+                        IncreaseId("box_list_ol");
+                    }
+
+                }
+            });
+        }
+    </script>
+   
+</body>
+</html>
+

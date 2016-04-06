@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+  <script src="@Url.Content("~/Script/jquery-1.8.2.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(".current_back").click(function() {//点击之后的样式
+                var urlNew = "../Content/images/images_back.png";
+                $(this).css("background-image", "url(" + urlNew + ")");
+            });
+        });
+
+        function oldBackgroundReturn() {//点击之前的样式
+            $(".current_back").css("background-image", "url('../Content/images/images_back_click.png')");
+        }
+    </script>
+    <style type="text/css">
+        .current_back
+        {
+            width: 158px;
+            height: 60px;
+            margin: 0px;
+            padding: 0px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        .current
+        {
+            background-color: #1B2023;
+            width: 158px;
+            height: 60px;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body class="current">
+
+    <div class="current_back" onclick="window.parent.$.OH.startNavigation.pageToggle_return();" style="background-image: url(@Url.Content("~/content/Images/images_back_click.png"))">
+    </div>
+</body>
+</html>
+

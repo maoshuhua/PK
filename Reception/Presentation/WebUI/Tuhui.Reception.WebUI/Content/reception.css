@@ -1,0 +1,142 @@
+﻿html, body {
+   color:#2a2a2a;
+   font-size:16px;
+}
+
+.resource_status_bottom {
+   position:absolute;
+   right:30px;
+   bottom:50px;
+   border:1px solid #C7C7C7;
+   z-index:999;
+   background-color:#fff;
+   width:335px;
+   height:68px;
+}
+
+.resource_status_wkg,.resource_status_ykg,.resource_status_ywg {
+    float:left;
+    padding:14px 0 0 18px;
+    height:40px;
+    line-height:35px;
+    width:85px;
+    font-weight:bold;
+}
+    .resource_status_wkg .bg {
+        background:url(../Content/images/reception/wkg_small.png);
+        float:left;
+        width:32px;
+        height:39px;
+    }
+
+    .resource_status_ykg .bg {
+        background:url(../Content/images/reception/ykg_small.png);
+        float:left;
+        width:32px;
+        height:39px;
+    }
+
+    .resource_status_ywg .bg {
+        background:url(../Content/images/reception/ywg_small.png);
+        float:left;
+        width:32px;
+        height:39px;
+    }
+
+.resource_status_left{
+    position:absolute;
+    z-index:999;
+    left:40px;
+    top:40px;
+    width:67px;
+    height:67px;
+    cursor:pointer;
+}
+.wp {
+    background:url(../Content/images/reception/map_wp.png);
+}
+
+.wx {
+    background:url(../Content/images/reception/map_wx.png);
+}
+
+.resource_navigation_newest {
+    position:absolute;
+    z-index:999;
+    left:40px;
+    top:117px;
+    width:67px;
+    height:72px;
+    cursor:pointer;
+}
+
+.navi_open {
+    background:url(../Content/images/reception/navi_open.png);
+}
+
+.navi_close {
+    background:url(../Content/images/reception/navi_close.png);
+}
+
+.resource_list_container {
+    position:absolute;
+    top:40px;
+    right:40px;
+    width:245px;
+    z-index:999;
+    border:1px solid #859abb;
+    max-height:480px;
+    border-radius:10px;
+    opacity:0.85;
+    background: #b7ccee; /*针对ie9及其以下*/
+    background: -webkit-linear-gradient(#b7ccee, #becfed); 
+    background: -o-linear-gradient(#b7ccee, #becfed); 
+    background: -moz-linear-gradient(#b7ccee, #becfed);
+    background: linear-gradient(#b7ccee, #becfed); 
+}
+
+.resource_list {
+    width:229px;
+    height:100%;
+    border:1px solid #859abb;
+    margin:7px;
+    border-radius:5px;
+    max-height:464px;
+    overflow-y:auto;
+}
+
+.resource_list_head {
+   width:200px;
+   height:40px;
+   background: #698ed5; /*针对ie9及其以下*/
+   background: -webkit-linear-gradient(#698ed5, #396eb4); 
+   background: -o-linear-gradient(#698ed5, #396eb4); 
+   background: -moz-linear-gradient(#698ed5, #396eb4);
+   background: linear-gradient(#698ed5, #396eb4); 
+   border-radius:10px;
+   color:#fff;
+   line-height:40px;
+   text-align:left;
+   padding-left:29px;
+   font-size:20px;
+   margin-bottom:6px;
+}
+
+.resource_list_item {
+   margin:0 7px;
+   border-bottom:1px solid #728099;
+   height:30px;
+   line-height:30px;
+   text-align:left;
+   background:url(../Content/images/reception/arrow.png) no-repeat 10px center;
+   padding-left:23px;
+   cursor:pointer;
+}
+
+.no_border {
+   border:none;
+}
+
+.floatR {
+  float:right;
+}

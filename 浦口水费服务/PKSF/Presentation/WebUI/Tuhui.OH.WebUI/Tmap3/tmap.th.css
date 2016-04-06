@@ -1,0 +1,165 @@
+﻿.tmap-th-cluster {
+    width: 30px;
+    height: 30px;
+    color:#fff;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 100px;
+    box-shadow: 0px 3px 14px rgba(0,0,0,0.4);
+    background: -webkit-gradient(radial,15 15,5,15 15,15,from(rgb(38,127,202)),to(blue));
+}
+
+.tmap-th-label {
+    background: rgb(54, 54, 54);
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid transparent;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: -21px;
+    padding: 4px 8px;
+    font: 12px/18px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    z-index: 6;
+}
+
+    .tmap-th-label p.before {
+        border-right: 6px solid black;
+        border-right-color: rgba(0, 0, 0, 0.6);
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        content: "";
+        position: absolute;
+        padding:0;
+        margin:0;
+        top: 7px;
+        left: -7px;
+    }
+
+.tmap-th-marker-A1 {
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+    box-shadow: 2px 5px 20px rgba(0,0,0,0.8);
+}
+
+    .tmap-th-marker-A1 .A1_main {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .tmap-th-marker-A1 .A1_bottom {
+        position: absolute;
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-left: 6px solid transparent;
+        border-top: 12px solid #297dfc;
+        border-right: 6px solid transparent;
+        -moz-transition: all ease 0.3s;
+        -webkit-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+    }
+
+.tmap-th-marker-B1 {
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    box-shadow: 0px 3px 14px rgba(0,0,0,0.4);
+}
+
+.tmap-th-marker-type1 {
+    height: 30px;
+    box-shadow: 0px 3px 14px rgba(0,0,0,0.4);
+    border-radius: 3px;
+    opacity: 0.9;
+}
+
+    .tmap-th-marker-type1 img {
+        height: 30px;
+        width: 30px;
+        border: none;
+    }
+
+    .tmap-th-marker-type1 p.font {
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bolder;
+        border: none;
+    }
+
+    .tmap-th-marker-type1 p.cluster {
+        position: absolute;
+        height: 20px;
+        line-height: 20px;
+        width: 20px;
+        border-radius: 15px;
+        background: rgb(255, 0, 0);
+        box-shadow: 0px 3px 14px rgba(0,0,0,0.4);
+        opacity: 0.9;
+        right: -12px;
+        top: -12px;
+        color:#fff;
+    }
+
+    /*.tmap-th-marker-type1 p.title {
+        display:none;
+        height:30px;
+        line-height:30px;
+        text-align:center;
+        font-size:18px;
+        font-weight:bolder;
+        border:none;
+    }
+
+    .tmap-th-marker-type1:hover p.title {
+        display:block;
+    }
+
+    .tmap-th-marker-type1:hover p.font {
+        display:none;
+    }*/
+
+    .tmap-th-marker-type1:before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: 9px;
+        width: 0px;
+        height: 0px;
+        border-left: 6px solid transparent;
+        border-top: 12px solid #297dfc;
+        border-right: 6px solid transparent;
+    }
+
+.tmap-th-mark-type1-colorType-1 {
+    background-color: #297dfc;
+}
+
+    .tmap-th-mark-type1-colorType-1:hover {
+        background-color: #ff6a00;
+    }
+
+    .tmap-th-mark-type1-colorType-1:before {
+        border-top: 12px solid #297dfc;
+    }
+
+    .tmap-th-mark-type1-colorType-1:hover:before {
+        border-top: 12px solid #ff6a00;
+    }

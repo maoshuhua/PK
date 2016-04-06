@@ -1,0 +1,204 @@
+﻿<ControllerAction_Logger><log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:33:32.0309108+08:00" level="INFO" thread="10104" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:33:14.402','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:33:32.1089110+08:00" level="INFO" thread="10104" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:33:32.108','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:34:05.5704844+08:00" level="INFO" thread="8776" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:34:05.570','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:34:05.5704844+08:00" level="INFO" thread="8776" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:34:05.570','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:35:13.4673567+08:00" level="INFO" thread="8776" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:35:13.467','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:35:13.4673567+08:00" level="INFO" thread="8776" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:35:13.467','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:35:30.3173874+08:00" level="INFO" thread="8776" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:35:30.317','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:35:30.3173874+08:00" level="INFO" thread="8776" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:35:30.317','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:35:50.0434230+08:00" level="INFO" thread="5808" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:35:50.043','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:35:50.0434230+08:00" level="INFO" thread="5808" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:35:50.043','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:36:19.2207047+08:00" level="INFO" thread="7288" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:36:19.220','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:36:19.2207047+08:00" level="INFO" thread="7288" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:36:19.220','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:36:38.0156635+08:00" level="INFO" thread="7288" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:36:38.015','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:36:38.0156635+08:00" level="INFO" thread="7288" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:36:38.015','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:36:52.6292904+08:00" level="INFO" thread="5808" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:36:52.629','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:36:52.6292904+08:00" level="INFO" thread="5808" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:36:52.629','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:37:37.2179704+08:00" level="INFO" thread="7288" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:37:37.217','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:37:37.2179704+08:00" level="INFO" thread="7288" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:37:37.217','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:38:04.8474784+08:00" level="INFO" thread="7272" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:38:04.847','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:38:04.8474784+08:00" level="INFO" thread="7272" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:38:04.847','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:38:14.0509956+08:00" level="INFO" thread="5348" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:38:14.050','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:38:14.0509956+08:00" level="INFO" thread="5348" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:38:14.050','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:39:30.3071462+08:00" level="INFO" thread="7284" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:39:30.307','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:39:30.3071462+08:00" level="INFO" thread="7284" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:39:30.307','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:40:53.2512242+08:00" level="INFO" thread="1940" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:40:53.251','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:40:53.2512242+08:00" level="INFO" thread="1940" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:40:53.251','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:41:24.5938369+08:00" level="INFO" thread="9712" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:41:24.593','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:41:24.5938369+08:00" level="INFO" thread="9712" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:41:24.593','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:46:56.9553246+08:00" level="INFO" thread="7416" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:46:56.939','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:46:56.9553246+08:00" level="INFO" thread="7416" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:46:56.955','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:47:48.6843182+08:00" level="INFO" thread="10180" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:47:48.684','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:47:48.6843182+08:00" level="INFO" thread="10180" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:47:48.684','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:50:59.1752631+08:00" level="INFO" thread="7704" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>Start_Action:{'OccurTime':'2015-06-04 05:50:59.175','ActionName':'Index','ControllerName':'Home','Method':'GET','Url':'http://localhost:12063/','UserHostName':'::1','UserHostAddress':'::1','Browser':'IE(V10)','Form':,'QueryString':}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2015-06-04T17:50:59.1752631+08:00" level="INFO" thread="7704" domain="6cb08a04-1-130778839859476650" username="Alio-PC\Alio">
+  <log4net_message>End_Action:{'OccurTime':'2015-06-04 05:50:59.175','ActionName':'Index','ControllerName':'Home',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+</log4net_event>

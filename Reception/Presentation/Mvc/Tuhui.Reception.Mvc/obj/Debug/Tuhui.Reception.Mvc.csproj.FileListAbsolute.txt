@@ -122,9 +122,12 @@ D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\Tuhui.Comm
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\Tuhui.Common45.Log.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\System.Web.WebPages.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\EntityFramework.dll
+D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NPOI.dll
+D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NPOI.OOXML.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\Tuhui.Reception.Repository.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NLog.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NPOI.OpenXml4Net.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\Tuhui.Common45.Mvc.pdb
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\Tuhui.Common45.Framework.pdb
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\Tuhui.Common45.Utility.pdb
@@ -146,8 +149,3 @@ D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\zh-Hans\Sy
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.dll
 D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\obj\Debug\Tuhui.Reception.Mvc.pdb
-D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NPOI.dll
-D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NPOI.OOXML.dll
-D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NPOI.OpenXmlFormats.dll
-D:\msh\pk\PK\Reception\Presentation\Mvc\Tuhui.Reception.Mvc\bin\Debug\NPOI.OpenXml4Net.dll

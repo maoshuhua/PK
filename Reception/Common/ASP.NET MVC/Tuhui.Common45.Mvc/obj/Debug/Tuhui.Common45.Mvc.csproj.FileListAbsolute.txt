@@ -67,7 +67,10 @@ D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\Tuhui.Com
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\Tuhui.Common45.Utility.dll
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\EntityFramework.dll
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NLog.dll
+D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NPOI.dll
+D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NPOI.OOXML.dll
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NPOI.OpenXml4Net.dll
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\Tuhui.Common45.Environment.pdb
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\Tuhui.Common45.Exception.pdb
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\Tuhui.Common45.Framework.pdb
@@ -85,8 +88,3 @@ D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\zh-Hans\S
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\obj\Debug\Tuhui.Common45.Mvc.csprojResolveAssemblyReference.cache
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\obj\Debug\Tuhui.Common45.Mvc.dll
 D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\obj\Debug\Tuhui.Common45.Mvc.pdb
-D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NPOI.dll
-D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NPOI.OOXML.dll
-D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NPOI.OpenXmlFormats.dll
-D:\msh\pk\PK\Reception\Common\ASP.NET MVC\Tuhui.Common45.Mvc\bin\Debug\NPOI.OpenXml4Net.dll

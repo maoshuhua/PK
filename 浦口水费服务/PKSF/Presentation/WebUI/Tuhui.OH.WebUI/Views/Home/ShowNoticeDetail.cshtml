@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    @Content.Common1(Url,false)
+
+    <script type="text/javascript">
+        var rootPath = '@Request.ApplicationPath';
+        if (rootPath[rootPath.length - 1] == '/') {
+            rootPath = rootPath.substring(0, rootPath.length - 2);
+        }
+        $(function () {
+            ////查询公告列表
+            //$.OH.showNotice.searchNoticeById(3);
+
+        });
+
+        function bindData(noticeData) {
+            $("#detail_list").bindingData(noticeData);
+
+        }
+
+        function back() {
+            window.parent.$("#ShowNotice").show();
+            window.parent.$("#ShowNoticeDetail").hide();
+        }
+    </script>
+    <style type="text/css">
+        body{margin: 0px;padding: 0px;background: #ffffff;}
+        #box_title{ height: 50px; line-height: 50px; font-size: 22px; background: url('@Url.Content("~/content/title/tit_back.png")') repeat-x;color: #fff;font-family: '微软雅黑', '黑体';}
+        #box_title .titleIcon{width: 126px;height: 31px;background: url('@Url.Content("~/content/title/tit_14.png")') no-repeat center;position: absolute;left: 0px;top: 0px;margin-left: 30px;margin-top: 12px;}
+      
+        #box_title .closeBtn{width: 21px;height: 21px;background: url('@Url.Content("~/content/title/close.png")') no-repeat center;position: absolute;right: 0px;top: 0px; cursor: pointer;margin-top: 12px;margin-right: 15px;}
+       
+     
+
+        
+        #detail_list div {
+              font-family: '微软雅黑', '黑体';
+        color: #474747;
+        }
+        .title {
+             font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .time {
+             font-size: 14px;
+        text-align: center;
+        }
+
+        .content {
+            margin-left: 30px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+      @*  #bottom {
+              margin-bottom: 30px;
+        }*@
+        #bottom {
+            position: absolute;
+           bottom: 50px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 30px;
+            margin-right: 30px;
+          
+            text-align: center;
+       
+            font-size: 16px;
+            font-family: '微软雅黑', '黑体';
+            background-color: #6a6976;
+               width: 90%;
+        }
+
+         #busButton {
+            position: absolute;
+            bottom: 30px;
+            background-color: #6a6976;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 40px;
+            margin-right: 30px;
+            text-align: center;
+            font-size: 16px;
+            font-family: '微软雅黑', '黑体';
+            width: 90%;
+            cursor: pointer;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+
+            //关闭按钮
+            $(".closeBtn").on("click", function () {
+                window.parent.$("#ShowNoticeDetail").hide();
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div id="box_title">
+        <div class="titleIcon"></div>
+        <div style="background: #cbdcc3; width: 60px; height: 50px; float: right">
+            <div class="closeBtn"></div>
+        </div>
+
+    </div>
+
+
+
+    <div id="detail_list">
+        <div class="title" binding="{'text':'noticetitle'}"></div>
+        <div class="time">
+            <span style="">时间：</span>
+            <span binding="{'html':'createtime','htmlHandle':'datetime_Date'}"></span>
+        </div>
+        <div class="content" binding="{'text':'noticedesc'}"></div>
+
+    </div>
+
+
+
+
+    <div id="busButton" onclick="back()">
+        返    回
+        @* <input type="button" value="返    回" style="background-color: #6a6976;width: 90%;" onclick="$.OH.showNotice.back()"/>*@
+    </div>
+
+</body>
+</html>
+

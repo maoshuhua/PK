@@ -1,0 +1,35 @@
+﻿<SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-07T16:53:39.1375056+08:00" level="FATAL" thread="2740" domain="/LM/W3SVC/2/ROOT/ylc-1-130781408133030954" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+</SystemException_Logger><SystemException_Logger><log4net_event logger="SystemExceptionLogger" timestamp="2015-06-07T16:54:17.5603731+08:00" level="FATAL" thread="3480" domain="/LM/W3SVC/2/ROOT/ylc-2-130781408568739719" username="IIS APPPOOL\tuhui">
+  <log4net_message>ϵͳ�쳣</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="Alio-PC" />
+  </log4net_properties>
+  <log4net_exception><![CDATA[System.NullReferenceException: δ�������������õ������ʵ��?
+   �� Tuhui.Common.Mvc.SessionHelper.GetSession(String key)
+   �� Tuhui.Common.Mvc.SessionHelper.get_LogOnUserObj()
+   �� ASP._Page_Views__ViewStart_cshtml.Execute() λ�� d:\�������\OH\Presentation\WebUI\Tuhui.OH.WebUI\Views\_ViewStart.cshtml:�к� 3
+   �� System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   �� System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   �� System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   �� System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   �� System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   �� System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)]]></log4net_exception>
+</log4net_event>
+</SystemException_Logger>

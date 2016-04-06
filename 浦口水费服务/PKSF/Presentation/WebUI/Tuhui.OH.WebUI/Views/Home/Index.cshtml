@@ -1,0 +1,399 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+    <title>空气质量监测</title>
+    @Content.Common(Url)
+
+    @Content.tmap(Url)
+
+    @Content.demo(Url, "tmap3.demo.js")
+    <!--导入图表JS-->
+    <script type="text/javascript" src="~/Scripts/HighCharts/HighCharts/highcharts.js"></script>
+    <script type="text/javascript" src="~/Scripts/HighCharts/HighCharts/highcharts-3d.js"></script>
+    <script type="text/javascript" src="~/Scripts/HighCharts/HighCharts/gray.js"></script>
+    <script type="text/javascript" src="~/Scripts/data.js"></script>
+    <script>
+
+        function CONTENT_URL(_name) {
+            return '@Url.Content("~/")' + _name;
+        }
+
+        var $url = {
+            Code_CreateMap: '@Url.Action("Code_CreateMap", "Code")'
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <div id="map" style="float: left; margin-left: 960px;"></div>
+    <div id="logo" class="logo"></div>
+    <div id="heatIcon" class="heatIcon"></div>
+    <div id="jianceIcon" class="jianceIcon" style="display: none;"></div>
+    <div id="map_status" class="map_status"></div>
+    <div id="left_main" class="left_main">
+        <div style="height: 1040px; width: 920px; margin: 20px 20px;">
+            <div id="kongqi" style="height: 130px; width: 460px; float: left; background-color: #B17718; cursor: pointer;" onclick="$.demo.showKongqi();">
+                <p style="text-align: center; font-size: 40px; font-weight: 900; margin-top: 40px;">
+                    空气质量监测
+                </p>
+            </div>
+            <div id="jiance" style="height: 130px; width: 460px; float: left; background-color: #434343; cursor: pointer;" onclick="$.demo.showJiance();">
+                <p style="text-align: center; font-size: 40px; font-weight: 900; margin-top: 40px;">监测点信息</p>
+            </div>
+            <div id="tubiao" style="float: left; height: 570px; width: 920px; background-color: #434343; margin-top: 20px;">
+                <div id="chart">
+                    <div id="" style="height: 130px;">
+                        <p id="heatmaphead" style="font-size: 30px; padding-top: 40px; font-weight: 400;"></p>
+                        <div class="timeRelver" style="cursor: pointer;" onclick="$.demo.HeatmapSet();">
+                            <p style="font-weight: 400; font-size: 20px; margin-top: 10px; color: black;">时 间 回 溯</p>
+                        </div>
+                        <div style="float: right; margin-top: -20px; margin-right: 20px;">
+                            <ul style="height: 45px; width: 170px; border: solid 1px #8A8A8A; border-radius: 5px;">
+                                <li id="day" style="float: left; width: 56px; height: 45px; border-right: solid 1px #8A8A8A; border-radius: 5px; background-color: #242424;" onclick="$.demo.day();">
+                                    <p style="text-align: center; font-size: 20px; font-weight: 400; margin-top: 10px;">日</p>
+                                </li>
+                                <li id="month" style="float: left; width: 56px; height: 45px; border-right: solid 1px #8A8A8A;" onclick="$.demo.month();">
+                                    <p style="text-align: center; font-size: 20px; font-weight: 400; margin-top: 10px;">月</p>
+                                </li>
+                                <li id="year" style="float: left; width: 56px; height: 45px;" onclick="$.demo.year();">
+                                    <p style="text-align: center; font-size: 20px; font-weight: 400; margin-top: 10px;">年</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="objMonthPicTotal" style="height: 440px;">
+                    </div>
+                </div>
+            </div>
+            <div id="zhonglei" style="float: left; height: 300px; width: 920px; background-color: #434343; margin-top: 20px;">
+                <div style="height: 80px; width: 920px;">
+                    <ul>
+                        <li id="type_1" style="height: 80px; width: 308px; float: left; cursor: pointer;" onclick="$.demo.KQ();">
+                            <p style="margin-top: 20px; font-size: 25px; font-weight: 500;">空气监测</p>
+                        </li>
+                        <li id="type_3" style="height: 80px; width: 306px; background-color: #383838; float: left; cursor: pointer;" onclick="$.demo.QC();">
+                            <p style="margin-top: 20px; font-size: 25px; font-weight: 500;">汽车尾气</p>
+                        </li>
+                        <li id="type_2" style="height: 80px; width: 306px; background-color: #383838; float: left;">
+                            <p style="margin-top: 20px; font-size: 25px; font-weight: 500;">
+                                工业污染
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="kq_1" style="height: 220px; width: 920px;">
+                    <form>
+                        <div style="height: 110px; width: 920px;">
+                            <ul>
+                                <li style="height: 110px; width: 308px; float: left; margin-top: 30px;">
+                                    <input id="CheckBox1" type="checkbox" name="flag" style="height: 20px; width: 20px;" checked="checked" onclick="CheckBoxCheck(this); $.demo.setobjMonthPicTotal('day', 0, 0)"><span style="font-size: 30px;">OHI</span>
+                                </li>
+                                <li style="height: 110px; width: 306px; float: left; margin-top: 30px;">
+                                    <input id="CheckBox2" type="checkbox" name="flag" style="height: 20px; width: 20px; margin-left: 15px;" onclick="CheckBoxCheck(this); $.demo.setobjMonthPicTotal('day', 0, 0)"><span style="font-size: 30px;">PM2.5</span></li>
+                                <li style="height: 110px; width: 306px; float: left; margin-top: 30px;">
+                                    <input id="CheckBox3" type="checkbox" name="flag" style="height: 20px; width: 20px;" onclick="CheckBoxCheck(this); $.demo.setobjMonthPicTotal('day', 0, 0)"><span style="font-size: 30px;">PM10</span></li>
+                            </ul>
+
+                        </div>
+                        <div style="height: 110px; width: 920px;">
+                            <ul>
+                                <li style="height: 110px; width: 308px; float: left;">
+                                    <input id="CheckBox4" type="checkbox" name="flag" style="height: 20px; width: 20px;" onclick="CheckBoxCheck(this); $.demo.setobjMonthPicTotal('day', 0, 0)"><span style="font-size: 30px;">SO2</span>
+                                </li>
+                                <li style="height: 110px; width: 306px; float: left;">
+                                    <input id="CheckBox5" type="checkbox" name="flag" style="height: 20px; width: 20px;" onclick="CheckBoxCheck(this); $.demo.setobjMonthPicTotal('day', 0, 0)"><span style="font-size: 30px;">NO2</span></li>
+                                <li style="height: 110px; width: 306px; float: left;">
+                                    <input id="CheckBox6" type="checkbox" name="flag" style="height: 20px; width: 20px; margin-left: -30px;" onclick="CheckBoxCheck(this); $.demo.setobjMonthPicTotal('day', 0, 0)"><span style="font-size: 30px;">CO</span></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <div id="qc_1" style="height: 220px; width: 920px; display: none;">
+                    <form>
+                        <div style="height: 110px; width: 920px;">
+                            <ul>
+                                <li style="height: 110px; width: 308px; float: left; margin-top: 30px;">
+                                    <input id="CheckBox7" type="checkbox" name="flag" style="height: 20px; width: 20px;" onclick="CheckBoxCheck(this); $.demo.setobjMonthPicTotal('day', 0, 0)"><span style="font-size: 30px;">CO</span>
+                                </li>
+                                <li style="height: 110px; width: 306px; float: left; margin-top: 30px;">
+                                    <input id="CheckBox8" type="checkbox" name="flag" style="height: 20px; width: 20px; margin-left: 15px;" onclick="CheckBoxCheck(this); $.demo.setobjMonthPicTotal('day', 0, 0)"><span style="font-size: 30px;">NO</span></li>
+                                <li style="height: 110px; width: 306px; float: left; margin-top: 30px;">
+                                    <input id="CheckBox9" type="checkbox" name="flag" style="height: 20px; width: 20px;" onclick="CheckBoxCheck(this); $.demo.setobjMonthPicTotal('day', 0, 0)"><span style="font-size: 30px;">CO2</span></li>
+                            </ul>
+
+                        </div>
+                        <div style="height: 110px; width: 920px;">
+                            <ul>
+                                <li style="height: 110px; width: 308px; float: left;">
+                                    <input id="CheckBox10" type="checkbox" name="flag" style="height: 20px; width: 20px;" onclick="CheckBoxCheck(this); $.demo.setobjMonthPicTotal('day', 0, 0)"><span style="font-size: 30px;">CH</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="right_main" class="right_main">
+        <div style="height: 1040px; width: 920px; margin: 20px 20px;">
+            <div id="OHI" style="height: 83px; width: 460px; float: left; background-color: #B17718; cursor: pointer;" onclick="$.demo.OHI_paihang();">
+                <p style="text-align: center; font-size: 30px; font-weight: 900; margin-top: 30px;">
+                    南京4月各地区OHI排行
+                </p>
+            </div>
+
+            <div id="gongyewuran" style="height: 83px; width: 460px; float: left; background-color: #434343; cursor: pointer;" onclick="$.demo.GY_paihang();">
+                <p style="text-align: center; font-size: 30px; font-weight: 900; margin-top: 30px;">工业污染排行（月）</p>
+            </div>
+            <div id="aqi_paihang" style="height: 350px; width: 920px; float: left; margin-top: 20px;">
+                <table id="table_aqi_1" class="l-table" style="height: 350px; width: 460px; border: 0.5px; float: left;" cellspacing="0" cellpadding="0">
+                    <tbody id="tbodyContent_1">
+                        <tr class="oddrowcolor">
+                            <td>1</td>
+                            <td>江宁区</td>
+                            <td>83.26</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>2</td>
+                            <td>高淳区</td>
+                            <td>78.42</td>
+                        </tr>
+                        <tr class="oddrowcolor">
+                            <td>3</td>
+                            <td>六合区</td>
+                            <td>77.07</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>4</td>
+                            <td>秦淮区</td>
+                            <td>75.58</td>
+                        </tr>
+                        <tr class="oddrowcolor">
+                            <td>5</td>
+                            <td>玄武区</td>
+                            <td>73.83</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>6</td>
+                            <td>浦口区</td>
+                            <td>71.21</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="table_aqi_2" class="l-table" style="height: 350px; width: 458px; border: 0.5px; float: left; border-left: solid 1px #505251;" cellspacing="0" cellpadding="0">
+                    <tbody id="tbodyContent_2">
+                        <tr class="oddrowcolor">
+                            <td>7</td>
+                            <td>溧水区</td>
+                            <td>70.37</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>8</td>
+                            <td>鼓楼区</td>
+                            <td>68.12</td>
+                        </tr>
+                        <tr class="oddrowcolor">
+                            <td>9</td>
+                            <td>栖霞区</td>
+                            <td>65.89</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>10</td>
+                            <td>雨花区</td>
+                            <td>68.56</td>
+                        </tr>
+                        <tr class="oddrowcolor">
+                            <td>11</td>
+                            <td>建邺区</td>
+                            <td>65.35</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>&nbsp;</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="gy_paihang" style="height: 350px; width: 920px; float: left; margin-top: 20px; overflow-y: scroll; display: none;">
+                <table class="l-table" style="height: 500px; width: 900px; border: 0.5px;" cellspacing="0" cellpadding="0">
+                    <thead style="background-color: #8A8A8A; height: 51px; width: 900px; color: #1a1919; font-size: 20px;">
+                        <tr>
+                            <th>企业名称</th>
+                            <th>监控点名称</th>
+                            <th>超标流量</th>
+                            <th>监测项目</th>
+                            <th>标准限值</th>
+                            <th>运行状态</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyContent_5">
+                        <tr class="oddrowcolor">
+                            <td>1</td>
+                            <td>江苏昆药集团</td>
+                            <td>159M</td>
+                            <td>市环保局</td>
+                            <td>150～250</td>
+                            <td>正常</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>2</td>
+                            <td>南京钛白化工有限责任公司</td>
+                            <td>237M</td>
+                            <td>市环保局</td>
+                            <td>150～250</td>
+                            <td>正常</td>
+                        </tr>
+                        <tr class="oddrowcolor">
+                            <td>3</td>
+                            <td>南京法伯耳纺织有限公司</td>
+                            <td>231M</td>
+                            <td>市环保局</td>
+                            <td>150～250</td>
+                            <td>正常</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>4</td>
+                            <td>南京高欣水务有限公司</td>
+                            <td>115M</td>
+                            <td>市环保局</td>
+                            <td>150～250</td>
+                            <td>正常</td>
+                        </tr>
+                        <tr class="oddrowcolor">
+                            <td>5</td>
+                            <td>南京中联水泥有限公司</td>
+                            <td>64M</td>
+                            <td>市环保局</td>
+                            <td>150～250</td>
+                            <td>正常</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>6</td>
+                            <td>南京钛白化工有限责任公司</td>
+                            <td>79M</td>
+                            <td>市环保局</td>
+                            <td>150～250</td>
+                            <td>正常</td>
+                        </tr>
+                        <tr class="oddrowcolor">
+                            <td>7</td>
+                            <td>拓达技术有限公司</td>
+                            <td>128M</td>
+                            <td>市环保局</td>
+                            <td>150～250</td>
+                            <td>正常</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>8</td>
+                            <td>斯维尔科技有限公司</td>
+                            <td>43M</td>
+                            <td>市环保局</td>
+                            <td>150～250</td>
+                            <td>正常</td>
+                        </tr>
+                        <tr class="oddrowcolor">
+                            <td>9</td>
+                            <td>拓达技术有限公司</td>
+                            <td>128M</td>
+                            <td>市环保局</td>
+                            <td>150～250</td>
+                            <td>正常</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>10</td>
+                            <td>斯维尔科技有限公司</td>
+                            <td>43M</td>
+                            <td>市环保局</td>
+                            <td>150～250</td>
+                            <td>正常</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="MonthPicTotal_column" style="height: 267px; width: 450px; float: left; margin-top: 20px;"></div>
+            <div style="height: 267px; width: 450px; position: absolute; margin-top: 470px;">
+                <p style="margin-top: 150px; margin-left: -150px; font-size: 30px; font-weight: 600; ">-3.3%</p>
+                <p style="font-size: 30px; font-weight: 600; margin-top: -40px; margin-left: 240px;">-5.3%</p>
+            </div>
+            <div id="MonthPicTotal_area" style="height: 267px; width: 450px; float: left; margin-top: 20px; margin-left: 20px;"></div>
+            <div id="enterprise" style="height: 280px; width: 920px; float: left; border: solid 1px #646060; margin-top: 20px;">
+                <div style="height: 53px; width: 920px; background-color: #222222;">
+                    <p style="font-size: 20px; font-weight: 600; float: left; margin-left: 65px; padding-top: 18px;">工业污染排放统计</p>
+                </div>
+                <table class="l-table" style="height: 227px; width: 920px; border: 0.5px;" cellspacing="0" cellpadding="0">
+                    <thead style="background-color: #8A8A8A; height: 50px; width: 920px; color: #1a1919; font-size: 20px;">
+                        <tr>
+                            <th style="width: 184px;">名称</th>
+                            <th style="width: 184px;">上月排放量</th>
+                            <th style="width: 184px;">趋势</th>
+                            <th style="width: 184px;">同比</th>
+                            <th style="width: 184px;">排放总量</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyContent">
+                        <tr class="oddrowcolor">
+                            <td>需氧量</td>
+                            <td>0.84</td>
+                            <td class="up"></td>
+                            <td>0.2%</td>
+                            <td>3.6</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>氨氮</td>
+                            <td>0.79</td>
+                            <td class="down"></td>
+                            <td>0.1%</td>
+                            <td>4.1</td>
+                        </tr>
+                        <tr class="oddrowcolor">
+                            <td>二硫化物</td>
+                            <td>0.89</td>
+                            <td class="down"></td>
+                            <td>0.3%</td>
+                            <td>2.8</td>
+                        </tr>
+                        <tr class="evenrowcolor">
+                            <td>氮氧化物</td>
+                            <td>0.77</td>
+                            <td class="up"></td>
+                            <td>0.2%</td>
+                            <td>3.7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $.demo.pageInit();
+            $.demo.mapInit();
+            //$.demo.aaaaabbbb();
+            $.demo.setobjMonthPicTotal("day", 0, 0);
+            $.demo.setobjMonthPicTotal_area();
+            $.demo.setobjMonthPicTotal_column();
+        })
+
+        function CheckBoxCheck(chk) {
+            for (var i = 1; i <= 10; i++) {
+                var chkObj = document.getElementById("CheckBox" + i);
+                if (chkObj != chk) {
+                    chkObj.checked = false;
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿<ControllerAction_Logger><log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:10.1005257+08:00" level="INFO" thread="8240" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>Start_Action:{'OccurTime':'2014-05-29 02:32:10.100','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS','Method':'GET','Url':'http://www.tuhui.com/ZENTRACK_TICKETS/alarmList?priority=null','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'priority':'null'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:10.1105263+08:00" level="INFO" thread="8240" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>End_Action:{'OccurTime':'2014-05-29 02:32:10.110','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:20.0390942+08:00" level="INFO" thread="8744" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>Start_Action:{'OccurTime':'2014-05-29 02:32:20.039','ActionName':'FindEventList','ControllerName':'APIEvent','Method':'GET','Url':'http://www.tuhui.com/api/event/list.json?_=1401345140029','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'_':'1401345140029'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:20.0490947+08:00" level="INFO" thread="8744" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>End_Action:{'OccurTime':'2014-05-29 02:32:20.049','ActionName':'FindEventList','ControllerName':'APIEvent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:20.0920972+08:00" level="INFO" thread="8240" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>Start_Action:{'OccurTime':'2014-05-29 02:32:20.092','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS','Method':'GET','Url':'http://www.tuhui.com/ZENTRACK_TICKETS/alarmList?priority=null','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'priority':'null'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:20.0940973+08:00" level="INFO" thread="8240" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>End_Action:{'OccurTime':'2014-05-29 02:32:20.094','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:30.0356659+08:00" level="INFO" thread="5952" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>Start_Action:{'OccurTime':'2014-05-29 02:32:30.035','ActionName':'FindEventList','ControllerName':'APIEvent','Method':'GET','Url':'http://www.tuhui.com/api/event/list.json?_=1401345150025','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'_':'1401345150025'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:30.0456665+08:00" level="INFO" thread="5952" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>End_Action:{'OccurTime':'2014-05-29 02:32:30.045','ActionName':'FindEventList','ControllerName':'APIEvent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:30.0866688+08:00" level="INFO" thread="5936" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>Start_Action:{'OccurTime':'2014-05-29 02:32:30.086','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS','Method':'GET','Url':'http://www.tuhui.com/ZENTRACK_TICKETS/alarmList?priority=null','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'priority':'null'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:30.0886690+08:00" level="INFO" thread="5936" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>End_Action:{'OccurTime':'2014-05-29 02:32:30.088','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:40.0262374+08:00" level="INFO" thread="8748" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>Start_Action:{'OccurTime':'2014-05-29 02:32:40.026','ActionName':'FindEventList','ControllerName':'APIEvent','Method':'GET','Url':'http://www.tuhui.com/api/event/list.json?_=1401345160018','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'_':'1401345160018'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:40.0432383+08:00" level="INFO" thread="8748" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>End_Action:{'OccurTime':'2014-05-29 02:32:40.043','ActionName':'FindEventList','ControllerName':'APIEvent',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:40.0842407+08:00" level="INFO" thread="8744" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>Start_Action:{'OccurTime':'2014-05-29 02:32:40.084','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS','Method':'GET','Url':'http://www.tuhui.com/ZENTRACK_TICKETS/alarmList?priority=null','UserHostName':'127.0.0.1','UserHostAddress':'127.0.0.1','Browser':'IE(V9)','Form':,'QueryString':{'priority':'null'}}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+<log4net_event logger="ControllerActionLogger" timestamp="2014-05-29T14:32:40.0852407+08:00" level="INFO" thread="8744" domain="/LM/W3SVC/1/ROOT-1-130458151074173201" identity="admin" username="IIS APPPOOL\ASP.NET v4.0">
+  <log4net_message>End_Action:{'OccurTime':'2014-05-29 02:32:40.085','ActionName':'alarmList','ControllerName':'ZENTRACK_TICKETS',}</log4net_message>
+  <log4net_properties>
+    <log4net_data name="log4net:HostName" value="tangdeng" />
+  </log4net_properties>
+</log4net_event>
+</ControllerAction_Logger>

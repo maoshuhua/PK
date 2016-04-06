@@ -1,0 +1,47 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>接待资源</title>
+    @Content.Common(Url, false)
+    @Content.tmap(Url)
+    @Content.reception(Url)
+</head>
+<body>
+    <!--卫星和瓦片切换-->
+    <div class="resource_status_left wx"></div>
+    <!--最新导航切换-->
+    <div class="resource_navigation_newest navi_open"></div>
+    <!--资源分类及其列表-->
+    <div class="resource_list_container">
+        <div class="resource_list"></div>
+    </div>
+    <script id="resourceList" type="text/html">
+        {{if list.length > 0 }}
+        {{each list as value index}}
+            <div class="resource_list_head" data-rtid="{{value.RT_ID}}">{{value.RT_Name}}</div>
+            {{if value.R_Name}}
+        <div class="resource_list_item" data-rid="{{value.R_ID}}" data-lng="{{value.Long}}" data-lat="{{value.Lat}}" data-rtid="{{value.RT_ID}}" data-rrdw="{{value.RRDW}}" data-sfdw="{{value.SFDW}}" data-starttime="{{value.StartTime}}" data-endtime="{{value.EndTime}}" data-rstatus="{{value.RStatus}}" data-ssjd="{{value.SSJD}}">{{value.R_Name}}</div>
+            {{/if}}
+        {{/each}} 
+        {{/if}}
+    </script>
+    <!--资源状态区域-->
+    <div class="resource_status_bottom">
+        <div class="resource_status_wkg"><div class="bg"></div>未开工</div>
+        <div class="resource_status_ykg"><div class="bg"></div>已开工</div>
+        <div class="resource_status_ywg"><div class="bg"></div>已投产</div>
+    </div>
+    <!--地图展示区-->
+    <div id="map" style="height:100%;width:100%;"></div>
+</body>
+</html>
+
+
+
