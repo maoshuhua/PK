@@ -5,7 +5,7 @@
 
 .resource_detail_main {
    width:100%;
-   overflow:hidden;
+   overflow-x:hidden;
 }
 
 .resource_detail_title {
@@ -46,4 +46,9 @@
 .carousel-example-generic,.carousel-example-generic img {
    width:100%;
    height:100%;
+}
+
+video {
+   width:400px;
+   height:300px;
 }

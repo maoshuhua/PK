@@ -82,6 +82,12 @@ namespace Tuhui.Reception.WebUI.Controllers
         }
 
         //获取资源视频
+        public ActionResult GetResourceVideo(string id)
+        {
+            var list = _video.GetList(id);
+
+            return Json(list,JsonRequestBehavior.AllowGet);
+        }
 
         //获取资源下大事件列表
 
