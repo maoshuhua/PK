@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="resource_detail_title">
-                    <span class="glyphicon glyphicon-home"></span>&nbsp;<label id="ZYMC"></label><div class="back"><span class="glyphicon glyphicon-circle-arrow-left"></span></div>
+                    <span class="glyphicon glyphicon-home"></span>&nbsp;<label id="ZYMC"></label><div class="back"><span class="glyphicon glyphicon-circle-arrow-left" style="font-size:30px;vertical-align:-6px;"></span></div>
                 </div>
             </div>
         </div>
@@ -32,8 +32,34 @@
                          <div class="col-sm-12 col-md-7" id="resourceInfo"></div>
                          
                          <!--轮播图-->
-                        <div class="col-sm-12  col-md-5" id="imageList"></div>
+                         <div class="col-sm-12  col-md-5" id="imageList"></div>
                         
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="resource_detail_border">
+                    <div class="resource_detail">
+                        <span class="glyphicon glyphicon-pencil"></span>&nbsp;项目大事件
+                        <hr />
+                        <!--表格列表-->
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>时间</th>
+                                    <th>大事件</th>
+                                    <th>内容</th>
+                                </tr>
+                            </thead>
+                            <tbody id="eventlist">
+                                <tr id="no_data" style="display:none;">
+                                    <td colspan="3" style="text-align:center;">暂无数据</td>
+                                </tr>                  
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -44,22 +70,22 @@
         <span class="glyphicon glyphicon-globe"></span>&nbsp;项目概况
         <hr />
         <div class="row">
-            <div class="col-sm-6">所属街道：{{ model.SSJD }}</div>
             <div class="col-sm-6">责任单位：{{ model.RRDW }}</div>
-        </div>
-        <div class="row">
             <div class="col-sm-6">施方单位：{{ model.SFDW }}</div>
-            <div class="col-sm-6">开工时间：{{ model.StartTime._data() }}</div>
         </div>
         <div class="row">
-            <div class="col-sm-6">计划完成时间：{{ model.EndTime._data() }}</div>
+            <div class="col-sm-6">开工时间：{{ model.StartTime._data() }}</div>
+            <div class="col-sm-6" style="padding-right:0px;">计划完成时间：{{ model.EndTime._data() }}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">所属街道：{{ model.SSJD }}</div>
             <div class="col-sm-6">状态：{{ model.RStatus }}</div>
         </div>
         <div class="row">
             <div class="col-sm-12" id="videoList">
                 视频内容：
                 {{each list_v}}
-                    <a class="resource_video" href="javascript:void(0);" data-src="@Url.Content("~/UploadFile/Video/{{ $value.VideoPath }}")">点击查看</a>
+                    <a class="resource_video" href="javascript:void(0);" data-src="@Url.Content("~/UploadFile/Video/{{ $value.VideoPath }}")">点击播放</a>
                 {{/each}}
             </div>
         </div>

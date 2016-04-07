@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Tuhui.Common45.Mvc;
+using Tuhui.Reception.Model;
 using Tuhui.Reception.Service;
 
 namespace Tuhui.Reception.WebUI.Controllers
@@ -90,6 +91,21 @@ namespace Tuhui.Reception.WebUI.Controllers
         }
 
         //获取资源下大事件列表
+        public ActionResult GetEventList(string id, int pageIndex = 1, int pageSize = 10)
+        {
+            Reception_ResourceEvent entity = new Reception_ResourceEvent
+            {
+                R_ID = id
+            };
+            var list = _event.GetPageList(entity, pageIndex, pageSize);
 
+            return Json(list, JsonRequestBehavior.AllowGet);
+        }
+
+        //获取大事件相关信息
+        public ActionResult GetEventById(string id)
+        {
+            return Json(_event.Get(id), JsonRequestBehavior.AllowGet);
+        }
 	}
 }
