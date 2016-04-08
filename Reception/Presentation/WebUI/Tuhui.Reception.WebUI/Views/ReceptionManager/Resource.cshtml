@@ -62,8 +62,7 @@
     var list;
 
     $(function () {
-        GetResourceTypeList();
-        GetResourceList();      
+        GetResourceTypeList(); 
     });
 
     function GetResourceList(pageIndex) {
@@ -94,7 +93,6 @@
         $.ajax({
             type: "get",
             cache: "false",
-            async: false,
             url: ACTION_URL("GetResourceTypeList", "ReceptionManager"),
             data: {
                 
@@ -109,6 +107,8 @@
                     }
                 }
                 $("#RT_ID").append(str);
+
+                GetResourceList();
             }
         })
     }

@@ -46,7 +46,6 @@
 
     $(function () {
         GetResourceList();
-        GetResourceEventList();
     });
 
     function GetResourceEventList(pageIndex) {
@@ -75,7 +74,6 @@
         $.ajax({
             type: "get",
             cache: "false",
-            async: false,
             url: ACTION_URL("GetResourceList", "ReceptionManager"),
             data: {
 
@@ -90,6 +88,8 @@
                     }
                 }
                 $("#R_ID").append(str);
+
+                GetResourceEventList();
             }
         })
     }
