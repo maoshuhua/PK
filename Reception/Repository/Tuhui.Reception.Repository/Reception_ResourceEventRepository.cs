@@ -55,6 +55,7 @@ namespace Tuhui.Reception.Repository
             return base.Update<Reception_ResourceEvent>(p => p.RE_ID == model.RE_ID, p => {
                 p.Name = model.Name;
                 p.Content = model.Content;
+                p.JDRY = model.JDRY;
             });
         }
         

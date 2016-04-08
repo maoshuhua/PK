@@ -4,19 +4,18 @@ $(function () {
     window.onresize = _onResize;
 
     _onResize();
-
+   
     map = $.tMap.init("map", {
         defaultLayer: "autonavi",
         lng: 118.63792419433595,
-        lat: 32.067155999071446,
-        zoom: 11
+        lat: 32.067155999071446
     });
+  
+    //资源分类及其列表
+    GetResourceTypeList();
 
     //获取所有资源
     GetResourceList();
-
-    //资源分类及其列表
-    GetResourceTypeList();
 
     //地图切换
     $(".resource_status_left").on("click", function () {
@@ -96,25 +95,19 @@ function GetResourceList() {
                             break;
                     }
                     
-                    //添加资源点
-                    _markers.push(map.addImgMarker(response[i].Long, response[i].Lat, {
+                    var _m = map.addImgMarker(response[i].Long, response[i].Lat, {
                         icon: {
+                            addToMapFlag: false,
                             iconUrl: iconUrl,
                             iconSize: [47, 57],
                             iconAnchor: [23.5, 0]
-                        },
-                        attribute: response[i],
-                        event: {
-                            click: function (evt) {
-                                RedirectTo(evt.target.attribute.R_ID);
-                            }
                         }
-                    }));
+                    });
+                    _markers.push(_m);
                 }
 
-                //聚合
                 map.addClusterMarkers(_markers, {
-                    maxClusterRadius: 100,
+                    maxClusterRadius: 50,
                     spiderfyOnMaxZoom: true,
                     showCoverageOnHover: true,
                     zoomToBoundsOnClick: true,
@@ -128,7 +121,7 @@ function GetResourceList() {
                     chunkDelay: 50,
                     chunkProgress: null,
                     polygonOptions: {}
-                });
+                });
             }
         }
     });

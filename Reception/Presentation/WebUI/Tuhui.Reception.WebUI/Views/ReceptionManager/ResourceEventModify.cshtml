@@ -26,6 +26,12 @@
             </div>
         </div>
         <div class="edit-area">
+            <div class="edit-lable">接待人员:</div>
+            <div class="edit-content">
+                @Html.TextAreaFor(p => p.JDRY, new { @style="width:300px;height:100px;" })
+            </div>
+        </div>
+        <div class="edit-area">
             <div class="edit-lable">大事件内容:</div>
             <div class="edit-content">
                 @Html.TextAreaFor(p => p.Content, new {rows="30",cols="50"})
@@ -61,6 +67,11 @@
         if (rid.length == 0)
         {
             $.L.messageWarningT('请选择资源名称');
+            return false;
+        }
+        var jdry = $.trim($("#JDRY").val());
+        if (jdry.length == 0) {
+            $.L.messageWarningT('接待人员不能为空');
             return false;
         }
         var content = $.trim(editor.document.getBody().getText());

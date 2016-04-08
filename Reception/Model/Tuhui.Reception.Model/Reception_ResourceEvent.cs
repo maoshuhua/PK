@@ -24,5 +24,7 @@ namespace Tuhui.Reception.Model
        public string Content  { get; set; }
        //添加时间
        public DateTime AddTime  { get; set; }
+       //接待人员
+       public string JDRY { get; set; }
     }
 }
