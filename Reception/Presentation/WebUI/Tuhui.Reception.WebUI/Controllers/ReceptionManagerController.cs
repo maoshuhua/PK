@@ -270,12 +270,13 @@ namespace Tuhui.Reception.WebUI.Controllers
             return View();
         }
 
-        public ActionResult GetResourceEventPageList(string Name, string R_ID, int pageIndex = 1, int pageSize = 10)
+        public ActionResult GetResourceEventPageList(string Name, string R_ID,string JDRY, int pageIndex = 1, int pageSize = 10)
         {
             Reception_ResourceEvent entity = new Reception_ResourceEvent
             {
                 Name = Name,
-                R_ID = R_ID
+                R_ID = R_ID,
+                JDRY = JDRY
             };
             var list = _event.GetPageList(entity, pageIndex, pageSize);
 

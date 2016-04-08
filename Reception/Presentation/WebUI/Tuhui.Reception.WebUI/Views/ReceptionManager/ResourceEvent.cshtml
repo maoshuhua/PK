@@ -9,6 +9,9 @@
     大事件名称：
     <input id="Name" name="Name" style="width: 160px; height: 30px;" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    接待人员：
+    <input id="JDRY" name="JDRY" style="width: 160px; height: 30px;" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     资源：
     <select id="R_ID" name="R_ID" style="width: 120px;">
         <option value="" selected="selected">--请选择--</option>
@@ -49,6 +52,7 @@
     });
 
     function GetResourceEventList(pageIndex) {
+
         $.L.ajaxHandle({
             type: "get",
             cache: "false",
@@ -56,7 +60,8 @@
             data: {
                 pageIndex: pageIndex,
                 Name: entity.Name,
-                R_ID: entity.R_ID
+                R_ID: entity.R_ID,
+                JDRY: entity.JDRY
             },
             success: function (response) {
                 if (response.PageData.length > 0) {
@@ -119,13 +124,15 @@
 
     var entity = {
         Name: "",
-        R_ID: ""
+        R_ID: "",
+        JDRY: ""
     };
 
     function Search()
     {
         entity.Name = $.trim($("#Name").val());
         entity.R_ID = $("#R_ID").val();
+        entity.JDRY = $.trim($("#JDRY").val());
 
         GetResourceList();
     }
