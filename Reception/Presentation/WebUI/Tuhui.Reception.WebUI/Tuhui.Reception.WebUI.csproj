@@ -229,7 +229,6 @@
     <Content Include="Content\images\manager\manager_home.png" />
     <Content Include="Content\images\manager\menu_head.png" />
     <Content Include="Content\images\manager\tit-2.png" />
-    <Content Include="Content\images\manager\tit.png" />
     <Content Include="Content\images\reception\arrow.png" />
     <Content Include="Content\images\reception\logo.png" />
     <Content Include="Content\images\reception\map_wp.png" />
