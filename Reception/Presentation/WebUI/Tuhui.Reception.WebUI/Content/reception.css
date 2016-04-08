@@ -19,9 +19,10 @@
     padding:14px 0 0 18px;
     height:40px;
     line-height:35px;
-    width:85px;
+    width:100px;
     font-weight:bold;
 }
+
     .resource_status_wkg .bg {
         background:url(../Content/images/reception/wkg_small.png);
         float:left;
@@ -47,11 +48,12 @@
     position:absolute;
     z-index:999;
     left:40px;
-    top:40px;
+    top:106px;
     width:67px;
     height:67px;
     cursor:pointer;
 }
+
 .wp {
     background:url(../Content/images/reception/map_wp.png);
 }
@@ -64,7 +66,7 @@
     position:absolute;
     z-index:999;
     left:40px;
-    top:117px;
+    top:195px;
     width:67px;
     height:72px;
     cursor:pointer;
@@ -103,10 +105,11 @@
     border-radius:5px;
     max-height:464px;
     overflow-y:auto;
+    overflow-x:hidden;
 }
 
 .resource_list_head {
-   width:200px;
+   width:229px;
    height:40px;
    background: #698ed5; /*针对ie9及其以下*/
    background: -webkit-linear-gradient(#698ed5, #396eb4); 
@@ -139,4 +142,45 @@
 
 .floatR {
   float:right;
+}
+
+.logo {
+   position:absolute;
+   left:0px;
+   top:0px;
+   z-index:999;
+   background:url(../Content/images/reception/logo.png);
+   width:480px;
+   height:76px;
+}
+
+.resource_search {
+    position: absolute;
+    top: 40px;
+    right: 300px;
+    z-index: 999;
+    width: 330px;
+}
+
+/*平板竖屏*/
+@media screen and (min-width: 768px) {
+    .resource_search {
+        top: 88px;
+    }
+    .resource_list_container {
+        top:88px;
+    } 
+}
+
+@media screen and (min-width: 992px) {
+     
+}
+
+@media screen and (min-width: 1200px) {
+    .resource_search {
+        top: 40px;
+    }
+    .resource_list_container {
+        top:40px;
+    }  
 }

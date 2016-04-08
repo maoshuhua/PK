@@ -88,7 +88,8 @@ namespace Tuhui.Reception.WebUI.Controllers
             {
                 //抛出异常
             }
-            int i = _reception_ResourceType.Delete(id);
+            //删除资源分类
+            _reception_ResourceType.Delete(id);
 
             return Json(true);
         }
@@ -237,7 +238,7 @@ namespace Tuhui.Reception.WebUI.Controllers
             return RedirectToAction("Resource");
         }
 
-        //删除资源分类
+        //删除资源
         public ActionResult ResourceDelete(string id)
         {
             if (string.IsNullOrEmpty(id))

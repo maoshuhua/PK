@@ -30,5 +30,8 @@ namespace Tuhui.Reception.Repository
         int Delete(string id);
 
         List<Reception_Resource_Type> GetResource_Type();
+
+        //根据资源分类删除
+        int DeleteByTypeID(string id);
     }
 }

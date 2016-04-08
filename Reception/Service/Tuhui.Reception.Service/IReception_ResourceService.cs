@@ -31,5 +31,8 @@ namespace Tuhui.Reception.Service
 
         //获取资源分类及其资源列表
         List<Reception_Resource_Type> GetResource_Type();
+
+        //根据资源分类删除
+        int DeleteByTypeID(string id);
     }
 }

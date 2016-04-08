@@ -11,13 +11,32 @@
     <title>接待资源</title>
     @Content.Common(Url, false)
     @Content.tmap(Url)
+    @Content.bootstrap(Url)
     @Content.Css(Url, "reception.css")
 </head>
 <body>
+    <!--logo-->
+    <div class="logo"></div>
     <!--卫星和瓦片切换-->
     <div class="resource_status_left wx"></div>
     <!--最新导航切换-->
     <div class="resource_navigation_newest navi_open"></div>
+    <!--搜索-->
+    <div class="resource_search">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="selectType">项目</span> <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">项目</a></li>
+                    <li><a href="javascript:void(0);">大事件</a></li>
+                </ul>
+            </div>
+            <input type="text" class="form-control" id="searchName" aria-label="..." placeholder="请输入搜索关键词" style="height:34px;">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+        </div>
+    </div>
     <!--资源分类及其列表-->
     <div class="resource_list_container">
         <div class="resource_list"></div>

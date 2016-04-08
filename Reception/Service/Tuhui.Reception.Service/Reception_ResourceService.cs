@@ -60,5 +60,11 @@ namespace Tuhui.Reception.Service
         {
             return repository.GetResource_Type();
         }
+
+        //根据资源分类删除
+        public int DeleteByTypeID(string id)
+        {
+            return repository.DeleteByTypeID(id); 
+        }
     }
 }

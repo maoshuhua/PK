@@ -94,5 +94,11 @@ namespace Tuhui.Reception.Repository
 
             return query.ToList();
         }
+
+        //根据资源分类删除
+        public int DeleteByTypeID(string id)
+        {
+            return base.Delete<Reception_Resource>(p => p.RT_ID == id);
+        }
     }
 }

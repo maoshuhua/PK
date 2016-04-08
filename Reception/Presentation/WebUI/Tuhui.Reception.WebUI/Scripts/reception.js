@@ -59,6 +59,27 @@ $(function () {
         popupContent += "</div>";
         map.openPopup(lng, lat, popupContent);
     });
+
+    //选择搜索项
+    $(".dropdown-menu li a").on("click", function () {
+        var val = $(this).html();
+        $("#selectType").html(val);
+    });
+
+    //搜索
+    $(".glyphicon-search").on("click", function () {
+        var searchName = $.trim($("#searchName").val());
+        if (searchName.length == 0) {
+            $("#searchName").focus();
+        } else {
+            var val = $("#selectType").html();
+            if (val == "项目") {
+
+            } else if (val == "大事件") {
+
+            }
+        }
+    });
 })
 
 function _onResize() {
