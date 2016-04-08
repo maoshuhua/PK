@@ -54,5 +54,11 @@ namespace Tuhui.Reception.Service
         {
             return repository.Delete(id);
         }
+
+        //搜索结果
+        public PagedList<Reception_ResourceEvent> GetSearchPageList(Reception_ResourceEvent model, int pageIndex, int pageSize)
+        {
+            return repository.GetSearchPageList(model, pageIndex, pageSize);
+        }
     }
 }

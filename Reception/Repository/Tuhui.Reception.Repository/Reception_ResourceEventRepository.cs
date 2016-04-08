@@ -32,7 +32,12 @@ namespace Tuhui.Reception.Repository
 
             if (!string.IsNullOrEmpty(model.Name)) 
             {
-                query = query.Where(p => p.Name == model.Name);
+                query = query.Where(p => p.Name.Contains(model.Name));
+            }
+
+            if (!string.IsNullOrEmpty(model.JDRY))
+            {
+                query = query.Where(p => p.JDRY.Contains(model.JDRY));
             }
 
             if (!string.IsNullOrEmpty(model.R_ID))
@@ -40,6 +45,19 @@ namespace Tuhui.Reception.Repository
                 query = query.Where(p => p.R_ID == model.R_ID);
             }
             
+            return new PagedList<Reception_ResourceEvent>(query.OrderByDescending(p => p.AddTime), pageIndex, pageSize);
+        }
+
+        //搜索结果
+        public PagedList<Reception_ResourceEvent> GetSearchPageList(Reception_ResourceEvent model, int pageIndex, int pageSize)
+        {
+            var query = base.Search<Reception_ResourceEvent>();
+
+            if (!string.IsNullOrEmpty(model.Name) && !string.IsNullOrEmpty(model.JDRY))
+            {
+                query = query.Where(p => p.Name.Contains(model.Name) ||　p.JDRY.Contains(model.JDRY));
+            }
+
             return new PagedList<Reception_ResourceEvent>(query.OrderByDescending(p => p.AddTime), pageIndex, pageSize);
         }
         

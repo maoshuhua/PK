@@ -74,9 +74,9 @@ $(function () {
         } else {
             var val = $("#selectType").html();
             if (val == "项目") {
-
+                window.location.href = ACTION_URL("SearchResource?keyword=" + escape(searchName), "Reception");
             } else if (val == "大事件") {
-
+                window.location.href = ACTION_URL("SearchResourceEvent?keyword=" + escape(searchName), "Reception");
             }
         }
     });

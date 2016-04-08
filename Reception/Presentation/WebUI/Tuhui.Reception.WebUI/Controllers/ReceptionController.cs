@@ -61,11 +61,6 @@ namespace Tuhui.Reception.WebUI.Controllers
             return View();
         }
 
-        public ActionResult EventDetail()
-        {
-            return View();
-        }
-
         //获取资源详情
         public ActionResult GetResourceInfo(string id)
         {
@@ -107,5 +102,32 @@ namespace Tuhui.Reception.WebUI.Controllers
         {
             return Json(_event.Get(id), JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult SearchResource()
+        {
+            return View();
+        }
+
+        public ActionResult SearchResourceEvent()
+        {
+            ViewBag.keyword = Request.QueryString["keyword"];
+            return View();
+        }
+
+        //大事件搜索结果
+        public ActionResult SearchEventList(string keyword, int pageIndex = 1, int pageSize = 10)
+        {
+            Reception_ResourceEvent entity = new Reception_ResourceEvent
+            {
+                Name = keyword,
+                JDRY = keyword
+            };
+            var list = _event.GetSearchPageList(entity, pageIndex, pageSize);
+
+            return Json(list, JsonRequestBehavior.AllowGet);
+        }
+
+        //项目搜索结果
+
 	}
 }

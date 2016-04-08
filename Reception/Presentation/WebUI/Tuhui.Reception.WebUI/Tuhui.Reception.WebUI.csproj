@@ -228,6 +228,7 @@
     <Content Include="Content\images\manager\bg.png" />
     <Content Include="Content\images\manager\manager_home.png" />
     <Content Include="Content\images\manager\menu_head.png" />
+    <Content Include="Content\images\manager\tit-2.png" />
     <Content Include="Content\images\manager\tit.png" />
     <Content Include="Content\images\reception\arrow.png" />
     <Content Include="Content\images\reception\logo.png" />
@@ -681,6 +682,7 @@
     <Content Include="Scripts\My97DatePicker\开发包\skin\whyGreen\img.gif" />
     <Content Include="Scripts\reception.js" />
     <Content Include="Scripts\ResourceDetail.js" />
+    <Content Include="Scripts\SearchResourceEvent.js" />
     <Content Include="Scripts\STVIDEO\common.js" />
     <Content Include="Scripts\STVIDEO\videoPlayer.swf" />
     <Content Include="Scripts\template.js" />
@@ -786,7 +788,8 @@
     <Content Include="Views\ReceptionManager\NavigationImport.cshtml" />
     <Content Include="Views\Reception\Index.cshtml" />
     <Content Include="Views\Reception\ResourceDetail.cshtml" />
-    <Content Include="Views\Reception\EventDetail.cshtml" />
+    <Content Include="Views\Reception\SearchResource.cshtml" />
+    <Content Include="Views\Reception\SearchResourceEvent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\ASP.NET MVC\Tuhui.Common45.Mvc\Tuhui.Common45.Mvc.csproj">

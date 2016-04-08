@@ -28,5 +28,8 @@ namespace Tuhui.Reception.Repository
         
         //删除
         int Delete(string id);
+
+        //搜索结果
+        PagedList<Reception_ResourceEvent> GetSearchPageList(Reception_ResourceEvent model, int pageIndex, int pageSize);
     }
 }
