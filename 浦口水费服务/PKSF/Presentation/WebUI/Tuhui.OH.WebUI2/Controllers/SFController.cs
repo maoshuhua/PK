@@ -46,7 +46,7 @@ namespace Tuhui.OH.WebUI2.Controllers
                     c.Send(bs, bs.Length, 0);//发送信息
                     log.WriteLine("Socket Sended");
                     ///接受从服务器返回的信息
-                    byte[] recvBytes = new byte[1024];
+                    byte[] recvBytes = new byte[20000];
                     int bytes;
                     log.WriteLine("Socket Receive...");
                     bytes = c.Receive(recvBytes, recvBytes.Length, 0);//从服务器端接受返回信息
