@@ -100,5 +100,18 @@ namespace Tuhui.Reception.Repository
         {
             return base.Delete<Reception_Resource>(p => p.RT_ID == id);
         }
+
+        //搜索结果
+        public PagedList<Reception_Resource> GetSearchPageList(Reception_Resource model, int pageIndex, int pageSize)
+        {
+            var query = base.Search<Reception_Resource>();
+
+            if (!string.IsNullOrEmpty(model.Name))
+            {
+                query = query.Where(p => p.Name.Contains(model.Name));
+            }
+
+            return new PagedList<Reception_Resource>(query.OrderByDescending(p => p.AddTime), pageIndex, pageSize);
+        }
     }
 }

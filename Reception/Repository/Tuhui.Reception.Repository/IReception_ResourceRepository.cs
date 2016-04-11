@@ -33,5 +33,9 @@ namespace Tuhui.Reception.Repository
 
         //根据资源分类删除
         int DeleteByTypeID(string id);
+
+        //搜索结果
+        PagedList<Reception_Resource> GetSearchPageList(Reception_Resource model, int pageIndex, int pageSize);
+
     }
 }

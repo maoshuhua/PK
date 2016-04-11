@@ -681,6 +681,7 @@
     <Content Include="Scripts\My97DatePicker\开发包\skin\whyGreen\img.gif" />
     <Content Include="Scripts\reception.js" />
     <Content Include="Scripts\ResourceDetail.js" />
+    <Content Include="Scripts\SearchResource.js" />
     <Content Include="Scripts\SearchResourceEvent.js" />
     <Content Include="Scripts\STVIDEO\common.js" />
     <Content Include="Scripts\STVIDEO\videoPlayer.swf" />

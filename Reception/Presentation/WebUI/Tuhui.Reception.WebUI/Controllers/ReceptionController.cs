@@ -105,6 +105,7 @@ namespace Tuhui.Reception.WebUI.Controllers
 
         public ActionResult SearchResource()
         {
+            ViewBag.keyword = Request.QueryString["keyword"];
             return View();
         }
 
@@ -128,6 +129,15 @@ namespace Tuhui.Reception.WebUI.Controllers
         }
 
         //项目搜索结果
+        public ActionResult SearchResourceList(string keyword, int pageIndex = 1, int pageSize = 10)
+        {
+            Reception_Resource entity = new Reception_Resource
+            {
+                Name = keyword
+            };
+            var list = _reception_Resource.GetSearchPageList(entity, pageIndex, pageSize);
 
+            return Json(list, JsonRequestBehavior.AllowGet);
+        }
 	}
 }
