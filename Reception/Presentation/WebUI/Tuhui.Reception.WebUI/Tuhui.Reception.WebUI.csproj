@@ -235,6 +235,7 @@
     <Content Include="Content\images\reception\map_wx.png" />
     <Content Include="Content\images\reception\navi_close.png" />
     <Content Include="Content\images\reception\navi_open.png" />
+    <Content Include="Content\images\reception\no_data.png" />
     <Content Include="Content\images\reception\wkg_big.png" />
     <Content Include="Content\images\reception\wkg_small.png" />
     <Content Include="Content\images\reception\ykg_big.png" />

@@ -32,8 +32,10 @@
                          <div class="col-sm-12 col-md-7" id="resourceInfo"></div>
                          
                          <!--轮播图-->
-                         <div class="col-sm-12  col-md-5" id="imageList"></div>
-                        
+                        <div class="col-sm-12  col-md-5" id="imageList"></div>
+                         
+                         <!--项目详情-->
+                        <div class="col-sm-12" id="resourceDetail"></div>
                     </div>
                 </div>
             </div>
@@ -90,11 +92,10 @@
                 {{/each}}
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12">项目内容：{{ #model.Content }}</div>
-        </div>
+        
     </script>
     <script id="image_list" type="text/html">
+        {{if list.length > 0 }}
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -113,11 +114,11 @@
                 {{each list}}
                 {{if $index == 0}}
                 <div class="item active">
-                    <img src="@Url.Content("~/UploadFile/Image/{{ $value.ImagePath }}")" alt="" />
+                    <img class="img-responsive" src="@Url.Content("~/UploadFile/Image/{{ $value.ImagePath }}")" alt="" />
                 </div>
                 {{else}}
                 <div class="item">
-                    <img src="@Url.Content("~/UploadFile/Image/{{ $value.ImagePath }}")" alt="" />
+                    <img class="img-responsive" src="@Url.Content("~/UploadFile/Image/{{ $value.ImagePath }}")" alt="" />
                 </div>
                 {{/if}}
                 {{/each}}
@@ -133,6 +134,11 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        {{else}}
+        <div class="no_data">
+            <img class="img-responsive" src="@Url.Content("~/Content/images/reception/no_data.png")" />
+        </div>
+        {{/if}}
     </script>
     <script>
         var id = "@ViewBag.Id";

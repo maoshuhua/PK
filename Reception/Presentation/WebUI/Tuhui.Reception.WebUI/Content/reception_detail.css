@@ -59,3 +59,7 @@ video {
    width:400px;
    height:300px;
 }
+
+.no_data img{
+   margin:0 auto;
+}

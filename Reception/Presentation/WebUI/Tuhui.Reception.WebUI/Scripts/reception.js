@@ -159,8 +159,13 @@ function GetNewest(){
         },
         success: function (response) {
             if (response != null) {
+                var list = JSON.parse(response.GHLJ);
                 //显示线
-                map.addLine(JSON.parse(response.GHLJ));
+                map.addLine(list);
+                //定位到第一个点
+                if (list.length > 0) {
+                    map.panTo(list[0].lng, list[0].lat);
+                }
             }
         }
     });
