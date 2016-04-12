@@ -51,11 +51,11 @@ $(function () {
         var popupContent = "";
         popupContent += "<div style='color:#14265c;text-align:center;font-size:22px;font-weight:bold;border-bottom:3px solid #758db8;min-width:300px;padding-bottom:5px;'>" + $(this).html() + "</div>";
         popupContent += "<div style='padding:0 20px;font-size:18px;line-height:30px;'>";
-        popupContent += "<div style='border-bottom:1px solid #cdced0;height:30px;padding-left:46px;margin-top:10px;overflow:hidden;'><strong>所属街道</strong>&nbsp;&nbsp;" + $(this).attr("data-ssjd") + "</div>";
-        popupContent += "<div style='border-bottom:1px solid #cdced0;height:30px;padding-left:46px;overflow:hidden;'><strong>责任单位</strong>&nbsp;&nbsp;" + $(this).attr("data-rrdw") + "</div>";
-        popupContent += "<div style='border-bottom:1px solid #cdced0;height:30px;padding-left:46px;overflow:hidden;'><strong>施方单位</strong>&nbsp;&nbsp;" + $(this).attr("data-sfdw") + "</div>";
-        popupContent += "<div style='border-bottom:1px solid #cdced0;height:30px;padding-left:46px;overflow:hidden;'><strong>开工时间</strong>&nbsp;&nbsp;" + $(this).attr("data-starttime")._data() + "</div>";
-        popupContent += "<div style='height:30px;padding-left:10px;overflow:hidden;'><strong>计划完成时间</strong>&nbsp;&nbsp;<span style='font-weight:200;'>" + $(this).attr("data-endtime")._data() + "</span></div>";
+        popupContent += "<div style='border-bottom:1px solid #cdced0;height:30px;padding-left:46px;margin-top:10px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;'><strong>所属街道</strong>&nbsp;&nbsp;" + $(this).attr("data-ssjd") + "</div>";
+        popupContent += "<div style='border-bottom:1px solid #cdced0;height:30px;padding-left:46px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;'><strong>责任单位</strong>&nbsp;&nbsp;" + $(this).attr("data-rrdw") + "</div>";
+        popupContent += "<div style='border-bottom:1px solid #cdced0;height:30px;padding-left:46px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;'><strong>施方单位</strong>&nbsp;&nbsp;" + $(this).attr("data-sfdw") + "</div>";
+        popupContent += "<div style='border-bottom:1px solid #cdced0;height:30px;padding-left:46px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;'><strong>开工时间</strong>&nbsp;&nbsp;" + $(this).attr("data-starttime")._data() + "</div>";
+        popupContent += "<div style='height:30px;padding-left:10px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;'><strong>计划完成时间</strong>&nbsp;&nbsp;<span style='font-weight:200;'>" + $(this).attr("data-endtime")._data() + "</span></div>";
         popupContent += "<div style='background-color:#3A89D3;text-align:center;color:#fff;border-radius:5px;margin-top:5px;cursor:pointer;' onclick='RedirectTo(\"" + $(this).attr("data-rid") + "\");'>查看详情</div>";
         popupContent += "</div>";
         map.openPopup(lng, lat, popupContent);

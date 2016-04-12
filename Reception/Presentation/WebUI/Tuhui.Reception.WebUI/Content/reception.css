@@ -6,7 +6,7 @@
 .resource_status_bottom {
    position:absolute;
    right:30px;
-   bottom:50px;
+   bottom:30px;
    border:1px solid #C7C7C7;
    z-index:999;
    background-color:#fff;
@@ -82,7 +82,7 @@
 
 .resource_list_container {
     position:absolute;
-    top:40px;
+    top:20px;
     right:40px;
     width:245px;
     z-index:999;
@@ -131,9 +131,12 @@
    height:30px;
    line-height:30px;
    text-align:left;
-   background:url(../Content/images/reception/arrow.png) no-repeat 10px center;
+   background:url(../Content/images/reception/arrow.png) no-repeat 10px 10px;
    padding-left:23px;
    cursor:pointer;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
 }
 
 .no_border {
@@ -156,7 +159,7 @@
 
 .resource_search {
     position: absolute;
-    top: 40px;
+    top: 20px;
     right: 300px;
     z-index: 999;
     width: 330px;
@@ -165,22 +168,30 @@
 /*平板竖屏*/
 @media screen and (min-width: 768px) {
     .resource_search {
+        width:230px;
         top: 88px;
     }
     .resource_list_container {
         top:88px;
     } 
 }
-
+/*平板横屏*/
 @media screen and (min-width: 992px) {
-     
-}
-
-@media screen and (min-width: 1200px) {
-    .resource_search {
-        top: 40px;
+    .resource_search { 
+        width:230px;      
+        top: 20px;
     }
     .resource_list_container {
-        top:40px;
+        top:20px;
+    } 
+}
+/*pc*/
+@media screen and (min-width: 1200px) {
+    .resource_search {
+        width: 330px;
+        top: 20px;
+    }
+    .resource_list_container {
+        top:20px;
     }  
 }
